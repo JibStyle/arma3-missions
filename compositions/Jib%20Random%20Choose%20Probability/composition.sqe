@@ -1,0 +1,73 @@
+version=54;
+center[]={6921.1943,341.78513,4642.6299};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-4.4960938,0.24353027,-2.4516602};
+		};
+		init="[this, 0.5] call jib_random_logicChooseProbability;";
+		id=587;
+		type="Logic";
+		atlOffset=-3.0517578e-005;
+	};
+	class Item1
+	{
+		dataType="Trigger";
+		position[]={2.046875,0,7.59375};
+		class Attributes
+		{
+			sizeA=0;
+			sizeB=0;
+		};
+		id=588;
+		type="EmptyDetector";
+	};
+	class Item2
+	{
+		dataType="Trigger";
+		position[]={2.4487305,1.2271118,-5.1435547};
+		class Attributes
+		{
+			sizeA=0;
+			sizeB=0;
+		};
+		id=589;
+		type="EmptyDetector";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=2;
+	};
+	class Links
+	{
+		items=2;
+		class Item0
+		{
+			linkID=0;
+			item0=588;
+			item1=587;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=589;
+			item1=587;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

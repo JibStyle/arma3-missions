@@ -1,0 +1,639 @@
+respawnOnStart = 0;
+
+#define MY_ORBAT_BCT size="Brigade";  type="MechanizedInfantry";
+#define MY_ORBAT_RCT size="Regiment";  type="MechanizedInfantry";
+#define MY_ORBAT_BN  size="Battalion"; commanderRank="MAJOR";
+#define MY_ORBAT_SQN size="Squadron";  commanderRank="MAJOR";
+#define MY_ORBAT_CO  size="Company";   idType=2;
+#define MY_ORBAT_TRP size="Troop";     idType=2;
+#define MY_ORBAT_PLT size="Platoon";
+#define MY_ORBAT_SQD size="Squad";
+
+#define MY_ORBAT_BN_INF    MY_ORBAT_BN  type="Infantry";
+#define MY_ORBAT_BN_RECON  MY_ORBAT_BN  type="Recon";
+#define MY_ORBAT_BN_SUP    MY_ORBAT_BN  type="Support";
+#define MY_ORBAT_CO_ARMOR  MY_ORBAT_CO  type="Armored";
+#define MY_ORBAT_CO_ARTY   MY_ORBAT_CO  type="Artillery";
+#define MY_ORBAT_CO_INF    MY_ORBAT_CO  type="Infantry";
+#define MY_ORBAT_CO_RECON  MY_ORBAT_CO  type="Recon";
+#define MY_ORBAT_CO_MECH   MY_ORBAT_CO  type="MechanizedInfantry";
+#define MY_ORBAT_CO_SUP    MY_ORBAT_CO  type="Support";
+#define MY_ORBAT_SQN_AIR   MY_ORBAT_SQN type="CombatAviation";
+#define MY_ORBAT_TRP_HELI  MY_ORBAT_TRP type="Helicopter";
+#define MY_ORBAT_TRP_PLANE MY_ORBAT_TRP type="Fighter";
+#define MY_ORBAT_TRP_RECON MY_ORBAT_TRP type="Recon";
+#define MY_ORBAT_PLT_INF   MY_ORBAT_PLT type="Infantry";
+#define MY_ORBAT_PLT_RECON MY_ORBAT_PLT type="Recon";
+#define MY_ORBAT_PLT_ARMOR MY_ORBAT_PLT type="Armored";
+#define MY_ORBAT_PLT_ARTY  MY_ORBAT_PLT type="Artillery";
+#define MY_ORBAT_SQD_INF   MY_ORBAT_SQD type="Infantry";
+#define MY_ORBAT_SQD_ARMOR MY_ORBAT_SQD type="Armored";
+#define MY_ORBAT_SQD_RECON MY_ORBAT_SQD type="Recon";
+
+#define MY_ORBAT_BLU commander="NATOMen";        side="West";
+#define MY_ORBAT_COV commander="SangheiliNames"; side="East";
+
+#define MY_ORBAT_BLU_RCT       MY_ORBAT_BLU MY_ORBAT_RCT
+#define MY_ORBAT_BLU_BN_INF    MY_ORBAT_BLU MY_ORBAT_BN_INF
+#define MY_ORBAT_BLU_BN_RECON  MY_ORBAT_BLU MY_ORBAT_BN_RECON
+#define MY_ORBAT_BLU_BN_SUP    MY_ORBAT_BLU MY_ORBAT_BN_SUP
+#define MY_ORBAT_BLU_CO_ARMOR  MY_ORBAT_BLU MY_ORBAT_CO_ARMOR  \
+    class 1 { MY_ORBAT_BLU_PLT_ARMOR id=1; }                   \
+    class 2 { MY_ORBAT_BLU_PLT_ARMOR id=2; }                   \
+    class 3 { MY_ORBAT_BLU_PLT_ARMOR id=3; }                   \
+    class 4 { MY_ORBAT_BLU_PLT_ARTY  id=4; }
+#define MY_ORBAT_BLU_CO_ARTY   MY_ORBAT_BLU MY_ORBAT_CO_ARTY
+#define MY_ORBAT_BLU_CO_INF    MY_ORBAT_BLU MY_ORBAT_CO_INF    \
+    class 1 { MY_ORBAT_BLU_PLT_INF id=1; };                    \
+    class 2 { MY_ORBAT_BLU_PLT_INF id=2; };                    \
+    class 3 { MY_ORBAT_BLU_PLT_INF id=3; };                    \
+    class 4 { MY_ORBAT_BLU_PLT_INF id=4; };
+#define MY_ORBAT_BLU_CO_RECON  MY_ORBAT_BLU MY_ORBAT_CO_RECON  \
+    class 1 { MY_ORBAT_BLU_PLT_RECON id=1; };                  \
+    class 2 { MY_ORBAT_BLU_PLT_RECON id=2; };                  \
+    class 3 { MY_ORBAT_BLU_PLT_RECON id=3; };                  \
+    class 4 { MY_ORBAT_BLU_PLT_RECON id=4; };
+#define MY_ORBAT_BLU_CO_MECH   MY_ORBAT_BLU MY_ORBAT_CO_MECH
+#define MY_ORBAT_BLU_CO_SUP    MY_ORBAT_BLU MY_ORBAT_CO_SUP
+#define MY_ORBAT_BLU_SQN_AIR   MY_ORBAT_BLU MY_ORBAT_SQN_AIR
+#define MY_ORBAT_BLU_TRP_HELI  MY_ORBAT_BLU MY_ORBAT_TRP_HELI
+#define MY_ORBAT_BLU_TRP_PLANE MY_ORBAT_BLU MY_ORBAT_TRP_PLANE
+#define MY_ORBAT_BLU_TRP_RECON MY_ORBAT_BLU MY_ORBAT_TRP_RECON
+#define MY_ORBAT_BLU_PLT_INF   MY_ORBAT_BLU MY_ORBAT_PLT_INF   \
+    class 1 { MY_ORBAT_BLU_SQD_INF id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_INF id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_INF id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_INF id=4; };
+#define MY_ORBAT_BLU_PLT_RECON MY_ORBAT_BLU MY_ORBAT_PLT_RECON \
+    class 1 { MY_ORBAT_BLU_SQD_RECON id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_RECON id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_RECON id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_RECON id=4; };
+#define MY_ORBAT_BLU_PLT_ARMOR MY_ORBAT_BLU MY_ORBAT_PLT_ARMOR \
+    assets[]={{OPTRE_M808B_UNSC, 3}};
+#define MY_ORBAT_BLU_PLT_ARTY MY_ORBAT_BLU MY_ORBAT_PLT_ARTY   \
+    assets[]={{OPTRE_M875_SPH, 3}};
+#define MY_ORBAT_BLU_SQD_INF   MY_ORBAT_BLU MY_ORBAT_SQD_INF
+#define MY_ORBAT_BLU_SQD_ARMOR MY_ORBAT_BLU MY_ORBAT_SQD_ARMOR
+#define MY_ORBAT_BLU_SQD_RECON MY_ORBAT_BLU MY_ORBAT_SQD_RECON
+
+#define MY_ORBAT_COV_BCT       MY_ORBAT_COV MY_ORBAT_BCT
+#define MY_ORBAT_COV_RCT       MY_ORBAT_COV MY_ORBAT_RCT
+#define MY_ORBAT_COV_BN_INF    MY_ORBAT_COV MY_ORBAT_BN_INF
+#define MY_ORBAT_COV_BN_RECON  MY_ORBAT_COV MY_ORBAT_BN_RECON
+#define MY_ORBAT_COV_BN_SUP    MY_ORBAT_COV MY_ORBAT_BN_SUP
+#define MY_ORBAT_COV_CO_ARMOR  MY_ORBAT_COV MY_ORBAT_CO_ARMOR  \
+    class 1 { MY_ORBAT_COV_PLT_ARMOR id=1; }                   \
+    class 2 { MY_ORBAT_COV_PLT_ARMOR id=2; }                   \
+    class 3 { MY_ORBAT_COV_PLT_ARMOR id=3; }                   \
+    class 4 { MY_ORBAT_COV_PLT_ARMOR id=4; }
+#define MY_ORBAT_COV_CO_ARTY   MY_ORBAT_COV MY_ORBAT_CO_ARTY
+#define MY_ORBAT_COV_CO_INF    MY_ORBAT_COV MY_ORBAT_CO_INF    \
+    class 1 { MY_ORBAT_COV_PLT_INF id=1; };                    \
+    class 2 { MY_ORBAT_COV_PLT_INF id=2; };                    \
+    class 3 { MY_ORBAT_COV_PLT_INF id=3; };                    \
+    class 4 { MY_ORBAT_COV_PLT_INF id=4; };
+#define MY_ORBAT_COV_CO_RECON  MY_ORBAT_COV MY_ORBAT_CO_RECON  \
+    class 1 { MY_ORBAT_COV_PLT_RECON id=1; };                  \
+    class 2 { MY_ORBAT_COV_PLT_RECON id=2; };                  \
+    class 3 { MY_ORBAT_COV_PLT_RECON id=3; };                  \
+    class 4 { MY_ORBAT_COV_PLT_RECON id=4; };
+#define MY_ORBAT_COV_CO_MECH   MY_ORBAT_COV MY_ORBAT_CO_MECH
+#define MY_ORBAT_COV_CO_SUP    MY_ORBAT_COV MY_ORBAT_CO_SUP
+#define MY_ORBAT_COV_SQN_AIR   MY_ORBAT_COV MY_ORBAT_SQN_AIR
+#define MY_ORBAT_COV_TRP_HELI  MY_ORBAT_COV MY_ORBAT_TRP_HELI
+#define MY_ORBAT_COV_TRP_PLANE MY_ORBAT_COV MY_ORBAT_TRP_PLANE
+#define MY_ORBAT_COV_TRP_RECON MY_ORBAT_COV MY_ORBAT_TRP_RECON
+#define MY_ORBAT_COV_PLT_INF   MY_ORBAT_COV MY_ORBAT_PLT_INF   \
+    class 1 { MY_ORBAT_COV_SQD_INF id=1; };                    \
+    class 2 { MY_ORBAT_COV_SQD_INF id=2; };                    \
+    class 3 { MY_ORBAT_COV_SQD_INF id=3; };                    \
+    class 4 { MY_ORBAT_COV_SQD_INF id=4; };
+#define MY_ORBAT_COV_PLT_RECON MY_ORBAT_COV MY_ORBAT_PLT_RECON \
+    class 1 { MY_ORBAT_COV_SQD_RECON id=1; };                  \
+    class 2 { MY_ORBAT_COV_SQD_RECON id=2; };                  \
+    class 3 { MY_ORBAT_COV_SQD_RECON id=3; };                  \
+    class 4 { MY_ORBAT_COV_SQD_RECON id=4; };
+#define MY_ORBAT_COV_PLT_ARMOR MY_ORBAT_COV MY_ORBAT_PLT_ARMOR
+#define MY_ORBAT_COV_SQD_INF   MY_ORBAT_COV MY_ORBAT_SQD_INF
+#define MY_ORBAT_COV_SQD_ARMOR MY_ORBAT_COV MY_ORBAT_SQD_ARMOR
+#define MY_ORBAT_COV_SQD_RECON MY_ORBAT_COV MY_ORBAT_SQD_RECON
+
+class CfgORBAT {
+    class blu {
+        MY_ORBAT_RCT side="West";
+        commander="Jacob Keyes";
+        colorInsignia[]={0,0,0,1};
+        description="Naval, ground, and air forces that survived the evacuation of the UNSC Pillar of Autumn.";
+        insignia=__EVAL(getMissionPath "wca.paa");
+        text="UNSC Pillar of Autumn";
+        textShort="UNSC";
+
+        class 1 {
+            MY_ORBAT_BN_RECON side="West";
+            commander="Antonio Silva";
+            id=1;
+            text="%1 Shock Troops %3";
+            class a { MY_ORBAT_BLU_CO_RECON id=1; description="""Assassin""" };
+            class b { MY_ORBAT_BLU_CO_RECON id=2; };
+            class c { MY_ORBAT_BLU_CO_RECON id=3; };
+            class d { MY_ORBAT_BLU_CO_RECON id=4; };
+        };
+        class 79 {
+            MY_ORBAT_BLU_BN_INF
+            id=79;
+            text="%1 %2 %3";
+            class e {
+                MY_ORBAT_BLU_CO_INF id=5;
+                assets[]={
+                    {OPTRE_M12_LRV, 12},
+                };
+            };
+            class f {
+                MY_ORBAT_BLU_CO_INF id=6;
+                assets[]={
+                    {OPTRE_M12_LRV, 12},
+                };
+            };
+            class g {
+                MY_ORBAT_BLU_CO_INF id=7;
+                assets[]={
+                    {OPTRE_M12_LRV, 12},
+                };
+            };
+            class h {
+                MY_ORBAT_BLU_CO_ARMOR id=8;
+                description="""Warpig""";
+                assets[]={
+                    {OPTRE_M808B_UNSC, 12},
+                };
+            };
+        };
+        class 23 {
+            MY_ORBAT_BLU_SQN_AIR
+            id=23;
+            text="%1 Naval Air %3";
+            class i {
+                MY_ORBAT_BLU_TRP_HELI
+                description="""Rodeo""";
+                id=9;
+                text="%1 Flight";
+                textShort="%1 Flt";
+                assets[]={
+                    {OPTRE_Pelican_unarmed, 8},
+                };
+            };
+            class k {
+                MY_ORBAT_BLU_TRP_HELI
+                id=11;
+                text="%1 Flight";
+                textShort="%1 Flt";
+                assets[]={
+                    {OPTRE_UNSC_falcon, 4},
+                };
+            };
+        };
+    };
+    class opf {
+        MY_ORBAT_BCT side="East";
+        commander="Thel 'Vadamee";
+        description="Covenant ground forces in the Battle for Installation 04.";
+        colorInsignia[]={0,0,0,1};
+        insignia=__EVAL(getMissionPath "wca.paa");
+        text="Fleet of Particular Justice";
+        textShort="Covenant";
+
+        class 1 {
+            MY_ORBAT_COV_BN_INF id=1;
+            class a { MY_ORBAT_COV_CO_INF id=1; };
+            class b { MY_ORBAT_COV_CO_INF id=2; };
+            class c { MY_ORBAT_COV_CO_INF id=3; };
+            class d { MY_ORBAT_COV_CO_ARMOR id=4; };
+        };
+        class 2 {
+            MY_ORBAT_COV_BN_INF id=2;
+            class e { MY_ORBAT_COV_CO_INF id=5; };
+            class f { MY_ORBAT_COV_CO_INF id=6; };
+            class g { MY_ORBAT_COV_CO_INF id=7; };
+            class h { MY_ORBAT_COV_CO_ARMOR id=8; };
+        };
+        class 3 {
+            MY_ORBAT_COV_BN_INF id=3;
+            class i { MY_ORBAT_COV_CO_INF id=9; };
+            class k { MY_ORBAT_COV_CO_INF id=11; };
+            class l { MY_ORBAT_COV_CO_INF id=12; };
+            class m { MY_ORBAT_COV_CO_ARMOR id=13; };
+        };
+        class 4 {
+            MY_ORBAT_BN_RECON id=4;
+            commander="Rtas 'Vadumee";
+            side="East";
+            text="%1 Special Operations %3";
+            class n { MY_ORBAT_COV_CO_RECON id=14; };
+            class p { MY_ORBAT_COV_CO_RECON id=16; };
+            class q { MY_ORBAT_COV_CO_RECON id=17; };
+            class r { MY_ORBAT_COV_CO_RECON id=18; };
+        };
+        class 5 {
+            MY_ORBAT_COV_SQN_AIR id=5;
+            class s {
+                MY_ORBAT_COV_TRP_HELI id=19;
+                text="%1 Flight";
+                textShort="%1 Flt";
+            };
+            class t {
+                MY_ORBAT_COV_TRP_PLANE id=20;
+                text="%1 Flight";
+                textShort="%1 Flt";
+            };
+        };
+    };
+};
+
+#define MY_GROUP_OPF side=0; faction="my_covenant";
+
+#define MY_UNIT_OPF_ELITE_FIELD_MARSHAL_MG side=0; rank="COLONEL"; vehicle="OPTRE_FC_Elite_FieldMarshal";
+#define MY_UNIT_OPF_ELITE_FIELD_MARSHAL_GL side=0; rank="COLONEL";"vehicle=OPTRE_FC_Elite_FieldMarshal2";
+#define MY_UNIT_OPF_ELITE_ZEALOT_MG side=0; rank="MAJOR"; vehicle="OPTRE_FC_Elite_Zealot";
+#define MY_UNIT_OPF_ELITE_ZEALOT_GL side=0; rank="MAJOR"; vehicle="OPTRE_FC_Elite_Zealot2";
+#define MY_UNIT_OPF_ELITE_HONOR_GUARD_AR side=0; rank="CAPTAIN"; vehicle="OPTRE_FC_Elite_HonorGuard";
+
+#define MY_UNIT_OPF_ELITE_ULTRA_MARKSMAN side=0; rank="CAPTAIN"; vehicle="OPTRE_FC_Elite_Ultra";
+#define MY_UNIT_OPF_ELITE_ULTRA_GL side=0; rank="CAPTAIN"; vehicle="OPTRE_FC_Elite_Ultra2";
+#define MY_UNIT_OPF_ELITE_MAJOR_MG side=0; rank="LIEUTENANT"; vehicle="OPTRE_FC_Elite_Major";
+#define MY_UNIT_OPF_ELITE_MINOR_AR side=0; rank="SERGEANT"; vehicle="OPTRE_FC_Elite_Minor";
+#define MY_UNIT_OPF_ELITE_MINOR_MARKSMAN side=0; rank="SERGEANT"; vehicle="OPTRE_FC_Elite_Minor2";
+#define MY_UNIT_OPF_ELITE_MINOR_AA side=0; rank="SERGEANT"; vehicle="OPTRE_FC_Elite_MinorAA";
+#define MY_UNIT_OPF_ELITE_MINOR_AT side=0; rank="SERGEANT"; vehicle="OPTRE_FC_Elite_MinorAT";
+
+#define MY_UNIT_OPF_JACKAL_SHIELD side=0; rank="PRIVATE"; vehicle="OPTRE_Jackal_F";
+#define MY_UNIT_OPF_JACKAL_AR side=0; rank="CORPORAL"; vehicle="OPTRE_Jackal_Infantry_F";
+#define MY_UNIT_OPF_JACKAL_PP side=0; rank="PRIVATE"; vehicle="OPTRE_Jackal_Infantry2_F";
+#define MY_UNIT_OPF_JACKAL_MARKSMAN side=0; rank="CORPORAL"; vehicle="OPTRE_Jackal_Sharpshooter_F";
+#define MY_UNIT_OPF_JACKAL_SNIPER side=0; rank="PRIVATE"; vehicle="OPTRE_Jackal_Sniper_F";
+
+#define MY_UNIT_OPF_ELITE_SPECOPS_SNIPER side=0; rank="SERGEANT"; vehicle="OPTRE_FC_Elite_SpecOps";
+#define MY_UNIT_OPF_ELITE_SPECOPS_MARKSMAN side=0; rank="SERGEANT"; vehicle="OPTRE_FC_Elite_SpecOps2";
+#define MY_UNIT_OPF_ELITE_SPECOPS_GL side=0; rank="SERGEANT"; vehicle="OPTRE_FC_Elite_SpecOps3";
+
+#define MY_UNIT_OPF_WRAITH_MORTAR side=0; rank="LIEUTENANT"; vehicle="OPTRE_FC_Wraith";
+#define MY_UNIT_OPF_WRAITH_AT side=0; rank="LIEUTENANT"; vehicle="OPTRE_FC_Wraith_Tank";
+#define MY_UNIT_OPF_WRAITH_AA side=0; rank="LIEUTENANT"; vehicle="OPTRE_FC_AA_Wraith";
+#define MY_UNIT_OPF_WRAITH_AA_NOFLAK side=0; rank="LIEUTENANT"; vehicle="OPTRE_FC_AA_Wraith_NOFLAK";
+#define MY_UNIT_OPF_WRAITH_AA_NEEDLE side=0; rank="LIEUTENANT"; vehicle="OPTRE_FC_AA_Wraith_Needle";
+
+#define MY_UNIT_OPF_BANSHEE side=0; rank="LIEUTENANT"; vehicle="OPTRE_FC_Type26B_Banshee";
+
+#define MY_GROUP_OPF_BANSHEE_ELEMENT MY_GROUP_OPF class 0 { MY_UNIT_OPF_BANSHEE };
+
+#define MY_GROUP_OPF_WRAITH_ELEMENT_MORTAR MY_GROUP_OPF class 0 { MY_UNIT_OPF_WRAITH_MORTAR };
+#define MY_GROUP_OPF_WRAITH_ELEMENT_AT MY_GROUP_OPF class 0 { MY_UNIT_OPF_WRAITH_AT };
+#define MY_GROUP_OPF_WRAITH_ELEMENT_AA MY_GROUP_OPF class 0 { MY_UNIT_OPF_WRAITH_AA };
+#define MY_GROUP_OPF_WRAITH_ELEMENT_NOFLAK MY_GROUP_OPF class 0 { MY_UNIT_OPF_WRAITH_AA_NOFLAK };
+#define MY_GROUP_OPF_WRAITH_ELEMENT_NEEDLE MY_GROUP_OPF class 0 { MY_UNIT_OPF_WRAITH_AA_NEEDLE };
+
+#define MY_GROUP_OPF_JACKAL_FIRETEAM_SHIELD         \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_JACKAL_SHIELD };          \
+    class 1 { MY_UNIT_OPF_JACKAL_SHIELD };          \
+    class 2 { MY_UNIT_OPF_JACKAL_SHIELD };          \
+    class 3 { MY_UNIT_OPF_JACKAL_SHIELD };
+
+#define MY_GROUP_OPF_MIXED_FIRETEAM_AR              \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 1 { MY_UNIT_OPF_ELITE_MINOR_AR };         \
+    class 2 { MY_UNIT_OPF_JACKAL_AR };              \
+    class 3 { MY_UNIT_OPF_JACKAL_AR };
+
+#define MY_GROUP_OPF_MIXED_FIRETEAM_SHIELD          \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 1 { MY_UNIT_OPF_ELITE_MINOR_AR };         \
+    class 2 { MY_UNIT_OPF_JACKAL_SHIELD };          \
+    class 3 { MY_UNIT_OPF_JACKAL_SHIELD };
+
+#define MY_GROUP_OPF_MIXED_FIRETEAM_MARKSMAN        \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 1 { MY_UNIT_OPF_ELITE_MINOR_AR };         \
+    class 2 { MY_UNIT_OPF_JACKAL_MARKSMAN };        \
+    class 3 { MY_UNIT_OPF_JACKAL_MARKSMAN };
+
+#define MY_GROUP_OPF_ELITE_PATROL_AR                \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_MINOR_AR };         \
+    class 1 { MY_UNIT_OPF_ELITE_MINOR_AR };
+
+#define MY_GROUP_OPF_ELITE_FIRETEAM                 \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 1 { MY_UNIT_OPF_ELITE_MINOR_AR };         \
+    class 2 { MY_UNIT_OPF_ELITE_MINOR_AT };         \
+    class 3 { MY_UNIT_OPF_ELITE_MINOR_MARKSMAN };
+
+#define MY_GROUP_OPF_ELITE_AT_AA                    \
+    class 0 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 1 { MY_UNIT_OPF_ELITE_MINOR_AT };         \
+    class 2 { MY_UNIT_OPF_ELITE_MINOR_AT };         \
+    class 3 { MY_UNIT_OPF_ELITE_MINOR_AA };
+
+#define MY_GROUP_OPF_MIXED_SQUAD                    \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 1 { MY_UNIT_OPF_ELITE_MINOR_MARKSMAN };   \
+    class 2 { MY_UNIT_OPF_ELITE_MINOR_AR };         \
+    class 3 { MY_UNIT_OPF_JACKAL_AR };              \
+    class 4 { MY_UNIT_OPF_JACKAL_MARKSMAN };        \
+    class 5 { MY_UNIT_OPF_JACKAL_SHIELD };          \
+    class 6 { MY_UNIT_OPF_JACKAL_SHIELD };          \
+    class 7 { MY_UNIT_OPF_JACKAL_AR };              \
+    class 8 { MY_UNIT_OPF_JACKAL_MARKSMAN };        \
+    class 9 { MY_UNIT_OPF_JACKAL_SHIELD };          \
+    class 10 { MY_UNIT_OPF_JACKAL_SHIELD };         \
+    class 11 { MY_UNIT_OPF_ELITE_MINOR_AT };        \
+    class 12 { MY_UNIT_OPF_ELITE_MINOR_AA };
+
+#define MY_GROUP_OPF_JACKAL_FIRETEAM_MARKSMAN       \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_JACKAL_MARKSMAN };        \
+    class 1 { MY_UNIT_OPF_JACKAL_MARKSMAN };        \
+    class 2 { MY_UNIT_OPF_JACKAL_SNIPER };          \
+    class 3 { MY_UNIT_OPF_JACKAL_SNIPER };
+
+#define MY_GROUP_OPF_ELITE_FIRETEAM_SPECOPS         \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_ULTRA_MARKSMAN };   \
+    class 1 { MY_UNIT_OPF_ELITE_SPECOPS_MARKSMAN }; \
+    class 2 { MY_UNIT_OPF_ELITE_SPECOPS_GL };       \
+    class 3 { MY_UNIT_OPF_ELITE_SPECOPS_SNIPER };
+
+#define MY_GROUP_OPF_ELITE_SQUAD_COMMAND            \
+    MY_GROUP_OPF                                    \
+    class 0 { MY_UNIT_OPF_ELITE_FIELD_MARSHAL_MG }; \
+    class 1 { MY_UNIT_OPF_ELITE_ZEALOT_MG };        \
+    class 2 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 3 { MY_UNIT_OPF_ELITE_MAJOR_MG };         \
+    class 4 { MY_UNIT_OPF_ELITE_HONOR_GUARD_AR };   \
+    class 5 { MY_UNIT_OPF_ELITE_HONOR_GUARD_AR };
+
+#define MY_GROUP_BLU side=1; faction="my_unsc";
+
+#define MY_UNIT_BLU_ODST_CPT side=1; rank="CAPTAIN"; vehicle="OPTRE_UNSC_ODST_Soldier_TeamLeader";
+#define MY_UNIT_BLU_ODST_LT side=1; rank="LIEUTENANT"; vehicle="OPTRE_UNSC_ODST_Soldier_TeamLeader";
+#define MY_UNIT_BLU_ODST_SGT side=1; rank="SERGEANT"; vehicle="OPTRE_UNSC_ODST_Soldier_TeamLeader";
+#define MY_UNIT_BLU_ODST_MEDIC side=1; rank="CORPORAL"; vehicle="OPTRE_UNSC_ODST_Soldier_Paramedic";
+#define MY_UNIT_BLU_ODST_SNIPER side=1; rank="CORPORAL"; vehicle="OPTRE_UNSC_ODST_Soldier_Scout_Sniper";
+#define MY_UNIT_BLU_ODST_AR side=1; rank="CORPORAL"; vehicle="OPTRE_UNSC_ODST_Soldier_Automatic_Rifleman";
+#define MY_UNIT_BLU_ODST_MARKSMAN side=1; rank="CORPORAL"; vehicle="OPTRE_UNSC_ODST_Soldier_Marksman";
+#define MY_UNIT_BLU_ODST_AT side=1; rank="CORPORAL"; vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_AT";
+#define MY_UNIT_BLU_ODST_BR side=1; rank="CORPORAL"; vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_BR";
+#define MY_UNIT_BLU_ODST_R side=1; rank="CORPORAL"; vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_AR";
+
+#define MY_GROUP_BLU_ODST_COY_HQ           \
+    MY_GROUP_BLU                           \
+    class 0 { MY_UNIT_BLU_ODST_CPT };      \
+    class 1 { MY_UNIT_BLU_ODST_SGT };      \
+    class 2 { MY_UNIT_BLU_ODST_MEDIC };
+
+#define MY_GROUP_BLU_ODST_PLT_HQ           \
+    MY_GROUP_BLU                           \
+    class 0 { MY_UNIT_BLU_ODST_LT };       \
+    class 1 { MY_UNIT_BLU_ODST_SGT };      \
+    class 2 { MY_UNIT_BLU_ODST_MEDIC };    \
+    class 3 { MY_UNIT_BLU_ODST_R };
+
+#define MY_GROUP_BLU_ODST_TEAM             \
+    MY_GROUP_BLU                           \
+    class 0 { MY_UNIT_BLU_ODST_SGT };      \
+    class 1 { MY_UNIT_BLU_ODST_AR };       \
+    class 2 { MY_UNIT_BLU_ODST_MARKSMAN }; \
+    class 3 { MY_UNIT_BLU_ODST_MEDIC };    \
+    class 4 { MY_UNIT_BLU_ODST_AT };       \
+    class 5 { MY_UNIT_BLU_ODST_BR };
+
+#define MY_GROUP_BLU_ODST_SNIPER           \
+    MY_GROUP_BLU                           \
+    class 0 { MY_UNIT_BLU_ODST_SGT };      \
+    class 1 { MY_UNIT_BLU_ODST_SNIPER };
+
+#define MY_UNIT_BLU_INF_CPT side=1; rank="CAPTAIN"; vehicle="OPTRE_UNSC_Marine_Soldier_Officer";
+#define MY_UNIT_BLU_INF_LT side=1; rank="LIEUTENANT"; vehicle="OPTRE_FC_Marines_Soldier_SquadLead";
+#define MY_UNIT_BLU_INF_SGT side=1; rank="SERGEANT"; vehicle="OPTRE_FC_Marines_Soldier_SquadLead";
+#define MY_UNIT_BLU_INF_CPL side=1; rank="CORPORAL"; vehicle="OPTRE_FC_Marines_Soldier_TeamLead";
+#define MY_UNIT_BLU_INF_SNIPER side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_Sniper";
+#define MY_UNIT_BLU_INF_MEDIC side=1; rank="PRIVATE"; vehicle="OPTRE_UNSC_Marine_Soldier_Corpsman";
+#define MY_UNIT_BLU_INF_AA side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_AA_Specialist";
+#define MY_UNIT_BLU_INF_AT side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_AT_Specialist";
+#define MY_UNIT_BLU_INF_AR side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_Autorifleman";
+#define MY_UNIT_BLU_INF_MARKSMAN side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_Marksman";
+#define MY_UNIT_BLU_INF_GR side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_Grenadier";
+#define MY_UNIT_BLU_INF_LAT side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_Rifleman_AT";
+#define MY_UNIT_BLU_INF_BR side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_Rifleman_BR";
+#define MY_UNIT_BLU_INF_R side=1; rank="PRIVATE"; vehicle="OPTRE_FC_Marines_Soldier_Rifleman_AR";
+
+#define MY_UNIT_BLU_MOT_HOG_LT side=1; rank="LIEUTENANT"; vehicle="OPTRE_M813_TT";
+#define MY_UNIT_BLU_MOT_HOG side=1; rank="SERGEANT"; vehicle="OPTRE_M813_TT";
+#define MY_UNIT_BLU_MOT_TRUCK side=1; rank="SERGEANT"; vehicle="OPTRE_m1087_stallion_unsc";
+#define MY_UNIT_BLU_MECH_HOG_LT side=1; rank="LIEUTENANT"; vehicle="OPTRE_M12_LRV";
+#define MY_UNIT_BLU_MECH_HOG_MG side=1; rank="SERGEANT"; vehicle="OPTRE_M12_LRV";
+#define MY_UNIT_BLU_MECH_HOG_AT side=1; rank="SERGEANT"; vehicle="OPTRE_M12A1_LRV";
+#define MY_UNIT_BLU_ARMOR_SCORPION_LT side=1; rank="LIEUTENANT"; vehicle="OPTRE_M808BM_UNSC";
+#define MY_UNIT_BLU_ARMOR_SCORPION side=1; rank="SERGEANT"; vehicle="OPTRE_M808B_UNSC";
+
+#define MY_GROUP_BLU_INF_COY_HQ                \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_INF_CPT };           \
+    class 1 { MY_UNIT_BLU_INF_SGT };           \
+    class 2 { MY_UNIT_BLU_INF_MEDIC };
+
+#define MY_GROUP_BLU_INF_PLT_HQ                \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_INF_LT };            \
+    class 1 { MY_UNIT_BLU_INF_SGT };           \
+    class 2 { MY_UNIT_BLU_INF_MEDIC };         \
+    class 3 { MY_UNIT_BLU_INF_R };
+
+#define MY_GROUP_BLU_INF_SQUAD                 \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_INF_SGT };           \
+    class 1 { MY_UNIT_BLU_INF_AR };            \
+    class 2 { MY_UNIT_BLU_INF_MARKSMAN };      \
+    class 3 { MY_UNIT_BLU_INF_MEDIC };         \
+    class 4 { MY_UNIT_BLU_INF_LAT };           \
+    class 5 { MY_UNIT_BLU_INF_R };             \
+    class 6 { MY_UNIT_BLU_INF_CPL };           \
+    class 7 { MY_UNIT_BLU_INF_AR };            \
+    class 8 { MY_UNIT_BLU_INF_BR };            \
+    class 9 { MY_UNIT_BLU_INF_GR };            \
+    class 10 { MY_UNIT_BLU_INF_R };            \
+    class 11 { MY_UNIT_BLU_INF_R };
+
+#define MY_GROUP_BLU_INF_WPN                   \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_INF_SGT };           \
+    class 1 { MY_UNIT_BLU_INF_AR };            \
+    class 2 { MY_UNIT_BLU_INF_AT };            \
+    class 3 { MY_UNIT_BLU_INF_AA };            \
+    class 4 { MY_UNIT_BLU_INF_CPL };           \
+    class 5 { MY_UNIT_BLU_INF_AR };            \
+    class 6 { MY_UNIT_BLU_INF_AT };            \
+    class 7 { MY_UNIT_BLU_INF_AA };
+
+#define MY_GROUP_BLU_INF_SNIPER                \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_INF_SGT };           \
+    class 1 { MY_UNIT_BLU_INF_SNIPER };
+
+#define MY_GROUP_BLU_MOT_HOGS                  \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_MOT_HOG_LT };        \
+    class 1 { MY_UNIT_BLU_MOT_HOG };
+
+#define MY_GROUP_BLU_MOT_REINFORCEMENTS        \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_MOT_TRUCK };         \
+    class 1 { MY_UNIT_BLU_INF_SGT };           \
+    class 2 { MY_UNIT_BLU_INF_AR };            \
+    class 3 { MY_UNIT_BLU_INF_MARKSMAN };      \
+    class 4 { MY_UNIT_BLU_INF_MEDIC };         \
+    class 5 { MY_UNIT_BLU_INF_LAT };           \
+    class 6 { MY_UNIT_BLU_INF_R };             \
+    class 7 { MY_UNIT_BLU_INF_CPL };           \
+    class 8 { MY_UNIT_BLU_INF_AR };            \
+    class 9 { MY_UNIT_BLU_INF_BR };            \
+    class 10 { MY_UNIT_BLU_INF_GR };           \
+    class 11 { MY_UNIT_BLU_INF_R };            \
+    class 12 { MY_UNIT_BLU_INF_R };            \
+    class 13 { MY_UNIT_BLU_INF_R };
+
+#define MY_GROUP_BLU_MECH_HOGS                 \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_MECH_HOG_LT };       \
+    class 1 { MY_UNIT_BLU_MECH_HOG_MG };       \
+    class 2 { MY_UNIT_BLU_MECH_HOG_AT };
+
+#define MY_GROUP_BLU_ARMOR_TANKS               \
+    MY_GROUP_BLU                               \
+    class 0 { MY_UNIT_BLU_ARMOR_SCORPION_LT }; \
+    class 1 { MY_UNIT_BLU_ARMOR_SCORPION };
+
+class CfgFactionClasses {
+    class my_covenant {
+        displayName="My Covenant"; priority=2; side=0;
+    };
+    class my_unsc {
+        displayName="My UNSC"; priority=2; side=1;
+    };
+};
+
+class CfgGroups {
+    class East {
+        class my_covenant {
+            name="My Covenant";
+            class Infantry {
+                class my_group_opf_inf_0 { MY_GROUP_OPF_JACKAL_FIRETEAM_SHIELD };
+                class my_group_opf_inf_1 { MY_GROUP_OPF_JACKAL_FIRETEAM_SHIELD };
+                class my_group_opf_inf_2 { MY_GROUP_OPF_JACKAL_FIRETEAM_SHIELD };
+                class my_group_opf_inf_3 { MY_GROUP_OPF_JACKAL_FIRETEAM_MARKSMAN };
+                class my_group_opf_inf_4 { MY_GROUP_OPF_MIXED_FIRETEAM_AR };
+                class my_group_opf_inf_5 { MY_GROUP_OPF_MIXED_FIRETEAM_SHIELD };
+                class my_group_opf_inf_6 { MY_GROUP_OPF_MIXED_FIRETEAM_MARKSMAN };
+                class my_group_opf_inf_7 { MY_GROUP_OPF_ELITE_PATROL_AR };
+                class my_group_opf_inf_8 { MY_GROUP_OPF_ELITE_PATROL_AR };
+                class my_group_opf_inf_9 { MY_GROUP_OPF_ELITE_FIRETEAM };
+                class my_group_opf_inf_10 { MY_GROUP_OPF_ELITE_FIRETEAM };
+                class my_group_opf_inf_11 { MY_GROUP_OPF_ELITE_AT_AA };
+                class my_group_opf_inf_12 { MY_GROUP_OPF_ELITE_AT_AA };
+                class my_group_opf_inf_13 { MY_GROUP_OPF_MIXED_SQUAD };
+                class my_group_opf_inf_14 { MY_GROUP_OPF_MIXED_SQUAD };
+            };
+            class SpecOps {
+                class my_group_opf_recon_0 { MY_GROUP_OPF_ELITE_FIRETEAM_SPECOPS };
+                class my_group_opf_recon_1 { MY_GROUP_OPF_ELITE_FIRETEAM_SPECOPS };
+                class my_group_opf_recon_2 { MY_GROUP_OPF_ELITE_FIRETEAM_SPECOPS };
+                class my_group_opf_recon_3 { MY_GROUP_OPF_ELITE_SQUAD_COMMAND };
+            };
+            class Armored {
+                class my_group_opf_armor_0 { MY_GROUP_OPF_WRAITH_ELEMENT_MORTAR };
+                class my_group_opf_armor_1 { MY_GROUP_OPF_WRAITH_ELEMENT_MORTAR };
+                class my_group_opf_armor_2 { MY_GROUP_OPF_WRAITH_ELEMENT_MORTAR };
+                class my_group_opf_armor_3 { MY_GROUP_OPF_WRAITH_ELEMENT_MORTAR };
+                class my_group_opf_armor_4 { MY_GROUP_OPF_WRAITH_ELEMENT_AT };
+                // class my_group_opf_armor_5 { MY_GROUP_OPF_WRAITH_ELEMENT_AA };
+                // class my_group_opf_armor_6 { MY_GROUP_OPF_WRAITH_ELEMENT_NOFLAK };
+                // class my_group_opf_armor_7 { MY_GROUP_OPF_WRAITH_ELEMENT_NEEDLE };
+            };
+        };
+    };
+    class West {
+        class my_unsc {
+            name="My UNSC";
+            class Infantry {
+                class my_group_blu_inf_0 { MY_GROUP_BLU_INF_COY_HQ };
+                class my_group_blu_inf_1 { MY_GROUP_BLU_INF_PLT_HQ };
+                class my_group_blu_inf_2 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_3 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_4 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_5 { MY_GROUP_BLU_INF_WPN };
+                class my_group_blu_inf_6 { MY_GROUP_BLU_INF_PLT_HQ };
+                class my_group_blu_inf_7 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_8 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_9 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_10 { MY_GROUP_BLU_INF_WPN };
+                class my_group_blu_inf_11 { MY_GROUP_BLU_INF_PLT_HQ };
+                class my_group_blu_inf_12 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_13 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_14 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_15 { MY_GROUP_BLU_INF_WPN };
+                class my_group_blu_inf_16 { MY_GROUP_BLU_INF_PLT_HQ };
+                class my_group_blu_inf_17 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_18 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_19 { MY_GROUP_BLU_INF_SQUAD };
+                class my_group_blu_inf_20 { MY_GROUP_BLU_INF_WPN };
+                class my_group_blu_inf_21 { MY_GROUP_BLU_INF_SNIPER };
+                class my_group_blu_inf_22 { MY_GROUP_BLU_INF_SNIPER };
+            };
+            class SpecOps {
+                class my_group_blu_recon_0 { MY_GROUP_BLU_ODST_COY_HQ };
+                class my_group_blu_recon_1 { MY_GROUP_BLU_ODST_PLT_HQ };
+                class my_group_blu_recon_2 { MY_GROUP_BLU_ODST_PLT_HQ };
+                class my_group_blu_recon_3 { MY_GROUP_BLU_ODST_PLT_HQ };
+                class my_group_blu_recon_4 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_5 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_6 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_7 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_8 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_9 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_10 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_11 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_12 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_13 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_14 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_15 { MY_GROUP_BLU_ODST_TEAM };
+                class my_group_blu_recon_16 { MY_GROUP_BLU_ODST_SNIPER };
+                class my_group_blu_recon_17 { MY_GROUP_BLU_ODST_SNIPER };
+            };
+            class Motorized {
+                class my_group_blu_mot_0 { MY_GROUP_BLU_MOT_HOGS };
+                class my_group_blu_mot_1 { MY_GROUP_BLU_MOT_REINFORCEMENTS };
+            };
+            class Mechanized {
+                class my_group_blu_mech_0 { MY_GROUP_BLU_MECH_HOGS };
+            };
+            class Armored {
+                class my_group_blu_armor_0 { MY_GROUP_BLU_ARMOR_TANKS };
+            };
+        };
+    };
+};
+
+class CfgFunctions {
+    class my {
+        class my {
+            file = "functions";
+            class hc { preInit = 1; };
+            class optre { preInit = 1; };
+        };
+    };
+};

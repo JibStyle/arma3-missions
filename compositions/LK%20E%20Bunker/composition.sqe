@@ -1,0 +1,263 @@
+version=54;
+center[]={5049.5059,132.94574,18034.086};
+class items
+{
+	items=6;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.7055664,0.75506592,1.109375};
+			angles[]={0.015998369,1.5707945,6.2541924};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.2;
+		};
+		id=2084;
+		type="Land_Razorwire_F";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.24658203,1.5485382,-0.16210938};
+			angles[]={0.0042846538,3.1416028,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.2;
+		};
+		id=2080;
+		type="CamoNet_INDP_open_F";
+		atlOffset=0.20329285;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.088378906,1.2756653,-1.3945313};
+			angles[]={0.0042846538,3.1416028,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.2;
+		};
+		id=2081;
+		type="Land_BagBunker_Large_F";
+		atlOffset=0.18504333;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.20751953,0.84907532,5.109375};
+			angles[]={0.015998369,3.1415999,6.2591896};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.2;
+		};
+		id=2082;
+		type="Land_Razorwire_F";
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-5.5366211,1.0661469,0.35742188};
+			angles[]={0.018000545,1.5707973,6.2571907};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			skill=0.2;
+		};
+		id=2083;
+		type="Land_Razorwire_F";
+		atlOffset=1.5258789e-005;
+	};
+	class Item5
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=8;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.51318359,0.56698608,-1.6425781};
+				};
+				side="East";
+				flags=3;
+				class Attributes
+				{
+					rank="SERGEANT";
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2072;
+				type="CUP_O_RU_Soldier_SL_M_EMR_V2";
+				atlOffset=0.34541321;
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.7475586,0.55278015,1.8691406};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2073;
+				type="CUP_O_RU_Soldier_M_EMR_V2";
+				atlOffset=0.00080871582;
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.5952148,0.56019592,0.47851563};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2074;
+				type="CUP_O_RU_Soldier_LAT_M_EMR_V2";
+				atlOffset=0.0022583008;
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.53759766,0.37588501,1.9335938};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2075;
+				type="CUP_O_RU_Soldier_MG_M_EMR_V2";
+				atlOffset=0.23696899;
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.253418,0.39544678,-2.9648438};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					rank="SERGEANT";
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2076;
+				type="CUP_O_RU_Soldier_TL_M_EMR_V2";
+				atlOffset=0.081588745;
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.9360352,0.37686157,1.7832031};
+				};
+				side="East";
+				flags=1;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2077;
+				type="CUP_O_RU_Soldier_AR_M_EMR_V2";
+				atlOffset=0.30508423;
+			};
+			class Item6
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={3.246582,0.39221191,-2.4003906};
+				};
+				side="East";
+				flags=1;
+				class Attributes
+				{
+					skill=0.40000001;
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2078;
+				type="CUP_O_RU_Soldier_A_M_EMR_V2";
+				atlOffset=0.26249695;
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.1879883,0.39024353,-1.9882813};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+					init="if (!local this) exitWith {}; " \n "[this] spawn { " \n "    params [""_unit""]; " \n "    waitUntil { alive _unit }; " \n "    doStop _unit; " \n "}; " \n "";
+					presence=0.49718651;
+				};
+				id=2079;
+				type="CUP_O_RU_Soldier_Medic_M_EMR_V2";
+				atlOffset=0.20742798;
+			};
+		};
+		class Attributes
+		{
+			dynamicSimulation=1;
+		};
+		id=2071;
+		atlOffset=0.34541321;
+	};
+};

@@ -1,0 +1,90 @@
+version=54;
+center[]={3349.772,5,3252.1074};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.0014390945,0.050048828};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_Katiba_F";
+							firemode="arifle_Katiba_F:Single";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_green";
+								ammoLeft=30;
+							};
+						};
+					};
+				};
+				id=1084;
+				type="O_Soldier_VR_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Male01PERVR";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="SCALAR";
+								value=0.94999999;
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="ENH_disableAI_all";
+						expression="if (_value) then {[_this, 'all'] remoteExec ['disableAI', _this]}";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=1083;
+	};
+};

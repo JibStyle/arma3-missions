@@ -1,0 +1,1 @@
+my_register_emitter = my_spawn_register_emitter;

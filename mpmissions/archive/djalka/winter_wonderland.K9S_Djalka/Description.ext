@@ -1,0 +1,1182 @@
+#define JIB_RCT size="Regiment";  type="MechanizedInfantry";
+#define JIB_BN  size="Battalion"; commanderRank="MAJOR";
+#define JIB_SQN size="Squadron";  commanderRank="MAJOR"; text="%1 %2 %3";
+#define JIB_CO  size="Company";   idType=2;
+#define JIB_TRP size="Troop";     idType=2;
+
+#define JIB_BN_INF    JIB_BN  type="Infantry";
+#define JIB_BN_SUP    JIB_BN  type="Support";
+#define JIB_CO_ARMOR  JIB_CO  type="Armored";
+#define JIB_CO_ARTY   JIB_CO  type="Artillery";
+#define JIB_CO_INF    JIB_CO  type="Infantry";
+#define JIB_CO_MECH   JIB_CO  type="MechanizedInfantry";
+#define JIB_CO_SUP    JIB_CO  type="Support";
+#define JIB_SQN_AIR   JIB_SQN type="CombatAviation";
+#define JIB_TRP_HELI  JIB_TRP type="Helicopter";
+#define JIB_TRP_PLANE JIB_TRP type="Fighter";
+#define JIB_TRP_RECON JIB_TRP type="Recon";
+
+#define JIB_BLU   commander="NATOMen";  side="West";
+#define JIB_AFRO  commander="AfroMen";  side="East";
+#define JIB_GREEK commander="GreekMen"; side="East";
+
+#define JIB_BLU_RCT       JIB_BLU JIB_RCT
+#define JIB_BLU_BN_INF    JIB_BLU JIB_BN_INF
+#define JIB_BLU_BN_SUP    JIB_BLU JIB_BN_SUP
+#define JIB_BLU_CO_ARMOR  JIB_BLU JIB_CO_ARMOR
+#define JIB_BLU_CO_ARTY   JIB_BLU JIB_CO_ARTY
+#define JIB_BLU_CO_INF    JIB_BLU JIB_CO_INF
+#define JIB_BLU_CO_MECH   JIB_BLU JIB_CO_MECH
+#define JIB_BLU_CO_SUP    JIB_BLU JIB_CO_SUP
+#define JIB_BLU_SQN_AIR   JIB_BLU JIB_SQN_AIR
+#define JIB_BLU_TRP_HELI  JIB_BLU JIB_TRP_HELI
+#define JIB_BLU_TRP_PLANE JIB_BLU JIB_TRP_PLANE
+#define JIB_BLU_TRP_RECON JIB_BLU JIB_TRP_RECON
+
+#define JIB_GREEK_RCT       JIB_GREEK JIB_RCT
+#define JIB_GREEK_BN_INF    JIB_GREEK JIB_BN_INF
+#define JIB_GREEK_BN_SUP    JIB_GREEK JIB_BN_SUP
+#define JIB_GREEK_CO_ARMOR  JIB_GREEK JIB_CO_ARMOR
+#define JIB_GREEK_CO_ARTY   JIB_GREEK JIB_CO_ARTY
+#define JIB_GREEK_CO_INF    JIB_GREEK JIB_CO_INF
+#define JIB_GREEK_CO_MECH   JIB_GREEK JIB_CO_MECH
+#define JIB_GREEK_CO_SUP    JIB_GREEK JIB_CO_SUP
+#define JIB_GREEK_SQN_AIR   JIB_GREEK JIB_SQN_AIR
+#define JIB_GREEK_TRP_HELI  JIB_GREEK JIB_TRP_HELI
+#define JIB_GREEK_TRP_PLANE JIB_GREEK JIB_TRP_PLANE
+#define JIB_GREEK_TRP_RECON JIB_GREEK JIB_TRP_RECON
+
+class CfgORBAT {
+    class blu {
+        JIB_BLU_RCT
+        colorInsignia[]={0,0,0,1};
+        description="Task Force Chillsim is a combined arms regiment with balanced ground, air, and logistics power. This self contained and flexible unit can effectively deploy in any environment for a wide range of operations.";
+        insignia=__EVAL(getMissionPath "wca.paa");
+        text="Task Force Chillsim";
+        textShort="TF Chillsim";
+
+        class ground {
+            JIB_BLU_BN_INF id=1;
+            class a { JIB_BLU_CO_INF id=1; };
+            class b { JIB_BLU_CO_INF id=2; };
+            class c {
+                JIB_BLU_CO_MECH id=3;
+                assets[]={
+                    {B_APC_Wheeled_01_cannon_F, 16},
+                };
+            };
+            class d {
+                JIB_BLU_CO_ARMOR id=4;
+                assets[]={
+                    {B_mas_usm_MBT_01_cannon_F, 16},
+                };
+            };
+            class e {
+                JIB_BLU_TRP_RECON id=5;
+                assets[]={
+                    {B_LSV_01_armed_F, 4},
+                    {B_LSV_01_AT_F, 4},
+                };
+            };
+        };
+        class air {
+            JIB_BLU_SQN_AIR id=2;
+            class f {
+                JIB_BLU_TRP_HELI id=6;
+                assets[]={
+                    {B_Heli_Light_01_F, 4},
+                    {B_Heli_Transport_01_F, 8},
+                    {B_Heli_Transport_03_F, 4},
+                };
+            };
+            class g {
+                JIB_BLU_TRP_HELI id=7;
+                assets[]={
+                    {B_Heli_Light_01_dynamicLoadout_F, 4},
+                    {B_Heli_Attack_01_dynamicLoadout_F, 4},
+                };
+            };
+            class h {
+                JIB_BLU_TRP_PLANE id=8;
+                assets[]={
+                    {B_Plane_CAS_01_dynamicLoadout_F, 4},
+                    {B_Plane_Fighter_01_F, 4},
+                };
+            };
+        };
+        class support {
+            JIB_BLU_BN_SUP id=3;
+            class i {
+                JIB_BLU_CO_ARTY id=9;
+                assets[]={
+                    {B_MBT_01_arty_F, 8},
+                    {B_MBT_01_mlrs_F, 4},
+                };
+            };
+            class j {
+                JIB_BLU_CO_SUP id=10;
+                assets[]={
+                    {B_Truck_01_transport_F, 8},
+                    {B_Truck_01_fuel_F, 8},
+                    {B_Truck_01_box_F, 8},
+                };
+            };
+        };
+    };
+    class opf {
+        JIB_GREEK_RCT
+        description="The 25th Combined Arms Regiment is composed of infantry, armor, air, and logistics near peer forces. Infantry body armor is very light, but they have high tech weapons and vehicles provided by CSAT, giving them peer offensive capabilities.";
+        id=25;
+
+        class ground {
+            JIB_GREEK_BN_INF id=1;
+            class a { JIB_GREEK_CO_INF id=1; };
+            class b { JIB_GREEK_CO_INF id=2; };
+            class c {
+                JIB_GREEK_CO_MECH id=3;
+                assets[]={
+                    {O_APC_Wheeled_02_rcws_v2_F, 8},
+                    {O_APC_Tracked_02_cannon_F, 8},
+                };
+            };
+            class d {
+                JIB_GREEK_CO_ARMOR id=4;
+                assets[]={
+                    {O_MBT_02_cannon_F, 16},
+                };
+            };
+        };
+        class air {
+            JIB_GREEK_SQN_AIR id=2;
+            class e {
+                JIB_GREEK_TRP_HELI id=5;
+                assets[]={
+                    {O_Heli_Light_02_dynamicLoadout_F, 8},
+                    {O_Heli_Attack_02_dynamicLoadout_F, 8},
+                };
+            };
+            class f {
+                JIB_GREEK_TRP_PLANE id=6;
+                assets[]={
+                    {O_Plane_CAS_02_dynamicLoadout_F, 4},
+                    {O_Plane_Fighter_02_F, 4},
+                };
+            };
+        };
+        class support {
+            JIB_GREEK_BN_SUP id=3;
+            class g {
+                JIB_GREEK_CO_ARTY id=7;
+                assets[]={
+                    {O_MBT_02_arty_F, 8},
+                };
+            };
+            class h {
+                JIB_GREEK_CO_SUP id=8;
+                assets[]={
+                    {O_Truck_02_transport_F, 8},
+                    {O_Truck_02_fuel_F, 8},
+                    {O_Truck_02_box_F, 8},
+                };
+            };
+        };
+    };
+};
+
+class CfgFactionClasses
+{
+    class my_OPFa_mas_W_F
+    {
+	displayName="My OPFOR Army(Winter)";
+	priority=2;
+	side=0;
+	icon="\mas_ind_army\cfgfaction_mas_opf_ca.paa";
+	flag="\mas_ind_army\flags\mas_flag_opf.paa";
+    };
+    class my_mas_usm_cwint
+    {
+	displayName="My USMC(Winter/Arctic)";
+	priority=1;
+	side=1;
+	icon="\mas_usm_lite\cfgfaction_mas_usm_blu_ca.paa";
+	flag="\mas_usm_lite\flags\mas_flag_usm_co.paa";
+    };
+};
+
+class CfgGroups
+{
+    class East
+    {
+	class my_OPFa_mas_W_F
+	{
+	    name="My OPFOR Army(Winter)";
+	    class Infantry
+	    {
+		name="Infantry Troop";
+		class OPFa_mas_W_F_InfSquad
+		{
+		    name="Infantry Squad";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SL_F";
+			rank="LIEUTENANT";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_TL_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_LAT_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_R_F";
+			rank="PRIVATE";
+			position[]={9,0,0};
+		    };
+		    class Unit5
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_M_F";
+			rank="SERGEANT";
+			position[]={12,0,0};
+		    };
+		    class Unit6
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Med_F";
+			rank="PRIVATE";
+			position[]={14,0,0};
+		    };
+		    class Unit7
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={16,0,0};
+		    };
+		};
+		class OPFa_mas_W_F_InfTeam
+		{
+		    name="Infantry Team";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_TL_F";
+			rank="LIEUTENANT";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_LAT_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Med_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		};
+		class OPFa_mas_W_F_RecTeam
+		{
+		    name="Reservist Squad";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Rec_F";
+			rank="LIEUTENANT";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Rec_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Rec_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Rec_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Rec_F";
+			rank="SERGEANT";
+			position[]={9,0,0};
+		    };
+		};
+	    };
+	    class Motorized
+	    {
+		name="Motorized Troop";
+		class OPFa_mas_W_F_motoSquad
+		{
+		    name="Motorized Infantry Squad";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_VehW_Truck_Opf_F";
+			rank="LIEUTENANT";
+			position[]={0,15,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SL_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_LAT_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Med_F";
+			rank="PRIVATE";
+			position[]={9,0,0};
+		    };
+		    class Unit5
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_M_F";
+			rank="SERGEANT";
+			position[]={12,0,0};
+		    };
+		    class Unit6
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_R_F";
+			rank="PRIVATE";
+			position[]={14,0,0};
+		    };
+		    class Unit7
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={16,0,0};
+		    };
+		    class Unit8
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_TL_F";
+			rank="PRIVATE";
+			position[]={18,0,0};
+		    };
+		};
+		class OPFa_mas_W_F_motoTeam
+		{
+		    name="Motorized Infantry Team";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_motor_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_VehW_Car_F";
+			rank="LIEUTENANT";
+			position[]={0,15,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_TL_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_LAT_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Med_F";
+			rank="PRIVATE";
+			position[]={9,0,0};
+		    };
+		};
+	    };
+	    class Mechanized
+	    {
+		name="Mechanized Troop";
+		class OPFa_mas_W_F_mechSquad
+		{
+		    name="Mechanized Infantry Squad";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="INDa_mas_VehW_APC_Opf_F";
+			rank="LIEUTENANT";
+			position[]={0,15,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SL_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_LAT_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Med_F";
+			rank="PRIVATE";
+			position[]={9,0,0};
+		    };
+		    class Unit5
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_M_F";
+			rank="SERGEANT";
+			position[]={12,0,0};
+		    };
+		    class Unit6
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_R_F";
+			rank="PRIVATE";
+			position[]={14,0,0};
+		    };
+		    class Unit7
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={16,0,0};
+		    };
+		    class Unit8
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_TL_F";
+			rank="PRIVATE";
+			position[]={18,0,0};
+		    };
+		};
+		class OPFa_mas_W_F_mechTeam
+		{
+		    name="Mechanized Infantry Team";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_mech_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_VehW_APC_Tracked_02_cannon_F";
+			rank="LIEUTENANT";
+			position[]={0,15,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SL_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_MG_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_LAT_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_Med_F";
+			rank="PRIVATE";
+			position[]={9,0,0};
+		    };
+		};
+	    };
+	    class Armored
+	    {
+		name="Armored Troop";
+		class OPFa_mas_W_F_Armored
+		{
+		    name="Armored Platoon";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_armor.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_VehW_MBT_02_cannon_F";
+			rank="LIEUTENANT";
+			position[]={0,15,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_VehW_MBT_02_cannon_F";
+			rank="SERGEANT";
+			position[]={15,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_VehW_MBT_02_cannon_F";
+			rank="PRIVATE";
+			position[]={30,0,0};
+		    };
+		};
+	    };
+            class SpecOps
+            {
+                name="Spec Ops";
+		class OPFa_mas_W_F_SOFTeam
+		{
+		    name="Spec Ops Team";
+		    side=0;
+		    faction="my_OPFa_mas_W_F";
+		    icon="\A3\ui_f\data\map\markers\nato\o_inf.paa";
+		    class Unit0
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SF_F";
+			rank="LIEUTENANT";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SFD_F";
+			rank="SERGEANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SFR_F";
+			rank="PRIVATE";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=0;
+			vehicle="OPFa_mas_SoldierW_Sold_SFD_F";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		};
+            };
+	};
+    };
+    class West
+    {
+	class my_mas_usm_cwint
+	{
+	    name="My USMC(Winter/Arctic)";
+	    class Infantry
+	    {
+		name="USMC Infantry Troops";
+		class BUS_mas_usm_InfSquad_ass_cw
+		{
+		    name="Infantry Squad";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_SL_F_cw";
+			rank="CAPTAIN";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_TL_F_cw";
+			rank="LIEUTENANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_medic_F_cw";
+			rank="CORPORAL";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AR_F_cw";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_MG_F_cw";
+			rank="SERGEANT";
+			position[]={-3,0,0};
+		    };
+		    class Unit5
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_LAT_F_cw";
+			rank="SERGEANT";
+			position[]={-5,0,0};
+		    };
+		    class Unit6
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_GL_F_cw";
+			rank="SERGEANT";
+			position[]={-7,0,0};
+		    };
+		    class Unit7
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_JTAC_F_cw";
+			rank="SERGEANT";
+			position[]={-9,0,0};
+		    };
+		};
+		class BUS_mas_usm_InfTeam_ass_cw
+		{
+		    name="Infantry Team";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_TL_F_cw";
+			rank="CAPTAIN";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_F_cw";
+			rank="LIEUTENANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_medic_F_cw";
+			rank="CORPORAL";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AR_F_cw";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		};
+		class BUS_mas_usm_InfTeam_sup_cw
+		{
+		    name="Support Team";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_TL_F_cw";
+			rank="CAPTAIN";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_MG_F_cw";
+			rank="LIEUTENANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_medic_F_cw";
+			rank="CORPORAL";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_MG_F_cw";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		    class Unit4
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_LAT_F_cw";
+			rank="CORPORAL";
+			position[]={9,0,0};
+		    };
+		    class Unit5
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AT_F_cw";
+			rank="CORPORAL";
+			position[]={11,0,0};
+		    };
+		};
+	    };
+	    class SpecOps
+	    {
+		name="USMC Force Recon";
+		class BUS_mas_usm_InfTeam_rec_cw
+		{
+		    name="FR Team";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_recon.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_Recon_TL_F_cw";
+			rank="CAPTAIN";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Recon_OP_F_cw";
+			rank="LIEUTENANT";
+			position[]={3,0,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Recon_medic_F_cw";
+			rank="CORPORAL";
+			position[]={5,0,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Recon_exp_F_cw";
+			rank="SERGEANT";
+			position[]={7,0,0};
+		    };
+		};
+		class BUS_mas_usm_InfTeam_snip_cw
+		{
+		    name="Sniper Team";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_recon.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_spotter_F_cw";
+			rank="CAPTAIN";
+			position[]={0,5,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_sniper_F_cw";
+			rank="LIEUTENANT";
+			position[]={3,0,0};
+		    };
+		};
+	    };
+	    class Motorized
+	    {
+		name="$STR_A3_CfgGroups_West_BLU_F_Motorized0";
+		class BUS_mas_usm_MotInf_Team_cw
+		{
+		    name="$STR_A3_CfgGroups_West_BLU_F_Motorized_BUS_MotInf_Team0";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_MRAP_01_gmg_F_w";
+			rank="SERGEANT";
+			position[]={0,0,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AR_F_cw";
+			rank="CORPORAL";
+			position[]={5,-5,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_LAT_F_cw";
+			rank="PRIVATE";
+			position[]={-5,-5,0};
+		    };
+		};
+		class BUS_mas_usm_MotInf_AT_cw
+		{
+		    name="$STR_A3_CfgGroups_West_BLU_F_Motorized_BUS_MotInf_AT0";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_MRAP_01_F_w";
+			rank="SERGEANT";
+			position[]={0,0,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AT_F_cw";
+			rank="CORPORAL";
+			position[]={5,-5,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AT_F_cw";
+			rank="CORPORAL";
+			position[]={-5,-5,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_LAT_F_cw";
+			rank="PRIVATE";
+			position[]={0,-10,0};
+		    };
+		};
+		class BUS_mas_usm_MotInf_AA_cw
+		{
+		    name="$STR_A3_CfgGroups_West_BLU_F_Motorized_BUS_MotInf_AA0";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_MRAP_01_F_w";
+			rank="SERGEANT";
+			position[]={0,0,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AA_F_cw";
+			rank="CORPORAL";
+			position[]={5,-5,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AA_F_cw";
+			rank="CORPORAL";
+			position[]={-5,-5,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AA_F_cw";
+			rank="PRIVATE";
+			position[]={0,-10,0};
+		    };
+		};
+		class BUS_mas_usm_MotInf_Reinforce_cw
+		{
+		    name="$STR_A3_CfgGroups_West_BLU_F_Motorized_BUS_MotInf_Reinforce0";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_motor_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_Truck_01_covered_F_w";
+			rank="SERGEANT";
+			position[]={0,0,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_SL_F_cw";
+			rank="SERGEANT";
+			position[]={5,0,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_F_cw";
+			rank="PRIVATE";
+			position[]={5,-2,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_LAT_F_cw";
+			rank="CORPORAL";
+			position[]={5,-4,0};
+		    };
+		    class Unit4
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_M_F_cw";
+			rank="PRIVATE";
+			position[]={5,-6,0};
+		    };
+		    class Unit5
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_TL_F_cw";
+			rank="SERGEANT";
+			position[]={5,-8,0};
+		    };
+		    class Unit6
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AR_F_cw";
+			rank="CORPORAL";
+			position[]={5,-10,0};
+		    };
+		    class Unit7
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_MG_F_cw";
+			rank="PRIVATE";
+			position[]={5,-12,0};
+		    };
+		    class Unit8
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_medic_F_cw";
+			rank="PRIVATE";
+			position[]={5,-14,0};
+		    };
+		    class Unit9
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_SL_F_cw";
+			rank="SERGEANT";
+			position[]={-5,0,0};
+		    };
+		    class Unit10
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_F_cw";
+			rank="PRIVATE";
+			position[]={-5,-2,0};
+		    };
+		    class Unit11
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_LAT_F_cw";
+			rank="CORPORAL";
+			position[]={-5,-4,0};
+		    };
+		    class Unit12
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_M_F_cw";
+			rank="PRIVATE";
+			position[]={-5,-6,0};
+		    };
+		    class Unit13
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_TL_F_cw";
+			rank="SERGEANT";
+			position[]={-5,-8,0};
+		    };
+		    class Unit14
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AR_F_cw";
+			rank="CORPORAL";
+			position[]={-5,-10,0};
+		    };
+		    class Unit15
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_eng_F_cw";
+			rank="PRIVATE";
+			position[]={-5,-12,0};
+		    };
+		    class Unit16
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_medic_F_cw";
+			rank="PRIVATE";
+			position[]={-5,-14,0};
+		    };
+		};
+	    };
+	    class Mechanized
+	    {
+		name="$STR_A3_CfgGroups_West_BLU_F_Mechanized0";
+		class BUS_mas_usm_MechInfSquad_cw
+		{
+		    name="$STR_A3_CfgGroups_West_BLU_F_Mechanized_BUS_MechInfSquad0";
+		    side=1;
+		    faction="my_mas_usm_cwint";
+		    icon="\A3\ui_f\data\map\markers\nato\b_mech_inf.paa";
+		    class Unit0
+		    {
+			side=1;
+			vehicle="B_mas_usm_APC_Wheeled_01_cannon_F_w";
+			rank="LIEUTENANT";
+			position[]={0,0,0};
+		    };
+		    class Unit1
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_SL_F_cw";
+			rank="SERGEANT";
+			position[]={5,-5,0};
+		    };
+		    class Unit2
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_GL_F_cw";
+			rank="PRIVATE";
+			position[]={-5,-5,0};
+		    };
+		    class Unit3
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_LAT_F_cw";
+			rank="CORPORAL";
+			position[]={10,-10,0};
+		    };
+		    class Unit4
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_M_F_cw";
+			rank="PRIVATE";
+			position[]={-10,-10,0};
+		    };
+		    class Unit5
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_TL_F_cw";
+			rank="SERGEANT";
+			position[]={15,-15,0};
+		    };
+		    class Unit6
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_AR_F_cw";
+			rank="CORPORAL";
+			position[]={-15,-15,0};
+		    };
+		    class Unit7
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_MG_F_cw";
+			rank="PRIVATE";
+			position[]={20,-20,0};
+		    };
+		    class Unit8
+		    {
+			side=1;
+			vehicle="B_mas_usm_Soldier_medic_F_cw";
+			rank="PRIVATE";
+			position[]={-20,-20,0};
+		    };
+		};
+	    };
+	};
+    };
+};

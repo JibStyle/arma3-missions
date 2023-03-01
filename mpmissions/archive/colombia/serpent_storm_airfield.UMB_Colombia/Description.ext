@@ -1,0 +1,25 @@
+author = "JibStyle";
+onLoadName = "Serpent Storm";
+overviewText = "USMC invade OPFOR occupied Colombia.";
+// 1024x512
+overviewPicture = "loading.paa";
+
+respawn = 2;
+respawnDelay = 1; // Must be > 0
+respawnVehicleDelay = 1;
+respawnTemplates[] = {"MenuPosition","MenuInventory","Tickets"};
+respawnTemplatesVirtual[] = {};
+
+disabledAI = 1;
+joinUnassigned = 1;
+aiKills  = 1;
+
+class Header {
+    gameType = Zeus;
+    minPlayers = 1;
+    maxPlayers = 20;
+};
+
+enableDebugConsole = 1;
+//enableDebugConsole[] = { "76561198XXXXXXXXX", "76561198YYYYYYYYY", };
+zeusCompositionScriptLevel = 2;

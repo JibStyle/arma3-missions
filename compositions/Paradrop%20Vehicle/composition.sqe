@@ -1,0 +1,268 @@
+version=54;
+center[]={13068.68,369.41751,6888.9346};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=7;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.4580078,160.97092,-45.363281};
+					angles[]={0.41865212,0,0.11784463};
+				};
+				side="West";
+				flags=6;
+				class Attributes
+				{
+				};
+				id=565;
+				type="B_T_Pilot_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.5703125,167.46579,-46.51709};
+					angles[]={0.41865212,0,0.11784463};
+				};
+				side="West";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=566;
+				type="B_T_Pilot_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.5703125,167.46579,-46.51709};
+					angles[]={0.41865212,0,0.11784463};
+				};
+				side="West";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=567;
+				type="B_T_Pilot_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.5703125,167.46579,-46.51709};
+					angles[]={0.41865212,0,0.11784463};
+				};
+				side="West";
+				flags=4;
+				class Attributes
+				{
+				};
+				id=568;
+				type="B_T_Pilot_F";
+			};
+			class Item4
+			{
+				dataType="Waypoint";
+				loiterAltitude=-3.4028235e+038;
+				position[]={0.14648438,16.828583,-7.8422852};
+				expActiv="[this] call jib_wp_paradropIngressComplete;";
+				class Effects
+				{
+				};
+				showWP="NEVER";
+				id=569;
+				type="Move";
+			};
+			class Item5
+			{
+				dataType="Waypoint";
+				loiterAltitude=-3.4028235e+038;
+				position[]={-1.4580078,4.8883057,33.117188};
+				expActiv="[this] call jib_wp_paradropEgressComplete;";
+				class Effects
+				{
+				};
+				showWP="NEVER";
+				id=570;
+				type="Move";
+			};
+			class Item6
+			{
+				dataType="Waypoint";
+				loiterAltitude=-3.4028235e+038;
+				position[]={-5.4316406,0,73.127441};
+				expActiv="[this] call jib_wp_rtbComplete;";
+				class Effects
+				{
+				};
+				showWP="NEVER";
+				id=571;
+				type="Move";
+			};
+		};
+		class Attributes
+		{
+			init="this setVariable [jib_wp_varParadropHeight, 1e11];";
+			behaviour="CARELESS";
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=4;
+			};
+			class Links
+			{
+				items=4;
+				class Item0
+				{
+					linkID=0;
+					item0=565;
+					item1=572;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+				class Item1
+				{
+					linkID=1;
+					item0=566;
+					item1=572;
+					class CustomData
+					{
+						role=2;
+						turretPath[]={0};
+					};
+				};
+				class Item2
+				{
+					linkID=2;
+					item0=567;
+					item1=572;
+					class CustomData
+					{
+						role=2;
+						turretPath[]={1};
+					};
+				};
+				class Item3
+				{
+					linkID=3;
+					item0=568;
+					item1=572;
+					class CustomData
+					{
+						role=2;
+						turretPath[]={2};
+					};
+				};
+			};
+		};
+		id=564;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={2.5703125,39.888245,-46.566895};
+			angles[]={0.41865212,0,0.11784463};
+		};
+		side="West";
+		flags=6;
+		class Attributes
+		{
+			reportRemoteTargets=1;
+			receiveRemoteTargets=1;
+			reportOwnPosition=1;
+		};
+		id=572;
+		type="B_T_VTOL_01_vehicle_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[""FirstAidKit"",""Medikit""],[10,1]],[[],[]],[[""ToolKit""],[1]],[[],[]]],false]";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};
+class VehicleInVehicleLinks
+{
+	class LinkIDProvider
+	{
+		nextID=4;
+	};
+	class Links
+	{
+		items=4;
+		class Item0
+		{
+			linkID=0;
+			item0=565;
+			item1=572;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=566;
+			item1=572;
+			class CustomData
+			{
+				role=2;
+				turretPath[]={0};
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=567;
+			item1=572;
+			class CustomData
+			{
+				role=2;
+				turretPath[]={1};
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=568;
+			item1=572;
+			class CustomData
+			{
+				role=2;
+				turretPath[]={2};
+			};
+		};
+	};
+};

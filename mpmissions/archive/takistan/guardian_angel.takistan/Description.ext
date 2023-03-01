@@ -1,0 +1,35 @@
+class CfgFactionClasses
+{
+    class mas_acm_OPF_ins
+    {
+        displayName="ACM Insurgents";
+        priority=2;
+        side=0;
+        icon="\mas_acm_lite\cfgfaction_mas_acm_opf_ca.paa";
+        flag="\mas_acm_lite\flags\mas_flag_acm_opf.paa";
+    };
+    class mas_acm_OPF_insA
+    {
+        displayName="ACM Insurgents(city)";
+        priority=2;
+        side=0;
+        icon="\mas_acm_lite\cfgfaction_mas_acm_opf_ca.paa";
+        flag="\mas_acm_lite\flags\mas_flag_acm_opf.paa";
+    };
+    class mas_mec_OPF_ins
+    {
+        displayName="MEC Insurgents";
+        priority=2;
+        side=0;
+        icon="\mas_mec_lite\cfgfaction_mas_mec_ca.paa";
+        flag="\mas_mec_lite\flags\mas_flag_mec.paa";
+    };
+    class mas_mec_OPF_insA
+    {
+        displayName="MEC Insurgents(city)";
+        priority=2;
+        side=0;
+        icon="\mas_mec_lite\cfgfaction_mas_mec_ca.paa";
+        flag="\mas_mec_lite\flags\mas_flag_mec.paa";
+    };
+};

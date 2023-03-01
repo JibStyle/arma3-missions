@@ -1,0 +1,840 @@
+#define MY_ORBAT_BLU commander="UkrainianNames"; side="West";
+#define MY_ORBAT_OPF commander="RussianMen"; side="East";
+
+#define MY_ORBAT_BLU_MECH CUP_B_M1126_ICV_M2_Desert
+#define MY_ORBAT_BLU_ARMOR CUP_B_M1A2SEP_TUSK_Desert_US_Army
+#define MY_ORBAT_BLU_ARTY CUP_B_M270_DPICM_USA
+#define MY_ORBAT_BLU_SUPA CUP_B_MTVR_Ammo_USA
+#define MY_ORBAT_BLU_SUPB CUP_B_MTVR_Refuel_USA
+#define MY_ORBAT_BLU_SUPC CUP_B_MTVR_Repair_USA
+#define MY_ORBAT_BLU_SUPD CUP_B_nM997_USA_DES
+#define MY_ORBAT_BLU_HELIC1 CUP_B_MH6J_USA
+#define MY_ORBAT_BLU_HELIC2 CUP_B_UH60M_US
+#define MY_ORBAT_BLU_HELIC3 CUP_B_CH47F_USA
+#define MY_ORBAT_BLU_HELIA1 CUP_B_AH6M_USA
+#define MY_ORBAT_BLU_HELIA2 CUP_B_MH60L_DAP_4x_US
+#define MY_ORBAT_BLU_HELIA3 CUP_B_AH64D_DL_USA
+#define MY_ORBAT_BLU_PLANEA CUP_B_A10_DYN_USA
+#define MY_ORBAT_BLU_PLANEB CUP_B_A10_DYN_USA
+#define MY_ORBAT_BLU_PLANEC CUP_B_A10_DYN_USA
+#define MY_ORBAT_BLU_PLANED CUP_B_A10_DYN_USA
+#define MY_ORBAT_BLU_UAVA CUP_B_USMC_DYN_MQ9
+#define MY_ORBAT_BLU_UAVB CUP_B_USMC_DYN_MQ9
+#define MY_ORBAT_BLU_UAVC CUP_B_USMC_DYN_MQ9
+#define MY_ORBAT_BLU_UAVD CUP_B_USMC_DYN_MQ9
+
+#define MY_ORBAT_OPF_MECH CUP_O_MTLB_pk_TK_MILITIA
+#define MY_ORBAT_OPF_ARMOR CUP_O_T55_TK
+#define MY_ORBAT_OPF_ARTY CUP_O_BM21_TKA
+#define MY_ORBAT_OPF_SUPA CUP_O_V3S_Rearm_TKM
+#define MY_ORBAT_OPF_SUPB CUP_O_V3S_Refuel_TKM
+#define MY_ORBAT_OPF_SUPC CUP_O_V3S_Repair_TKM
+#define MY_ORBAT_OPF_SUPD CUP_O_V3S_Covered_TKM
+
+#define MY_ORBAT_BCT size="Brigade";  type="MechanizedInfantry";
+#define MY_ORBAT_RCT size="Regiment";  type="MechanizedInfantry";
+#define MY_ORBAT_BN  size="Battalion"; commanderRank="MAJOR";
+#define MY_ORBAT_SQN size="Squadron";  commanderRank="MAJOR";
+#define MY_ORBAT_CO  size="Company";   idType=2;
+#define MY_ORBAT_FLT size="Troop";     idType=2; \
+                     text="%1 Flight"; textShort="%1 Flt";
+#define MY_ORBAT_PLT size="Platoon";
+#define MY_ORBAT_SQD size="Squad";
+
+#define MY_ORBAT_BN_INF    MY_ORBAT_BN  type="Infantry";
+#define MY_ORBAT_BN_MECH   MY_ORBAT_BN  type="MechanizedInfantry";
+#define MY_ORBAT_BN_ARMOR  MY_ORBAT_BN  type="Armored";
+#define MY_ORBAT_BN_ARTY   MY_ORBAT_BN  type="Artillery";
+#define MY_ORBAT_BN_SUP    MY_ORBAT_BN  type="Support";
+#define MY_ORBAT_BN_RECON  MY_ORBAT_SQN type="Recon";
+#define MY_ORBAT_BN_HELI   MY_ORBAT_SQN type="Helicopter";
+#define MY_ORBAT_BN_PLANE  MY_ORBAT_SQN type="Fighter";
+#define MY_ORBAT_BN_UAV    MY_ORBAT_SQN type="UAV";
+#define MY_ORBAT_BN_AIR    MY_ORBAT_SQN type="CombatAviation";
+#define MY_ORBAT_CO_INF    MY_ORBAT_CO  type="Infantry";
+#define MY_ORBAT_CO_MECH   MY_ORBAT_CO  type="MechanizedInfantry";
+#define MY_ORBAT_CO_ARMOR  MY_ORBAT_CO  type="Armored";
+#define MY_ORBAT_CO_ARTY   MY_ORBAT_CO  type="Artillery";
+#define MY_ORBAT_CO_SUP    MY_ORBAT_CO  type="Support";
+#define MY_ORBAT_CO_RECON  MY_ORBAT_CO  type="Recon";
+#define MY_ORBAT_CO_HELI   MY_ORBAT_FLT type="Helicopter";
+#define MY_ORBAT_CO_PLANE  MY_ORBAT_FLT type="Fighter";
+#define MY_ORBAT_CO_UAV    MY_ORBAT_FLT type="UAV";
+#define MY_ORBAT_CO_AIR    MY_ORBAT_FLT type="CombatAviation";
+#define MY_ORBAT_PLT_INF   MY_ORBAT_PLT type="Infantry";
+#define MY_ORBAT_PLT_MECH  MY_ORBAT_PLT type="MechanizedInfantry";
+#define MY_ORBAT_PLT_ARMOR MY_ORBAT_PLT type="Armored";
+#define MY_ORBAT_PLT_ARTY  MY_ORBAT_PLT type="Artillery";
+#define MY_ORBAT_PLT_SUP   MY_ORBAT_PLT type="Support";
+#define MY_ORBAT_PLT_RECON MY_ORBAT_PLT type="Recon";
+#define MY_ORBAT_PLT_HELI  MY_ORBAT_PLT type="Helicopter";
+#define MY_ORBAT_PLT_PLANE MY_ORBAT_PLT type="Fighter";
+#define MY_ORBAT_PLT_UAV   MY_ORBAT_PLT type="UAV";
+#define MY_ORBAT_PLT_AIR   MY_ORBAT_PLT type="CombatAviation";
+#define MY_ORBAT_SQD_INF   MY_ORBAT_SQD type="Infantry";
+#define MY_ORBAT_SQD_MECH  MY_ORBAT_SQD type="MechanizedInfantry";
+#define MY_ORBAT_SQD_ARMOR MY_ORBAT_SQD type="Armored";
+#define MY_ORBAT_SQD_ARTY  MY_ORBAT_SQD type="Artillery";
+#define MY_ORBAT_SQD_SUP   MY_ORBAT_SQD type="Support";
+#define MY_ORBAT_SQD_RECON MY_ORBAT_SQD type="Recon";
+#define MY_ORBAT_SQD_HELI  MY_ORBAT_SQD type="Helicopter";
+#define MY_ORBAT_SQD_PLANE MY_ORBAT_SQD type="Fighter";
+#define MY_ORBAT_SQD_UAV   MY_ORBAT_SQD type="UAV";
+#define MY_ORBAT_SQD_AIR   MY_ORBAT_SQD type="CombatAviation";
+
+#define MY_ORBAT_BLU_BCT       MY_ORBAT_BLU MY_ORBAT_BCT
+#define MY_ORBAT_BLU_RCT       MY_ORBAT_BLU MY_ORBAT_RCT
+#define MY_ORBAT_BLU_BN_INF    MY_ORBAT_BLU MY_ORBAT_BN_INF
+#define MY_ORBAT_BLU_BN_MECH   MY_ORBAT_BLU MY_ORBAT_BN_MECH
+#define MY_ORBAT_BLU_BN_ARMOR  MY_ORBAT_BLU MY_ORBAT_BN_ARMOR
+#define MY_ORBAT_BLU_BN_ARTY   MY_ORBAT_BLU MY_ORBAT_BN_ARTY
+#define MY_ORBAT_BLU_BN_SUP    MY_ORBAT_BLU MY_ORBAT_BN_SUP
+#define MY_ORBAT_BLU_BN_RECON  MY_ORBAT_BLU MY_ORBAT_BN_RECON
+#define MY_ORBAT_BLU_BN_HELI   MY_ORBAT_BLU MY_ORBAT_BN_HELI
+#define MY_ORBAT_BLU_BN_PLANE  MY_ORBAT_BLU MY_ORBAT_BN_PLANE
+#define MY_ORBAT_BLU_BN_UAV    MY_ORBAT_BLU MY_ORBAT_BN_UAV
+#define MY_ORBAT_BLU_BN_AIR    MY_ORBAT_BLU MY_ORBAT_BN_AIR
+
+#define MY_ORBAT_BLU_CO_INF    MY_ORBAT_BLU MY_ORBAT_CO_INF   \
+    class 1 { MY_ORBAT_BLU_PLT_INF id=1; };                   \
+    class 2 { MY_ORBAT_BLU_PLT_INF id=2; };                   \
+    class 3 { MY_ORBAT_BLU_PLT_INF id=3; };                   \
+    class 4 { MY_ORBAT_BLU_PLT_INF id=4; };
+#define MY_ORBAT_BLU_CO_MECH   MY_ORBAT_BLU MY_ORBAT_CO_MECH  \
+    class 1 { MY_ORBAT_BLU_PLT_MECH id=1; };                  \
+    class 2 { MY_ORBAT_BLU_PLT_MECH id=2; };                  \
+    class 3 { MY_ORBAT_BLU_PLT_MECH id=3; };                  \
+    class 4 { MY_ORBAT_BLU_PLT_MECH id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_MECH, 16}};
+#define MY_ORBAT_BLU_CO_ARMOR  MY_ORBAT_BLU MY_ORBAT_CO_ARMOR \
+    class 1 { MY_ORBAT_BLU_PLT_ARMOR id=1; };                 \
+    class 2 { MY_ORBAT_BLU_PLT_ARMOR id=2; };                 \
+    class 3 { MY_ORBAT_BLU_PLT_ARMOR id=3; };                 \
+    class 4 { MY_ORBAT_BLU_PLT_ARMOR id=4; };                 \
+    assets[]={{MY_ORBAT_BLU_ARMOR, 16}};
+#define MY_ORBAT_BLU_CO_ARTY   MY_ORBAT_BLU MY_ORBAT_CO_ARTY  \
+    class 1 { MY_ORBAT_BLU_PLT_ARTY id=1; };                  \
+    class 2 { MY_ORBAT_BLU_PLT_ARTY id=2; };                  \
+    class 3 { MY_ORBAT_BLU_PLT_ARTY id=3; };                  \
+    class 4 { MY_ORBAT_BLU_PLT_ARTY id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_ARTY, 16}};
+#define MY_ORBAT_BLU_CO_SUP    MY_ORBAT_BLU MY_ORBAT_CO_SUP   \
+    class 1 { MY_ORBAT_BLU_PLT_SUP id=1; };                   \
+    class 2 { MY_ORBAT_BLU_PLT_SUP id=2; };                   \
+    class 3 { MY_ORBAT_BLU_PLT_SUP id=3; };                   \
+    class 4 { MY_ORBAT_BLU_PLT_SUP id=4; };                   \
+    assets[]={                                                \
+        {MY_ORBAT_BLU_SUPA, 4},                               \
+        {MY_ORBAT_BLU_SUPB, 4},                               \
+        {MY_ORBAT_BLU_SUPC, 4},                               \
+        {MY_ORBAT_BLU_SUPD, 4}                                \
+    };
+#define MY_ORBAT_BLU_CO_RECON  MY_ORBAT_BLU MY_ORBAT_CO_RECON \
+    class 1 { MY_ORBAT_BLU_PLT_RECON id=1; };                 \
+    class 2 { MY_ORBAT_BLU_PLT_RECON id=2; };                 \
+    class 3 { MY_ORBAT_BLU_PLT_RECON id=3; };                 \
+    class 4 { MY_ORBAT_BLU_PLT_RECON id=4; };
+#define MY_ORBAT_BLU_CO_HELIC  MY_ORBAT_BLU MY_ORBAT_CO_HELI  \
+    class 1 { MY_ORBAT_BLU_PLT_HELIC1 id=1; };                \
+    class 2 { MY_ORBAT_BLU_PLT_HELIC2 id=2; };                \
+    class 3 { MY_ORBAT_BLU_PLT_HELIC3 id=3; };                \
+    assets[]={                                                \
+        {MY_ORBAT_BLU_HELIC1, 4},                             \
+        {MY_ORBAT_BLU_HELIC2, 4},                             \
+        {MY_ORBAT_BLU_HELIC3, 4}                              \
+    };
+#define MY_ORBAT_BLU_CO_HELIA  MY_ORBAT_BLU MY_ORBAT_CO_HELI  \
+    class 1 { MY_ORBAT_BLU_PLT_HELIA1 id=1; };                \
+    class 2 { MY_ORBAT_BLU_PLT_HELIA2 id=2; };                \
+    class 3 { MY_ORBAT_BLU_PLT_HELIA3 id=3; };                \
+    assets[]={                                                \
+        {MY_ORBAT_BLU_HELIA1, 4},                             \
+        {MY_ORBAT_BLU_HELIA2, 4},                             \
+        {MY_ORBAT_BLU_HELIA3, 4}                              \
+    };
+#define MY_ORBAT_BLU_CO_PLANE  MY_ORBAT_BLU MY_ORBAT_CO_PLANE \
+    class 1 { MY_ORBAT_BLU_PLT_PLANEA id=1; };                \
+    class 2 { MY_ORBAT_BLU_PLT_PLANEB id=2; };                \
+    class 3 { MY_ORBAT_BLU_PLT_PLANEC id=3; };                \
+    class 4 { MY_ORBAT_BLU_PLT_PLANED id=4; };                \
+    assets[]={                                                \
+        {MY_ORBAT_BLU_PLANEA, 4},                             \
+        {MY_ORBAT_BLU_PLANEB, 4},                             \
+        {MY_ORBAT_BLU_PLANEC, 4},                             \
+        {MY_ORBAT_BLU_PLANED, 4}                              \
+    };
+#define MY_ORBAT_BLU_CO_UAV  MY_ORBAT_BLU MY_ORBAT_CO_UAV     \
+    class 1 { MY_ORBAT_BLU_PLT_UAVA id=1; };                  \
+    class 2 { MY_ORBAT_BLU_PLT_UAVB id=2; };                  \
+    class 3 { MY_ORBAT_BLU_PLT_UAVC id=3; };                  \
+    class 4 { MY_ORBAT_BLU_PLT_UAVD id=4; };                  \
+    assets[]={                                                \
+        {MY_ORBAT_BLU_UAVA, 4},                               \
+        {MY_ORBAT_BLU_UAVB, 4},                               \
+        {MY_ORBAT_BLU_UAVC, 4},                               \
+        {MY_ORBAT_BLU_UAVD, 4}                                \
+    };
+#define MY_ORBAT_BLU_CO_AIR    MY_ORBAT_BLU MY_ORBAT_CO_AIR   \
+    class 1 { MY_ORBAT_BLU_PLT_AIR id=1; };                   \
+    class 2 { MY_ORBAT_BLU_PLT_AIR id=2; };                   \
+    class 3 { MY_ORBAT_BLU_PLT_AIR id=3; };                   \
+    class 4 { MY_ORBAT_BLU_PLT_AIR id=4; };
+
+#define MY_ORBAT_BLU_PLT_INF   MY_ORBAT_BLU MY_ORBAT_PLT_INF    \
+    class 1 { MY_ORBAT_BLU_SQD_INF id=1; };                     \
+    class 2 { MY_ORBAT_BLU_SQD_INF id=2; };                     \
+    class 3 { MY_ORBAT_BLU_SQD_INF id=3; };                     \
+    class 4 { MY_ORBAT_BLU_SQD_INF id=4; };
+#define MY_ORBAT_BLU_PLT_MECH  MY_ORBAT_BLU MY_ORBAT_PLT_MECH   \
+    class 1 { MY_ORBAT_BLU_SQD_MECH id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_MECH id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_MECH id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_MECH id=4; };                    \
+    assets[]={{MY_ORBAT_BLU_MECH, 4}};
+#define MY_ORBAT_BLU_PLT_ARMOR MY_ORBAT_BLU MY_ORBAT_PLT_ARMOR  \
+    class 1 { MY_ORBAT_BLU_SQD_ARMOR id=1; };                   \
+    class 2 { MY_ORBAT_BLU_SQD_ARMOR id=2; };                   \
+    class 3 { MY_ORBAT_BLU_SQD_ARMOR id=3; };                   \
+    class 4 { MY_ORBAT_BLU_SQD_ARMOR id=4; };                   \
+    assets[]={{MY_ORBAT_BLU_ARMOR, 4}};
+#define MY_ORBAT_BLU_PLT_ARTY  MY_ORBAT_BLU MY_ORBAT_PLT_ARTY   \
+    class 1 { MY_ORBAT_BLU_SQD_ARTY id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_ARTY id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_ARTY id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_ARTY id=4; };                    \
+    assets[]={{MY_ORBAT_BLU_ARTY, 4}};
+#define MY_ORBAT_BLU_PLT_SUP   MY_ORBAT_BLU MY_ORBAT_PLT_SUP    \
+    class 1 { MY_ORBAT_BLU_SQD_SUPA id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_SUPB id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_SUPC id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_SUPD id=4; };                    \
+    assets[]={                                                  \
+        {MY_ORBAT_BLU_SUPA, 1},                                 \
+        {MY_ORBAT_BLU_SUPB, 1},                                 \
+        {MY_ORBAT_BLU_SUPC, 1},                                 \
+        {MY_ORBAT_BLU_SUPD, 1}                                  \
+    };
+#define MY_ORBAT_BLU_PLT_RECON  MY_ORBAT_BLU MY_ORBAT_PLT_RECON \
+    class 1 { MY_ORBAT_BLU_SQD_RECON id=1; };                   \
+    class 2 { MY_ORBAT_BLU_SQD_RECON id=2; };                   \
+    class 3 { MY_ORBAT_BLU_SQD_RECON id=3; };                   \
+    class 4 { MY_ORBAT_BLU_SQD_RECON id=4; };
+#define MY_ORBAT_BLU_PLT_HELIC1 MY_ORBAT_BLU MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_BLU_SQD_HELIC1 id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_HELIC1 id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_HELIC1 id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_HELIC1 id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_HELIC1, 4}};
+#define MY_ORBAT_BLU_PLT_HELIC2 MY_ORBAT_BLU MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_BLU_SQD_HELIC2 id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_HELIC2 id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_HELIC2 id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_HELIC2 id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_HELIC2, 4}};
+#define MY_ORBAT_BLU_PLT_HELIC3 MY_ORBAT_BLU MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_BLU_SQD_HELIC3 id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_HELIC3 id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_HELIC3 id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_HELIC3 id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_HELIC3, 4}};
+#define MY_ORBAT_BLU_PLT_HELIA1 MY_ORBAT_BLU MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_BLU_SQD_HELIA1 id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_HELIA1 id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_HELIA1 id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_HELIA1 id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_HELIA1, 4}};
+#define MY_ORBAT_BLU_PLT_HELIA2 MY_ORBAT_BLU MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_BLU_SQD_HELIA2 id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_HELIA2 id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_HELIA2 id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_HELIA2 id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_HELIA2, 4}};
+#define MY_ORBAT_BLU_PLT_HELIA3 MY_ORBAT_BLU MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_BLU_SQD_HELIA3 id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_HELIA3 id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_HELIA3 id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_HELIA3 id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_HELIA3, 4}};
+#define MY_ORBAT_BLU_PLT_PLANEA MY_ORBAT_BLU MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_BLU_SQD_PLANEA id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_PLANEA id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_PLANEA id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_PLANEA id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_PLANEA, 4}};
+#define MY_ORBAT_BLU_PLT_PLANEB MY_ORBAT_BLU MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_BLU_SQD_PLANEB id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_PLANEB id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_PLANEB id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_PLANEB id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_PLANEB, 4}};
+#define MY_ORBAT_BLU_PLT_PLANEC MY_ORBAT_BLU MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_BLU_SQD_PLANEC id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_PLANEC id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_PLANEC id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_PLANEC id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_PLANEC, 4}};
+#define MY_ORBAT_BLU_PLT_PLANED MY_ORBAT_BLU MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_BLU_SQD_PLANED id=1; };                  \
+    class 2 { MY_ORBAT_BLU_SQD_PLANED id=2; };                  \
+    class 3 { MY_ORBAT_BLU_SQD_PLANED id=3; };                  \
+    class 4 { MY_ORBAT_BLU_SQD_PLANED id=4; };                  \
+    assets[]={{MY_ORBAT_BLU_PLANED, 4}};
+#define MY_ORBAT_BLU_PLT_UAVA   MY_ORBAT_BLU MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_BLU_SQD_UAVA id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_UAVA id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_UAVA id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_UAVA id=4; };                    \
+    assets[]={{MY_ORBAT_BLU_UAVA, 4}};
+#define MY_ORBAT_BLU_PLT_UAVB   MY_ORBAT_BLU MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_BLU_SQD_UAVB id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_UAVB id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_UAVB id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_UAVB id=4; };                    \
+    assets[]={{MY_ORBAT_BLU_UAVB, 4}};
+#define MY_ORBAT_BLU_PLT_UAVC   MY_ORBAT_BLU MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_BLU_SQD_UAVC id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_UAVC id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_UAVC id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_UAVC id=4; };                    \
+    assets[]={{MY_ORBAT_BLU_UAVC, 4}};
+#define MY_ORBAT_BLU_PLT_UAVD   MY_ORBAT_BLU MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_BLU_SQD_UAVD id=1; };                    \
+    class 2 { MY_ORBAT_BLU_SQD_UAVD id=2; };                    \
+    class 3 { MY_ORBAT_BLU_SQD_UAVD id=3; };                    \
+    class 4 { MY_ORBAT_BLU_SQD_UAVD id=4; };                    \
+    assets[]={{MY_ORBAT_BLU_UAVD, 4}};
+#define MY_ORBAT_BLU_PLT_AIR    MY_ORBAT_BLU MY_ORBAT_PLT_AIR   \
+    class 1 { MY_ORBAT_BLU_SQD_AIR id=1; };                     \
+    class 2 { MY_ORBAT_BLU_SQD_AIR id=2; };                     \
+    class 3 { MY_ORBAT_BLU_SQD_AIR id=3; };                     \
+    class 4 { MY_ORBAT_BLU_SQD_AIR id=4; };
+
+#define MY_ORBAT_BLU_SQD_INF    MY_ORBAT_BLU MY_ORBAT_SQD_INF
+#define MY_ORBAT_BLU_SQD_MECH   MY_ORBAT_BLU MY_ORBAT_SQD_MECH  \
+    assets[]={{MY_ORBAT_BLU_MECH, 1}};
+#define MY_ORBAT_BLU_SQD_ARMOR  MY_ORBAT_BLU MY_ORBAT_SQD_ARMOR \
+    assets[]={{MY_ORBAT_BLU_ARMOR, 1}};
+#define MY_ORBAT_BLU_SQD_ARTY   MY_ORBAT_BLU MY_ORBAT_SQD_ARTY  \
+    assets[]={{MY_ORBAT_BLU_ARTY, 1}};
+#define MY_ORBAT_BLU_SQD_SUPA   MY_ORBAT_BLU MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_BLU_SUPA, 1}};
+#define MY_ORBAT_BLU_SQD_SUPB   MY_ORBAT_BLU MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_BLU_SUPB, 1}};
+#define MY_ORBAT_BLU_SQD_SUPC   MY_ORBAT_BLU MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_BLU_SUPC, 1}};
+#define MY_ORBAT_BLU_SQD_SUPD   MY_ORBAT_BLU MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_BLU_SUPD, 1}};
+#define MY_ORBAT_BLU_SQD_RECON  MY_ORBAT_BLU MY_ORBAT_SQD_RECON
+#define MY_ORBAT_BLU_SQD_HELIC1 MY_ORBAT_BLU MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_BLU_HELIC1, 1}};
+#define MY_ORBAT_BLU_SQD_HELIC2 MY_ORBAT_BLU MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_BLU_HELIC2, 1}};
+#define MY_ORBAT_BLU_SQD_HELIC3 MY_ORBAT_BLU MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_BLU_HELIC3, 1}};
+#define MY_ORBAT_BLU_SQD_HELIA1 MY_ORBAT_BLU MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_BLU_HELIA1, 1}};
+#define MY_ORBAT_BLU_SQD_HELIA2 MY_ORBAT_BLU MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_BLU_HELIA2, 1}};
+#define MY_ORBAT_BLU_SQD_HELIA3 MY_ORBAT_BLU MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_BLU_HELIA3, 1}};
+#define MY_ORBAT_BLU_SQD_PLANEA MY_ORBAT_BLU MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_BLU_PLANEA, 1}};
+#define MY_ORBAT_BLU_SQD_PLANEB MY_ORBAT_BLU MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_BLU_PLANEB, 1}};
+#define MY_ORBAT_BLU_SQD_PLANEC MY_ORBAT_BLU MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_BLU_PLANEC, 1}};
+#define MY_ORBAT_BLU_SQD_PLANED MY_ORBAT_BLU MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_BLU_PLANED, 1}};
+#define MY_ORBAT_BLU_SQD_UAVA   MY_ORBAT_BLU MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_BLU_UAVA, 1}};
+#define MY_ORBAT_BLU_SQD_UAVB   MY_ORBAT_BLU MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_BLU_UAVB, 1}};
+#define MY_ORBAT_BLU_SQD_UAVC   MY_ORBAT_BLU MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_BLU_UAVC, 1}};
+#define MY_ORBAT_BLU_SQD_UAVD   MY_ORBAT_BLU MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_BLU_UAVD, 1}};
+#define MY_ORBAT_BLU_SQD_AIR    MY_ORBAT_BLU MY_ORBAT_SQD_AIR
+
+#define MY_ORBAT_OPF_BCT       MY_ORBAT_OPF MY_ORBAT_BCT
+#define MY_ORBAT_OPF_RCT       MY_ORBAT_OPF MY_ORBAT_RCT
+#define MY_ORBAT_OPF_BN_INF    MY_ORBAT_OPF MY_ORBAT_BN_INF
+#define MY_ORBAT_OPF_BN_MECH   MY_ORBAT_OPF MY_ORBAT_BN_MECH
+#define MY_ORBAT_OPF_BN_ARMOR  MY_ORBAT_OPF MY_ORBAT_BN_ARMOR
+#define MY_ORBAT_OPF_BN_ARTY   MY_ORBAT_OPF MY_ORBAT_BN_ARTY
+#define MY_ORBAT_OPF_BN_SUP    MY_ORBAT_OPF MY_ORBAT_BN_SUP
+#define MY_ORBAT_OPF_BN_RECON  MY_ORBAT_OPF MY_ORBAT_BN_RECON
+#define MY_ORBAT_OPF_BN_HELI   MY_ORBAT_OPF MY_ORBAT_BN_HELI
+#define MY_ORBAT_OPF_BN_PLANE  MY_ORBAT_OPF MY_ORBAT_BN_PLANE
+#define MY_ORBAT_OPF_BN_UAV    MY_ORBAT_OPF MY_ORBAT_BN_UAV
+#define MY_ORBAT_OPF_BN_AIR    MY_ORBAT_OPF MY_ORBAT_BN_AIR
+
+#define MY_ORBAT_OPF_CO_INF    MY_ORBAT_OPF MY_ORBAT_CO_INF   \
+    class 1 { MY_ORBAT_OPF_PLT_INF id=1; };                   \
+    class 2 { MY_ORBAT_OPF_PLT_INF id=2; };                   \
+    class 3 { MY_ORBAT_OPF_PLT_INF id=3; };                   \
+    class 4 { MY_ORBAT_OPF_PLT_INF id=4; };
+#define MY_ORBAT_OPF_CO_MECH   MY_ORBAT_OPF MY_ORBAT_CO_MECH  \
+    class 1 { MY_ORBAT_OPF_PLT_MECH id=1; };                  \
+    class 2 { MY_ORBAT_OPF_PLT_MECH id=2; };                  \
+    class 3 { MY_ORBAT_OPF_PLT_MECH id=3; };                  \
+    class 4 { MY_ORBAT_OPF_PLT_MECH id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_MECH, 16}};
+#define MY_ORBAT_OPF_CO_ARMOR  MY_ORBAT_OPF MY_ORBAT_CO_ARMOR \
+    class 1 { MY_ORBAT_OPF_PLT_ARMOR id=1; };                 \
+    class 2 { MY_ORBAT_OPF_PLT_ARMOR id=2; };                 \
+    class 3 { MY_ORBAT_OPF_PLT_ARMOR id=3; };                 \
+    class 4 { MY_ORBAT_OPF_PLT_ARMOR id=4; };                 \
+    assets[]={{MY_ORBAT_OPF_ARMOR, 16}};
+#define MY_ORBAT_OPF_CO_ARTY   MY_ORBAT_OPF MY_ORBAT_CO_ARTY  \
+    class 1 { MY_ORBAT_OPF_PLT_ARTY id=1; };                  \
+    class 2 { MY_ORBAT_OPF_PLT_ARTY id=2; };                  \
+    class 3 { MY_ORBAT_OPF_PLT_ARTY id=3; };                  \
+    class 4 { MY_ORBAT_OPF_PLT_ARTY id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_ARTY, 16}};
+#define MY_ORBAT_OPF_CO_SUP    MY_ORBAT_OPF MY_ORBAT_CO_SUP   \
+    class 1 { MY_ORBAT_OPF_PLT_SUP id=1; };                   \
+    class 2 { MY_ORBAT_OPF_PLT_SUP id=2; };                   \
+    class 3 { MY_ORBAT_OPF_PLT_SUP id=3; };                   \
+    class 4 { MY_ORBAT_OPF_PLT_SUP id=4; };                   \
+    assets[]={                                                \
+        {MY_ORBAT_OPF_SUPA, 4},                               \
+        {MY_ORBAT_OPF_SUPB, 4},                               \
+        {MY_ORBAT_OPF_SUPC, 4},                               \
+        {MY_ORBAT_OPF_SUPD, 4}                                \
+    };
+#define MY_ORBAT_OPF_CO_RECON  MY_ORBAT_OPF MY_ORBAT_CO_RECON \
+    class 1 { MY_ORBAT_OPF_PLT_RECON id=1; };                 \
+    class 2 { MY_ORBAT_OPF_PLT_RECON id=2; };                 \
+    class 3 { MY_ORBAT_OPF_PLT_RECON id=3; };                 \
+    class 4 { MY_ORBAT_OPF_PLT_RECON id=4; };
+#define MY_ORBAT_OPF_CO_HELIC  MY_ORBAT_OPF MY_ORBAT_CO_HELI  \
+    class 1 { MY_ORBAT_OPF_PLT_HELIC1 id=1; };                \
+    class 2 { MY_ORBAT_OPF_PLT_HELIC2 id=2; };                \
+    class 3 { MY_ORBAT_OPF_PLT_HELIC3 id=3; };                \
+    assets[]={                                                \
+        {MY_ORBAT_OPF_HELIC1, 4},                             \
+        {MY_ORBAT_OPF_HELIC2, 4},                             \
+        {MY_ORBAT_OPF_HELIC3, 4}                              \
+    };
+#define MY_ORBAT_OPF_CO_HELIA  MY_ORBAT_OPF MY_ORBAT_CO_HELI  \
+    class 1 { MY_ORBAT_OPF_PLT_HELIA1 id=1; };                \
+    class 2 { MY_ORBAT_OPF_PLT_HELIA2 id=2; };                \
+    class 3 { MY_ORBAT_OPF_PLT_HELIA3 id=3; };                \
+    assets[]={                                                \
+        {MY_ORBAT_OPF_HELIA1, 4},                             \
+        {MY_ORBAT_OPF_HELIA2, 4},                             \
+        {MY_ORBAT_OPF_HELIA3, 4}                              \
+    };
+#define MY_ORBAT_OPF_CO_PLANE  MY_ORBAT_OPF MY_ORBAT_CO_PLANE \
+    class 1 { MY_ORBAT_OPF_PLT_PLANEA id=1; };                \
+    class 2 { MY_ORBAT_OPF_PLT_PLANEB id=2; };                \
+    class 3 { MY_ORBAT_OPF_PLT_PLANEC id=3; };                \
+    class 4 { MY_ORBAT_OPF_PLT_PLANED id=4; };                \
+    assets[]={                                                \
+        {MY_ORBAT_OPF_PLANEA, 4},                             \
+        {MY_ORBAT_OPF_PLANEB, 4},                             \
+        {MY_ORBAT_OPF_PLANEC, 4},                             \
+        {MY_ORBAT_OPF_PLANED, 4}                              \
+    };
+#define MY_ORBAT_OPF_CO_UAV  MY_ORBAT_OPF MY_ORBAT_CO_UAV     \
+    class 1 { MY_ORBAT_OPF_PLT_UAVA id=1; };                  \
+    class 2 { MY_ORBAT_OPF_PLT_UAVB id=2; };                  \
+    class 3 { MY_ORBAT_OPF_PLT_UAVC id=3; };                  \
+    class 4 { MY_ORBAT_OPF_PLT_UAVD id=4; };                  \
+    assets[]={                                                \
+        {MY_ORBAT_OPF_UAVA, 4},                               \
+        {MY_ORBAT_OPF_UAVB, 4},                               \
+        {MY_ORBAT_OPF_UAVC, 4},                               \
+        {MY_ORBAT_OPF_UAVD, 4}                                \
+    };
+#define MY_ORBAT_OPF_CO_AIR    MY_ORBAT_OPF MY_ORBAT_CO_AIR   \
+    class 1 { MY_ORBAT_OPF_PLT_AIR id=1; };                   \
+    class 2 { MY_ORBAT_OPF_PLT_AIR id=2; };                   \
+    class 3 { MY_ORBAT_OPF_PLT_AIR id=3; };                   \
+    class 4 { MY_ORBAT_OPF_PLT_AIR id=4; };
+
+#define MY_ORBAT_OPF_PLT_INF   MY_ORBAT_OPF MY_ORBAT_PLT_INF    \
+    class 1 { MY_ORBAT_OPF_SQD_INF id=1; };                     \
+    class 2 { MY_ORBAT_OPF_SQD_INF id=2; };                     \
+    class 3 { MY_ORBAT_OPF_SQD_INF id=3; };                     \
+    class 4 { MY_ORBAT_OPF_SQD_INF id=4; };
+#define MY_ORBAT_OPF_PLT_MECH  MY_ORBAT_OPF MY_ORBAT_PLT_MECH   \
+    class 1 { MY_ORBAT_OPF_SQD_MECH id=1; };                    \
+    class 2 { MY_ORBAT_OPF_SQD_MECH id=2; };                    \
+    class 3 { MY_ORBAT_OPF_SQD_MECH id=3; };                    \
+    class 4 { MY_ORBAT_OPF_SQD_MECH id=4; };                    \
+    assets[]={{MY_ORBAT_OPF_MECH, 4}};
+#define MY_ORBAT_OPF_PLT_ARMOR MY_ORBAT_OPF MY_ORBAT_PLT_ARMOR  \
+    class 1 { MY_ORBAT_OPF_SQD_ARMOR id=1; };                   \
+    class 2 { MY_ORBAT_OPF_SQD_ARMOR id=2; };                   \
+    class 3 { MY_ORBAT_OPF_SQD_ARMOR id=3; };                   \
+    class 4 { MY_ORBAT_OPF_SQD_ARMOR id=4; };                   \
+    assets[]={{MY_ORBAT_OPF_ARMOR, 4}};
+#define MY_ORBAT_OPF_PLT_ARTY  MY_ORBAT_OPF MY_ORBAT_PLT_ARTY   \
+    class 1 { MY_ORBAT_OPF_SQD_ARTY id=1; };                    \
+    class 2 { MY_ORBAT_OPF_SQD_ARTY id=2; };                    \
+    class 3 { MY_ORBAT_OPF_SQD_ARTY id=3; };                    \
+    class 4 { MY_ORBAT_OPF_SQD_ARTY id=4; };                    \
+    assets[]={{MY_ORBAT_OPF_ARTY, 4}};
+#define MY_ORBAT_OPF_PLT_SUP   MY_ORBAT_OPF MY_ORBAT_PLT_SUP    \
+    class 1 { MY_ORBAT_OPF_SQD_SUPA id=1; };                    \
+    class 2 { MY_ORBAT_OPF_SQD_SUPB id=2; };                    \
+    class 3 { MY_ORBAT_OPF_SQD_SUPC id=3; };                    \
+    class 4 { MY_ORBAT_OPF_SQD_SUPD id=4; };                    \
+    assets[]={                                                  \
+        {MY_ORBAT_OPF_SUPA, 1},                                 \
+        {MY_ORBAT_OPF_SUPB, 1},                                 \
+        {MY_ORBAT_OPF_SUPC, 1},                                 \
+        {MY_ORBAT_OPF_SUPD, 1}                                  \
+    };
+#define MY_ORBAT_OPF_PLT_RECON  MY_ORBAT_OPF MY_ORBAT_PLT_RECON \
+    class 1 { MY_ORBAT_OPF_SQD_RECON id=1; };                   \
+    class 2 { MY_ORBAT_OPF_SQD_RECON id=2; };                   \
+    class 3 { MY_ORBAT_OPF_SQD_RECON id=3; };                   \
+    class 4 { MY_ORBAT_OPF_SQD_RECON id=4; };
+#define MY_ORBAT_OPF_PLT_HELIC1 MY_ORBAT_OPF MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_OPF_SQD_HELIC1 id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_HELIC1 id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_HELIC1 id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_HELIC1 id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_HELIC1, 4}};
+#define MY_ORBAT_OPF_PLT_HELIC2 MY_ORBAT_OPF MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_OPF_SQD_HELIC2 id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_HELIC2 id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_HELIC2 id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_HELIC2 id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_HELIC2, 4}};
+#define MY_ORBAT_OPF_PLT_HELIC3 MY_ORBAT_OPF MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_OPF_SQD_HELIC3 id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_HELIC3 id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_HELIC3 id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_HELIC3 id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_HELIC3, 4}};
+#define MY_ORBAT_OPF_PLT_HELIA1 MY_ORBAT_OPF MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_OPF_SQD_HELIA1 id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_HELIA1 id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_HELIA1 id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_HELIA1 id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_HELIA1, 4}};
+#define MY_ORBAT_OPF_PLT_HELIA2 MY_ORBAT_OPF MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_OPF_SQD_HELIA2 id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_HELIA2 id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_HELIA2 id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_HELIA2 id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_HELIA2, 4}};
+#define MY_ORBAT_OPF_PLT_HELIA3 MY_ORBAT_OPF MY_ORBAT_PLT_HELI  \
+    class 1 { MY_ORBAT_OPF_SQD_HELIA3 id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_HELIA3 id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_HELIA3 id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_HELIA3 id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_HELIA3, 4}};
+#define MY_ORBAT_OPF_PLT_PLANEA MY_ORBAT_OPF MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_OPF_SQD_PLANEA id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_PLANEA id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_PLANEA id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_PLANEA id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_PLANEA, 4}};
+#define MY_ORBAT_OPF_PLT_PLANEB MY_ORBAT_OPF MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_OPF_SQD_PLANEB id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_PLANEB id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_PLANEB id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_PLANEB id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_PLANEB, 4}};
+#define MY_ORBAT_OPF_PLT_PLANEC MY_ORBAT_OPF MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_OPF_SQD_PLANEC id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_PLANEC id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_PLANEC id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_PLANEC id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_PLANEC, 4}};
+#define MY_ORBAT_OPF_PLT_PLANED MY_ORBAT_OPF MY_ORBAT_PLT_PLANE \
+    class 1 { MY_ORBAT_OPF_SQD_PLANED id=1; };                  \
+    class 2 { MY_ORBAT_OPF_SQD_PLANED id=2; };                  \
+    class 3 { MY_ORBAT_OPF_SQD_PLANED id=3; };                  \
+    class 4 { MY_ORBAT_OPF_SQD_PLANED id=4; };                  \
+    assets[]={{MY_ORBAT_OPF_PLANED, 4}};
+#define MY_ORBAT_OPF_PLT_UAVA   MY_ORBAT_OPF MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_OPF_SQD_UAVA id=1; };                    \
+    class 2 { MY_ORBAT_OPF_SQD_UAVA id=2; };                    \
+    class 3 { MY_ORBAT_OPF_SQD_UAVA id=3; };                    \
+    class 4 { MY_ORBAT_OPF_SQD_UAVA id=4; };                    \
+    assets[]={{MY_ORBAT_OPF_UAVA, 4}};
+#define MY_ORBAT_OPF_PLT_UAVB   MY_ORBAT_OPF MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_OPF_SQD_UAVB id=1; };                    \
+    class 2 { MY_ORBAT_OPF_SQD_UAVB id=2; };                    \
+    class 3 { MY_ORBAT_OPF_SQD_UAVB id=3; };                    \
+    class 4 { MY_ORBAT_OPF_SQD_UAVB id=4; };                    \
+    assets[]={{MY_ORBAT_OPF_UAVB, 4}};
+#define MY_ORBAT_OPF_PLT_UAVC   MY_ORBAT_OPF MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_OPF_SQD_UAVC id=1; };                    \
+    class 2 { MY_ORBAT_OPF_SQD_UAVC id=2; };                    \
+    class 3 { MY_ORBAT_OPF_SQD_UAVC id=3; };                    \
+    class 4 { MY_ORBAT_OPF_SQD_UAVC id=4; };                    \
+    assets[]={{MY_ORBAT_OPF_UAVC, 4}};
+#define MY_ORBAT_OPF_PLT_UAVD   MY_ORBAT_OPF MY_ORBAT_PLT_UAV   \
+    class 1 { MY_ORBAT_OPF_SQD_UAVD id=1; };                    \
+    class 2 { MY_ORBAT_OPF_SQD_UAVD id=2; };                    \
+    class 3 { MY_ORBAT_OPF_SQD_UAVD id=3; };                    \
+    class 4 { MY_ORBAT_OPF_SQD_UAVD id=4; };                    \
+    assets[]={{MY_ORBAT_OPF_UAVD, 4}};
+#define MY_ORBAT_OPF_PLT_AIR    MY_ORBAT_OPF MY_ORBAT_PLT_AIR   \
+    class 1 { MY_ORBAT_OPF_SQD_AIR id=1; };                     \
+    class 2 { MY_ORBAT_OPF_SQD_AIR id=2; };                     \
+    class 3 { MY_ORBAT_OPF_SQD_AIR id=3; };                     \
+    class 4 { MY_ORBAT_OPF_SQD_AIR id=4; };
+
+#define MY_ORBAT_OPF_SQD_INF    MY_ORBAT_OPF MY_ORBAT_SQD_INF
+#define MY_ORBAT_OPF_SQD_MECH   MY_ORBAT_OPF MY_ORBAT_SQD_MECH  \
+    assets[]={{MY_ORBAT_OPF_MECH, 1}};
+#define MY_ORBAT_OPF_SQD_ARMOR  MY_ORBAT_OPF MY_ORBAT_SQD_ARMOR \
+    assets[]={{MY_ORBAT_OPF_ARMOR, 1}};
+#define MY_ORBAT_OPF_SQD_ARTY   MY_ORBAT_OPF MY_ORBAT_SQD_ARTY  \
+    assets[]={{MY_ORBAT_OPF_ARTY, 1}};
+#define MY_ORBAT_OPF_SQD_SUPA   MY_ORBAT_OPF MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_OPF_SUPA, 1}};
+#define MY_ORBAT_OPF_SQD_SUPB   MY_ORBAT_OPF MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_OPF_SUPB, 1}};
+#define MY_ORBAT_OPF_SQD_SUPC   MY_ORBAT_OPF MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_OPF_SUPC, 1}};
+#define MY_ORBAT_OPF_SQD_SUPD   MY_ORBAT_OPF MY_ORBAT_SQD_SUP   \
+    assets[]={{MY_ORBAT_OPF_SUPD, 1}};
+#define MY_ORBAT_OPF_SQD_RECON  MY_ORBAT_OPF MY_ORBAT_SQD_RECON
+#define MY_ORBAT_OPF_SQD_HELIC1 MY_ORBAT_OPF MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_OPF_HELIC1, 1}};
+#define MY_ORBAT_OPF_SQD_HELIC2 MY_ORBAT_OPF MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_OPF_HELIC2, 1}};
+#define MY_ORBAT_OPF_SQD_HELIC3 MY_ORBAT_OPF MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_OPF_HELIC3, 1}};
+#define MY_ORBAT_OPF_SQD_HELIA1 MY_ORBAT_OPF MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_OPF_HELIA1, 1}};
+#define MY_ORBAT_OPF_SQD_HELIA2 MY_ORBAT_OPF MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_OPF_HELIA2, 1}};
+#define MY_ORBAT_OPF_SQD_HELIA3 MY_ORBAT_OPF MY_ORBAT_SQD_HELI  \
+    assets[]={{MY_ORBAT_OPF_HELIA3, 1}};
+#define MY_ORBAT_OPF_SQD_PLANEA MY_ORBAT_OPF MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_OPF_PLANEA, 1}};
+#define MY_ORBAT_OPF_SQD_PLANEB MY_ORBAT_OPF MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_OPF_PLANEB, 1}};
+#define MY_ORBAT_OPF_SQD_PLANEC MY_ORBAT_OPF MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_OPF_PLANEC, 1}};
+#define MY_ORBAT_OPF_SQD_PLANED MY_ORBAT_OPF MY_ORBAT_SQD_PLANE \
+    assets[]={{MY_ORBAT_OPF_PLANED, 1}};
+#define MY_ORBAT_OPF_SQD_UAVA   MY_ORBAT_OPF MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_OPF_UAVA, 1}};
+#define MY_ORBAT_OPF_SQD_UAVB   MY_ORBAT_OPF MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_OPF_UAVB, 1}};
+#define MY_ORBAT_OPF_SQD_UAVC   MY_ORBAT_OPF MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_OPF_UAVC, 1}};
+#define MY_ORBAT_OPF_SQD_UAVD   MY_ORBAT_OPF MY_ORBAT_SQD_UAV   \
+    assets[]={{MY_ORBAT_OPF_UAVD, 1}};
+#define MY_ORBAT_OPF_SQD_AIR    MY_ORBAT_OPF MY_ORBAT_SQD_AIR
+
+class CfgORBAT {
+    class blu {
+        MY_ORBAT_BLU_BCT
+        colorInsignia[]={0,0,0,1};
+        description="Balanced combined arms force organized for rapid deployment to Takistan.";
+        insignia=__EVAL(getMissionPath "wca.paa");
+        text="Task Force Chillsim";
+        textShort="TF Chillsim";
+
+        class 1 {
+            MY_ORBAT_BLU_BN_MECH
+            id=1;
+            text="%1 Combined Arms %3";
+            class 1 { id=1; MY_ORBAT_BLU_CO_INF };
+            class 2 { id=2; MY_ORBAT_BLU_CO_MECH };
+            class 3 { id=3; MY_ORBAT_BLU_CO_ARMOR };
+            class 4 { id=4; MY_ORBAT_BLU_CO_RECON };
+        };
+        class 2 {
+            MY_ORBAT_BLU_BN_MECH
+            id=2;
+            text="%1 Combined Arms %3";
+            class 5 { id=5; MY_ORBAT_BLU_CO_INF };
+            class 6 { id=6; MY_ORBAT_BLU_CO_MECH };
+            class 7 { id=7; MY_ORBAT_BLU_CO_ARMOR };
+            class 8 { id=8; MY_ORBAT_BLU_CO_RECON };
+        };
+        class 3 {
+            MY_ORBAT_BLU_BN_AIR
+            id=3;
+            text="%1 %2 %3";
+            class 9 { id=9; MY_ORBAT_BLU_CO_HELIC };
+            class 10 { id=10; MY_ORBAT_BLU_CO_HELIA };
+            class 11 { id=11; MY_ORBAT_BLU_CO_PLANE };
+            class 12 { id=12; MY_ORBAT_BLU_CO_UAV };
+        };
+        class 4 {
+            MY_ORBAT_BLU_BN_SUP
+            id=4;
+            text="%1 %2 %3";
+            class 13 { id=13; MY_ORBAT_BLU_CO_SUP };
+            class 14 { id=14; MY_ORBAT_BLU_CO_SUP };
+            class 15 { id=15; MY_ORBAT_BLU_CO_SUP };
+        };
+    };
+    class opf {
+        MY_ORBAT_OPF_BCT
+        colorInsignia[]={0,0,0,1};
+        description="Insurgent fighters that terrorize the Takistani civilians.";
+        insignia=__EVAL(getMissionPath "wca.paa");
+        text="Takistani Insurgents";
+        textShort="Insurgents";
+
+        class 1 {
+            MY_ORBAT_OPF_BN_INF
+            id=1;
+            text="%1 %2 %3";
+            class 1 { id=1; MY_ORBAT_OPF_CO_INF };
+            class 2 { id=2; MY_ORBAT_OPF_CO_INF };
+            class 3 { id=3; MY_ORBAT_OPF_CO_INF };
+            class 4 { id=4; MY_ORBAT_OPF_CO_INF };
+            class 5 { id=5; MY_ORBAT_OPF_CO_MECH };
+            class 6 { id=6; MY_ORBAT_OPF_CO_ARMOR };
+        };
+        class 2 {
+            MY_ORBAT_OPF_BN_INF
+            id=2;
+            text="%1 %2 %3";
+            class 7 { id=7; MY_ORBAT_OPF_CO_INF };
+            class 8 { id=8; MY_ORBAT_OPF_CO_INF };
+            class 9 { id=9; MY_ORBAT_OPF_CO_INF };
+            class 10 { id=10; MY_ORBAT_OPF_CO_INF };
+            class 11 { id=11; MY_ORBAT_OPF_CO_MECH };
+            class 12 { id=12; MY_ORBAT_OPF_CO_ARMOR };
+        };
+        class 3 {
+            MY_ORBAT_OPF_BN_SUP
+            id=4;
+            text="%1 %2 %3";
+            class 13 { id=13; MY_ORBAT_OPF_CO_SUP };
+            class 14 { id=14; MY_ORBAT_OPF_CO_SUP };
+        };
+    };
+};
+
+#define MY_GROUP_BLU_SQUAD side=1; faction="my_blu";                           \
+    class 0 {side=1; rank="SERGEANT"; vehicle="b_afougf_sergeant_gp25";};      \
+    class 1 {side=1; rank="PRIVATE"; vehicle="b_afougf_mg_rpk74";};            \
+    class 2 {side=1; rank="PRIVATE"; vehicle="b_afougf_makrsman_svdm";};       \
+    class 3 {side=1; rank="PRIVATE"; vehicle="b_afougf_rifleman_ak74";};       \
+    class 4 {side=1; rank="CORPORAL"; vehicle="b_afougf_teamleader_gp25";};    \
+    class 5 {side=1; rank="PRIVATE"; vehicle="b_afougf_mg_pkm";};              \
+    class 6 {side=1; rank="PRIVATE"; vehicle="b_afougf_pt_maaws";};            \
+    class 7 {side=1; rank="PRIVATE"; vehicle="b_afougf_medic";};
+#define MY_GROUP_BLU_AT side=1; faction="my_blu";                              \
+    class 0 {side=1; rank="SERGEANT"; vehicle="b_afougf_teamleader_gp25";};    \
+    class 1 {side=1; rank="CORPORAL"; vehicle="b_afougf_pt_fgm148";};          \
+    class 2 {side=1; rank="CORPORAL"; vehicle="b_afougf_pt_fgm148";};          \
+    class 3 {side=1; rank="CORPORAL"; vehicle="b_afougf_aa_stinger_specialist";};
+#define MY_GROUP_BLU_SNIPER side=1; faction="my_blu";                          \
+    class 0 {side=1; rank="SERGEANT"; vehicle="b_afougf_teamleader_gp25";};    \
+    class 1 {side=1; rank="CORPORAL"; vehicle="b_afougf_makrsman_m82";};
+#define MY_GROUP_BLU_TECHNICALS side=1; faction="my_blu";                      \
+    class 0 {side=1; rank="LIEUTENANT"; vehicle="b_afougf_offroad_01_dshkm";}; \
+    class 1 {side=1; rank="SERGEANT"; vehicle="b_afougf_offroad_at";};
+
+#define MY_GROUP_OPF_SQUAD side=0; faction="my_opf";                           \
+    class 0 {side=0; rank="SERGEANT"; vehicle="rhs_msv_emr_sergeant";};        \
+    class 1 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_arifleman";};        \
+    class 2 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_marksman";};         \
+    class 3 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_rifleman";};         \
+    class 4 {side=0; rank="CORPORAL"; vehicle="rhs_msv_emr_junior_sergeant";}; \
+    class 5 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_machinegunner";};    \
+    class 6 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_at";};               \
+    class 7 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_medic";};
+#define MY_GROUP_OPF_AT side=0; faction="my_opf";                              \
+    class 0 {side=0; rank="SERGEANT"; vehicle="rhs_msv_emr_sergeant";};        \
+    class 1 {side=0; rank="CORPORAL"; vehicle="rhs_msv_emr_at";};              \
+    class 2 {side=0; rank="CORPORAL"; vehicle="rhs_msv_emr_at";};              \
+    class 3 {side=0; rank="CORPORAL"; vehicle="rhs_msv_emr_aa";};
+#define MY_GROUP_OPF_SNIPER side=0; faction="my_opf";                          \
+    class 0 {side=0; rank="SERGEANT"; vehicle="rhs_msv_emr_sergeant";};        \
+    class 1 {side=0; rank="CORPORAL"; vehicle="rhs_msv_emr_marksman";};
+#define MY_GROUP_OPF_MOTORIZED side=0; faction="my_opf";                       \
+    class 0 {side=0; rank="PRIVATE"; vehicle="RHS_Ural_Open_MSV_01";};         \
+    class 1 {side=0; rank="SERGEANT"; vehicle="rhs_msv_emr_sergeant";};        \
+    class 2 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_arifleman";};        \
+    class 3 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_marksman";};         \
+    class 4 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_LAT";};              \
+    class 5 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_arifleman_rpk";};    \
+    class 6 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_rifleman";};         \
+    class 7 {side=0; rank="CORPORAL"; vehicle="rhs_msv_emr_junior_sergeant";}; \
+    class 8 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_machinegunner";};    \
+    class 9 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_at";};               \
+    class 10 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_rifleman";};        \
+    class 11 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_medic";};           \
+    class 12 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_rifleman";};        \
+    class 13 {side=0; rank="PRIVATE"; vehicle="rhs_msv_emr_rifleman";};
+#define MY_GROUP_OPF_BRDM side=0; faction="my_opf";                            \
+    class 0 {side=0; rank="SERGEANT"; vehicle="rhsgref_BRDM2_HQ_msv";};
+#define MY_GROUP_OPF_GAZ side=0; faction="my_opf";                             \
+    class 0 {side=0; rank="LIEUTENANT"; vehicle="rhs_tigr_sts_msv";};          \
+    class 1 {side=0; rank="SERGEANT"; vehicle="rhs_tigr_sts_msv";};
+#define MY_GROUP_OPF_BTR side=0; faction="my_opf";                             \
+    class 0 {side=0; rank="LIEUTENANT"; vehicle="rhs_btr80_msv";};             \
+    class 1 {side=0; rank="SERGEANT"; vehicle="rhs_btr80_msv";};
+#define MY_GROUP_OPF_BMP side=0; faction="my_opf";                             \
+    class 0 {side=0; rank="LIEUTENANT"; vehicle="rhs_bmp2d_msv";};             \
+    class 1 {side=0; rank="SERGEANT"; vehicle="rhs_bmp2d_msv";};
+#define MY_GROUP_OPF_T72 side=0; faction="my_opf";                             \
+    class 0 {side=0; rank="LIEUTENANT"; vehicle="rhs_t72be_tv";};              \
+    class 1 {side=0; rank="SERGEANT"; vehicle="rhs_t72be_tv";};                \
+    class 2 {side=0; rank="SERGEANT"; vehicle="rhs_t72be_tv";};
+
+class CfgFactionClasses {
+    class my_blu {displayName="My BLU"; priority=2; side=1;};
+    class my_opf {displayName="My OPF"; priority=2; side=0;};
+};
+
+class CfgGroups {
+    class West {
+        class my_blu {
+            name="My BLU";
+            class Infantry {
+                class my_group_blu_infantry_0 { MY_GROUP_BLU_SQUAD };
+                class my_group_blu_infantry_1 { MY_GROUP_BLU_SQUAD };
+                class my_group_blu_infantry_2 { MY_GROUP_BLU_AT };
+                class my_group_blu_infantry_3 { MY_GROUP_BLU_AT };
+            };
+            class Motorized {
+            };
+            class Mechanized {
+                class my_group_blu_motorized_0 { MY_GROUP_BLU_TECHNICALS };
+            };
+            class Armored {
+            };
+            class SpecOps {
+                class my_group_blu_specops_0 { MY_GROUP_BLU_SNIPER };
+            };
+        };
+    };
+    class East {
+        class my_opf {
+            name="My OPF";
+            class Infantry {
+                class my_group_opf_infantry_0 { MY_GROUP_OPF_SQUAD };
+                class my_group_opf_infantry_1 { MY_GROUP_OPF_SQUAD };
+                class my_group_opf_infantry_2 { MY_GROUP_OPF_SQUAD };
+                class my_group_opf_infantry_3 { MY_GROUP_OPF_AT};
+            };
+            class Motorized {
+                class my_group_opf_motorized_0 { MY_GROUP_OPF_MOTORIZED };
+            };
+            class Mechanized {
+                class my_group_opf_mechanized_0 { MY_GROUP_OPF_BRDM };
+                class my_group_opf_mechanized_1 { MY_GROUP_OPF_GAZ };
+                class my_group_opf_mechanized_2 { MY_GROUP_OPF_BTR };
+                class my_group_opf_mechanized_3 { MY_GROUP_OPF_BMP };
+            };
+            class Armored {
+                class my_group_opf_armored_0 { MY_GROUP_OPF_T72 };
+            };
+            class SpecOps {
+                class my_group_opf_specops_0 { MY_GROUP_OPF_SNIPER };
+            };
+        };
+    };
+};
+
+respawnOnStart = 0;
