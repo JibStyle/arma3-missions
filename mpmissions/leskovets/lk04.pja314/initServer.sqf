@@ -32,3 +32,67 @@ my_rally = {
     ],
     {"Russian garrisons marked on your map."}
 ] call jib_objective_intel;
+
+my_emitter_start_inf = {
+    private _emitter = my_emitter_o_inf;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [30, 30, 120],
+        1, 1, 0, 0, 0, 1200
+    ] call jib_emitter_enable;
+};
+
+my_emitter_start_mot = {
+    private _emitter = my_emitter_o_mot;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [300, 600, 1200],
+        1, 1, 0, 0, 0, 1200
+    ] call jib_emitter_enable;
+};
+
+my_emitter_start_arm = {
+    private _emitter = my_emitter_o_arm;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [300, 600, 1200],
+        1, 1, 0, 0, 0, 1800
+    ] call jib_emitter_enable;
+};
+
+my_emitter_start_air = {
+    private _emitter = my_emitter_o_air;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [300, 600, 1200],
+        1, 1, 0, 0, 0, 1200
+    ] call jib_emitter_enable;
+};
+
+my_emitter_start_tra = {
+    private _emitter = my_emitter_o_tra;
+    [
+        _emitter, [1, 1, 1],
+        0, 0, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [10, 10, 10],
+        1, 1, 0, 0, 0, 1200
+    ] call jib_emitter_enable;
+};
+
+my_emitter_stop_all = {
+    [
+        my_emitter_o_inf, my_emitter_o_mot, my_emitter_o_arm,
+        my_emitter_o_air, my_emitter_o_tra
+    ] apply {
+        [_x] call jib_emitter_disable;
+    };
+}
