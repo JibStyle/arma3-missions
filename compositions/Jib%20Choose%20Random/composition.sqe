@@ -1,0 +1,17 @@
+version=54;
+center[]={12769,172.44501,7737};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			angles[]={6.2093229,0,0.023003438};
+		};
+		init="[this, random [1, 1, 1]] call jib_random_logicChooseNumber;";
+		id=1969;
+		type="Logic";
+	};
+};
