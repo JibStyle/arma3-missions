@@ -1,2623 +1,4734 @@
 version=54;
-center[]={5271.1777,148.72807,17054.674};
+center[]={5271.8389,148.65428,17055.158};
 class items
 {
-	items=5;
+	items=1;
 	class Item0
 	{
-		dataType="Group";
-		side="West";
+		dataType="Layer";
+		name="LKA Players";
 		class Entities
 		{
-			items=6;
+			items=7;
 			class Item0
 			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.3452148,0.10673523,1.6621094};
-					angles[]={0,4.712389,-0};
-				};
+				dataType="Group";
 				side="West";
-				flags=7;
-				class Attributes
+				class Entities
 				{
-					rank="SERGEANT";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					description="1: Squad Leader@Assassin";
-					isPlayer=1;
-					isPlayable=1;
-					class Inventory
+					items=6;
+					class Item0
 					{
-						class primaryWeapon
+						dataType="Object";
+						class PositionInfo
 						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
+							position[]={-1.7768555,0.17967224,1.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							description="1: Squad Leader@Hitman";
+							isPlayable=1;
+							class Inventory
 							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="ACRE_PRC152";
+											count=1;
+										};
+										class Item1
+										{
+											name="ACE_microDAGR";
+											count=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_US_Assault_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=5;
+										class Item0
+										{
+											name="SmokeShellGreen";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShellPurple";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item2
+										{
+											name="SmokeShellRed";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item3
+										{
+											name="SmokeShellBlue";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item4
+										{
+											name="B_IR_Grenade";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACRE_PRC117F";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
 							};
 						};
-						class binocular
+						id=335;
+						type="CUP_B_US_Soldier_SL_OCP";
+						class CustomAttributes
 						{
-							name="CUP_Vector21Nite";
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male09ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.01;
+									};
+								};
+							};
+							nAttributes=2;
 						};
-						class uniform
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
 						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
+							position[]={-0.77734375,0.1427002,1.0996094};
+							angles[]={0,4.712389,0};
 						};
-						class vest
+						side="West";
+						flags=5;
+						class Attributes
 						{
-							typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
-							isBackpack=0;
-							class MagazineCargo
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
 							{
-								items=1;
-								class Item0
+								class primaryWeapon
 								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
 								};
-							};
-							class ItemCargo
-							{
-								items=1;
-								class Item0
+								class uniform
 								{
-									name="ACRE_PRC152";
-									count=1;
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
 								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Medic_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=4;
+											ammoLeft=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_Medic_OCP";
+									isBackpack=1;
+									class ItemCargo
+									{
+										items=8;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=15;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=15;
+										};
+										class Item2
+										{
+											name="ACE_adenosine";
+											count=5;
+										};
+										class Item3
+										{
+											name="ACE_epinephrine";
+											count=5;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=5;
+										};
+										class Item5
+										{
+											name="ACE_salineIV_500";
+											count=5;
+										};
+										class Item6
+										{
+											name="ACE_splint";
+											count=5;
+										};
+										class Item7
+										{
+											name="ACE_tourniquet";
+											count=5;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_OCP";
 							};
 						};
-						class backpack
+						id=336;
+						type="CUP_B_US_Medic_OCP";
+					};
+					class Item2
+					{
+						dataType="Object";
+						class PositionInfo
 						{
-							typeName="CUP_B_US_Assault_OCP";
-							isBackpack=1;
-							class MagazineCargo
+							position[]={0.22265625,0.10568237,1.0996094};
+							angles[]={0.024996169,4.712389,6.2461996};
+						};
+						side="West";
+						flags=4;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
 							{
-								items=5;
-								class Item0
+								class primaryWeapon
 								{
-									name="SmokeShellGreen";
-									count=4;
-									ammoLeft=1;
+									name="CUP_arifle_M4A3_CCO_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_CCO_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
 								};
-								class Item1
+								class uniform
 								{
-									name="SmokeShellPurple";
-									count=2;
-									ammoLeft=1;
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
 								};
-								class Item2
+								class vest
 								{
-									name="SmokeShellRed";
-									count=2;
-									ammoLeft=1;
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACE_Clacker";
+											count=1;
+										};
+									};
 								};
-								class Item3
+								class backpack
 								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
+									typeName="CUP_B_US_IIID_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="DemoCharge_Remote_Mag";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="ATMine_Range_Mag";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ToolKit";
+											count=1;
+										};
+									};
 								};
-								class Item4
-								{
-									name="B_IR_Grenade";
-									count=2;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="ACRE_PRC117F";
-									count=1;
-								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
 							};
 						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Red";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+						id=337;
+						type="CUP_B_US_Soldier_Engineer_OCP";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male08ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.05;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+					class Item3
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={1.2226563,0.06867981,1.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class secondaryWeapon
+								{
+									name="CUP_launch_MAAWS_Scope";
+									optics="CUP_optic_MAAWS_Scope";
+									class primaryMuzzleMag
+									{
+										name="CUP_MAAWS_HEAT_M";
+										ammoLeft=1;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_Deltoid_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AT_MAAWS_DP_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_MAAWS_HEAT_M";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
+							};
+						};
+						id=338;
+						type="CUP_B_US_Soldier_AT_OCP";
+						atlOffset=-1.5258789e-005;
+					};
+					class Item4
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={2.2226563,0.035430908,1.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_srifle_Mk18_blk_LP4";
+									optics="CUP_optic_LeupoldMk4";
+									flashlight="CUP_acc_ANPEQ_2_grey";
+									underBarrel="CUP_bipod_Harris_1A2_L_BLK";
+									firemode="CUP_srifle_Mk18_blk_LP4:Single";
+									class primaryMuzzleMag
+									{
+										name="20Rnd_762x51_Mag";
+										ammoLeft=20;
+									};
+								};
+								class handgun
+								{
+									name="CUP_hgun_M9";
+									class primaryMuzzleMag
+									{
+										name="CUP_15Rnd_9x19_M9";
+										ammoLeft=15;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="20Rnd_762x51_Mag";
+											count=8;
+											ammoLeft=20;
+										};
+										class Item1
+										{
+											name="CUP_15Rnd_9x19_M9";
+											count=2;
+											ammoLeft=15;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_OCP";
+							};
+						};
+						id=339;
+						type="CUP_B_US_Soldier_Marksman_EBR_OCP";
+						atlOffset=-1.5258789e-005;
+					};
+					class Item5
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={3.2226563,0.012435913,1.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_lmg_M249_ElcanM145";
+									optics="CUP_optic_ElcanM145";
+									firemode="CUP_lmg_M249_ElcanM145:FullAuto";
+									class primaryMuzzleMag
+									{
+										name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+										ammoLeft=200;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SAW_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AmmoSAW_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+							};
+						};
+						id=340;
+						type="CUP_B_US_Soldier_AR_OCP";
+						atlOffset=-1.5258789e-005;
 					};
 				};
-				id=2060;
-				type="CUP_B_US_Soldier_SL_OCP";
+				class Attributes
+				{
+				};
+				id=334;
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="speaker";
-						expression="_this setspeaker _value;";
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 						class Value
 						{
 							class data
 							{
 								singleType="STRING";
-								value="Male09ENG";
+								value="Hitman";
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=1.01;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
 			class Item1
 			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.34521484,0.075424194,1.6621094};
-					angles[]={0,4.712389,-0};
-				};
+				dataType="Group";
 				side="West";
-				flags=5;
-				class Attributes
+				class Entities
 				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
+					items=6;
+					class Item0
 					{
-						class primaryWeapon
+						dataType="Object";
+						class PositionInfo
 						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG_PIP";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
+							position[]={-1.7773438,0.20469666,0.099609375};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							description="1: Squad Leader@Raptor";
+							isPlayable=1;
+							class Inventory
 							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="ACRE_PRC152";
+											count=1;
+										};
+										class Item1
+										{
+											name="ACE_microDAGR";
+											count=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_US_Assault_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=5;
+										class Item0
+										{
+											name="SmokeShellGreen";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShellPurple";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item2
+										{
+											name="SmokeShellRed";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item3
+										{
+											name="SmokeShellBlue";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item4
+										{
+											name="B_IR_Grenade";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACRE_PRC117F";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
 							};
 						};
-						class uniform
+						id=342;
+						type="CUP_B_US_Soldier_SL_OCP";
+						class CustomAttributes
 						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
+							class Attribute0
 							{
-								items=2;
-								class Item0
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
 								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
+									class data
+									{
+										singleType="STRING";
+										value="Male09ENG";
+									};
 								};
 							};
-							class ItemCargo
+							class Attribute1
 							{
-								items=7;
-								class Item0
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
 								{
-									name="ACE_fieldDressing";
-									count=2;
+									class data
+									{
+										singleType="SCALAR";
+										value=1.01;
+									};
 								};
-								class Item1
+							};
+							nAttributes=2;
+						};
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.77783203,0.16769409,0.099609375};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
 								{
-									name="ACE_packingBandage";
-									count=2;
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
 								};
-								class Item2
+								class uniform
 								{
-									name="ACE_EarPlugs";
-									count=1;
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
 								};
-								class Item3
+								class vest
 								{
-									name="ACE_Flashlight_XL50";
-									count=1;
+									typeName="CUP_V_B_IOTV_OCP_Medic_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=4;
+											ammoLeft=1;
+										};
+									};
 								};
-								class Item4
+								class backpack
 								{
-									name="ACE_morphine";
-									count=1;
+									typeName="CUP_B_USPack_Medic_OCP";
+									isBackpack=1;
+									class ItemCargo
+									{
+										items=8;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=15;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=15;
+										};
+										class Item2
+										{
+											name="ACE_adenosine";
+											count=5;
+										};
+										class Item3
+										{
+											name="ACE_epinephrine";
+											count=5;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=5;
+										};
+										class Item5
+										{
+											name="ACE_salineIV_500";
+											count=5;
+										};
+										class Item6
+										{
+											name="ACE_splint";
+											count=5;
+										};
+										class Item7
+										{
+											name="ACE_tourniquet";
+											count=5;
+										};
+									};
 								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_OCP";
 							};
 						};
-						class vest
+						id=343;
+						type="CUP_B_US_Medic_OCP";
+					};
+					class Item2
+					{
+						dataType="Object";
+						class PositionInfo
 						{
-							typeName="CUP_V_B_IOTV_OCP_Medic_USArmy";
-							isBackpack=0;
-							class MagazineCargo
+							position[]={0.22216797,0.13070679,0.099609375};
+							angles[]={0.024996169,4.712389,6.2461996};
+						};
+						side="West";
+						flags=4;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
 							{
-								items=2;
-								class Item0
+								class primaryWeapon
 								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
+									name="CUP_arifle_M4A3_CCO_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_CCO_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
 								};
-								class Item1
+								class uniform
 								{
-									name="SmokeShell";
-									count=4;
-									ammoLeft=1;
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
 								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACE_Clacker";
+											count=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_US_IIID_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="DemoCharge_Remote_Mag";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="ATMine_Range_Mag";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ToolKit";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
 							};
 						};
-						class backpack
+						id=344;
+						type="CUP_B_US_Soldier_Engineer_OCP";
+						class CustomAttributes
 						{
-							typeName="CUP_B_USPack_Medic_OCP";
-							isBackpack=1;
-							class ItemCargo
+							class Attribute0
 							{
-								items=8;
-								class Item0
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
 								{
-									name="ACE_fieldDressing";
-									count=15;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=15;
-								};
-								class Item2
-								{
-									name="ACE_adenosine";
-									count=5;
-								};
-								class Item3
-								{
-									name="ACE_epinephrine";
-									count=5;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=5;
-								};
-								class Item5
-								{
-									name="ACE_salineIV_500";
-									count=5;
-								};
-								class Item6
-								{
-									name="ACE_splint";
-									count=5;
-								};
-								class Item7
-								{
-									name="ACE_tourniquet";
-									count=5;
+									class data
+									{
+										singleType="STRING";
+										value="Male08ENG";
+									};
 								};
 							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.05;
+									};
+								};
+							};
+							nAttributes=2;
 						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Green";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_ESS_OCP";
+					};
+					class Item3
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={1.222168,0.093719482,0.099609375};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class secondaryWeapon
+								{
+									name="CUP_launch_MAAWS_Scope";
+									optics="CUP_optic_MAAWS_Scope";
+									class primaryMuzzleMag
+									{
+										name="CUP_MAAWS_HEAT_M";
+										ammoLeft=1;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_Deltoid_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AT_MAAWS_DP_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_MAAWS_HEAT_M";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
+							};
+						};
+						id=345;
+						type="CUP_B_US_Soldier_AT_OCP";
+					};
+					class Item4
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={2.222168,0.05670166,0.099609375};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_srifle_Mk18_blk_LP4";
+									optics="CUP_optic_LeupoldMk4";
+									flashlight="CUP_acc_ANPEQ_2_grey";
+									underBarrel="CUP_bipod_Harris_1A2_L_BLK";
+									firemode="CUP_srifle_Mk18_blk_LP4:Single";
+									class primaryMuzzleMag
+									{
+										name="20Rnd_762x51_Mag";
+										ammoLeft=20;
+									};
+								};
+								class handgun
+								{
+									name="CUP_hgun_M9";
+									class primaryMuzzleMag
+									{
+										name="CUP_15Rnd_9x19_M9";
+										ammoLeft=15;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="20Rnd_762x51_Mag";
+											count=8;
+											ammoLeft=20;
+										};
+										class Item1
+										{
+											name="CUP_15Rnd_9x19_M9";
+											count=2;
+											ammoLeft=15;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_OCP";
+							};
+						};
+						id=346;
+						type="CUP_B_US_Soldier_Marksman_EBR_OCP";
+					};
+					class Item5
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={3.222168,0.0234375,0.099609375};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_lmg_M249_ElcanM145";
+									optics="CUP_optic_ElcanM145";
+									firemode="CUP_lmg_M249_ElcanM145:FullAuto";
+									class primaryMuzzleMag
+									{
+										name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+										ammoLeft=200;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SAW_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AmmoSAW_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+							};
+						};
+						id=347;
+						type="CUP_B_US_Soldier_AR_OCP";
+						atlOffset=-3.0517578e-005;
 					};
 				};
-				id=2061;
-				type="CUP_B_US_Medic_OCP";
+				class Attributes
+				{
+				};
+				id=341;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Raptor";
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item2
 			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.65478516,0.038421631,1.6621094};
-					angles[]={0,4.712389,-0};
-				};
+				dataType="Group";
 				side="West";
-				flags=5;
-				class Attributes
+				class Entities
 				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
+					items=6;
+					class Item0
 					{
-						class primaryWeapon
+						dataType="Object";
+						class PositionInfo
 						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG_PIP";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
+							position[]={-1.7773438,0.22969055,-0.90039063};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							description="1: Squad Leader@Savage";
+							isPlayable=1;
+							class Inventory
 							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="ACRE_PRC152";
+											count=1;
+										};
+										class Item1
+										{
+											name="ACE_microDAGR";
+											count=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_US_Assault_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=5;
+										class Item0
+										{
+											name="SmokeShellGreen";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShellPurple";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item2
+										{
+											name="SmokeShellRed";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item3
+										{
+											name="SmokeShellBlue";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item4
+										{
+											name="B_IR_Grenade";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACRE_PRC117F";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
 							};
 						};
-						class secondaryWeapon
+						id=349;
+						type="CUP_B_US_Soldier_SL_OCP";
+						class CustomAttributes
 						{
-							name="CUP_launch_MAAWS_Scope";
-							optics="CUP_optic_MAAWS_Scope";
-							class primaryMuzzleMag
+							class Attribute0
 							{
-								name="CUP_MAAWS_HEAT_M";
-								ammoLeft=1;
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male09ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.01;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.77685547,0.19267273,-0.90039063};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Medic_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=4;
+											ammoLeft=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_Medic_OCP";
+									isBackpack=1;
+									class ItemCargo
+									{
+										items=8;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=15;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=15;
+										};
+										class Item2
+										{
+											name="ACE_adenosine";
+											count=5;
+										};
+										class Item3
+										{
+											name="ACE_epinephrine";
+											count=5;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=5;
+										};
+										class Item5
+										{
+											name="ACE_salineIV_500";
+											count=5;
+										};
+										class Item6
+										{
+											name="ACE_splint";
+											count=5;
+										};
+										class Item7
+										{
+											name="ACE_tourniquet";
+											count=5;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_OCP";
 							};
 						};
-						class uniform
+						id=350;
+						type="CUP_B_US_Medic_OCP";
+					};
+					class Item2
+					{
+						dataType="Object";
+						class PositionInfo
 						{
-							typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
+							position[]={0.22314453,0.15565491,-0.90039063};
+							angles[]={0.024996169,4.712389,6.2461996};
+						};
+						side="West";
+						flags=4;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
 							{
-								items=2;
-								class Item0
+								class primaryWeapon
 								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
+									name="CUP_arifle_M4A3_CCO_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_CCO_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
 								};
-								class Item1
+								class uniform
 								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
 								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
+								class vest
 								{
-									name="ACE_fieldDressing";
-									count=2;
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACE_Clacker";
+											count=1;
+										};
+									};
 								};
-								class Item1
+								class backpack
 								{
-									name="ACE_packingBandage";
-									count=2;
+									typeName="CUP_B_US_IIID_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="DemoCharge_Remote_Mag";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="ATMine_Range_Mag";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ToolKit";
+											count=1;
+										};
+									};
 								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
 							};
 						};
-						class vest
+						id=351;
+						type="CUP_B_US_Soldier_Engineer_OCP";
+						class CustomAttributes
 						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_Deltoid_USArmy";
-							isBackpack=0;
-							class MagazineCargo
+							class Attribute0
 							{
-								items=1;
-								class Item0
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
 								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
+									class data
+									{
+										singleType="STRING";
+										value="Male08ENG";
+									};
 								};
 							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_USPack_AT_MAAWS_DP_OCP";
-							isBackpack=1;
-							class MagazineCargo
+							class Attribute1
 							{
-								items=1;
-								class Item0
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
 								{
-									name="CUP_MAAWS_HEAT_M";
-									count=2;
-									ammoLeft=1;
+									class data
+									{
+										singleType="SCALAR";
+										value=1.05;
+									};
 								};
 							};
+							nAttributes=2;
 						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Green";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
+					};
+					class Item3
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={1.2231445,0.1186676,-0.90039063};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class secondaryWeapon
+								{
+									name="CUP_launch_MAAWS_Scope";
+									optics="CUP_optic_MAAWS_Scope";
+									class primaryMuzzleMag
+									{
+										name="CUP_MAAWS_HEAT_M";
+										ammoLeft=1;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_Deltoid_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AT_MAAWS_DP_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_MAAWS_HEAT_M";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
+							};
+						};
+						id=352;
+						type="CUP_B_US_Soldier_AT_OCP";
+					};
+					class Item4
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={2.2231445,0.08164978,-0.90039063};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_srifle_Mk18_blk_LP4";
+									optics="CUP_optic_LeupoldMk4";
+									flashlight="CUP_acc_ANPEQ_2_grey";
+									underBarrel="CUP_bipod_Harris_1A2_L_BLK";
+									firemode="CUP_srifle_Mk18_blk_LP4:Single";
+									class primaryMuzzleMag
+									{
+										name="20Rnd_762x51_Mag";
+										ammoLeft=20;
+									};
+								};
+								class handgun
+								{
+									name="CUP_hgun_M9";
+									class primaryMuzzleMag
+									{
+										name="CUP_15Rnd_9x19_M9";
+										ammoLeft=15;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="20Rnd_762x51_Mag";
+											count=8;
+											ammoLeft=20;
+										};
+										class Item1
+										{
+											name="CUP_15Rnd_9x19_M9";
+											count=2;
+											ammoLeft=15;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_OCP";
+							};
+						};
+						id=353;
+						type="CUP_B_US_Soldier_Marksman_EBR_OCP";
+						atlOffset=-1.5258789e-005;
+					};
+					class Item5
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={3.2231445,0.044647217,-0.90039063};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_lmg_M249_ElcanM145";
+									optics="CUP_optic_ElcanM145";
+									firemode="CUP_lmg_M249_ElcanM145:FullAuto";
+									class primaryMuzzleMag
+									{
+										name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+										ammoLeft=200;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SAW_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AmmoSAW_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+							};
+						};
+						id=354;
+						type="CUP_B_US_Soldier_AR_OCP";
+						atlOffset=-1.5258789e-005;
 					};
 				};
-				id=2062;
-				type="CUP_B_US_Soldier_AT_OCP";
-				atlOffset=1.5258789e-005;
+				class Attributes
+				{
+				};
+				id=348;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Savage";
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item3
 			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={1.6547852,0.0014343262,1.6621094};
-					angles[]={0,4.712389,-0};
-				};
+				dataType="Group";
 				side="West";
-				flags=5;
-				class Attributes
+				class Entities
 				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
+					items=2;
+					class Item0
 					{
-						class primaryWeapon
+						dataType="Object";
+						class PositionInfo
 						{
-							name="CUP_srifle_Mk18_blk_LP4";
-							optics="CUP_optic_LeupoldMk4";
-							flashlight="CUP_acc_ANPEQ_2_grey";
-							underBarrel="CUP_bipod_Harris_1A2_L_BLK";
-							firemode="CUP_srifle_Mk18_blk_LP4:Single";
-							class primaryMuzzleMag
+							position[]={-1.7773438,0.25471497,-1.9003906};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_2, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							description="1: Crewman@Warpig";
+							isPlayable=1;
+							class Inventory
 							{
-								name="20Rnd_762x51_Mag";
-								ammoLeft=20;
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A1";
+									firemode="CUP_arifle_M4A1:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class handgun
+								{
+									name="CUP_hgun_M9";
+									class primaryMuzzleMag
+									{
+										name="CUP_15Rnd_9x19_M9";
+										ammoLeft=15;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=6;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="CUP_15Rnd_9x19_M9";
+											count=2;
+											ammoLeft=15;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_CVC";
 							};
 						};
-						class handgun
+						id=356;
+						type="CUP_B_US_Crew_OCP";
+						class CustomAttributes
 						{
-							name="CUP_hgun_M9";
-							class primaryMuzzleMag
+							class Attribute0
 							{
-								name="CUP_15Rnd_9x19_M9";
-								ammoLeft=15;
-							};
-						};
-						class binocular
-						{
-							name="CUP_Vector21Nite";
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
 								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
+									class data
+									{
+										singleType="STRING";
+										value="Male01ENG";
+									};
 								};
 							};
-							class ItemCargo
+							class Attribute1
 							{
-								items=7;
-								class Item0
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
 								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
+									class data
+									{
+										singleType="SCALAR";
+										value=1.01;
+									};
 								};
 							};
+							nAttributes=2;
 						};
-						class vest
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
 						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
-							isBackpack=0;
-							class MagazineCargo
+							position[]={-0.77734375,0.2177124,-1.9003906};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_2, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
 							{
-								items=2;
-								class Item0
+								class primaryWeapon
 								{
-									name="20Rnd_762x51_Mag";
-									count=8;
-									ammoLeft=20;
+									name="CUP_arifle_M4A1";
+									firemode="CUP_arifle_M4A1:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
 								};
-								class Item1
+								class handgun
 								{
-									name="CUP_15Rnd_9x19_M9";
-									count=2;
-									ammoLeft=15;
+									name="CUP_hgun_M9";
+									class primaryMuzzleMag
+									{
+										name="CUP_15Rnd_9x19_M9";
+										ammoLeft=15;
+									};
 								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=6;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="CUP_15Rnd_9x19_M9";
+											count=2;
+											ammoLeft=15;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_CVC";
 							};
 						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Green";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_OCP";
+						id=357;
+						type="CUP_B_US_Crew_OCP";
 					};
 				};
-				id=2066;
-				type="CUP_B_US_Soldier_Marksman_EBR_OCP";
-				atlOffset=1.5258789e-005;
+				class Attributes
+				{
+				};
+				id=355;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Warpig";
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item4
 			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.65478516,0.088409424,-0.33789063};
-					angles[]={0,4.712389,-0};
-				};
+				dataType="Group";
 				side="West";
-				flags=5;
-				class Attributes
+				class Entities
 				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
+					items=2;
+					class Item0
 					{
-						class primaryWeapon
+						dataType="Object";
+						class PositionInfo
 						{
-							name="CUP_lmg_M249_ElcanM145";
-							optics="CUP_optic_ElcanM145";
-							firemode="CUP_lmg_M249_ElcanM145:FullAuto";
-							class primaryMuzzleMag
+							position[]={-1.7768555,0.27967834,-2.9003906};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_3, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							description="1: Pilot@Eagle";
+							isPlayable=1;
+							class Inventory
 							{
-								name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-								ammoLeft=200;
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A1";
+									firemode="CUP_arifle_M4A1:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class handgun
+								{
+									name="CUP_hgun_Colt1911";
+									class primaryMuzzleMag
+									{
+										name="CUP_7Rnd_45ACP_1911";
+										ammoLeft=7;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_PilotOverall";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_USArmy_PilotVest";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=3;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=4;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="CUP_7Rnd_45ACP_1911";
+											count=2;
+											ammoLeft=7;
+										};
+										class Item2
+										{
+											name="SmokeShellRed";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACE_microDAGR";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS7_Hide";
+								headgear="CUP_H_SPH4_grey";
 							};
 						};
-						class uniform
+						id=359;
+						type="CUP_B_US_Pilot";
+						class CustomAttributes
 						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
+							class Attribute0
 							{
-								items=2;
-								class Item0
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
 								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
+									class data
+									{
+										singleType="STRING";
+										value="Male11ENG";
+									};
 								};
 							};
-							class ItemCargo
+							class Attribute1
 							{
-								items=7;
-								class Item0
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
 								{
-									name="ACE_fieldDressing";
-									count=2;
+									class data
+									{
+										singleType="SCALAR";
+										value=0.99000001;
+									};
 								};
-								class Item1
+							};
+							nAttributes=2;
+						};
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.77734375,0.2427063,-2.9003906};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_3, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
 								{
-									name="ACE_packingBandage";
-									count=2;
+									name="CUP_arifle_M4A1";
+									firemode="CUP_arifle_M4A1:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
 								};
-								class Item2
+								class handgun
 								{
-									name="ACE_EarPlugs";
-									count=1;
+									name="CUP_hgun_Colt1911";
+									class primaryMuzzleMag
+									{
+										name="CUP_7Rnd_45ACP_1911";
+										ammoLeft=7;
+									};
 								};
-								class Item3
+								class uniform
 								{
-									name="ACE_Flashlight_XL50";
-									count=1;
+									typeName="CUP_U_B_USArmy_PilotOverall";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
 								};
-								class Item4
+								class vest
 								{
-									name="ACE_morphine";
-									count=1;
+									typeName="CUP_V_B_USArmy_PilotVest";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=3;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=4;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="CUP_7Rnd_45ACP_1911";
+											count=2;
+											ammoLeft=7;
+										};
+										class Item2
+										{
+											name="SmokeShellRed";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACE_microDAGR";
+											count=1;
+										};
+									};
 								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS7_Hide";
+								headgear="CUP_H_SPH4_grey";
 							};
 						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_SAW_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-									count=3;
-									ammoLeft=200;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_USPack_AmmoSAW_OCP";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-									count=3;
-									ammoLeft=200;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+						id=360;
+						type="CUP_B_US_Pilot";
 					};
 				};
-				id=2067;
-				type="CUP_B_US_Soldier_AR_OCP";
-				atlOffset=1.5258789e-005;
+				class Attributes
+				{
+				};
+				id=358;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+						class Value
+						{
+							class data
+							{
+								singleType="STRING";
+								value="Eagle";
+							};
+						};
+					};
+					nAttributes=1;
+				};
 			};
 			class Item5
 			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={1.6547852,0.051422119,-0.33789063};
-					angles[]={0,4.712389,-0};
-				};
+				dataType="Group";
 				side="West";
-				flags=5;
+				class Entities
+				{
+					items=6;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-1.7768555,0.15467834,2.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							description="1: Squad Leader@Assassin";
+							isPlayer=1;
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="ACRE_PRC152";
+											count=1;
+										};
+										class Item1
+										{
+											name="ACE_microDAGR";
+											count=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_US_Assault_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=5;
+										class Item0
+										{
+											name="SmokeShellGreen";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShellPurple";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item2
+										{
+											name="SmokeShellRed";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item3
+										{
+											name="SmokeShellBlue";
+											count=2;
+											ammoLeft=1;
+										};
+										class Item4
+										{
+											name="B_IR_Grenade";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACRE_PRC117F";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+							};
+						};
+						id=328;
+						type="CUP_B_US_Soldier_SL_OCP";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male09ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.01;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+					class Item1
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.77685547,0.11767578,2.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Medic_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=4;
+											ammoLeft=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_Medic_OCP";
+									isBackpack=1;
+									class ItemCargo
+									{
+										items=8;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=15;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=15;
+										};
+										class Item2
+										{
+											name="ACE_adenosine";
+											count=5;
+										};
+										class Item3
+										{
+											name="ACE_epinephrine";
+											count=5;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=5;
+										};
+										class Item5
+										{
+											name="ACE_salineIV_500";
+											count=5;
+										};
+										class Item6
+										{
+											name="ACE_splint";
+											count=5;
+										};
+										class Item7
+										{
+											name="ACE_tourniquet";
+											count=5;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_OCP";
+							};
+						};
+						id=329;
+						type="CUP_B_US_Medic_OCP";
+						atlOffset=-1.5258789e-005;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male11ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.01;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+					class Item2
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.22314453,0.080657959,2.0996094};
+							angles[]={0.024996169,4.712389,6.2461996};
+						};
+						side="West";
+						flags=4;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_CCO_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_CCO_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ACE_Clacker";
+											count=1;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_US_IIID_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="DemoCharge_Remote_Mag";
+											count=4;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="ATMine_Range_Mag";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="ToolKit";
+											count=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+							};
+						};
+						id=330;
+						type="CUP_B_US_Soldier_Engineer_OCP";
+						atlOffset=-1.5258789e-005;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male08ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.05;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+					class Item3
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={1.2231445,0.047424316,2.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_arifle_M4A3_ACOG_Laser";
+									optics="CUP_optic_ACOG_PIP";
+									flashlight="CUP_acc_ANPEQ_2_Black_Top";
+									firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
+									class primaryMuzzleMag
+									{
+										name="CUP_30Rnd_556x45_Stanag";
+										ammoLeft=30;
+									};
+								};
+								class secondaryWeapon
+								{
+									name="CUP_launch_MAAWS_Scope";
+									optics="CUP_optic_MAAWS_Scope";
+									class primaryMuzzleMag
+									{
+										name="CUP_MAAWS_HEAT_M";
+										ammoLeft=1;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_Deltoid_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_30Rnd_556x45_Stanag";
+											count=8;
+											ammoLeft=30;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AT_MAAWS_DP_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_MAAWS_HEAT_M";
+											count=2;
+											ammoLeft=1;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
+							};
+						};
+						id=331;
+						type="CUP_B_US_Soldier_AT_OCP";
+						atlOffset=-1.5258789e-005;
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male05ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.02;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+					class Item4
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={2.2226563,0.024429321,2.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_srifle_Mk18_blk_LP4";
+									optics="CUP_optic_LeupoldMk4";
+									flashlight="CUP_acc_ANPEQ_2_grey";
+									underBarrel="CUP_bipod_Harris_1A2_L_BLK";
+									firemode="CUP_srifle_Mk18_blk_LP4:Single";
+									class primaryMuzzleMag
+									{
+										name="20Rnd_762x51_Mag";
+										ammoLeft=20;
+									};
+								};
+								class handgun
+								{
+									name="CUP_hgun_M9";
+									class primaryMuzzleMag
+									{
+										name="CUP_15Rnd_9x19_M9";
+										ammoLeft=15;
+									};
+								};
+								class binocular
+								{
+									name="ACE_Vector";
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="20Rnd_762x51_Mag";
+											count=8;
+											ammoLeft=20;
+										};
+										class Item1
+										{
+											name="CUP_15Rnd_9x19_M9";
+											count=2;
+											ammoLeft=15;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_OCP";
+							};
+						};
+						id=332;
+						type="CUP_B_US_Soldier_Marksman_EBR_OCP";
+						atlOffset=-1.5258789e-005;
+					};
+					class Item5
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={3.2226563,0.0014343262,2.0996094};
+							angles[]={0,4.712389,0};
+						};
+						side="West";
+						flags=5;
+						class Attributes
+						{
+							rank="CORPORAL";
+							init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;";
+							isPlayable=1;
+							class Inventory
+							{
+								class primaryWeapon
+								{
+									name="CUP_lmg_M249_ElcanM145";
+									optics="CUP_optic_ElcanM145";
+									firemode="CUP_lmg_M249_ElcanM145:FullAuto";
+									class primaryMuzzleMag
+									{
+										name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+										ammoLeft=200;
+									};
+								};
+								class uniform
+								{
+									typeName="CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OCP";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=2;
+										class Item0
+										{
+											name="CUP_HandGrenade_M67";
+											count=1;
+											ammoLeft=1;
+										};
+										class Item1
+										{
+											name="SmokeShell";
+											count=1;
+											ammoLeft=1;
+										};
+									};
+									class ItemCargo
+									{
+										items=7;
+										class Item0
+										{
+											name="ACE_fieldDressing";
+											count=2;
+										};
+										class Item1
+										{
+											name="ACE_packingBandage";
+											count=2;
+										};
+										class Item2
+										{
+											name="ACE_EarPlugs";
+											count=1;
+										};
+										class Item3
+										{
+											name="ACE_Flashlight_XL50";
+											count=1;
+										};
+										class Item4
+										{
+											name="ACE_morphine";
+											count=1;
+										};
+										class Item5
+										{
+											name="ACE_tourniquet";
+											count=1;
+										};
+										class Item6
+										{
+											name="ACRE_PRC343";
+											count=1;
+										};
+									};
+								};
+								class vest
+								{
+									typeName="CUP_V_B_IOTV_OCP_SAW_USArmy";
+									isBackpack=0;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								class backpack
+								{
+									typeName="CUP_B_USPack_AmmoSAW_OCP";
+									isBackpack=1;
+									class MagazineCargo
+									{
+										items=1;
+										class Item0
+										{
+											name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+											count=3;
+											ammoLeft=200;
+										};
+									};
+								};
+								map="ItemMap";
+								compass="ItemCompass";
+								watch="ItemWatch";
+								hmd="CUP_NVG_PVS14";
+								headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
+							};
+						};
+						id=333;
+						type="CUP_B_US_Soldier_AR_OCP";
+						atlOffset=-1.5258789e-005;
+					};
+				};
 				class Attributes
 				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG_PIP";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_US_IIID_OCP";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=6;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="20Rnd_762x51_Mag";
-									count=2;
-									ammoLeft=20;
-								};
-								class Item2
-								{
-									name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-									count=1;
-									ammoLeft=200;
-								};
-								class Item3
-								{
-									name="SmokeShell";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="CUP_HandGrenade_M67";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item5
-								{
-									name="CUP_MAAWS_HEAT_M";
-									count=2;
-									ammoLeft=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_GCOVERED_OCP";
-					};
 				};
-				id=2068;
-				type="CUP_B_US_Soldier_Backpack_OCP";
-				atlOffset=1.5258789e-005;
-			};
-		};
-		class Attributes
-		{
-		};
-		id=2059;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="groupID";
-				expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="Assassin";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item1
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=6;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.3452148,0.13172913,0.66210938};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					rank="SERGEANT";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					description="1: Squad Leader@Hitman";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class binocular
-						{
-							name="CUP_Vector21Nite";
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_SL_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-							};
-							class ItemCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="ACRE_PRC152";
-									count=1;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_US_Assault_OCP";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=5;
-								class Item0
-								{
-									name="SmokeShellGreen";
-									count=4;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShellPurple";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item2
-								{
-									name="SmokeShellRed";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item3
-								{
-									name="SmokeShellBlue";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="B_IR_Grenade";
-									count=2;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="ACRE_PRC117F";
-									count=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Red";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
-					};
-				};
-				id=2078;
-				type="CUP_B_US_Soldier_SL_OCP";
+				id=327;
 				class CustomAttributes
 				{
 					class Attribute0
 					{
-						property="speaker";
-						expression="_this setspeaker _value;";
+						property="groupID";
+						expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
 						class Value
 						{
 							class data
 							{
 								singleType="STRING";
-								value="Male03ENG";
+								value="Assassin";
 							};
 						};
 					};
-					class Attribute1
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=0.98000002;
-							};
-						};
-					};
-					nAttributes=2;
+					nAttributes=1;
 				};
 			};
-			class Item1
+			class Item6
 			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.34521484,0.10041809,0.66210938};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG_PIP";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_Medic_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=4;
-									ammoLeft=1;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_USPack_Medic_OCP";
-							isBackpack=1;
-							class ItemCargo
-							{
-								items=8;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=15;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=15;
-								};
-								class Item2
-								{
-									name="ACE_adenosine";
-									count=5;
-								};
-								class Item3
-								{
-									name="ACE_epinephrine";
-									count=5;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=5;
-								};
-								class Item5
-								{
-									name="ACE_salineIV_500";
-									count=5;
-								};
-								class Item6
-								{
-									name="ACE_splint";
-									count=5;
-								};
-								class Item7
-								{
-									name="ACE_tourniquet";
-									count=5;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Green";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_ESS_OCP";
-					};
-				};
-				id=2079;
-				type="CUP_B_US_Medic_OCP";
-			};
-			class Item2
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.65478516,0.063415527,0.66210938};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG_PIP";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class secondaryWeapon
-						{
-							name="CUP_launch_MAAWS_Scope";
-							optics="CUP_optic_MAAWS_Scope";
-							class primaryMuzzleMag
-							{
-								name="CUP_MAAWS_HEAT_M";
-								ammoLeft=1;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_Deltoid_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_USPack_AT_MAAWS_DP_OCP";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_MAAWS_HEAT_M";
-									count=2;
-									ammoLeft=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Green";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_GCOVERED_Headset_OCP";
-					};
-				};
-				id=2080;
-				type="CUP_B_US_Soldier_AT_OCP";
-				atlOffset=1.5258789e-005;
-			};
-			class Item3
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={1.6547852,0.026428223,0.66210938};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_srifle_Mk18_blk_LP4";
-							optics="CUP_optic_LeupoldMk4";
-							flashlight="CUP_acc_ANPEQ_2_grey";
-							underBarrel="CUP_bipod_Harris_1A2_L_BLK";
-							firemode="CUP_srifle_Mk18_blk_LP4:Single";
-							class primaryMuzzleMag
-							{
-								name="20Rnd_762x51_Mag";
-								ammoLeft=20;
-							};
-						};
-						class handgun
-						{
-							name="CUP_hgun_M9";
-							class primaryMuzzleMag
-							{
-								name="CUP_15Rnd_9x19_M9";
-								ammoLeft=15;
-							};
-						};
-						class binocular
-						{
-							name="CUP_Vector21Nite";
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="20Rnd_762x51_Mag";
-									count=8;
-									ammoLeft=20;
-								};
-								class Item1
-								{
-									name="CUP_15Rnd_9x19_M9";
-									count=2;
-									ammoLeft=15;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						goggles="CUP_G_Shades_Green";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_OCP";
-					};
-				};
-				id=2081;
-				type="CUP_B_US_Soldier_Marksman_EBR_OCP";
-				atlOffset=1.5258789e-005;
-			};
-			class Item4
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.65478516,0.11343384,-1.3378906};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_lmg_M249_ElcanM145";
-							optics="CUP_optic_ElcanM145";
-							firemode="CUP_lmg_M249_ElcanM145:FullAuto";
-							class primaryMuzzleMag
-							{
-								name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-								ammoLeft=200;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_SAW_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-									count=3;
-									ammoLeft=200;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_USPack_AmmoSAW_OCP";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-									count=3;
-									ammoLeft=200;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_ESS_Headset_OCP";
-					};
-				};
-				id=2082;
-				type="CUP_B_US_Soldier_AR_OCP";
-				atlOffset=1.5258789e-005;
-			};
-			class Item5
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={1.6547852,0.076446533,-1.3378906};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					rank="CORPORAL";
-					init="[this, my_recruit_1, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A3_ACOG_Laser";
-							optics="CUP_optic_ACOG_PIP";
-							flashlight="CUP_acc_ANPEQ_2_Black_Top";
-							firemode="CUP_arifle_M4A3_ACOG_Laser:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_Kneepad_Gloves_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=1;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=8;
-									ammoLeft=30;
-								};
-							};
-						};
-						class backpack
-						{
-							typeName="CUP_B_US_IIID_OCP";
-							isBackpack=1;
-							class MagazineCargo
-							{
-								items=6;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="20Rnd_762x51_Mag";
-									count=2;
-									ammoLeft=20;
-								};
-								class Item2
-								{
-									name="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
-									count=1;
-									ammoLeft=200;
-								};
-								class Item3
-								{
-									name="SmokeShell";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item4
-								{
-									name="CUP_HandGrenade_M67";
-									count=2;
-									ammoLeft=1;
-								};
-								class Item5
-								{
-									name="CUP_MAAWS_HEAT_M";
-									count=2;
-									ammoLeft=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_USArmy_HelmetACH_GCOVERED_OCP";
-					};
-				};
-				id=2083;
-				type="CUP_B_US_Soldier_Backpack_OCP";
-				atlOffset=1.5258789e-005;
+				dataType="Marker";
+				position[]={-0.46679688,0.1672821,-0.45117188};
+				name="respawn";
+				text="Player Respawn";
+				type="respawn_inf";
+				colorName="ColorWEST";
+				id=268;
 			};
 		};
-		class Attributes
-		{
-		};
-		id=2077;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="groupID";
-				expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="Hitman";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item2
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=2;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.3452148,0.15672302,-0.33789063};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					rank="SERGEANT";
-					init="[this, my_recruit_2, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					description="1: Crewman@Warpig";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A1";
-							firemode="CUP_arifle_M4A1:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="CUP_hgun_M9";
-							class primaryMuzzleMag
-							{
-								name="CUP_15Rnd_9x19_M9";
-								ammoLeft=15;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="CUP_15Rnd_9x19_M9";
-									count=2;
-									ammoLeft=15;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_CVC";
-					};
-				};
-				id=2090;
-				type="CUP_B_US_Crew_OCP";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="STRING";
-								value="Male01ENG";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=1.01;
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.34521484,0.12541199,-0.33789063};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					rank="SERGEANT";
-					init="[this, my_recruit_2, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A1";
-							firemode="CUP_arifle_M4A1:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="CUP_hgun_M9";
-							class primaryMuzzleMag
-							{
-								name="CUP_15Rnd_9x19_M9";
-								ammoLeft=15;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_ACU_OCP";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_IOTV_OCP_Rifleman_USArmy";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=6;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="CUP_15Rnd_9x19_M9";
-									count=2;
-									ammoLeft=15;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						hmd="CUP_NVG_PVS14";
-						headgear="CUP_H_CVC";
-					};
-				};
-				id=2091;
-				type="CUP_B_US_Crew_OCP";
-			};
-		};
-		class Attributes
-		{
-		};
-		id=2089;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="groupID";
-				expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="Warpig";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item3
-	{
-		dataType="Group";
-		side="West";
-		class Entities
-		{
-			items=2;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-1.3452148,0.18174744,-1.3378906};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=7;
-				class Attributes
-				{
-					rank="SERGEANT";
-					init="[this, my_recruit_3, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					description="1: Pilot@Rodeo";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A1";
-							firemode="CUP_arifle_M4A1:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="CUP_hgun_Colt1911";
-							class primaryMuzzleMag
-							{
-								name="CUP_7Rnd_45ACP_1911";
-								ammoLeft=7;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_PilotOverall";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_USArmy_PilotVest";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=3;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="CUP_7Rnd_45ACP_1911";
-									count=2;
-									ammoLeft=7;
-								};
-								class Item2
-								{
-									name="SmokeShellRed";
-									count=2;
-									ammoLeft=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						gps="ItemGPS";
-						hmd="CUP_NVG_PVS7_Hide";
-						headgear="CUP_H_SPH4_grey";
-					};
-				};
-				id=2093;
-				type="CUP_B_US_Pilot";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="STRING";
-								value="Male11ENG";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=0.99000001;
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
-			class Item1
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={-0.34521484,0.1504364,-1.3378906};
-					angles[]={0,4.712389,-0};
-				};
-				side="West";
-				flags=5;
-				class Attributes
-				{
-					rank="SERGEANT";
-					init="[this, my_recruit_3, true, ""Spawn Reinforcements""] call jib_logistics_player;" \n "[this] call jib_menu_player;";
-					isPlayable=1;
-					class Inventory
-					{
-						class primaryWeapon
-						{
-							name="CUP_arifle_M4A1";
-							firemode="CUP_arifle_M4A1:Single";
-							class primaryMuzzleMag
-							{
-								name="CUP_30Rnd_556x45_Stanag";
-								ammoLeft=30;
-							};
-						};
-						class handgun
-						{
-							name="CUP_hgun_Colt1911";
-							class primaryMuzzleMag
-							{
-								name="CUP_7Rnd_45ACP_1911";
-								ammoLeft=7;
-							};
-						};
-						class uniform
-						{
-							typeName="CUP_U_B_USArmy_PilotOverall";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=2;
-								class Item0
-								{
-									name="CUP_HandGrenade_M67";
-									count=1;
-									ammoLeft=1;
-								};
-								class Item1
-								{
-									name="SmokeShell";
-									count=1;
-									ammoLeft=1;
-								};
-							};
-							class ItemCargo
-							{
-								items=7;
-								class Item0
-								{
-									name="ACE_fieldDressing";
-									count=2;
-								};
-								class Item1
-								{
-									name="ACE_packingBandage";
-									count=2;
-								};
-								class Item2
-								{
-									name="ACE_EarPlugs";
-									count=1;
-								};
-								class Item3
-								{
-									name="ACE_Flashlight_XL50";
-									count=1;
-								};
-								class Item4
-								{
-									name="ACE_morphine";
-									count=1;
-								};
-								class Item5
-								{
-									name="ACE_tourniquet";
-									count=1;
-								};
-								class Item6
-								{
-									name="ACRE_PRC343";
-									count=1;
-								};
-							};
-						};
-						class vest
-						{
-							typeName="CUP_V_B_USArmy_PilotVest";
-							isBackpack=0;
-							class MagazineCargo
-							{
-								items=3;
-								class Item0
-								{
-									name="CUP_30Rnd_556x45_Stanag";
-									count=4;
-									ammoLeft=30;
-								};
-								class Item1
-								{
-									name="CUP_7Rnd_45ACP_1911";
-									count=2;
-									ammoLeft=7;
-								};
-								class Item2
-								{
-									name="SmokeShellRed";
-									count=2;
-									ammoLeft=1;
-								};
-							};
-						};
-						map="ItemMap";
-						compass="ItemCompass";
-						watch="ItemWatch";
-						radio="ItemRadio";
-						gps="ItemGPS";
-						hmd="CUP_NVG_PVS7_Hide";
-						headgear="CUP_H_SPH4_grey";
-					};
-				};
-				id=2094;
-				type="CUP_B_US_Pilot";
-			};
-		};
-		class Attributes
-		{
-		};
-		id=2092;
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="groupID";
-				expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="Rodeo";
-					};
-				};
-			};
-			nAttributes=1;
-		};
-	};
-	class Item4
-	{
-		dataType="Marker";
-		position[]={0.19433594,0.093490601,0.033203125};
-		name="respawn";
-		text="Player Respawn";
-		type="respawn_inf";
-		colorName="ColorWEST";
-		id=1999;
+		id=361;
 	};
 };
