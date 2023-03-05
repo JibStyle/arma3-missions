@@ -11,6 +11,7 @@ my_emitter_menu = [
         ["Off", "[] remoteExec [""my_emitter_stop_all"", 2]", "1", true]
     ]
 ];
+publicVariable "my_emitter_menu";
 
 [
     _player, [

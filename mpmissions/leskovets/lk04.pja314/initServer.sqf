@@ -7,6 +7,7 @@ my_rally = {
     ];
     "rally" setMarkerAlphaLocal 1;
     "rally" setMarkerPos _player;
+    allGroups apply {[_x, getPos _player] call jib_group_rally};
 };
 
 [] call jib_garbage_start;
@@ -83,7 +84,7 @@ my_emitter_start_tra = {
         _emitter, [1, 1, 1],
         0, 0, 0, 8,
         0, 0, 0, 0,
-        0, 1, [10, 10, 10],
+        0, 1, [300, 600, 1200],
         1, 1, 0, 0, 0, 1200
     ] call jib_emitter_enable;
 };

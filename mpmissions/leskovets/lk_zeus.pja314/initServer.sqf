@@ -7,6 +7,7 @@ my_rally = {
     ];
     "rally" setMarkerAlphaLocal 1;
     "rally" setMarkerPos _player;
+    allGroups apply {[_x, getPos _player] call jib_group_rally};
 };
 
 [] call jib_garbage_start;
