@@ -1,5 +1,5 @@
 version=54;
-center[]={12740,171.242,7722};
+center[]={1422.121,78.844856,10747.588};
 class items
 {
 	items=1;
@@ -8,10 +8,11 @@ class items
 		dataType="Logic";
 		class PositionInfo
 		{
-			angles[]={6.2422075,0,0.0020132356};
+			angles[]={6.2422051,0,0.0020071287};
 		};
-		init="[this, 1] call jib_random_logicChooseNumber;";
-		id=1975;
+		init="[this, 1] call jib_choose_number;";
+		id=13376;
 		type="Logic";
+		atlOffset=7.6293945e-006;
 	};
 };
