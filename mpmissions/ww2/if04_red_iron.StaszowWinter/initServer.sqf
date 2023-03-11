@@ -33,3 +33,49 @@ my_rally = {
 //     ],
 //     {"German garrisons marked on your map."}
 // ] call jib_objective_intel;
+
+my_emitter_b_mot = {
+    private _emitter = my_e_b_mot;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [300, 600, 1200],
+        1, 1, 0, 0, 0, 1200
+    ] call jib_emitter_enable;
+};
+my_emitter_b_arm = {
+    private _emitter = my_e_b_arm;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [300, 600, 1200],
+        1, 1, 0, 0, 0, 1800
+    ] call jib_emitter_enable;
+};
+my_emitter_b_air = {
+    private _emitter = my_e_b_air;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [300, 600, 1200],
+        1, 1, 0, 0, 0, 1200
+    ] call jib_emitter_enable;
+};
+my_emitter_o_air = {
+    private _emitter = my_e_o_air;
+    [
+        _emitter, [1, 1, 1],
+        0, 1, 0, 8,
+        0, 0, 0, 0,
+        0, 1, [300, 600, 1200],
+        1, 1, 0, 0, 0, 1200
+    ] call jib_emitter_enable;
+};
+my_emitter_off = {
+    [my_e_b_mot, my_e_b_arm, my_e_b_air, my_e_o_air] apply {
+        [_x] call jib_emitter_disable;
+    };
+}
