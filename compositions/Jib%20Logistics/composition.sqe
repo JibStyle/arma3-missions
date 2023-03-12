@@ -1,0 +1,160 @@
+version=54;
+center[]={3324,80.372086,9693};
+class items
+{
+	items=6;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-2,2.6796188,0};
+		};
+		init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_vehicle;";
+		id=14243;
+		type="Logic";
+		atlOffset=2.6796188;
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0,2.6279144,0};
+		};
+		init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_crate;";
+		id=14250;
+		type="Logic";
+		atlOffset=2.0453262;
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2,3.6282043,0};
+		};
+		init="[this, my_logistics, ""Logistics""] call jib_logistics_menu;";
+		id=14251;
+		type="VirtualAISquad";
+		atlOffset=3.5709991;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.9975586,0.21324921,-0.001953125};
+			angles[]={6.2801952,0,0.012774965};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			name="my_logistics";
+		};
+		id=14381;
+		type="Land_Laptop_unfolded_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-2.0803223,2.1742783,-0.041015625};
+			angles[]={0.0017605233,0,0.013443363};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=14382;
+		type="B_LSV_01_unarmed_F";
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0046386719,0.31565857,-0.0029296875};
+			angles[]={6.2801952,0,0.018204696};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=14383;
+		type="Box_NATO_Ammo_F";
+		atlOffset=7.6293945e-006;
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=4;
+	};
+	class Links
+	{
+		items=4;
+		class Item0
+		{
+			linkID=0;
+			item0=14243;
+			item1=14382;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=14250;
+			item1=14251;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=14243;
+			item1=14251;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=14250;
+			item1=14383;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};
