@@ -1,59 +1,23 @@
 version=54;
-center[]={3324,80.372086,9693};
+center[]={3229.2517,79.412361,9798.2061};
 class items
 {
 	items=6;
 	class Item0
 	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={-2,2.6796188,0};
-		};
-		init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_vehicle;";
-		id=14243;
-		type="Logic";
-		atlOffset=2.6796188;
-	};
-	class Item1
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={0,2.6279144,0};
-		};
-		init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_crate;";
-		id=14250;
-		type="Logic";
-		atlOffset=2.0453262;
-	};
-	class Item2
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={2,3.6282043,0};
-		};
-		init="[this, my_logistics, ""Logistics""] call jib_logistics_menu;";
-		id=14251;
-		type="VirtualAISquad";
-		atlOffset=3.5709991;
-	};
-	class Item3
-	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={1.9975586,0.21324921,-0.001953125};
-			angles[]={6.2801952,0,0.012774965};
+			position[]={2.0112305,0.15605927,0.012695313};
+			angles[]={0.010978121,0,0.00076794485};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			name="my_logistics";
+			init="[this, my_logistics, ""Logistics""] call jib_logistics_object;";
 		};
-		id=14381;
+		id=14410;
 		type="Land_Laptop_unfolded_F";
 		class CustomAttributes
 		{
@@ -73,38 +37,74 @@ class items
 			nAttributes=1;
 		};
 	};
-	class Item4
+	class Item1
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-2.0803223,2.1742783,-0.041015625};
-			angles[]={0.0017605233,0,0.013443363};
+			position[]={-2.0666504,2.1814117,-0.026367188};
+			angles[]={0.01597973,0,0.0025135824};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
 		};
-		id=14382;
+		id=14411;
 		type="B_LSV_01_unarmed_F";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.0090332031,0.28518677,0.01171875};
+			angles[]={0.01597973,0,6.2789426};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=14412;
+		type="Box_NATO_Ammo_F";
+		atlOffset=7.6293945e-006;
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-1.9863281,2.6841354,0.014648438};
+		};
+		init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_vehicle;";
+		id=14413;
+		type="Logic";
+		atlOffset=2.6796188;
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.013671875,2.6291275,0.014648438};
+		};
+		init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_crate;";
+		id=14408;
+		type="Logic";
+		atlOffset=2.0771866;
 	};
 	class Item5
 	{
-		dataType="Object";
+		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.0046386719,0.31565857,-0.0029296875};
-			angles[]={6.2801952,0,0.018204696};
+			position[]={2.0131836,3.5709686,0.013671875};
 		};
-		side="Empty";
-		flags=4;
-		class Attributes
-		{
-		};
-		id=14383;
-		type="Box_NATO_Ammo_F";
-		atlOffset=7.6293945e-006;
+		name="my_logistics";
+		id=14409;
+		type="VirtualAISquad";
+		atlOffset=3.5709991;
 	};
 };
 class connections
@@ -119,8 +119,8 @@ class connections
 		class Item0
 		{
 			linkID=0;
-			item0=14243;
-			item1=14382;
+			item0=14413;
+			item1=14411;
 			class CustomData
 			{
 				type="Sync";
@@ -129,8 +129,8 @@ class connections
 		class Item1
 		{
 			linkID=1;
-			item0=14250;
-			item1=14251;
+			item0=14408;
+			item1=14409;
 			class CustomData
 			{
 				type="Sync";
@@ -139,8 +139,8 @@ class connections
 		class Item2
 		{
 			linkID=2;
-			item0=14243;
-			item1=14251;
+			item0=14413;
+			item1=14409;
 			class CustomData
 			{
 				type="Sync";
@@ -149,8 +149,8 @@ class connections
 		class Item3
 		{
 			linkID=3;
-			item0=14250;
-			item1=14383;
+			item0=14408;
+			item1=14412;
 			class CustomData
 			{
 				type="Sync";
