@@ -34,6 +34,17 @@ my_rally = {
 //     {"German garrisons marked on your map."}
 // ] call jib_objective_intel;
 
+my_emitter_menu = [
+    "Emitters",
+    [
+        ["B Mot", "[] remoteExec [""my_emitter_b_mot"", 2]", "1", true],
+        ["B Arm", "[] remoteExec [""my_emitter_b_arm"", 2]", "1", true],
+        ["B Air", "[] remoteExec [""my_emitter_b_air"", 2]", "1", true],
+        ["O Air", "[] remoteExec [""my_emitter_o_air"", 2]", "1", true],
+        ["Off", "[] remoteExec [""my_emitter_off"", 2]", "1", true]
+    ]
+];
+publicVariable "my_emitter_menu";
 my_emitter_b_mot = {
     private _emitter = my_e_b_mot;
     [
