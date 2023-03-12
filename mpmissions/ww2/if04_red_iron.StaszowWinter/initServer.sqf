@@ -41,7 +41,11 @@ my_emitter_menu = [
         ["B Arm", "[] remoteExec [""my_emitter_b_arm"", 2]", "1", true],
         ["B Air", "[] remoteExec [""my_emitter_b_air"", 2]", "1", true],
         ["O Air", "[] remoteExec [""my_emitter_o_air"", 2]", "1", true],
-        ["Off", "[] remoteExec [""my_emitter_off"", 2]", "1", true]
+        ["Off", "[] remoteExec [""my_emitter_off"", 2]", "1", true],
+        ["B Mot 1", "[] remoteExec [""my_emitter_b_mot_1"", 2]", "1", true],
+        ["B Arm 1", "[] remoteExec [""my_emitter_b_arm_1"", 2]", "1", true],
+        ["B Air 1", "[] remoteExec [""my_emitter_b_air_1"", 2]", "1", true],
+        ["O Air 1", "[] remoteExec [""my_emitter_o_air_1"", 2]", "1", true]
     ]
 ];
 publicVariable "my_emitter_menu";
@@ -89,4 +93,20 @@ my_emitter_off = {
     [my_e_b_mot, my_e_b_arm, my_e_b_air, my_e_o_air] apply {
         [_x] call jib_emitter_disable;
     };
-}
+};
+my_emitter_b_mot_1 = {
+    private _emitter = my_e_b_mot;
+    [_emitter] call jib_emitter_single;
+};
+my_emitter_b_arm_1 = {
+    private _emitter = my_e_b_arm;
+    [_emitter] call jib_emitter_single;
+};
+my_emitter_b_air_1 = {
+    private _emitter = my_e_b_air;
+    [_emitter] call jib_emitter_single;
+};
+my_emitter_o_air_1 = {
+    private _emitter = my_e_o_air;
+    [_emitter] call jib_emitter_single;
+};

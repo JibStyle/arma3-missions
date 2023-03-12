@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=513;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=14401;
+		nextID=14415;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=137;
+		nextID=139;
 	};
 	class Camera
 	{
-		pos[]={2990.2581,80.419319,10528.117};
-		dir[]={-0.47341093,-0.55209839,0.68634504};
-		up[]={-0.31347567,0.83377898,0.45447299};
-		aside[]={0.82317388,-1.4901161e-008,0.56778949};
+		pos[]={3312.7368,110.13256,9886.2754};
+		dir[]={0.084632315,-0.62863362,0.77308464};
+		up[]={0.068410173,0.77770162,0.62490225};
+		aside[]={0.99406379,-3.9144652e-008,-0.10882381};
 	};
 };
 binarizationWanted=0;
@@ -46,20 +46,22 @@ addons[]=
 	"WW2_Assets_c_Weapons_SimpleObjects_c",
 	"WW2_Core_c_WW2_EditorPreviews_c",
 	"WW2_Assets_c_Characters_Soviets_c_SOV_RKKA",
-	"WW2_Assets_c_Characters_Winter_c",
-	"WW2_Assets_c_Weapons_InfantryWeapons_c",
-	"A3_Weapons_F",
-	"WW2_Assets_c_Characters_Soviets_c_SOV_RKKA_Gear",
-	"WW2_Assets_c_Weapons_Mines_c",
-	"IFA3_COMP_ACE_main",
-	"ace_hearing",
-	"ace_flashlights",
-	"ace_medical_treatment",
-	"ace_trenches",
 	"WW2_Assets_c_Weapons_Recoil_c",
+	"WW2_Assets_c_Weapons_InfantryWeapons_c",
 	"WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons",
 	"WW2_Assets_c_Weapons_SoundFrameWork_c",
 	"WW2_Assets_c_Weapons_Sounds_c",
+	"IFA3_COMP_ACE_main",
+	"A3_Weapons_F",
+	"WW2_Assets_c_Characters_Soviets_c_SOV_RKKA_Gear",
+	"ace_hearing",
+	"ace_flashlights",
+	"ace_medical_treatment",
+	"WW2_Assets_c_Characters_Winter_c",
+	"acre_sys_prc117f",
+	"WW2_Core_c_WW2_Core_c_Eventhandlers",
+	"WW2_Assets_c_Weapons_Mines_c",
+	"ace_trenches",
 	"A3_Modules_F",
 	"A3_Structures_F_Mil_BagBunker",
 	"A3_Structures_F_Mil_Shelters",
@@ -101,7 +103,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=52;
+		items=54;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -165,8 +167,8 @@ class AddonsMetaData
 		};
 		class Item11
 		{
-			className="WW2_Assets_c_Characters_Winter_c";
-			name="WW2_Assets_c_Characters_Winter_c";
+			className="WW2_Assets_c_Weapons_Recoil_c";
+			name="WW2_Assets_c_Weapons_Recoil_c";
 		};
 		class Item12
 		{
@@ -175,20 +177,19 @@ class AddonsMetaData
 		};
 		class Item13
 		{
-			className="A3_Weapons_F";
-			name="Arma 3 Alpha - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
+			className="WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons";
+			name="WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons";
 		};
 		class Item14
 		{
-			className="WW2_Assets_c_Characters_Soviets_c_SOV_RKKA_Gear";
-			name="WW2_Assets_c_Characters_Soviets_c_SOV_RKKA_Gear";
+			className="WW2_Assets_c_Weapons_SoundFrameWork_c";
+			name="WW2_Assets_c_Weapons_SoundFrameWork_c";
 		};
 		class Item15
 		{
-			className="WW2_Assets_c_Weapons_Mines_c";
-			name="WW2_Assets_c_Weapons_Mines_c";
+			className="WW2_Assets_c_Weapons_Sounds_c";
+			name="WW2_Assets_c_Weapons_Sounds_c";
+			author="LAxemann";
 		};
 		class Item16
 		{
@@ -199,212 +200,225 @@ class AddonsMetaData
 		};
 		class Item17
 		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item18
+		{
+			className="WW2_Assets_c_Characters_Soviets_c_SOV_RKKA_Gear";
+			name="WW2_Assets_c_Characters_Soviets_c_SOV_RKKA_Gear";
+		};
+		class Item19
+		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item18
+		class Item20
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item19
+		class Item21
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item20
+		class Item22
+		{
+			className="WW2_Assets_c_Characters_Winter_c";
+			name="WW2_Assets_c_Characters_Winter_c";
+		};
+		class Item23
+		{
+			className="acre_sys_prc117f";
+			name="ACRE2 - AN/PRC-117F";
+			author="ACRE2Team";
+			url="https://github.com/IDI-Systems/acre2";
+		};
+		class Item24
+		{
+			className="WW2_Core_c_WW2_Core_c_Eventhandlers";
+			name="WW2_Core_c_WW2_Core_c_Eventhandlers";
+		};
+		class Item25
+		{
+			className="WW2_Assets_c_Weapons_Mines_c";
+			name="WW2_Assets_c_Weapons_Mines_c";
+		};
+		class Item26
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item21
-		{
-			className="WW2_Assets_c_Weapons_Recoil_c";
-			name="WW2_Assets_c_Weapons_Recoil_c";
-		};
-		class Item22
-		{
-			className="WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons";
-			name="WW2_Assets_s_Megagoth1702_Sounds_Config_CfgWeapons";
-		};
-		class Item23
-		{
-			className="WW2_Assets_c_Weapons_SoundFrameWork_c";
-			name="WW2_Assets_c_Weapons_SoundFrameWork_c";
-		};
-		class Item24
-		{
-			className="WW2_Assets_c_Weapons_Sounds_c";
-			name="WW2_Assets_c_Weapons_Sounds_c";
-			author="LAxemann";
-		};
-		class Item25
+		class Item27
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item28
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item27
+		class Item29
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item28
+		class Item30
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item31
 		{
 			className="emr_main";
 			name="Enhanced Movement Rework";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Enhanced-Movement-Rework";
 		};
-		class Item30
+		class Item32
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item31
+		class Item33
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item32
+		class Item34
 		{
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item35
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item36
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item35
+		class Item37
 		{
 			className="ALiVE_Missions";
 			name="ALiVE_Missions";
 		};
-		class Item36
+		class Item38
 		{
 			className="WW2_Assets_c_Characters_Germans_c_GER_Wehrmacht";
 			name="WW2_Assets_c_Characters_Germans_c_GER_Wehrmacht";
 		};
-		class Item37
+		class Item39
 		{
 			className="WW2_Assets_c_Vehicles_Winter_c";
 			name="WW2_Assets_c_Vehicles_Winter_c";
 		};
-		class Item38
+		class Item40
 		{
 			className="WW2_Assets_c_Vehicles_Pictures_c";
 			name="WW2_Assets_c_Vehicles_Pictures_c";
 		};
-		class Item39
+		class Item41
 		{
 			className="WW2_Objects_c_Structures_IF_BuildingsWinter_c";
 			name="WW2_Objects_c_Structures_IF_BuildingsWinter_c";
 		};
-		class Item40
+		class Item42
 		{
 			className="WW2_Objects_c_Misc_WW2_SimpleObjects_c_IF";
 			name="WW2_Objects_c_Misc_WW2_SimpleObjects_c_IF";
 		};
-		class Item41
+		class Item43
 		{
 			className="WW2_Objects_c_Misc_IF_EditorPreview_c";
 			name="WW2_Objects_c_Misc_IF_EditorPreview_c";
 		};
-		class Item42
+		class Item44
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item43
+		class Item45
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item46
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item45
+		class Item47
 		{
 			className="WW2_Assets_c_Misc_Items_c";
 			name="WW2_Assets_c_Misc_Items_c";
 		};
-		class Item46
+		class Item48
 		{
 			className="A3_Structures_F_Tank";
 			name="Arma 3 Tank - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item47
+		class Item49
 		{
 			className="WW2_Objects_c_Misc_JNS_Snow_Objects_c";
 			name="WW2_Objects_c_Misc_JNS_Snow_Objects_c";
 		};
-		class Item48
+		class Item50
 		{
 			className="WW2_Objects_c_Misc_WW2_EditorPreview_c";
 			name="WW2_Objects_c_Misc_WW2_EditorPreview_c";
 		};
-		class Item49
+		class Item51
 		{
 			className="WW2_Objects_c_Misc_WW2_SimpleObjects_c_WW2";
 			name="WW2_Objects_c_Misc_WW2_SimpleObjects_c_WW2";
 		};
-		class Item50
+		class Item52
 		{
 			className="WW2_Objects_c_Misc_IF_EditorMapSizeAndIcon_c";
 			name="WW2_Objects_c_Misc_IF_EditorMapSizeAndIcon_c";
 		};
-		class Item51
+		class Item53
 		{
 			className="WW2_Assets_c_Vehicles_SimpleObjects_c";
 			name="WW2_Assets_c_Vehicles_SimpleObjects_c";
@@ -1542,8 +1556,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3338.1169,79.030785,9928.6436};
-						angles[]={0.074046701,1.7483246,0.0034353647};
+						position[]={3335.5706,79.15847,9926.6455};
+						angles[]={0.068222471,1.7483246,0.012420096};
 					};
 					side="Empty";
 					flags=4;
@@ -1620,7 +1634,7 @@ class Mission
 				};
 			};
 			id=1484;
-			atlOffset=7.9669151;
+			atlOffset=8.0171204;
 		};
 		class Item2
 		{
@@ -1722,7 +1736,7 @@ class Mission
 					alpha=0.5;
 					a=184.586;
 					b=10;
-					angle=112.21279;
+					angle=112.21276;
 					id=13867;
 					atlOffset=-2.0649376;
 				};
@@ -2311,7 +2325,7 @@ class Mission
 				class Item36
 				{
 					dataType="Marker";
-					position[]={3224.5461,78.512558,9911.3945};
+					position[]={3232.8833,79.129646,9880.0469};
 					name="marker_39";
 					text="Service Depot";
 					type="respawn_armor";
@@ -2368,7 +2382,7 @@ class Mission
 				};
 			};
 			id=1485;
-			atlOffset=4.8898354;
+			atlOffset=4.9225807;
 		};
 		class Item3
 		{
@@ -2599,8 +2613,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3333.0469,78.276581,9936.3359};
-						angles[]={-0,3.3104007,0};
+						position[]={3333.5525,78.276627,9936.2939};
+						angles[]={0,3.3104007,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2609,6 +2623,7 @@ class Mission
 					};
 					id=13936;
 					type="LIB_BasicWeaponsBox_SU";
+					atlOffset=4.5776367e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2656,7 +2671,7 @@ class Mission
 												singleType="ARRAY";
 												class value
 												{
-													items=148;
+													items=151;
 													class Item0
 													{
 														class data
@@ -3841,6 +3856,30 @@ class Mission
 															value="LIB_Mohawk";
 														};
 													};
+													class Item148
+													{
+														class data
+														{
+															singleType="STRING";
+															value="H_LIB_SOV_RA_Helmet_w";
+														};
+													};
+													class Item149
+													{
+														class data
+														{
+															singleType="STRING";
+															value="H_LIB_SOV_TankHelmet";
+														};
+													};
+													class Item150
+													{
+														class data
+														{
+															singleType="STRING";
+															value="H_LIB_SOV_Ushanka";
+														};
+													};
 												};
 											};
 										};
@@ -3879,9 +3918,84 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, my_recruit_2] call jib_logistics_player;";
+								init="[this, my_recruit_2, true, ""Recruit Soldiers""] call jib_logistics_player;";
 								description="T-34 Commander@Mammoth";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_m";
+										firemode="LIB_PPSh41_m:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_35Rnd_762x25";
+											ammoLeft=35;
+										};
+									};
+									class binocular
+									{
+										name="LIB_Binocular_SU";
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Sergeant_inset_pocket";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=3;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_Belt";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_TankHelmet";
+								};
 							};
 							id=14159;
 							type="LIB_SOV_tank_overall_sergeant";
@@ -3939,7 +4053,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3332.2063,78.114983,9929.7051};
+								position[]={3332.2061,78.11496,9929.7051};
 								angles[]={6.2559228,0,0.014224433};
 							};
 							side="East";
@@ -3947,13 +4061,119 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, my_recruit_1] call jib_logistics_player;";
+								init="[this, my_recruit_1, true, ""Recruit Soldiers""] call jib_logistics_player;";
 								description="Squad Leader@Squad 1";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Sergeant_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=3;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+											class Item2
+											{
+												name="LIB_RDG";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Radio_ACRE2";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="ACRE_PRC117F";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14049;
 							type="LIB_SOV_Sergeant_w";
-							atlOffset=1.5258789e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3987,6 +4207,135 @@ class Mission
 								rank="CORPORAL";
 								description="Medic";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_fieldDressing";
+												count=17;
+											};
+											class Item1
+											{
+												name="ACE_packingBandage";
+												count=17;
+											};
+											class Item2
+											{
+												name="ACE_morphine";
+												count=6;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=6;
+											};
+											class Item4
+											{
+												name="ACE_adenosine";
+												count=5;
+											};
+											class Item5
+											{
+												name="ACE_epinephrine";
+												count=5;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_MedicalBag";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="ACE_morphine";
+												count=5;
+											};
+											class Item1
+											{
+												name="ACE_salineIV_500";
+												count=5;
+											};
+											class Item2
+											{
+												name="ACE_splint";
+												count=5;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=5;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14050;
 							type="LIB_SOV_Medic_w";
@@ -4023,6 +4372,101 @@ class Mission
 								rank="CORPORAL";
 								description="AT";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_m";
+										firemode="LIB_PPSh41_m:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_35Rnd_762x25";
+											ammoLeft=35;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="LIB_RPzB";
+										class primaryMuzzleMag
+										{
+											name="LIB_1Rnd_RPzB";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Razvedchik_am_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=4;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RAZV_PPShBelt_Mag";
+										isBackpack=0;
+									};
+									class backpack
+									{
+										typeName="B_LIB_GER_Panzer";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_1Rnd_RPzB";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14051;
 							type="LIB_SOV_AT_soldier_w";
@@ -4095,18 +4539,18 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_EarPlugs";
-												count=1;
+												name="ACE_fieldDressing";
+												count=2;
 											};
 											class Item2
 											{
-												name="ACE_Flashlight_XL50";
+												name="ACE_EarPlugs";
 												count=1;
 											};
 											class Item3
 											{
-												name="ACE_fieldDressing";
-												count=2;
+												name="ACE_Flashlight_XL50";
+												count=1;
 											};
 										};
 									};
@@ -4226,6 +4670,87 @@ class Mission
 								rank="CORPORAL";
 								description="MG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_DP28";
+										firemode="LIB_DP28:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_47Rnd_762x54";
+											ammoLeft=47;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Efreitor_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=1;
+												ammoLeft=47;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MGBelt_Kit";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=5;
+												ammoLeft=47;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14059;
 							type="LIB_SOV_Mgunner_w";
@@ -4262,6 +4787,113 @@ class Mission
 								rank="CORPORAL";
 								description="Grenadier";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130_DYAKONOV";
+										muzzle="LIB_ACC_GL_DYAKONOV_Empty";
+										firemode="LIB_M9130_DYAKONOV:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+										class secondaryMuzzleMag
+										{
+											name="LIB_1Rnd_G_DYAKONOV";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=1;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_1Rnd_G_DYAKONOV";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14060;
 							type="LIB_SOV_grenadier_w";
@@ -4298,6 +4930,107 @@ class Mission
 								rank="CORPORAL";
 								description="Rifleman";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14061;
 							type="LIB_SOV_Rifleman_w";
@@ -4334,6 +5067,98 @@ class Mission
 								rank="CORPORAL";
 								description="SMG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=2;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14062;
 							type="LIB_SOV_Smgunner_w";
@@ -4399,9 +5224,107 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, my_recruit_1] call jib_logistics_player;";
+								init="[this, my_recruit_1, true, ""Recruit Soldiers""] call jib_logistics_player;";
 								description="Squad Leader@Squad 2";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Sergeant_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=3;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+											class Item2
+											{
+												name="LIB_RDG";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Radio_ACRE2";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14127;
 							type="LIB_SOV_Sergeant_w";
@@ -4439,6 +5362,135 @@ class Mission
 								rank="CORPORAL";
 								description="Medic";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_fieldDressing";
+												count=17;
+											};
+											class Item1
+											{
+												name="ACE_packingBandage";
+												count=17;
+											};
+											class Item2
+											{
+												name="ACE_morphine";
+												count=6;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=6;
+											};
+											class Item4
+											{
+												name="ACE_adenosine";
+												count=5;
+											};
+											class Item5
+											{
+												name="ACE_epinephrine";
+												count=5;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_MedicalBag";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="ACE_morphine";
+												count=5;
+											};
+											class Item1
+											{
+												name="ACE_salineIV_500";
+												count=5;
+											};
+											class Item2
+											{
+												name="ACE_splint";
+												count=5;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=5;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14128;
 							type="LIB_SOV_Medic_w";
@@ -4475,6 +5527,101 @@ class Mission
 								rank="CORPORAL";
 								description="AT";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_m";
+										firemode="LIB_PPSh41_m:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_35Rnd_762x25";
+											ammoLeft=35;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="LIB_RPzB";
+										class primaryMuzzleMag
+										{
+											name="LIB_1Rnd_RPzB";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Razvedchik_am_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=4;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RAZV_PPShBelt_Mag";
+										isBackpack=0;
+									};
+									class backpack
+									{
+										typeName="B_LIB_GER_Panzer";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_1Rnd_RPzB";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14129;
 							type="LIB_SOV_AT_soldier_w";
@@ -4548,18 +5695,18 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_EarPlugs";
-												count=1;
+												name="ACE_fieldDressing";
+												count=2;
 											};
 											class Item2
 											{
-												name="ACE_Flashlight_XL50";
+												name="ACE_EarPlugs";
 												count=1;
 											};
 											class Item3
 											{
-												name="ACE_fieldDressing";
-												count=2;
+												name="ACE_Flashlight_XL50";
+												count=1;
 											};
 										};
 									};
@@ -4680,6 +5827,87 @@ class Mission
 								rank="CORPORAL";
 								description="MG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_DP28";
+										firemode="LIB_DP28:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_47Rnd_762x54";
+											ammoLeft=47;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Efreitor_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=1;
+												ammoLeft=47;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MGBelt_Kit";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=5;
+												ammoLeft=47;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14131;
 							type="LIB_SOV_Mgunner_w";
@@ -4717,6 +5945,113 @@ class Mission
 								rank="CORPORAL";
 								description="Grenadier";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130_DYAKONOV";
+										muzzle="LIB_ACC_GL_DYAKONOV_Empty";
+										firemode="LIB_M9130_DYAKONOV:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+										class secondaryMuzzleMag
+										{
+											name="LIB_1Rnd_G_DYAKONOV";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=1;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_1Rnd_G_DYAKONOV";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14132;
 							type="LIB_SOV_grenadier_w";
@@ -4753,6 +6088,107 @@ class Mission
 								rank="CORPORAL";
 								description="Rifleman";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14133;
 							type="LIB_SOV_Rifleman_w";
@@ -4789,6 +6225,98 @@ class Mission
 								rank="CORPORAL";
 								description="SMG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=2;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14134;
 							type="LIB_SOV_Smgunner_w";
@@ -4854,9 +6382,107 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, my_recruit_1] call jib_logistics_player;";
+								init="[this, my_recruit_1, true, ""Recruit Soldiers""] call jib_logistics_player;";
 								description="Squad Leader@Squad 3";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Sergeant_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=3;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+											class Item2
+											{
+												name="LIB_RDG";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Radio_ACRE2";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14136;
 							type="LIB_SOV_Sergeant_w";
@@ -4893,6 +6519,135 @@ class Mission
 								rank="CORPORAL";
 								description="Medic";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_fieldDressing";
+												count=17;
+											};
+											class Item1
+											{
+												name="ACE_packingBandage";
+												count=17;
+											};
+											class Item2
+											{
+												name="ACE_morphine";
+												count=6;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=6;
+											};
+											class Item4
+											{
+												name="ACE_adenosine";
+												count=5;
+											};
+											class Item5
+											{
+												name="ACE_epinephrine";
+												count=5;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_MedicalBag";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="ACE_morphine";
+												count=5;
+											};
+											class Item1
+											{
+												name="ACE_salineIV_500";
+												count=5;
+											};
+											class Item2
+											{
+												name="ACE_splint";
+												count=5;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=5;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14137;
 							type="LIB_SOV_Medic_w";
@@ -4929,6 +6684,101 @@ class Mission
 								rank="CORPORAL";
 								description="AT";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_m";
+										firemode="LIB_PPSh41_m:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_35Rnd_762x25";
+											ammoLeft=35;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="LIB_RPzB";
+										class primaryMuzzleMag
+										{
+											name="LIB_1Rnd_RPzB";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Razvedchik_am_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=4;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RAZV_PPShBelt_Mag";
+										isBackpack=0;
+									};
+									class backpack
+									{
+										typeName="B_LIB_GER_Panzer";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_1Rnd_RPzB";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14138;
 							type="LIB_SOV_AT_soldier_w";
@@ -5002,18 +6852,18 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_EarPlugs";
-												count=1;
+												name="ACE_fieldDressing";
+												count=2;
 											};
 											class Item2
 											{
-												name="ACE_Flashlight_XL50";
+												name="ACE_EarPlugs";
 												count=1;
 											};
 											class Item3
 											{
-												name="ACE_fieldDressing";
-												count=2;
+												name="ACE_Flashlight_XL50";
+												count=1;
 											};
 										};
 									};
@@ -5134,6 +6984,87 @@ class Mission
 								rank="CORPORAL";
 								description="MG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_DP28";
+										firemode="LIB_DP28:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_47Rnd_762x54";
+											ammoLeft=47;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Efreitor_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=1;
+												ammoLeft=47;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MGBelt_Kit";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=5;
+												ammoLeft=47;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14140;
 							type="LIB_SOV_Mgunner_w";
@@ -5170,6 +7101,113 @@ class Mission
 								rank="CORPORAL";
 								description="Grenadier";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130_DYAKONOV";
+										muzzle="LIB_ACC_GL_DYAKONOV_Empty";
+										firemode="LIB_M9130_DYAKONOV:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+										class secondaryMuzzleMag
+										{
+											name="LIB_1Rnd_G_DYAKONOV";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=1;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_1Rnd_G_DYAKONOV";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14141;
 							type="LIB_SOV_grenadier_w";
@@ -5206,6 +7244,107 @@ class Mission
 								rank="CORPORAL";
 								description="Rifleman";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14142;
 							type="LIB_SOV_Rifleman_w";
@@ -5242,6 +7381,98 @@ class Mission
 								rank="CORPORAL";
 								description="SMG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=2;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14143;
 							type="LIB_SOV_Smgunner_w";
@@ -5307,9 +7538,107 @@ class Mission
 							class Attributes
 							{
 								rank="SERGEANT";
-								init="[this, my_recruit_1] call jib_logistics_player;";
+								init="[this, my_recruit_1, true, ""Recruit Soldiers""] call jib_logistics_player;";
 								description="Squad Leader@Squad 4";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Sergeant_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=3;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+											class Item2
+											{
+												name="LIB_RDG";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Radio_ACRE2";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14145;
 							type="LIB_SOV_Sergeant_w";
@@ -5346,6 +7675,135 @@ class Mission
 								rank="CORPORAL";
 								description="Medic";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_fieldDressing";
+												count=17;
+											};
+											class Item1
+											{
+												name="ACE_packingBandage";
+												count=17;
+											};
+											class Item2
+											{
+												name="ACE_morphine";
+												count=6;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=6;
+											};
+											class Item4
+											{
+												name="ACE_adenosine";
+												count=5;
+											};
+											class Item5
+											{
+												name="ACE_epinephrine";
+												count=5;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_MedicalBag";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="ACE_morphine";
+												count=5;
+											};
+											class Item1
+											{
+												name="ACE_salineIV_500";
+												count=5;
+											};
+											class Item2
+											{
+												name="ACE_splint";
+												count=5;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=5;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14146;
 							type="LIB_SOV_Medic_w";
@@ -5382,6 +7840,101 @@ class Mission
 								rank="CORPORAL";
 								description="AT";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_m";
+										firemode="LIB_PPSh41_m:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_35Rnd_762x25";
+											ammoLeft=35;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="LIB_RPzB";
+										class primaryMuzzleMag
+										{
+											name="LIB_1Rnd_RPzB";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Razvedchik_am_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=4;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RAZV_PPShBelt_Mag";
+										isBackpack=0;
+									};
+									class backpack
+									{
+										typeName="B_LIB_GER_Panzer";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_1Rnd_RPzB";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14147;
 							type="LIB_SOV_AT_soldier_w";
@@ -5455,18 +8008,18 @@ class Mission
 											};
 											class Item1
 											{
-												name="ACE_EarPlugs";
-												count=1;
+												name="ACE_fieldDressing";
+												count=2;
 											};
 											class Item2
 											{
-												name="ACE_Flashlight_XL50";
+												name="ACE_EarPlugs";
 												count=1;
 											};
 											class Item3
 											{
-												name="ACE_fieldDressing";
-												count=2;
+												name="ACE_Flashlight_XL50";
+												count=1;
 											};
 										};
 									};
@@ -5586,6 +8139,87 @@ class Mission
 								rank="CORPORAL";
 								description="MG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_DP28";
+										firemode="LIB_DP28:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_47Rnd_762x54";
+											ammoLeft=47;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Efreitor_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=1;
+												ammoLeft=47;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MGBelt_Kit";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=5;
+												ammoLeft=47;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14149;
 							type="LIB_SOV_Mgunner_w";
@@ -5622,6 +8256,113 @@ class Mission
 								rank="CORPORAL";
 								description="Grenadier";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130_DYAKONOV";
+										muzzle="LIB_ACC_GL_DYAKONOV_Empty";
+										firemode="LIB_M9130_DYAKONOV:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+										class secondaryMuzzleMag
+										{
+											name="LIB_1Rnd_G_DYAKONOV";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=1;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_1Rnd_G_DYAKONOV";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14150;
 							type="LIB_SOV_grenadier_w";
@@ -5658,6 +8399,107 @@ class Mission
 								rank="CORPORAL";
 								description="Rifleman";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14151;
 							type="LIB_SOV_Rifleman_w";
@@ -5694,6 +8536,98 @@ class Mission
 								rank="CORPORAL";
 								description="SMG";
 								isPlayable=1;
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=2;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14152;
 							type="LIB_SOV_Smgunner_w";
@@ -5758,7 +8692,7 @@ class Mission
 							class Attributes
 							{
 								rank="LIEUTENANT";
-								init="[this, my_recruit_1] call jib_logistics_player;";
+								init="[this, my_recruit_1, true, ""Recruit Soldiers""] call jib_logistics_player;";
 								description="Platoon Leader@HQ";
 								isPlayer=1;
 								isPlayable=1;
@@ -5806,32 +8740,32 @@ class Mission
 											items=6;
 											class Item0
 											{
-												name="ACE_EarPlugs";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Flashlight_XL50";
-												count=1;
-											};
-											class Item2
-											{
 												name="ACE_fieldDressing";
 												count=2;
 											};
-											class Item3
+											class Item1
 											{
 												name="ACE_packingBandage";
 												count=2;
 											};
-											class Item4
+											class Item2
 											{
 												name="ACE_morphine";
 												count=1;
 											};
-											class Item5
+											class Item3
 											{
 												name="ACE_tourniquet";
+												count=1;
+											};
+											class Item4
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_Flashlight_XL50";
 												count=1;
 											};
 										};
@@ -5917,8 +8851,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3247.7473,79.525955,9890.7988};
-						angles[]={0.010534936,4.675303,6.2786312};
+						position[]={3247.7478,79.52626,9890.7988};
+						angles[]={0.010541788,4.6753006,6.2786303};
 					};
 					side="Empty";
 					flags=4;
@@ -5927,6 +8861,7 @@ class Mission
 					};
 					id=14362;
 					type="LIB_BasicWeaponsBox_SU";
+					atlOffset=0.00030517578;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -5974,7 +8909,7 @@ class Mission
 												singleType="ARRAY";
 												class value
 												{
-													items=148;
+													items=151;
 													class Item0
 													{
 														class data
@@ -7159,6 +10094,30 @@ class Mission
 															value="LIB_Mohawk";
 														};
 													};
+													class Item148
+													{
+														class data
+														{
+															singleType="STRING";
+															value="H_LIB_SOV_RA_Helmet_w";
+														};
+													};
+													class Item149
+													{
+														class data
+														{
+															singleType="STRING";
+															value="H_LIB_SOV_TankHelmet";
+														};
+													};
+													class Item150
+													{
+														class data
+														{
+															singleType="STRING";
+															value="H_LIB_SOV_Ushanka";
+														};
+													};
 												};
 											};
 										};
@@ -7179,7 +10138,7 @@ class Mission
 				};
 			};
 			id=11203;
-			atlOffset=-22.291691;
+			atlOffset=-22.291477;
 		};
 		class Item5
 		{
@@ -64352,17 +67311,36 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3333.0444,77.986694,9936.3809};
-						angles[]={-0,1.7235701,0};
+						position[]={3333.0442,77.986771,9936.3809};
+						angles[]={0,1.723565,0};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
+						createAsSimpleObject=1;
+						disableSimulation=1;
 					};
 					id=13933;
 					type="Land_Bench_F";
-					atlOffset=0.00022888184;
+					atlOffset=0.00030517578;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 				class Item15
 				{
@@ -64464,7 +67442,7 @@ class Mission
 				};
 			};
 			id=13937;
-			atlOffset=0.018882751;
+			atlOffset=0.018890381;
 		};
 		class Item9
 		{
@@ -64479,7 +67457,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3335,80.588158,9925};
+						position[]={3334.5342,80.792992,9921.9277};
 					};
 					init="[this] call jib_emitter_save;" \n "[this, ""AT""] call jib_logistics_unit;";
 					id=14326;
@@ -64491,7 +67469,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3335,80.660355,9924};
+						position[]={3334.5342,80.879112,9920.9277};
 					};
 					init="[this] call jib_emitter_save;" \n "[this, ""MG""] call jib_logistics_unit;";
 					id=14327;
@@ -64503,7 +67481,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3335,81.522118,9926};
+						position[]={3334.5342,81.720871,9922.9277};
 					};
 					name="my_recruit_1";
 					id=14328;
@@ -64539,7 +67517,7 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3335,80.506821,9926};
+						position[]={3334.5342,80.705574,9922.9277};
 					};
 					init="[this] call jib_emitter_save;" \n "[this, ""Medic""] call jib_logistics_unit;";
 					id=14325;
@@ -64567,6 +67545,81 @@ class Mission
 							{
 								rank="SERGEANT";
 								description="Tanker@Mammoth";
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_m";
+										firemode="LIB_PPSh41_m:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_35Rnd_762x25";
+											ammoLeft=35;
+										};
+									};
+									class binocular
+									{
+										name="LIB_Binocular_SU";
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Sergeant_inset_pocket";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=3;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_Belt";
+										isBackpack=0;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_TankHelmet";
+								};
 							};
 							id=14172;
 							type="LIB_SOV_tank_overall_sergeant";
@@ -64594,43 +67647,43 @@ class Mission
 					{
 					};
 					id=14171;
-					atlOffset=-49.130001;
+					atlOffset=7.6293945e-006;
 				};
 				class Item7
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3335,80.77877,9923};
+						position[]={3334.5342,80.997299,9919.9277};
 					};
 					init="[this] call jib_emitter_save;" \n "[this, ""Grenadier""] call jib_logistics_unit;";
 					id=14332;
 					type="Logic";
-					atlOffset=2.1819992;
+					atlOffset=2.1820068;
 				};
 				class Item8
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3335,80.86618,9922};
+						position[]={3334.5342,81.088676,9918.9277};
 					};
 					init="[this] call jib_emitter_save;" \n "[this, ""Rifleman""] call jib_logistics_unit;";
 					id=14333;
 					type="Logic";
-					atlOffset=2.1949997;
+					atlOffset=2.1950073;
 				};
 				class Item9
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3335,80.952599,9921};
+						position[]={3334.5342,81.179047,9917.9277};
 					};
 					init="[this] call jib_emitter_save;" \n "[this, ""SMG""] call jib_logistics_unit;";
 					id=14334;
 					type="Logic";
-					atlOffset=2.2070007;
+					atlOffset=2.2070084;
 				};
 				class Item10
 				{
@@ -64644,7 +67697,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3335,78.74704,9921.0498};
+								position[]={3334.5342,78.973488,9917.9775};
 								angles[]={6.2384176,0,0.056339227};
 							};
 							side="East";
@@ -64652,9 +67705,102 @@ class Mission
 							class Attributes
 							{
 								description="SMG";
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_d";
+										firemode="LIB_PPSh41_d:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_71Rnd_762x25";
+											ammoLeft=71;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=1;
+												ammoLeft=71;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_PPShBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_71Rnd_762x25";
+												count=2;
+												ammoLeft=71;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14170;
 							type="LIB_SOV_Smgunner_w";
+							atlOffset=7.6293945e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -64678,7 +67824,7 @@ class Mission
 					{
 					};
 					id=14343;
-					atlOffset=-49.130001;
+					atlOffset=7.6293945e-006;
 				};
 				class Item11
 				{
@@ -64692,7 +67838,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3335,78.395264,9926.0498};
+								position[]={3334.5342,78.594017,9922.9775};
 								angles[]={6.2486453,0,0.014224433};
 							};
 							side="East";
@@ -64700,6 +67846,135 @@ class Mission
 							class Attributes
 							{
 								description="Medic";
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_fieldDressing";
+												count=17;
+											};
+											class Item1
+											{
+												name="ACE_packingBandage";
+												count=17;
+											};
+											class Item2
+											{
+												name="ACE_morphine";
+												count=6;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=6;
+											};
+											class Item4
+											{
+												name="ACE_adenosine";
+												count=5;
+											};
+											class Item5
+											{
+												name="ACE_epinephrine";
+												count=5;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_MedicalBag";
+										isBackpack=1;
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="ACE_morphine";
+												count=5;
+											};
+											class Item1
+											{
+												name="ACE_salineIV_500";
+												count=5;
+											};
+											class Item2
+											{
+												name="ACE_splint";
+												count=5;
+											};
+											class Item3
+											{
+												name="ACE_tourniquet";
+												count=5;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14164;
 							type="LIB_SOV_Medic_w";
@@ -64726,7 +68001,6 @@ class Mission
 					{
 					};
 					id=14337;
-					atlOffset=-49.130001;
 				};
 				class Item12
 				{
@@ -64740,7 +68014,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3335,78.4636,9925.0498};
+								position[]={3334.5342,78.668434,9921.9775};
 								angles[]={6.2403026,0,0.021066124};
 							};
 							side="East";
@@ -64748,6 +68022,101 @@ class Mission
 							class Attributes
 							{
 								description="AT";
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_PPSh41_m";
+										firemode="LIB_PPSh41_m:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_35Rnd_762x25";
+											ammoLeft=35;
+										};
+									};
+									class secondaryWeapon
+									{
+										name="LIB_RPzB";
+										class primaryMuzzleMag
+										{
+											name="LIB_1Rnd_RPzB";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Razvedchik_am_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_35Rnd_762x25";
+												count=4;
+												ammoLeft=35;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RAZV_PPShBelt_Mag";
+										isBackpack=0;
+									};
+									class backpack
+									{
+										typeName="B_LIB_GER_Panzer";
+										isBackpack=1;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_1Rnd_RPzB";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14165;
 							type="LIB_SOV_AT_soldier_w";
@@ -64774,7 +68143,6 @@ class Mission
 					{
 					};
 					id=14338;
-					atlOffset=-49.130001;
 				};
 				class Item13
 				{
@@ -64788,7 +68156,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3335,78.523796,9924.0498};
+								position[]={3334.5342,78.742554,9920.9775};
 								angles[]={6.2320471,0,0.029181905};
 							};
 							side="East";
@@ -64796,6 +68164,87 @@ class Mission
 							class Attributes
 							{
 								description="MG";
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_DP28";
+										firemode="LIB_DP28:Full";
+										class primaryMuzzleMag
+										{
+											name="LIB_47Rnd_762x54";
+											ammoLeft=47;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Efreitor_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=1;
+												ammoLeft=47;
+											};
+										};
+										class ItemCargo
+										{
+											items=6;
+											class Item0
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+											class Item3
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item4
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item5
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MGBelt_Kit";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_47Rnd_762x54";
+												count=5;
+												ammoLeft=47;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_RA_Helmet_w";
+								};
 							};
 							id=14167;
 							type="LIB_SOV_Mgunner_w";
@@ -64822,7 +68271,6 @@ class Mission
 					{
 					};
 					id=14340;
-					atlOffset=-49.130001;
 				};
 				class Item14
 				{
@@ -64836,7 +68284,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3335,78.598213,9923.0498};
+								position[]={3334.5342,78.816742,9919.9775};
 								angles[]={6.219882,0,0.041381758};
 							};
 							side="East";
@@ -64844,9 +68292,117 @@ class Mission
 							class Attributes
 							{
 								description="Grenadier";
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130_DYAKONOV";
+										muzzle="LIB_ACC_GL_DYAKONOV_Empty";
+										firemode="LIB_M9130_DYAKONOV:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+										class secondaryMuzzleMag
+										{
+											name="LIB_1Rnd_G_DYAKONOV";
+											ammoLeft=1;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=1;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_1Rnd_G_DYAKONOV";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_Rucksack2_Gas_Kit_Shinel";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14168;
 							type="LIB_SOV_grenadier_w";
+							atlOffset=7.6293945e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -64870,7 +68426,7 @@ class Mission
 					{
 					};
 					id=14341;
-					atlOffset=-49.130001;
+					atlOffset=7.6293945e-006;
 				};
 				class Item15
 				{
@@ -64884,7 +68440,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={3335,78.672623,9922.0498};
+								position[]={3334.5342,78.895119,9918.9775};
 								angles[]={6.2264271,0,0.041381758};
 							};
 							side="East";
@@ -64892,9 +68448,111 @@ class Mission
 							class Attributes
 							{
 								description="Rifleman";
+								class Inventory
+								{
+									class primaryWeapon
+									{
+										name="LIB_M9130";
+										firemode="LIB_M9130:Single";
+										class primaryMuzzleMag
+										{
+											name="LIB_5Rnd_762x54";
+											ammoLeft=5;
+										};
+									};
+									class uniform
+									{
+										typeName="U_LIB_SOV_Strelok_w";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=7;
+												ammoLeft=5;
+											};
+										};
+										class ItemCargo
+										{
+											items=4;
+											class Item0
+											{
+												name="LIB_ACC_M1891_Bayo";
+												count=1;
+											};
+											class Item1
+											{
+												name="ACE_EarPlugs";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_Flashlight_XL50";
+												count=1;
+											};
+											class Item3
+											{
+												name="ACE_fieldDressing";
+												count=2;
+											};
+										};
+									};
+									class vest
+									{
+										typeName="V_LIB_SOV_RA_MosinBelt";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=2;
+											class Item0
+											{
+												name="LIB_5Rnd_762x54";
+												count=2;
+												ammoLeft=5;
+											};
+											class Item1
+											{
+												name="LIB_Rg42";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=3;
+											class Item0
+											{
+												name="ACE_packingBandage";
+												count=2;
+											};
+											class Item1
+											{
+												name="ACE_morphine";
+												count=1;
+											};
+											class Item2
+											{
+												name="ACE_tourniquet";
+												count=1;
+											};
+										};
+									};
+									class backpack
+									{
+										typeName="B_LIB_SOV_RA_GasBag";
+										isBackpack=1;
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									headgear="H_LIB_SOV_Ushanka";
+								};
 							};
 							id=14169;
 							type="LIB_SOV_Rifleman_w";
+							atlOffset=7.6293945e-006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -64918,11 +68576,11 @@ class Mission
 					{
 					};
 					id=14342;
-					atlOffset=-49.130001;
+					atlOffset=7.6293945e-006;
 				};
 			};
 			id=14331;
-			atlOffset=-37.526062;
+			atlOffset=0.032989502;
 		};
 		class Item10
 		{
@@ -64937,17 +68595,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3331.7546,78.542961,9937.9551};
-						angles[]={0,3.3048489,0};
+						position[]={3332.5544,78.336533,9936.4619};
+						angles[]={-0,3.3048489,0};
 					};
 					side="Empty";
+					flags=4;
 					class Attributes
 					{
 						init="[this] call jib_service_fak_init;" \n "[this] call jib_service_respawn_init;";
 					};
 					id=14344;
 					type="Land_FirstAidKit_01_open_F";
-					atlOffset=0.73942566;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -65037,7 +68695,7 @@ class Mission
 				};
 			};
 			id=14347;
-			atlOffset=0.50618744;
+			atlOffset=0.4467392;
 		};
 		class Item11
 		{
@@ -65346,17 +69004,35 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3247.7549,79.242592,9890.1885};
-						angles[]={0.010534936,0,6.2786312};
+						position[]={3247.7551,79.242599,9890.1885};
+						angles[]={0.010541788,0,6.2786303};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
+						createAsSimpleObject=1;
+						disableSimulation=1;
 					};
 					id=14374;
 					type="Land_Bench_F";
-					atlOffset=-7.6293945e-006;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=14376;
@@ -65375,12 +69051,12 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3246.2058,82.581131,9889.54};
+						position[]={3246.2061,82.581108,9889.54};
 					};
-					init="[this, my_teleport_base_1, ""Logistics""] call jib_logistics_menu;";
+					name="my_logistics_1";
 					id=14386;
 					type="VirtualAISquad";
-					atlOffset=3.571022;
+					atlOffset=3.5709991;
 				};
 				class Item1
 				{
@@ -65399,60 +69075,62 @@ class Mission
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3325.2966,81.455261,9931.6719};
+						position[]={3325.2971,81.455292,9931.6719};
 					};
-					init="[this, my_teleport_base_0, ""Logistics""] call jib_logistics_menu;";
+					name="my_logistics_0";
 					id=14393;
 					type="VirtualAISquad";
-					atlOffset=3.5709839;
+					atlOffset=3.5709991;
 				};
 				class Item3
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={3317.7913,80.09935,9930.5713};
+						position[]={3313.5811,78.529068,9957.1553};
 					};
 					init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_vehicle;";
 					id=14391;
 					type="Logic";
-					atlOffset=2.2499466;
+					atlOffset=2.2500458;
 				};
 				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3328.4307,78.632141,9932.4873};
-						angles[]={0.066749915,4.2931728,0.019430587};
+						position[]={3328.4309,78.632202,9932.4873};
+						angles[]={0.066741385,4.2931786,0.019425515};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="[this, [[my_teleport_base_1, ""Vehicle Base""]]] call jib_service_teleport_init;";
+						init="[this, [[my_teleport_base_1, ""Vehicle Base""]]] call jib_service_teleport_init;" \n "[this, my_logistics_0, ""Logistics""] call jib_logistics_object;";
 						name="my_teleport_base_0";
 					};
 					id=14379;
 					type="LIB_SovRadio";
+					atlOffset=5.3405762e-005;
 				};
 				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3247.7537,79.534889,9889.6846};
-						angles[]={0.010534936,3.1415927,6.2786312};
+						position[]={3247.7539,79.53521,9889.6846};
+						angles[]={0.010541788,3.1415927,6.2786303};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="[this, [[my_teleport_base_0, ""Infantry Base""]]] call jib_service_teleport_init;";
+						init="[this, [[my_teleport_base_0, ""Infantry Base""]]] call jib_service_teleport_init;" \n "[this, my_logistics_1, ""Logistics""] call jib_logistics_object;";
 						name="my_teleport_base_1";
 					};
 					id=14380;
 					type="LIB_SovRadio";
+					atlOffset=0.00030517578;
 				};
 				class Item6
 				{
@@ -65476,8 +69154,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3317.7959,79.246269,9930.6553};
-						angles[]={0.067468107,0,0.0035379357};
+						position[]={3313.5857,77.675911,9957.2393};
+						angles[]={0.1115684,0,6.2484331};
 					};
 					side="Empty";
 					flags=4;
@@ -65486,11 +69164,11 @@ class Mission
 					};
 					id=14399;
 					type="LIB_Willys_MB_w";
-					atlOffset=-6.8664551e-005;
+					atlOffset=-0.0025634766;
 				};
 			};
 			id=14397;
-			atlOffset=0.23722839;
+			atlOffset=-0.045509338;
 		};
 	};
 	class Connections
