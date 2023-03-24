@@ -1,0 +1,341 @@
+version=54;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
+	class ItemIDProvider
+	{
+		nextID=34;
+	};
+	class MarkerIDProvider
+	{
+		nextID=25;
+	};
+	class Camera
+	{
+		pos[]={18764.363,94.369217,9375.5879};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
+	};
+};
+binarizationWanted=0;
+sourceName="map_study";
+addons[]=
+{
+	"A3_Ui_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=13133368;
+class ScenarioData
+{
+	author="JibStyle";
+};
+class CustomAttributes
+{
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		wavesForced=1;
+		windForced=1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=10;
+		minute=0;
+		startFogBase=250;
+		forecastFogBase=250;
+		startFogDecay=0.017999999;
+		forecastFogDecay=0.017999999;
+	};
+	class Entities
+	{
+		items=25;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={5221.2168,198.95,5662.3091};
+			name="marker_0";
+			text="Abandoned Sawmill";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=0;
+		};
+		class Item1
+		{
+			dataType="Marker";
+			position[]={13176.576,42.747684,13118.197};
+			name="marker_1";
+			text="Lithuania";
+			type="mil_flag";
+			colorName="ColorWEST";
+			id=1;
+		};
+		class Item2
+		{
+			dataType="Marker";
+			position[]={-435.54041,295.65063,-493.9248};
+			name="marker_2";
+			text="Poland";
+			type="mil_flag";
+			colorName="ColorWEST";
+			id=2;
+			atlOffset=-3.0517578e-005;
+		};
+		class Item3
+		{
+			dataType="Marker";
+			position[]={-338.57199,196.29201,13118.194};
+			name="marker_3";
+			text="Russia";
+			type="mil_flag";
+			colorName="ColorEAST";
+			id=3;
+			atlOffset=0.00047302246;
+		};
+		class Item4
+		{
+			dataType="Marker";
+			position[]={13248.484,115.56,-433.32199};
+			name="marker_4";
+			text="Belarus";
+			type="mil_flag";
+			colorName="ColorEAST";
+			id=4;
+			atlOffset=7.6293945e-006;
+		};
+		class Item5
+		{
+			dataType="Marker";
+			position[]={5583.0449,251.43454,3808.7153};
+			name="marker_5";
+			text="Base Nadbor";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=5;
+		};
+		class Item6
+		{
+			dataType="Marker";
+			position[]={6392.7661,4.52,11039.776};
+			name="marker_6";
+			text="Warehouse River";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=6;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={7818.9336,168.9371,10068.521};
+			name="marker_7";
+			text="Radio Base";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=7;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={8150.3828,35.790001,10909.44};
+			name="marker_8";
+			text="Woodland Station";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=8;
+		};
+		class Item9
+		{
+			dataType="Marker";
+			position[]={11389.391,11.233997,9428.21};
+			name="marker_9";
+			text="Industrial";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=9;
+		};
+		class Item10
+		{
+			dataType="Marker";
+			position[]={1183.421,94.387001,8909.9805};
+			name="marker_10";
+			text="Quarry";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=10;
+			atlOffset=7.6293945e-006;
+		};
+		class Item11
+		{
+			dataType="Marker";
+			position[]={3092.23,80.040001,7047.4648};
+			name="marker_11";
+			text="Small Hill Installation";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=11;
+			atlOffset=0.0002822876;
+		};
+		class Item12
+		{
+			dataType="Marker";
+			position[]={10797.372,15.075613,10834.248};
+			name="marker_12";
+			text="01 Unrest";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=154.1796;
+			id=12;
+			atlOffset=9.5367432e-007;
+		};
+		class Item13
+		{
+			dataType="Marker";
+			position[]={9138.751,27.785988,11082.975};
+			name="marker_13";
+			text="02 Gone Dark";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=234.14554;
+			id=13;
+		};
+		class Item14
+		{
+			dataType="Marker";
+			position[]={6241.647,102.16397,6809.936};
+			name="marker_14";
+			text="03 Damage Control";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=91.928032;
+			id=14;
+			atlOffset=7.6293945e-006;
+		};
+		class Item15
+		{
+			dataType="Marker";
+			position[]={8098.2866,86.610458,8966.9023};
+			name="marker_15";
+			text="04 Beacon of Hope";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=346.5705;
+			id=15;
+			atlOffset=7.6293945e-006;
+		};
+		class Item16
+		{
+			dataType="Marker";
+			position[]={3463.3804,8.8335085,8778.6816};
+			name="marker_16";
+			text="05 Thunderstruck";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=269.85257;
+			id=16;
+		};
+		class Item17
+		{
+			dataType="Marker";
+			position[]={3394.6384,62.75069,6610.3188};
+			name="marker_17";
+			text="06 Snake Pit";
+			type="mil_start";
+			colorName="ColorWEST";
+			angle=291.64102;
+			id=17;
+		};
+		class Item18
+		{
+			dataType="Marker";
+			position[]={11117.329,176.68828,4227.0205};
+			name="marker_18";
+			text="Ridge Town";
+			type="mil_marker";
+			colorName="ColorCIV";
+			id=23;
+			atlOffset=-1.5258789e-005;
+		};
+		class Item19
+		{
+			dataType="Marker";
+			position[]={8833.499,145.13503,6638.0913};
+			name="marker_19";
+			type="o_inf";
+			id=26;
+		};
+		class Item20
+		{
+			dataType="Marker";
+			position[]={6131.1812,216.71564,4112.8403};
+			name="marker_20";
+			type="o_armor";
+			id=27;
+			atlOffset=-1.5258789e-005;
+		};
+		class Item21
+		{
+			dataType="Marker";
+			position[]={7885.8345,150.53726,9815.8262};
+			name="marker_21";
+			type="o_armor";
+			id=28;
+			atlOffset=1.5258789e-005;
+		};
+		class Item22
+		{
+			dataType="Marker";
+			position[]={3790.0864,71.435661,10222.022};
+			name="marker_22";
+			type="o_air";
+			id=29;
+		};
+		class Item23
+		{
+			dataType="Marker";
+			position[]={1723.15,29.391001,7342.27};
+			name="marker_23";
+			type="o_mech_inf";
+			id=30;
+			atlOffset=-0.0002155304;
+		};
+		class Item24
+		{
+			dataType="Marker";
+			position[]={8199.9072,60.317154,10572.144};
+			name="marker_24";
+			type="o_inf";
+			id=31;
+		};
+	};
+};
