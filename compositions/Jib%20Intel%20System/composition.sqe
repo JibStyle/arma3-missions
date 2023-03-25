@@ -1,0 +1,1758 @@
+version=54;
+center[]={10990.142,18.00005,8842.2813};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Layer";
+		name="Jib Intel System A";
+		class Entities
+		{
+			items=18;
+			class Item0
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-46.141602,2.5083447,-6.28125};
+					angles[]={0.051155224,0,0.006394445};
+				};
+				init="[[intel_a_1,intel_a_2,intel_a_3,intel_a_4],[[[""obj_a_1"",""obj_a_2"",""obj_a_3"",""obj_a_4""],[arrow_a_1,arrow_a_2,arrow_a_3,arrow_a_4]]],{""Objectives marked on your map.""}] call jib_objective_intel;";
+				id=229;
+				type="Logic";
+			};
+			class Item1
+			{
+				dataType="Marker";
+				position[]={-54.141602,2.1295757,1.71875};
+				name="obj_a_1";
+				text="OBJ 1";
+				type="mil_objective";
+				id=239;
+			};
+			class Item2
+			{
+				dataType="Marker";
+				position[]={-50.141602,2.0907822,1.71875};
+				name="obj_a_2";
+				text="OBJ 2";
+				type="mil_objective";
+				id=240;
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-54.141602,1.9329948,5.71875};
+					angles[]={0.052750662,0,6.2639894};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_a_1";
+				};
+				id=241;
+				type="Intel_File1_F";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-50.141602,1.8850079,5.71875};
+					angles[]={0.059129976,0,6.2703872};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_a_2";
+				};
+				id=242;
+				type="Intel_File1_F";
+				atlOffset=1.9073486e-006;
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-46.141602,1.8373966,5.71875};
+					angles[]={0.059130985,0,0.0015822123};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_a_3";
+				};
+				id=243;
+				type="Intel_File1_F";
+			};
+			class Item6
+			{
+				dataType="Trigger";
+				position[]={-54.141602,2.3275414,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=231;
+				type="EmptyDetector";
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-54.141602,3.077774,-2.28125};
+					angles[]={0.049559005,0,6.2687874};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_a_1";
+					disableSimulation=1;
+				};
+				id=230;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item8
+			{
+				dataType="Trigger";
+				position[]={-50.141602,2.3059425,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=233;
+				type="EmptyDetector";
+			};
+			class Item9
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-50.141602,3.0561752,-2.28125};
+					angles[]={0.049559005,0,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_a_2";
+					disableSimulation=1;
+				};
+				id=232;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item10
+			{
+				dataType="Trigger";
+				position[]={-46.141602,2.290741,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=235;
+				type="EmptyDetector";
+			};
+			class Item11
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-46.141602,3.0409737,-2.28125};
+					angles[]={0.055940546,0,0.0031832056};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_a_3";
+					disableSimulation=1;
+				};
+				id=234;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item12
+			{
+				dataType="Trigger";
+				position[]={-42.141602,2.3027401,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=237;
+				type="EmptyDetector";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item13
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-42.141602,3.0529728,-2.28125};
+					angles[]={0.057536088,0,0.0016194459};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_a_4";
+					disableSimulation=1;
+				};
+				id=236;
+				type="Sign_Arrow_Large_F";
+				atlOffset=-1.9073486e-006;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item14
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-50.141602,2.5067482,-6.28125};
+					angles[]={0.051155224,0,0};
+				};
+				init="[this, 2] call jib_choose_number;";
+				id=238;
+				type="Logic";
+			};
+			class Item15
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-42.141602,1.8330021,5.71875};
+					angles[]={0.063912325,0,6.2799835};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_a_4";
+				};
+				id=244;
+				type="Intel_File1_F";
+			};
+			class Item16
+			{
+				dataType="Marker";
+				position[]={-46.141602,2.0655804,1.71875};
+				name="obj_a_3";
+				text="OBJ 3";
+				type="mil_objective";
+				id=245;
+			};
+			class Item17
+			{
+				dataType="Marker";
+				position[]={-42.141602,2.0719814,1.71875};
+				name="obj_a_4";
+				text="OBJ 4";
+				type="mil_objective";
+				id=246;
+			};
+		};
+		id=247;
+		atlOffset=-0.0033168793;
+	};
+	class Item1
+	{
+		dataType="Layer";
+		name="Jib Intel System B";
+		class Entities
+		{
+			items=18;
+			class Item0
+			{
+				dataType="Marker";
+				position[]={-18.141602,2.0887852,1.71875};
+				name="obj_b_2";
+				text="OBJ 2";
+				type="mil_objective";
+				id=250;
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-22.141602,1.8465996,5.71875};
+					angles[]={0.063912325,0,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_b_1";
+				};
+				id=251;
+				type="Intel_File1_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-18.141602,1.8413982,5.71875};
+					angles[]={0.063912325,0,6.2815661};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_b_2";
+				};
+				id=252;
+				type="Intel_File1_F";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-14.141602,1.830204,5.71875};
+					angles[]={0.063912325,0,6.2767816};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_b_3";
+				};
+				id=253;
+				type="Intel_File1_F";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-10.141602,1.8046055,5.71875};
+					angles[]={0.063912325,0,6.2767816};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_b_4";
+				};
+				id=263;
+				type="Intel_File1_F";
+				atlOffset=1.9073486e-006;
+			};
+			class Item5
+			{
+				dataType="Marker";
+				position[]={-14.141602,2.0775871,1.71875};
+				name="obj_b_3";
+				text="OBJ 3";
+				type="mil_objective";
+				id=264;
+			};
+			class Item6
+			{
+				dataType="Marker";
+				position[]={-10.141602,2.0519867,1.71875};
+				name="obj_b_4";
+				text="OBJ 4";
+				type="mil_objective";
+				id=265;
+			};
+			class Item7
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-14.141602,2.5451488,-6.28125};
+					angles[]={0.054346491,0,6.2767816};
+				};
+				init="[[intel_b_1,intel_b_2,intel_b_3,intel_b_4],[[[""obj_b_1"",""obj_b_2"",""obj_b_3"",""obj_b_4""],[arrow_b_1,arrow_b_2,arrow_b_3,arrow_b_4]]],{""Objectives marked on your map.""}] call jib_objective_intel;";
+				id=248;
+				type="Logic";
+			};
+			class Item8
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-22.141602,3.0881729,-2.28125};
+					angles[]={0.06072529,0,0};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_b_1";
+					disableSimulation=1;
+				};
+				id=255;
+				type="Sign_Arrow_Large_F";
+				atlOffset=-1.9073486e-006;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item9
+			{
+				dataType="Trigger";
+				position[]={-22.141602,2.3379402,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=254;
+				type="EmptyDetector";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item10
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-18.141602,3.077774,-2.28125};
+					angles[]={0.060724311,0,6.2800021};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_b_2";
+					disableSimulation=1;
+				};
+				id=257;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item11
+			{
+				dataType="Trigger";
+				position[]={-18.141602,2.3275414,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=256;
+				type="EmptyDetector";
+			};
+			class Item12
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-14.141602,3.0673771,-2.28125};
+					angles[]={0.059129976,0,6.278389};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_b_3";
+					disableSimulation=1;
+				};
+				id=259;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item13
+			{
+				dataType="Trigger";
+				position[]={-14.141602,2.3171444,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=258;
+				type="EmptyDetector";
+			};
+			class Item14
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-10.141602,3.0461769,-2.28125};
+					angles[]={0.06072529,0,6.2767816};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_b_4";
+					disableSimulation=1;
+				};
+				id=261;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item15
+			{
+				dataType="Trigger";
+				position[]={-10.141602,2.2959442,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=260;
+				type="EmptyDetector";
+			};
+			class Item16
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-18.141602,2.5611458,-6.28125};
+					angles[]={0.054346491,0,6.2799835};
+				};
+				init="[this, 2] call jib_choose_number;";
+				id=262;
+				type="Logic";
+			};
+			class Item17
+			{
+				dataType="Marker";
+				position[]={-22.141602,2.0939846,1.71875};
+				name="obj_b_1";
+				text="OBJ 1";
+				type="mil_objective";
+				id=249;
+			};
+		};
+		id=266;
+		atlOffset=-0.005355835;
+	};
+	class Item2
+	{
+		dataType="Layer";
+		name="Jib Intel System C";
+		class Entities
+		{
+			items=18;
+			class Item0
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={17.859375,2.1111202,-6.28125};
+					angles[]={0.054346491,0,6.2543945};
+				};
+				init="[[intel_c_1,intel_c_2,intel_c_3,intel_c_4],[[[""obj_c_1"",""obj_c_2"",""obj_c_3"",""obj_c_4""],[arrow_c_1,arrow_c_2,arrow_c_3,arrow_c_4]]],{""Objectives marked on your map.""}] call jib_objective_intel;";
+				id=267;
+				type="Logic";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={9.8583984,2.8261738,-2.28125};
+					angles[]={0.057536088,0,6.260788};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_c_1";
+					disableSimulation=1;
+				};
+				id=274;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item2
+			{
+				dataType="Trigger";
+				position[]={9.8583984,2.0759411,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=273;
+				type="EmptyDetector";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={13.858398,2.735775,-2.28125};
+					angles[]={0.06072529,0,6.2575908};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_c_2";
+					disableSimulation=1;
+				};
+				id=276;
+				type="Sign_Arrow_Large_F";
+				atlOffset=1.9073486e-006;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item4
+			{
+				dataType="Trigger";
+				position[]={13.858398,1.9855423,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=275;
+				type="EmptyDetector";
+				atlOffset=1.9073486e-006;
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={17.858398,2.6277924,-2.28125};
+					angles[]={0.06072529,0,6.2543926};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_c_3";
+					disableSimulation=1;
+				};
+				id=278;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item6
+			{
+				dataType="Trigger";
+				position[]={17.858398,1.8775597,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=277;
+				type="EmptyDetector";
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={21.858398,2.5157852,-2.28125};
+					angles[]={0.059130985,0,6.2559919};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_c_4";
+					disableSimulation=1;
+				};
+				id=280;
+				type="Sign_Arrow_Large_F";
+				atlOffset=-1.9073486e-006;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item8
+			{
+				dataType="Trigger";
+				position[]={21.858398,1.7655525,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=279;
+				type="EmptyDetector";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item9
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={13.858398,2.2095432,-6.28125};
+					angles[]={0.052750662,0,6.2607903};
+				};
+				init="[this, 2] call jib_choose_number;";
+				id=281;
+				type="Logic";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item10
+			{
+				dataType="Marker";
+				position[]={9.8583984,1.8427868,1.71875};
+				name="obj_c_1";
+				text="OBJ 1";
+				type="mil_objective";
+				id=268;
+			};
+			class Item11
+			{
+				dataType="Marker";
+				position[]={13.858398,1.7403851,1.71875};
+				name="obj_c_2";
+				text="OBJ 2";
+				type="mil_objective";
+				id=269;
+			};
+			class Item12
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={9.8583984,1.5762024,5.71875};
+					angles[]={0.068692133,0,6.2575908};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_c_1";
+				};
+				id=270;
+				type="Intel_File1_F";
+			};
+			class Item13
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={13.858398,1.4865971,5.71875};
+					angles[]={0.062320013,0,6.2639866};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_c_2";
+				};
+				id=271;
+				type="Intel_File1_F";
+			};
+			class Item14
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={17.858398,1.3958149,5.71875};
+					angles[]={0.062319059,0,6.2559938};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_c_3";
+				};
+				id=272;
+				type="Intel_File1_F";
+			};
+			class Item15
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={21.858398,1.2810135,5.71875};
+					angles[]={0.063913256,0,6.2543926};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_c_4";
+				};
+				id=282;
+				type="Intel_File1_F";
+			};
+			class Item16
+			{
+				dataType="Marker";
+				position[]={17.858398,1.6367989,1.71875};
+				name="obj_c_3";
+				text="OBJ 3";
+				type="mil_objective";
+				id=283;
+			};
+			class Item17
+			{
+				dataType="Marker";
+				position[]={21.858398,1.5279961,1.71875};
+				name="obj_c_4";
+				text="OBJ 4";
+				type="mil_objective";
+				id=284;
+			};
+		};
+		id=285;
+		atlOffset=-0.0020065308;
+	};
+	class Item3
+	{
+		dataType="Layer";
+		name="Jib Intel System D";
+		class Entities
+		{
+			items=18;
+			class Item0
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={49.859375,0.82550049,-6.28125};
+					angles[]={0.046366453,0,6.2336264};
+				};
+				init="[[intel_d_1,intel_d_2,intel_d_3,intel_d_4],[[[""obj_d_1"",""obj_d_2"",""obj_d_3"",""obj_d_4""],[arrow_d_1,arrow_d_2,arrow_d_3,arrow_d_4]]],{""Objectives marked on your map.""}] call jib_objective_intel;";
+				id=286;
+				type="Logic";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item1
+			{
+				dataType="Marker";
+				position[]={41.858398,0.77158356,1.71875};
+				name="obj_d_1";
+				text="OBJ 1";
+				type="mil_objective";
+				id=296;
+			};
+			class Item2
+			{
+				dataType="Marker";
+				position[]={45.858398,0.59238052,1.71875};
+				name="obj_d_2";
+				text="OBJ 2";
+				type="mil_objective";
+				id=297;
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={41.858398,0.54340172,5.71875};
+					angles[]={0.059129976,0,6.2384167};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_d_1";
+				};
+				id=298;
+				type="Intel_File1_F";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={45.858398,0.36859703,5.71875};
+					angles[]={0.057537124,0,6.2400112};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_d_2";
+				};
+				id=299;
+				type="Intel_File1_F";
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={49.858398,0.18862534,5.71875};
+					angles[]={0.055941612,0,6.2384152};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_d_3";
+				};
+				id=300;
+				type="Intel_File1_F";
+			};
+			class Item6
+			{
+				dataType="Trigger";
+				position[]={41.858398,0.99994278,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=288;
+				type="EmptyDetector";
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={41.858398,1.7501755,-2.28125};
+					angles[]={0.057536088,0,6.2352223};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_d_1";
+					disableSimulation=1;
+				};
+				id=287;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item8
+			{
+				dataType="Trigger";
+				position[]={45.858398,0.81113815,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=290;
+				type="EmptyDetector";
+				atlOffset=-1.9073486e-006;
+			};
+			class Item9
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={45.858398,1.5613708,-2.28125};
+					angles[]={0.054346491,0,6.2384152};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_d_2";
+					disableSimulation=1;
+				};
+				id=289;
+				type="Sign_Arrow_Large_F";
+				atlOffset=-1.9073486e-006;
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item10
+			{
+				dataType="Trigger";
+				position[]={49.858398,0.61997223,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=292;
+				type="EmptyDetector";
+			};
+			class Item11
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={49.858398,1.3702049,-2.28125};
+					angles[]={0.054345392,0,6.2336264};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_d_3";
+					disableSimulation=1;
+				};
+				id=291;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item12
+			{
+				dataType="Trigger";
+				position[]={53.858398,0.4291687,-2.28125};
+				class Attributes
+				{
+					sizeA=1;
+					sizeB=1;
+					sizeC=1;
+					isServerOnly=1;
+					triggerInterval=10;
+				};
+				id=294;
+				type="EmptyDetector";
+			};
+			class Item13
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={53.858398,1.1794014,-2.28125};
+					angles[]={0.051155224,0,6.2320304};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="arrow_d_4";
+					disableSimulation=1;
+				};
+				id=293;
+				type="Sign_Arrow_Large_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="hideObject";
+						expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+						class Value
+						{
+							class data
+							{
+								singleType="BOOL";
+								value=1;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item14
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={45.858398,1.0263462,-6.28125};
+					angles[]={0.049560208,0,6.2352209};
+				};
+				init="[this, 2] call jib_choose_number;";
+				id=295;
+				type="Logic";
+				atlOffset=1.9073486e-006;
+			};
+			class Item15
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={53.858398,0.0086231232,5.71875};
+					angles[]={0.055941612,0,6.2352223};
+				};
+				side="Empty";
+				flags=4;
+				class Attributes
+				{
+					name="intel_d_4";
+				};
+				id=301;
+				type="Intel_File1_F";
+			};
+			class Item16
+			{
+				dataType="Marker";
+				position[]={49.858398,0.40960884,1.71875};
+				name="obj_d_3";
+				text="OBJ 3";
+				type="mil_objective";
+				id=302;
+			};
+			class Item17
+			{
+				dataType="Marker";
+				position[]={53.858398,0.22400475,1.71875};
+				name="obj_d_4";
+				text="OBJ 4";
+				type="mil_objective";
+				id=303;
+			};
+		};
+		id=304;
+		atlOffset=-0.0024776459;
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=16;
+	};
+	class Links
+	{
+		items=16;
+		class Item0
+		{
+			linkID=0;
+			item0=231;
+			item1=238;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=233;
+			item1=238;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=235;
+			item1=238;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=237;
+			item1=238;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=254;
+			item1=262;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=256;
+			item1=262;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item6
+		{
+			linkID=6;
+			item0=258;
+			item1=262;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=260;
+			item1=262;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item8
+		{
+			linkID=8;
+			item0=273;
+			item1=281;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item9
+		{
+			linkID=9;
+			item0=275;
+			item1=281;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item10
+		{
+			linkID=10;
+			item0=277;
+			item1=281;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item11
+		{
+			linkID=11;
+			item0=279;
+			item1=281;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item12
+		{
+			linkID=12;
+			item0=288;
+			item1=295;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item13
+		{
+			linkID=13;
+			item0=290;
+			item1=295;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item14
+		{
+			linkID=14;
+			item0=292;
+			item1=295;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item15
+		{
+			linkID=15;
+			item0=294;
+			item1=295;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

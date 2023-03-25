@@ -1,0 +1,218 @@
+version=54;
+center[]={11213.717,13.05479,8795.4453};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=6;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={10.283203,1.7618399,4.6044922};
+					angles[]={0.051155224,0,0};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="SERGEANT";
+				};
+				id=840;
+				type="I_L_Looter_Pistol_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={14.483398,1.9980097,-0.34570313};
+					angles[]={0.051155224,0,0.006394445};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=841;
+				type="I_L_Looter_SG_F";
+				atlOffset=9.5367432e-007;
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={6.0830078,1.6370497,-0.34570313};
+					angles[]={0.041575778,0,6.2799835};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=842;
+				type="I_L_Looter_Rifle_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={18.683594,2.2034655,-5.3457031};
+					angles[]={0.04796192,0,0.006394445};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=843;
+				type="I_L_Looter_SMG_F";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.8828125,1.4968462,-5.3457031};
+					angles[]={0.036783949,0,0.0016194459};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					rank="SERGEANT";
+				};
+				id=844;
+				type="I_L_Criminal_SG_F";
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={22.882813,2.3500032,-10.345703};
+					angles[]={0.041575778,0,0.004796607};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=845;
+				type="I_L_Criminal_SMG_F";
+				atlOffset=-9.5367432e-007;
+			};
+		};
+		class Attributes
+		{
+		};
+		id=839;
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=3;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-13.716797,0.59664917,4.6044922};
+					angles[]={0.02399601,0,6.2543945};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="SERGEANT";
+				};
+				id=847;
+				type="I_L_Looter_Pistol_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-9.5166016,0.87625885,-0.34570313};
+					angles[]={0.020799667,0,6.2543926};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=848;
+				type="I_L_Looter_SG_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-17.916992,0.49367332,-0.34570313};
+					angles[]={0.019199125,0,6.2575908};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=849;
+				type="I_L_Looter_Rifle_F";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=846;
+	};
+	class Item2
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-29.716797,0.0014390945,4.6044922};
+					angles[]={0.004796607,0,6.2256494};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=857;
+				type="I_L_Hunter_F";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=853;
+	};
+};

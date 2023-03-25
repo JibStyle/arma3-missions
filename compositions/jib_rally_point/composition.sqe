@@ -1,0 +1,86 @@
+version=54;
+center[]={10892,20.552,8860};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.76966095,0};
+			angles[]={0.051155601,0,6.2463937};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, [[jib_service_rally_base, ""Base""]]] call jib_service_teleport_init;";
+			name="jib_service_rally_field";
+		};
+		id=893;
+		type="Land_TentDome_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-3.9941406,0.45655823,0.0078125};
+			angles[]={0.052743852,0,6.2448053};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, [[jib_service_rally_field, ""Rally Point""]]] call jib_service_teleport_init;";
+			name="jib_service_rally_base";
+		};
+		id=894;
+		type="Land_Laptop_unfolded_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item2
+	{
+		dataType="Marker";
+		position[]={4,0,0};
+		name="jib_service_rally_marker";
+		text="Rally Point";
+		type="mil_join";
+		id=895;
+		atlOffset=0.00038909912;
+	};
+};
