@@ -14,3 +14,5 @@ params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
         ]
     ]
 ] call jib_menu_dynamic_action;
+
+my_radio radioChannelAdd [_newUnit];

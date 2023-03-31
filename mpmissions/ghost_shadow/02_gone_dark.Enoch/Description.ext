@@ -1,0 +1,33 @@
+class CfgRadio {
+    sounds[]={};
+    class my_convoy {
+        name="";
+        sound[]= {"@NR6_HAL\Sound\Voice2\OrdConf5v2.ogg", 1, 1};
+        title="Command, beginning patrol - Out.";
+    };
+    class my_dismount {
+        name="";
+        sound[]= {"@NR6_HAL\Sound\Voice2\OrdFinal1v2.ogg", 1, 1};
+        title="Destroyed vehicles spotted ahead.";
+    };
+    class my_spotted {
+        name="";
+        sound[]= {"@NR6_HAL\Sound\Voice2\EnemySpot1v2.ogg", 1, 1};
+        title="Suspicious emplacement spotted uphill.";
+    };
+    class my_wait {
+        name="";
+        sound[]= {"@NR6_HAL\Sound\Voice2\EnemySpot3v2.ogg", 1, 1};
+        title="Hitman, wait while Baba investigates.";
+    };
+    class my_wtf {
+        name="";
+        sound[]= {"@NR6_HAL\Sound\Voice2\InDanger9v2.ogg", 1, 1};
+        title="Titan AT launchers found, NATO are traitors!";
+    };
+    class my_attack {
+        name="";
+        sound[]= {"@NR6_HAL\Sound\Voice2\InDanger6v2.ogg", 1, 1};
+        title="Baba, open fire on Hitman!";
+    };
+};

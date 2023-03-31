@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=288;
+		nextID=299;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={5625.6685,263.2851,3785.8757};
-		dir[]={0.33591774,-0.1992944,-0.92056561};
-		up[]={0.068316989,0.97993964,-0.18721925};
-		aside[]={-0.93941045,0,-0.3427943};
+		pos[]={10277.578,107.21135,2091.2771};
+		dir[]={0.10606723,-0.29057994,0.95095402};
+		up[]={0.032210857,0.95685095,0.28878927};
+		aside[]={0.99383777,-3.4226105e-008,-0.11085042};
 	};
 };
 binarizationWanted=0;
@@ -4095,6 +4095,7 @@ class Mission
 		{
 			dataType="Layer";
 			name="objectives";
+			state=2;
 			class Entities
 			{
 				items=24;
@@ -5581,7 +5582,7 @@ class Mission
 					class Attributes
 					{
 						text="Convoy Done";
-						onActivation="convoy_done = true;";
+						onActivation="convoy_done = true;" \n "leader baba customRadio [my_radio, ""my_dismount""];";
 						activationBy="ANYPLAYER";
 					};
 					id=169;
@@ -5595,7 +5596,7 @@ class Mission
 					{
 						text="Convoy Start";
 						condition="convoy_start";
-						onActivation="convoy_done = false;" \n "[baba, hitman, {!convoy_done}, 5, -1, 30] call jib_wp_follow;";
+						onActivation="convoy_done = false;" \n "[baba, hitman, {!convoy_done}, 5, -1, 30] call jib_wp_follow;" \n "leader baba customRadio [my_radio, ""my_convoy""];";
 						sizeA=0;
 						sizeB=0;
 					};
@@ -5621,17 +5622,18 @@ class Mission
 				class Item18
 				{
 					dataType="Trigger";
-					position[]={10193.552,111.52303,1942.3252};
+					position[]={10193.552,111.52307,1942.325};
 					class Attributes
 					{
 						text="Investigate Done";
 						condition="investigate_done";
-						onActivation="independent setFriend [west, 0];" \n "west setFriend [independent, 0];";
+						onActivation="independent setFriend [west, 0];" \n "west setFriend [independent, 0];" \n "leader baba customRadio [my_radio, ""my_wtf""];" \n "leader baba customRadio [my_radio, ""my_attack""];";
 						sizeA=0;
 						sizeB=0;
 					};
 					id=182;
 					type="EmptyDetector";
+					atlOffset=-7.6293945e-006;
 				};
 				class Item19
 				{
@@ -5640,6 +5642,7 @@ class Mission
 					class Attributes
 					{
 						text="Investigate Start";
+						onActivation="leader baba customRadio [my_radio, ""my_spotted""];" \n "leader baba customRadio [my_radio, ""my_wait""];";
 						sizeA=20;
 						sizeB=20;
 						activationBy="ANYPLAYER";
@@ -5651,7 +5654,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={10235.35,85.757263,2046.339};
-					angle=3.6055882;
+					angle=3.6055868;
 					class Attributes
 					{
 						text="Defend Done";
