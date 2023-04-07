@@ -1,0 +1,56 @@
+version=54;
+center[]={5672,249.57001,3762};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.15606689,1};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this addAction [""Open Spectator"", {[true, false, true] call ace_spectator_fnc_setSpectator;}];";
+		};
+		id=12;
+		type="Land_Laptop_unfolded_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Logic";
+		init="[[west], [east, independent, civilian]] call ace_spectator_fnc_updateSides;";
+		id=13;
+		type="Logic";
+	};
+	class Item2
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={0,0,-1};
+		};
+		description="Remember to set ACE Spectator addon option for Enable AI.";
+		id=14;
+	};
+};
