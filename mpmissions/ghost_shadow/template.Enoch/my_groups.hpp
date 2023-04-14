@@ -78,22 +78,48 @@
     class 55 {MY_G_B_3 vehicle="B_T_MBT_01_TUSK_F";};            \
     class 56 {MY_G_B_3 vehicle="B_T_MBT_01_cannon_F";};
 
+#define MY_G_O_INF_8 side=0; faction="my_o";                     \
+    class 0 {MY_G_O_3 vehicle="O_R_Soldier_TL_F;"};              \
+    class 1 {MY_G_O_1 vehicle="O_R_Soldier_AR_F;"};              \
+    class 2 {MY_G_O_1 vehicle="O_R_Soldier_LAT_F;"};             \
+    class 3 {MY_G_O_1 vehicle="O_R_medic_F;"};                   \
+    class 4 {MY_G_O_1 vehicle="O_R_JTAC_F;"};                    \
+    class 5 {MY_G_O_1 vehicle="O_R_Soldier_GL_F;"};              \
+    class 6 {MY_G_O_1 vehicle="O_R_soldier_M_F;"};               \
+    class 7 {MY_G_O_1 vehicle="O_R_soldier_exp_F;"};
 #define MY_G_O_INF_6 side=0; faction="my_o";                     \
-    class 57 {MY_G_O_3 vehicle="I_L_Looter_Pistol_F";};          \
-    class 58 {MY_G_O_1 vehicle="I_L_Looter_SG_F";};              \
-    class 59 {MY_G_O_1 vehicle="I_L_Looter_Rifle_F";};           \
-    class 60 {MY_G_O_1 vehicle="I_L_Looter_SMG_F";};             \
-    class 61 {MY_G_O_1 vehicle="I_L_Criminal_SG_F";};            \
-    class 62 {MY_G_O_1 vehicle="I_L_Criminal_SMG_F";};
-#define MY_G_O_INF_3 side=0; faction="my_o";                     \
-    class 63 {MY_G_O_3 vehicle="I_L_Looter_Pistol_F";};          \
-    class 64 {MY_G_O_1 vehicle="I_L_Looter_SG_F";};              \
-    class 65 {MY_G_O_1 vehicle="I_L_Looter_Rifle_F";};
-#define MY_G_O_INF_1 side=0; faction="my_o";                     \
-    class 66 {MY_G_O_2 vehicle="I_L_Hunter_F";};
-#define MY_G_O_MOT side=0; faction="my_o";                       \
-    class 67 {MY_G_O_2 vehicle="O_G_Offroad_01_armed_F";};       \
-    class 68 {MY_G_O_2 vehicle="O_G_Offroad_01_AT_F";};
+    class 8 {MY_G_O_3 vehicle="O_R_Soldier_TL_F;"};              \
+    class 9 {MY_G_O_1 vehicle="O_R_Soldier_AR_F;"};              \
+    class 10 {MY_G_O_1 vehicle="O_R_Soldier_LAT_F;"};            \
+    class 11 {MY_G_O_1 vehicle="O_R_medic_F;"};                  \
+    class 12 {MY_G_O_1 vehicle="O_R_JTAC_F;"};                   \
+    class 13 {MY_G_O_1 vehicle="O_R_soldier_M_F;"};
+#define MY_G_O_INF_4 side=0; faction="my_o";                     \
+    class 14 {MY_G_O_3 vehicle="O_R_Soldier_TL_F;"};             \
+    class 15 {MY_G_O_1 vehicle="O_R_Soldier_AR_F;"};             \
+    class 16 {MY_G_O_1 vehicle="O_R_Soldier_LAT_F;"};            \
+    class 17 {MY_G_O_1 vehicle="O_R_soldier_M_F;"};
+#define MY_G_O_SF_8 side=0; faction="my_o";                      \
+    class 18 {MY_G_O_3 vehicle="O_R_recon_TL_F;"};               \
+    class 19 {MY_G_O_1 vehicle="O_R_recon_AR_F;"};               \
+    class 20 {MY_G_O_1 vehicle="O_R_recon_LAT_F;"};              \
+    class 21 {MY_G_O_1 vehicle="O_R_recon_medic_F;"};            \
+    class 22 {MY_G_O_1 vehicle="O_R_recon_JTAC_F;"};             \
+    class 23 {MY_G_O_1 vehicle="O_R_recon_GL_F;"};               \
+    class 24 {MY_G_O_1 vehicle="O_R_recon_M_F;"};                \
+    class 25 {MY_G_O_1 vehicle="O_R_recon_exp_F;"};
+#define MY_G_O_SF_6 side=0; faction="my_o";                      \
+    class 26 {MY_G_O_3 vehicle="O_R_recon_TL_F;"};               \
+    class 27 {MY_G_O_1 vehicle="O_R_recon_AR_F;"};               \
+    class 28 {MY_G_O_1 vehicle="O_R_recon_LAT_F;"};              \
+    class 29 {MY_G_O_1 vehicle="O_R_recon_medic_F;"};            \
+    class 30 {MY_G_O_1 vehicle="O_R_recon_JTAC_F;"};             \
+    class 31 {MY_G_O_1 vehicle="O_R_recon_M_F;"};
+#define MY_G_O_SF_4 side=0; faction="my_o";                      \
+    class 32 {MY_G_O_3 vehicle="O_R_recon_TL_F;"};               \
+    class 33 {MY_G_O_1 vehicle="O_R_recon_AR_F;"};               \
+    class 34 {MY_G_O_1 vehicle="O_R_recon_LAT_F;"};              \
+    class 35 {MY_G_O_1 vehicle="O_R_recon_M_F;"};
 
 #define MY_G_I_INF_8 side=2; faction="my_i";                     \
     class 69 {MY_G_I_3 vehicle="I_E_Soldier_SL_F";};             \
@@ -173,22 +199,24 @@ class CfgGroups {
             name="My BLU";
             class Infantry {
                 class my_g_0 {MY_G_B_INF_8};
-                class my_g_1 {MY_G_B_INF_6};
-                class my_g_2 {MY_G_B_INF_4};
+                class my_g_1 {MY_G_B_INF_8};
+                class my_g_2 {MY_G_B_INF_8};
+                class my_g_3 {MY_G_B_INF_6};
+                class my_g_4 {MY_G_B_INF_4};
             };
             class Motorized {
-                class my_g_3 {MY_G_B_MOT};
+                class my_g_5 {MY_G_B_MOT};
             };
             class Mechanized {
-                class my_g_4 {MY_G_B_MEC};
+                class my_g_6 {MY_G_B_MEC};
             };
             class Armored {
-                class my_g_5 {MY_G_B_ARM};
+                class my_g_7 {MY_G_B_ARM};
             };
             class SpecOps {
-                class my_g_6 {MY_G_B_INF_AT};
-                class my_g_7 {MY_G_B_INF_SNI};
-                class my_g_8 {MY_G_B_INF_HQ};
+                class my_g_8 {MY_G_B_INF_AT};
+                class my_g_9 {MY_G_B_INF_SNI};
+                class my_g_10 {MY_G_B_INF_HQ};
             };
         };
     };
@@ -196,18 +224,22 @@ class CfgGroups {
         class my_o {
             name="My OPF";
             class Infantry {
-                class my_g_9 {MY_G_O_INF_6};
-                class my_g_10 {MY_G_O_INF_3};
+                class my_g_11 {MY_G_O_INF_8};
+                class my_g_12 {MY_G_O_INF_8};
+                class my_g_13 {MY_G_O_INF_8};
+                class my_g_14 {MY_G_O_INF_6};
+                class my_g_15 {MY_G_O_INF_4};
             };
             class Motorized {
-                class my_g_11 {MY_G_O_MOT};
             };
             class Mechanized {
             };
             class Armored {
             };
             class SpecOps {
-                class my_g_12 {MY_G_O_INF_1};
+                class my_g_16 {MY_G_O_SF_8};
+                class my_g_17 {MY_G_O_SF_6};
+                class my_g_18 {MY_G_O_SF_4};
             };
         };
     };
@@ -215,22 +247,24 @@ class CfgGroups {
         class my_i {
             name="My IND";
             class Infantry {
-                class my_g_13 {MY_G_I_INF_8};
-                class my_g_14 {MY_G_I_INF_6};
-                class my_g_15 {MY_G_I_INF_4};
+                class my_g_19 {MY_G_I_INF_8};
+                class my_g_20 {MY_G_I_INF_8};
+                class my_g_21 {MY_G_I_INF_8};
+                class my_g_22 {MY_G_I_INF_6};
+                class my_g_23 {MY_G_I_INF_4};
             };
             class Motorized {
-                class my_g_16 {MY_G_I_MOT_17};
-                class my_g_17 {MY_G_I_MOT_6};
+                class my_g_24 {MY_G_I_MOT_17};
+                class my_g_25 {MY_G_I_MOT_6};
             };
             class Mechanized {
-                class my_g_18 {MY_G_I_MEC};
+                class my_g_26 {MY_G_I_MEC};
             };
             class Armored {
             };
             class SpecOps {
-                class my_g_19 {MY_G_I_INF_AT};
-                class my_g_20 {MY_G_I_INF_HQ};
+                class my_g_27 {MY_G_I_INF_AT};
+                class my_g_28 {MY_G_I_INF_HQ};
             };
         };
     };
