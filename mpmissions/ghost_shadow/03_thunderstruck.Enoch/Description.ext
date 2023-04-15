@@ -1,0 +1,11 @@
+#include "my_groups.hpp"
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You successfully destroyed the SAM site and uploaded a distress message to the radio tower. This will enable NATO command to coordinate an evacuation mission.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
