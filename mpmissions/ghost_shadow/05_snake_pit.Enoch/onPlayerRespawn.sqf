@@ -42,9 +42,24 @@ params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
                 ]
             ],
             [
-                "Emitters", "", "1", false,
+                "Attack Emitters", "", "1", false,
                 [
-                    "Emitters",
+                    "Attack Emitters",
+                    [
+                        [
+                            "LDF CAS Heli", toString {
+                                [my_e_i_air] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ]
+                    ]
+                ]
+            ],
+            [
+                "Defense Emitters", "", "1", false,
+                [
+                    "Defense Emitters",
                     [
                         [
                             "Spetsnaz Infantry", toString {
