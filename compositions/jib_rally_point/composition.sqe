@@ -1,5 +1,5 @@
 version=54;
-center[]={10892,20.552,8860};
+center[]={6443.5215,25.38987,731.39722};
 class items
 {
 	items=3;
@@ -8,17 +8,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0,0.76966095,0};
-			angles[]={0.051155601,0,6.2463937};
+			position[]={1.9155273,1.4832058,1.897583};
+			angles[]={6.2232571,0,0.21655035};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="[this, [[jib_service_rally_base, ""Base""]]] call jib_service_teleport_init;";
 			name="jib_service_rally_field";
 		};
-		id=893;
+		id=552;
 		type="Land_TentDome_F";
 		class CustomAttributes
 		{
@@ -43,17 +42,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={-3.9941406,0.45655823,0.0078125};
-			angles[]={0.052743852,0,6.2448053};
+			position[]={-2.0786133,0.15188217,1.9052124};
+			angles[]={6.228241,0,0.21177648};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="[this, [[jib_service_rally_field, ""Rally Point""]]] call jib_service_teleport_init;";
 			name="jib_service_rally_base";
 		};
-		id=894;
+		id=553;
 		type="Land_Laptop_unfolded_F";
 		class CustomAttributes
 		{
@@ -75,12 +73,36 @@ class items
 	};
 	class Item2
 	{
-		dataType="Marker";
-		position[]={4,0,0};
-		name="jib_service_rally_marker";
-		text="Rally Point";
-		type="mil_join";
-		id=895;
-		atlOffset=0.00038909912;
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.14306641,1.3784542,-3.9365845};
+			angles[]={6.1884661,0,0.20219639};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			name="jib_service_rally_vehicle";
+		};
+		id=556;
+		type="Land_Cargo10_military_green_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
 	};
 };
