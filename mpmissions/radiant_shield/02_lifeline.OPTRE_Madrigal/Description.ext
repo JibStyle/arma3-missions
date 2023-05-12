@@ -1,0 +1,11 @@
+#include "my_groups.hpp"
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You beat back the Covenant attack and destroyed their assembly area. Hopefully this will buy us enough time to regroup before they attack again.";
+	// pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
