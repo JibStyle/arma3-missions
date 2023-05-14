@@ -1,3 +1,6 @@
+jib_marker_enabled = false;
+publicVariable "jib_marker_enabled";
+
 my_alive_start = {
     if (!isServer) then {throw "Not server!"};
     [] call jib_alive_profileEnable;
