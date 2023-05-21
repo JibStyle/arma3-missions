@@ -4,8 +4,8 @@ class CfgDebriefing {
     class End1 {
 	title = "Mission Completed";
 	subtitle = "";
-	description = "You beat back the Covenant attack and destroyed their assembly area. Hopefully this will buy us enough time to regroup before they attack again.";
-	// pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	description = "You recaptured the Space Elevator in Barcelonova. This will limit the Covenant supply of heavy equipment and help us stand our ground on Madrigal.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
 	picture = __EVAL(getMissionPath "ignition.paa");
     };
 };
