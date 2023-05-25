@@ -1,0 +1,11 @@
+#include "my_groups.hpp"
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You recaptured the Space Elevator in Barcelonova. This will limit the Covenant supply of heavy equipment and help us stand our ground on Madrigal.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
