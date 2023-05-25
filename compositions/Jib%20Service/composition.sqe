@@ -1,24 +1,23 @@
 version=54;
-center[]={3350,80.235855,9689.334};
+center[]={9722.5,5.8699999,1451.5};
 class items
 {
-	items=3;
+	items=6;
 	class Item0
 	{
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.00024414063,0.96933746,1.6660156};
+			position[]={4.5,0.4322958,-0.5};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="[this] call jib_service_fak_init;" \n "[this] call jib_service_respawn_init;";
+			disableSimulation=1;
 		};
-		id=14245;
-		type="Land_FirstAidKit_01_open_F";
-		atlOffset=0.00042724609;
+		id=1096;
+		type="Land_WoodenTable_small_F";
 		class CustomAttributes
 		{
 			class Attribute0
@@ -42,17 +41,16 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.0070800781,2.417984,-3.3320313};
-			angles[]={6.2786837,0,-0};
+			position[]={4.5,0.062787056,0.5};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			init="[this, true, true, false] call jib_service_depot_init;";
+			init="[this] call jib_service_fak_init;" \n "[this] call jib_service_respawn_init;";
 		};
-		id=14246;
-		type="Land_RepairDepot_01_green_F";
+		id=1097;
+		type="Land_FirstAidKit_01_open_F";
 		class CustomAttributes
 		{
 			class Attribute0
@@ -76,17 +74,237 @@ class items
 		dataType="Object";
 		class PositionInfo
 		{
-			position[]={0.0021972656,0.47382355,1.6621094};
+			position[]={-4.5,2.4179983,-0.5};
 		};
 		side="Empty";
 		flags=4;
 		class Attributes
 		{
-			disableSimulation=1;
+			init="[this, true, true, true] call jib_service_depot_init;";
+			name="jib_service_rally_basevehicle";
 		};
-		id=14229;
-		type="Land_WoodenTable_small_F";
-		atlOffset=-7.6293945e-006;
+		id=1098;
+		type="Land_RepairDepot_01_green_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-10.5,1.3528881,-0.5};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			name="jib_service_rally_vehicle";
+		};
+		id=1102;
+		type="Land_Cargo10_military_green_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={4.5,0.15607262,1.5};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, my_logistics_vehicles, ""Spawn Vehicles""] call jib_logistics_object;";
+			name="jib_service_rally_base";
+		};
+		id=1101;
+		type="Land_Laptop_unfolded_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ENH_HoldAction";
+				expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=13;
+							class Item0
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="STRING";
+									value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa";
+								};
+							};
+							class Item2
+							{
+								class data
+								{
+									singleType="STRING";
+									value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_revive_ca.paa";
+								};
+							};
+							class Item3
+							{
+								class data
+								{
+									singleType="STRING";
+									value="true";
+								};
+							};
+							class Item4
+							{
+								class data
+								{
+									singleType="STRING";
+									value="true";
+								};
+							};
+							class Item5
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+							class Item6
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+							class Item7
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+							class Item8
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+							class Item9
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=10;
+								};
+							};
+							class Item10
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1000;
+								};
+							};
+							class Item11
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+							class Item12
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.5,0.61924553,-0.5};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			name="jib_service_rally_field";
+		};
+		id=1100;
+		type="Land_TentDome_F";
 		class CustomAttributes
 		{
 			class Attribute0
