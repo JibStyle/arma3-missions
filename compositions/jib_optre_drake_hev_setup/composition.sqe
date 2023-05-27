@@ -1,0 +1,14 @@
+version=54;
+center[]={169.205,1469.6691,139.416};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="[my_drake, my_console, [my_pod_1, my_pod_2, my_pod_3, my_pod_4, my_pod_5, my_pod_6]] call jib_optre_drake_hev_setup;";
+		id=1961;
+		type="Logic";
+		atlOffset=0.00024414063;
+	};
+};
