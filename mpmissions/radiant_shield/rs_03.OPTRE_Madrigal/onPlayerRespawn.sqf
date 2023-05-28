@@ -7,3 +7,49 @@ if (!isNull _oldUnit) then {
     uiSleep 5;
     player allowDamage true;
 };
+
+[
+    _newUnit,
+    jib_menu_condition_admin,
+    [
+        "Mission Menu",
+        [
+            [
+                "Tasks", "", "1", false,
+                [
+                    "Tasks",
+                    [
+                        [
+                            "Scout Done", "", "1", false,
+                            [
+                                "Confirm Scout Done?",
+                                [
+                                    [
+                                        "Scout Done", toString {
+                                            my_scout = true;
+                                            publicVariable "my_scout";
+                                        }, "1"
+                                    ]
+                                ]
+                            ]
+                        ],
+                        [
+                            "Mission Success", "", "1", false,
+                            [
+                                "Confirm Mission Success?",
+                                [
+                                    [
+                                        "Mission Success", toString {
+                                            mission_done = true;
+                                            publicVariable "mission_done";
+                                        }, "1"
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+] call jib_menu_dynamic_action;

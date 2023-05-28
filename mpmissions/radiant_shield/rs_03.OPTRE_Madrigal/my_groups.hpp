@@ -20,81 +20,81 @@
 #define MY_G_I_6 side=2; rank="MAJOR";
 #define MY_G_I_7 side=2; rank="COLONEL";
 
-#define MY_G_O_OPTRE_JACKAL_SECTION side=0; faction="my_o_wbk";      \
+#define MY_G_O_OPTRE_JACKAL_SECTION side=0; \
     class 0 {MY_G_O_2 vehicle="OPTRE_Jackal_Major_F";};              \
     class 1 {MY_G_O_1 vehicle="OPTRE_Jackal_F";};                    \
     class 2 {MY_G_O_1 vehicle="OPTRE_Jackal_F";};                    \
     class 3 {MY_G_O_1 vehicle="OPTRE_Jackal_F";};
-#define MY_G_O_OPTRE_JACKAL_PATROL side=0; faction="my_o_wbk";       \
+#define MY_G_O_OPTRE_JACKAL_PATROL side=0; \
     class 4 {MY_G_O_2 vehicle="OPTRE_Jackal_F";};                    \
     class 5 {MY_G_O_1 vehicle="OPTRE_Jackal_F";};
-#define MY_G_O_OPTRE_JACKAL_SNIPER_TEAM side=0; faction="my_o_wbk";  \
+#define MY_G_O_OPTRE_JACKAL_SNIPER_TEAM side=0; \
     class 6 {MY_G_O_3 vehicle="OPTRE_Jackal_Sniper_F";};             \
     class 7 {MY_G_O_2 vehicle="OPTRE_Jackal_Sharpshooter_F";};
-#define MY_G_O_OPTRE_JACKAL_RECON_TEAM side=0; faction="my_o_wbk";   \
+#define MY_G_O_OPTRE_JACKAL_RECON_TEAM side=0; \
     class 8 {MY_G_O_2 vehicle="OPTRE_Jackal_Sharpshooter_F";};       \
     class 9 {MY_G_O_1 vehicle="OPTRE_Jackal_Sharpshooter_F";};       \
     class 10 {MY_G_O_1 vehicle="OPTRE_Jackal_Sharpshooter_F";};      \
     class 11 {MY_G_O_1 vehicle="OPTRE_Jackal_Sniper_F";};
-#define MY_G_O_OPTRE_ELITE_SECTION side=0; faction="my_o_wbk";       \
+#define MY_G_O_OPTRE_ELITE_SECTION side=0; \
     class 12 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Major";};             \
     class 13 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 14 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 15 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Minor2";};
-#define MY_G_O_OPTRE_ELITE_AA_SECTION side=0; faction="my_o_wbk";    \
+#define MY_G_O_OPTRE_ELITE_AA_SECTION side=0; \
     class 16 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Major";};             \
     class 17 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAA";};           \
     class 18 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 19 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAA";};
-#define MY_G_O_OPTRE_ELITE_AT_SECTION side=0; faction="my_o_wbk";    \
+#define MY_G_O_OPTRE_ELITE_AT_SECTION side=0; \
     class 20 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Major";};             \
     class 21 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAT";};           \
     class 22 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 23 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAT";};
-#define MY_G_O_OPTRE_ELITE_PATROL side=0; faction="my_o_wbk";        \
+#define MY_G_O_OPTRE_ELITE_PATROL side=0; \
     class 24 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 25 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Minor";};
-#define MY_G_O_OPTRE_ELITE_SNIPER_TEAM side=0; faction="my_o_wbk";   \
+#define MY_G_O_OPTRE_ELITE_SNIPER_TEAM side=0; \
     class 26 {MY_G_O_3 vehicle="OPTRE_FC_Elite_SpecOps";};           \
     class 27 {MY_G_O_2 vehicle="OPTRE_FC_Elite_SpecOps2";};
-#define MY_G_O_OPTRE_ELITE_RECON_TEAM side=0; faction="my_o_wbk";    \
+#define MY_G_O_OPTRE_ELITE_RECON_TEAM side=0; \
     class 28 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Ultra3";};            \
     class 29 {MY_G_O_1 vehicle="OPTRE_FC_Elite_SpecOps2";};          \
     class 30 {MY_G_O_1 vehicle="OPTRE_FC_Elite_SpecOps2";};          \
     class 31 {MY_G_O_1 vehicle="OPTRE_FC_Elite_SpecOps";};
-#define MY_G_O_OPTRE_ELITE_COMMAND_TEAM side=0; faction="my_o_wbk";  \
+#define MY_G_O_OPTRE_ELITE_COMMAND_TEAM side=0; \
     class 32 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Zealot";};            \
     class 33 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Major";};             \
     class 34 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Major";};
-#define MY_G_O_OPTRE_ELITE_COMMAND_SQUAD side=0; faction="my_o_wbk"; \
+#define MY_G_O_OPTRE_ELITE_COMMAND_SQUAD side=0; \
     class 35 {MY_G_O_3 vehicle="OPTRE_FC_Elite_FieldMarshal";};      \
     class 36 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Zealot";};            \
     class 37 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Major";};             \
     class 38 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Major";};             \
     class 39 {MY_G_O_1 vehicle="OPTRE_FC_Elite_HonorGuard";};        \
     class 40 {MY_G_O_1 vehicle="OPTRE_FC_Elite_HonorGuard";};
-#define MY_G_O_OPTRE_MIXED_LEVY side=0; faction="my_o_wbk";          \
+#define MY_G_O_OPTRE_MIXED_LEVY side=0; \
     class 41 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 42 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry2_F";};         \
     class 43 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry2_F";};         \
     class 44 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry2_F";};
-#define MY_G_O_OPTRE_MIXED_SECTION side=0; faction="my_o_wbk";       \
+#define MY_G_O_OPTRE_MIXED_SECTION side=0; \
     class 45 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 46 {MY_G_O_1 vehicle="OPTRE_Jackal_F";};                   \
     class 47 {MY_G_O_1 vehicle="OPTRE_Jackal_F";};                   \
     class 48 {MY_G_O_1 vehicle="OPTRE_Jackal_Sharpshooter_F";};
-#define MY_G_O_OPTRE_MIXED_RECON_TEAM side=0; faction="my_o_wbk";    \
+#define MY_G_O_OPTRE_MIXED_RECON_TEAM side=0; \
     class 49 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Ultra3";};            \
     class 50 {MY_G_O_1 vehicle="OPTRE_FC_Elite_SpecOps2";};          \
     class 51 {MY_G_O_1 vehicle="OPTRE_Jackal_SpecOps_F";};           \
     class 52 {MY_G_O_1 vehicle="OPTRE_Jackal_SpecOps_F";};           \
     class 53 {MY_G_O_1 vehicle="OPTRE_FC_Elite_SpecOps";};
-#define MY_G_O_OPTRE_MIXED_COMMAND_TEAM side=0; faction="my_o_wbk";  \
+#define MY_G_O_OPTRE_MIXED_COMMAND_TEAM side=0; \
     class 54 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Zealot2";};           \
     class 55 {MY_G_O_1 vehicle="OPTRE_FC_Elite_Major";};             \
     class 56 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry_F";};          \
     class 57 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry_F";};
-#define MY_G_O_OPTRE_MIXED_FILE side=0; faction="my_o_wbk";          \
+#define MY_G_O_OPTRE_MIXED_FILE side=0; \
     class 58 {MY_G_O_3 vehicle="OPTRE_FC_Elite_Zealot2";};           \
     class 59 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Major";};             \
     class 60 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry_F";};          \
@@ -108,7 +108,7 @@
     class 68 {MY_G_O_1 vehicle="OPTRE_Jackal_Sharpshooter_F";};      \
     class 69 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAT";};           \
     class 70 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAA";};
-#define MY_G_O_OPTRE_MIXED_SPEC_OPS_FILE side=0; faction="my_o_wbk"; \
+#define MY_G_O_OPTRE_MIXED_SPEC_OPS_FILE side=0; \
     class 71 {MY_G_O_3 vehicle="OPTRE_FC_Elite_Zealot2";};           \
     class 72 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Ultra3";};            \
     class 73 {MY_G_O_1 vehicle="OPTRE_Jackal_SpecOps3_F";};          \
@@ -122,137 +122,137 @@
     class 81 {MY_G_O_1 vehicle="OPTRE_Jackal_Sharpshooter_F";};      \
     class 82 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAT";};           \
     class 83 {MY_G_O_1 vehicle="OPTRE_FC_Elite_MinorAA";};
-#define MY_G_O_OPTRE_SPECTRE_ARMED side=0; faction="my_o_optre";     \
+#define MY_G_O_OPTRE_SPECTRE_ARMED side=0; \
     class 84 {MY_G_O_3 vehicle="OPTRE_FC_Spectre";};
-#define MY_G_O_OPTRE_SPECTRE_MIXED side=0; faction="my_o_optre";     \
+#define MY_G_O_OPTRE_SPECTRE_MIXED side=0; \
     class 85 {MY_G_O_3 vehicle="OPTRE_FC_Spectre_Empty";};           \
     class 86 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 87 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry2_F";};         \
     class 88 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry2_F";};         \
     class 89 {MY_G_O_1 vehicle="OPTRE_Jackal_Infantry2_F";};
-#define MY_G_O_OPTRE_SPECTRE_ELITE side=0; faction="my_o_optre";     \
+#define MY_G_O_OPTRE_SPECTRE_ELITE side=0; \
     class 90 {MY_G_O_3 vehicle="OPTRE_FC_Spectre_Empty";};           \
     class 91 {MY_G_O_3 vehicle="OPTRE_FC_Elite_Major";};             \
     class 92 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 93 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Minor";};             \
     class 94 {MY_G_O_2 vehicle="OPTRE_FC_Elite_Minor2";};
-#define MY_G_O_OPTRE_GHOST_PAIR side=0; faction="my_o_optre";        \
+#define MY_G_O_OPTRE_GHOST_PAIR side=0; \
     class 95 {MY_G_O_3 vehicle="OPTRE_FC_Ghost";};                   \
     class 96 {MY_G_O_3 vehicle="OPTRE_FC_Ghost";};
-#define MY_G_O_OPTRE_GHOST_HEAVY side=0; faction="my_o_optre";       \
+#define MY_G_O_OPTRE_GHOST_HEAVY side=0; \
     class 97 {MY_G_O_3 vehicle="OPTRE_FC_Ghost_Armor";};
-#define MY_G_O_OPTRE_WRAITH side=0; faction="my_o_optre";            \
+#define MY_G_O_OPTRE_WRAITH side=0; \
     class 98 {MY_G_O_3 vehicle="OPTRE_FC_Wraith";};
 
-#define MY_G_O_WBK_GRUNT_SENTRY_MINOR side=0; faction="my_o_wbk";         \
+#define MY_G_O_WBK_GRUNT_SENTRY_MINOR side=0; \
     class 99 {MY_G_O_3 vehicle="WBK_Grunt_1";};                           \
     class 100 {MY_G_O_1 vehicle="WBK_Grunt_5";};
-#define MY_G_O_WBK_GRUNT_SENTRY_ULTRA side=0; faction="my_o_wbk";         \
+#define MY_G_O_WBK_GRUNT_SENTRY_ULTRA side=0; \
     class 101 {MY_G_O_3 vehicle="WBK_Grunt_4";};                          \
     class 102 {MY_G_O_1 vehicle="WBK_Grunt_4";};
-#define MY_G_O_WBK_GRUNT_FIRETEAM_LIGHT side=0; faction="my_o_wbk";       \
+#define MY_G_O_WBK_GRUNT_FIRETEAM_LIGHT side=0; \
     class 103 {MY_G_O_3 vehicle="WBK_Grunt_1";};                          \
     class 104 {MY_G_O_1 vehicle="WBK_Grunt_5";};                          \
     class 105 {MY_G_O_1 vehicle="WBK_Grunt_1";};                          \
     class 106 {MY_G_O_1 vehicle="WBK_Grunt_5";};
-#define MY_G_O_WBK_GRUNT_FIRETEAM_MEDIUM side=0; faction="my_o_wbk";      \
+#define MY_G_O_WBK_GRUNT_FIRETEAM_MEDIUM side=0; \
     class 107 {MY_G_O_3 vehicle="WBK_Grunt_2";};                          \
     class 108 {MY_G_O_1 vehicle="WBK_Grunt_5";};                          \
     class 109 {MY_G_O_1 vehicle="WBK_Grunt_1";};                          \
     class 110 {MY_G_O_1 vehicle="WBK_Grunt_3";};
-#define MY_G_O_WBK_GRUNT_FIRETEAM_HEAVY side=0; faction="my_o_wbk";       \
+#define MY_G_O_WBK_GRUNT_FIRETEAM_HEAVY side=0; \
     class 111 {MY_G_O_3 vehicle="WBK_Grunt_4";};                          \
     class 112 {MY_G_O_1 vehicle="WBK_Grunt_3";};                          \
     class 113 {MY_G_O_1 vehicle="WBK_Grunt_3";};                          \
     class 114 {MY_G_O_1 vehicle="WBK_Grunt_3";};
-#define MY_G_O_WBK_ELITE_SENTRY_MINOR side=0; faction="my_o_wbk";         \
+#define MY_G_O_WBK_ELITE_SENTRY_MINOR side=0; \
     class 115 {MY_G_O_3 vehicle="WBK_EliteMainWeap_2";};                  \
     class 116 {MY_G_O_1 vehicle="WBK_EliteMainWeap_2";};
-#define MY_G_O_WBK_ELITE_SENTRY_HONOR side=0; faction="my_o_wbk";         \
+#define MY_G_O_WBK_ELITE_SENTRY_HONOR side=0; \
     class 117 {MY_G_O_3 vehicle="WBK_EliteMainWeap_7";};                  \
     class 118 {MY_G_O_1 vehicle="WBK_EliteMainWeap_7";};
-#define MY_G_O_WBK_ELITE_SENTRY_ULTRA side=0; faction="my_o_wbk";         \
+#define MY_G_O_WBK_ELITE_SENTRY_ULTRA side=0; \
     class 119 {MY_G_O_3 vehicle="WBK_EliteMainWeap_9";};                  \
     class 120 {MY_G_O_1 vehicle="WBK_EliteMainWeap_9";};
-#define MY_G_O_WBK_ELITE_SENTRY_SPEC side=0; faction="my_o_wbk";          \
+#define MY_G_O_WBK_ELITE_SENTRY_SPEC side=0; \
     class 121 {MY_G_O_3 vehicle="WBK_EliteMainWeap_1";};                  \
     class 122 {MY_G_O_1 vehicle="WBK_EliteMainWeap_1";};
-#define MY_G_O_WBK_ELITE_FIRETEAM_MAJOR side=0; faction="my_o_wbk";       \
+#define MY_G_O_WBK_ELITE_FIRETEAM_MAJOR side=0; \
     class 123 {MY_G_O_3 vehicle="WBK_EliteMainWeap_3";};                  \
     class 124 {MY_G_O_1 vehicle="WBK_EliteMainWeap_2";};                  \
     class 125 {MY_G_O_1 vehicle="WBK_EliteMainWeap_2";};                  \
     class 126 {MY_G_O_1 vehicle="WBK_EliteMainWeap_2";};
-#define MY_G_O_WBK_ELITE_FIRETEAM_OFFICER side=0; faction="my_o_wbk";     \
+#define MY_G_O_WBK_ELITE_FIRETEAM_OFFICER side=0; \
     class 127 {MY_G_O_3 vehicle="WBK_EliteMainWeap_6";};                  \
     class 128 {MY_G_O_1 vehicle="WBK_EliteMainWeap_3";};                  \
     class 129 {MY_G_O_1 vehicle="WBK_EliteMainWeap_2";};                  \
     class 130 {MY_G_O_1 vehicle="WBK_EliteMainWeap_2";};
-#define MY_G_O_WBK_ELITE_FIRETEAM_ULTRA side=0; faction="my_o_wbk";       \
+#define MY_G_O_WBK_ELITE_FIRETEAM_ULTRA side=0; \
     class 131 {MY_G_O_3 vehicle="WBK_EliteMainWeap_9";};                  \
     class 132 {MY_G_O_1 vehicle="WBK_EliteMainWeap_9";};                  \
     class 133 {MY_G_O_1 vehicle="WBK_EliteMainWeap_9";};                  \
     class 134 {MY_G_O_1 vehicle="WBK_EliteMainWeap_9";};
-#define MY_G_O_WBK_ELITE_FIRETEAM_SPEC side=0; faction="my_o_wbk";        \
+#define MY_G_O_WBK_ELITE_FIRETEAM_SPEC side=0; \
     class 135 {MY_G_O_3 vehicle="WBK_EliteMainWeap_4";};                  \
     class 136 {MY_G_O_1 vehicle="WBK_EliteMainWeap_1";};                  \
     class 137 {MY_G_O_1 vehicle="WBK_EliteMainWeap_1";};                  \
     class 138 {MY_G_O_1 vehicle="WBK_EliteMainWeap_1";};
-#define MY_G_O_WBK_ELITE_FIRETEAM_ZEALOT side=0; faction="my_o_wbk";      \
+#define MY_G_O_WBK_ELITE_FIRETEAM_ZEALOT side=0; \
     class 139 {MY_G_O_3 vehicle="WBK_EliteMainWeap_8";};                  \
     class 140 {MY_G_O_1 vehicle="WBK_EliteMainWeap_8";};                  \
     class 141 {MY_G_O_1 vehicle="WBK_EliteMainWeap_8";};                  \
     class 142 {MY_G_O_1 vehicle="WBK_EliteMainWeap_8";};
-#define MY_G_O_WBK_ELITE_FIRETEAM_MARSHALL side=0; faction="my_o_wbk";    \
+#define MY_G_O_WBK_ELITE_FIRETEAM_MARSHALL side=0; \
     class 143 {MY_G_O_3 vehicle="WBK_EliteMainWeap_5";};                  \
     class 144 {MY_G_O_1 vehicle="WBK_EliteMainWeap_8";};                  \
     class 145 {MY_G_O_1 vehicle="WBK_EliteMainWeap_8";};                  \
     class 146 {MY_G_O_1 vehicle="WBK_EliteMainWeap_8";};
-#define MY_G_O_WBK_MIXED_FIRETEAM_MINOR side=0; faction="my_o_wbk";       \
+#define MY_G_O_WBK_MIXED_FIRETEAM_MINOR side=0; \
     class 147 {MY_G_O_3 vehicle="WBK_EliteMainWeap_2";};                  \
     class 148 {MY_G_O_1 vehicle="WBK_Grunt_5";};                          \
     class 149 {MY_G_O_1 vehicle="WBK_Grunt_1";};                          \
     class 150 {MY_G_O_1 vehicle="WBK_Grunt_1";};
-#define MY_G_O_WBK_MIXED_FIRETEAM_OFFICER side=0; faction="my_o_wbk";     \
+#define MY_G_O_WBK_MIXED_FIRETEAM_OFFICER side=0; \
     class 151 {MY_G_O_3 vehicle="WBK_EliteMainWeap_6";};                  \
     class 152 {MY_G_O_1 vehicle="WBK_Grunt_3";};                          \
     class 153 {MY_G_O_1 vehicle="WBK_Grunt_3";};                          \
     class 154 {MY_G_O_1 vehicle="WBK_Grunt_3";};
-#define MY_G_O_WBK_MIXED_FIRETEAM_ULTRA side=0; faction="my_o_wbk";       \
+#define MY_G_O_WBK_MIXED_FIRETEAM_ULTRA side=0; \
     class 155 {MY_G_O_3 vehicle="WBK_EliteMainWeap_9";};                  \
     class 156 {MY_G_O_1 vehicle="WBK_Grunt_4";};                          \
     class 157 {MY_G_O_1 vehicle="WBK_Grunt_4";};                          \
     class 158 {MY_G_O_1 vehicle="WBK_Grunt_4";};
-#define MY_G_O_WBK_HUNTER_SENTRY_BLUE side=0; faction="my_o_wbk";         \
+#define MY_G_O_WBK_HUNTER_SENTRY_BLUE side=0; \
     class 159 {MY_G_O_3 vehicle="WBK_HaloHunter_1";};                     \
     class 160 {MY_G_O_1 vehicle="WBK_HaloHunter_1";};
-#define MY_G_O_WBK_HUNTER_SENTRY_GOLD side=0; faction="my_o_wbk";         \
+#define MY_G_O_WBK_HUNTER_SENTRY_GOLD side=0; \
     class 161 {MY_G_O_3 vehicle="WBK_HaloHunter_3";};                     \
     class 162 {MY_G_O_1 vehicle="WBK_HaloHunter_3";};
-#define MY_G_O_WBK_HUNTER_SENTRY_RED side=0; faction="my_o_wbk";          \
+#define MY_G_O_WBK_HUNTER_SENTRY_RED side=0; \
     class 163 {MY_G_O_3 vehicle="WBK_HaloHunter_2";};                     \
     class 164 {MY_G_O_1 vehicle="WBK_HaloHunter_2";};
-#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_BLUE side=0; faction="my_o_wbk"; \
+#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_BLUE side=0; \
     class 165 {MY_G_O_3 vehicle="WBK_HaloHunter_1";};                     \
     class 166 {MY_G_O_1 vehicle="WBK_HaloHunter_1";};                     \
     class 167 {MY_G_O_1 vehicle="WBK_Grunt_2";};                          \
     class 168 {MY_G_O_1 vehicle="WBK_Grunt_1";};                          \
     class 169 {MY_G_O_1 vehicle="WBK_Grunt_5";};                          \
     class 170 {MY_G_O_1 vehicle="WBK_Grunt_3";};
-#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_GOLD side=0; faction="my_o_wbk"; \
+#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_GOLD side=0; \
     class 171 {MY_G_O_3 vehicle="WBK_HaloHunter_3";};                     \
     class 172 {MY_G_O_1 vehicle="WBK_HaloHunter_3";};                     \
     class 173 {MY_G_O_1 vehicle="WBK_Grunt_4";};                          \
     class 174 {MY_G_O_1 vehicle="WBK_Grunt_4";};                          \
     class 175 {MY_G_O_1 vehicle="WBK_Grunt_4";};                          \
     class 176 {MY_G_O_1 vehicle="WBK_Grunt_4";};
-#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_RED side=0; faction="my_o_wbk";  \
+#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_RED side=0; \
     class 177 {MY_G_O_3 vehicle="WBK_HaloHunter_2";};                     \
     class 178 {MY_G_O_1 vehicle="WBK_HaloHunter_2";};                     \
     class 179 {MY_G_O_1 vehicle="WBK_Grunt_2";};                          \
     class 180 {MY_G_O_1 vehicle="WBK_Grunt_2";};                          \
     class 181 {MY_G_O_1 vehicle="WBK_Grunt_2";};                          \
     class 182 {MY_G_O_1 vehicle="WBK_Grunt_2";};
-#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_SPEC side=0; faction="my_o_wbk"; \
+#define MY_G_O_WBK_MIXED_HUNTER_FIRETEAM_SPEC side=0; \
     class 183 {MY_G_O_3 vehicle="WBK_HaloHunter_1";};                     \
     class 184 {MY_G_O_1 vehicle="WBK_HaloHunter_1";};                     \
     class 185 {MY_G_O_1 vehicle="WBK_EliteMainWeap_4";};                  \
@@ -260,12 +260,12 @@
     class 187 {MY_G_O_1 vehicle="WBK_Grunt_4";};                          \
     class 188 {MY_G_O_1 vehicle="WBK_Grunt_4";};
 
-#define MY_G_B_ARMY_WDL_SENTRY side=1; faction="my_b_army_wdl";        \
+#define MY_G_B_ARMY_WDL_SENTRY side=1; \
     class 189 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_WDL";};            \
     class 190 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_WDL";};
-#define MY_G_B_ARMY_WDL_FIRETEAM side=1; faction="my_b_army_wdl";      \
+#define MY_G_B_ARMY_WDL_FIRETEAM side=1; \
     class 191 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_TeamLead_WDL";};                  \
     class 192 {MY_G_B_1                                                \
@@ -274,7 +274,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_WDL";};       \
     class 194 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_WDL";};
-#define MY_G_B_ARMY_WDL_SQUAD side=1; faction="my_b_army_wdl";         \
+#define MY_G_B_ARMY_WDL_SQUAD side=1; \
     class 195 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_WDL";};                 \
     class 196 {MY_G_B_2                                                \
@@ -303,7 +303,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_WDL";};       \
     class 208 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_WDL";};
-#define MY_G_B_ARMY_WDL_WEAPONS_SQUAD side=1; faction="my_b_army_wdl"; \
+#define MY_G_B_ARMY_WDL_WEAPONS_SQUAD side=1; \
     class 209 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_WDL";};                 \
     class 210 {MY_G_B_2                                                \
@@ -332,12 +332,12 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Demolitions_WDL";};               \
     class 222 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Grenadier_WDL";};
-#define MY_G_B_ARMY_WDL_SNIPER_TEAM side=1; faction="my_b_army_wdl";   \
+#define MY_G_B_ARMY_WDL_SNIPER_TEAM side=1; \
     class 223 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Sniper_WDL";};                    \
     class 224 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_ForwardObserver_WDL";};
-#define MY_G_B_ARMY_WDL_COMMAND_TEAM side=1; faction="my_b_army_wdl";  \
+#define MY_G_B_ARMY_WDL_COMMAND_TEAM side=1; \
     class 225 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Officer_WDL";};                   \
     class 226 {MY_G_B_2                                                \
@@ -346,29 +346,29 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Radioman_WDL";};                  \
     class 228 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Medic_WDL";};
-#define MY_G_B_ARMY_WDL_HOG_MG side=1; faction="my_b_army_wdl";        \
+#define MY_G_B_ARMY_WDL_HOG_MG side=1; \
     class 229 {MY_G_B_3 vehicle="OPTRE_M12_LRV";};
-#define MY_G_B_ARMY_WDL_HOG_ROCKET side=1; faction="my_b_army_wdl";    \
+#define MY_G_B_ARMY_WDL_HOG_ROCKET side=1; \
     class 230 {MY_G_B_3 vehicle="OPTRE_M12A1_LRV";};
-#define MY_G_B_ARMY_WDL_HOG_GAUSS side=1; faction="my_b_army_wdl";     \
+#define MY_G_B_ARMY_WDL_HOG_GAUSS side=1; \
     class 231 {MY_G_B_3 vehicle="OPTRE_M12G1_LRV";};
-#define MY_G_B_ARMY_WDL_HOG_AA side=1; faction="my_b_army_wdl";        \
+#define MY_G_B_ARMY_WDL_HOG_AA side=1; \
     class 232 {MY_G_B_3 vehicle="OPTRE_M12R_AA";};
-#define MY_G_B_ARMY_WDL_WHEELED_IFV side=1; faction="my_b_army_wdl";   \
+#define MY_G_B_ARMY_WDL_WHEELED_IFV side=1; \
     class 233 {MY_G_B_3 vehicle="OPTRE_M412_IFV_UNSC";};
-#define MY_G_B_ARMY_WDL_WHEELED_MGS side=1; faction="my_b_army_wdl";   \
+#define MY_G_B_ARMY_WDL_WHEELED_MGS side=1; \
     class 234 {MY_G_B_3 vehicle="OPTRE_M413_MGS_UNSC";};
-#define MY_G_B_ARMY_WDL_TRACKED_IFV side=1; faction="my_b_army_wdl";   \
+#define MY_G_B_ARMY_WDL_TRACKED_IFV side=1; \
     class 235 {MY_G_B_3 vehicle="OPTRE_M494";};
-#define MY_G_B_ARMY_WDL_SCORPION side=1; faction="my_b_army_wdl";      \
+#define MY_G_B_ARMY_WDL_SCORPION side=1; \
     class 236 {MY_G_B_3 vehicle="OPTRE_M808B_UNSC";};
 
-#define MY_G_B_ARMY_OLI_SENTRY side=1; faction="my_b_army_oli";        \
+#define MY_G_B_ARMY_OLI_SENTRY side=1; \
     class 237 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_OLI";};            \
     class 238 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_OLI";};
-#define MY_G_B_ARMY_OLI_FIRETEAM side=1; faction="my_b_army_oli";      \
+#define MY_G_B_ARMY_OLI_FIRETEAM side=1; \
     class 239 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_TeamLead_OLI";};                  \
     class 240 {MY_G_B_1                                                \
@@ -377,7 +377,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_OLI";};       \
     class 242 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_OLI";};
-#define MY_G_B_ARMY_OLI_SQUAD side=1; faction="my_b_army_oli";         \
+#define MY_G_B_ARMY_OLI_SQUAD side=1; \
     class 243 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_OLI";};                 \
     class 244 {MY_G_B_2                                                \
@@ -406,7 +406,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_OLI";};       \
     class 256 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_OLI";};
-#define MY_G_B_ARMY_OLI_WEAPONS_SQUAD side=1; faction="my_b_army_oli"; \
+#define MY_G_B_ARMY_OLI_WEAPONS_SQUAD side=1; \
     class 257 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_OLI";};                 \
     class 258 {MY_G_B_2                                                \
@@ -435,12 +435,12 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Demolitions_OLI";};               \
     class 270 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Grenadier_OLI";};
-#define MY_G_B_ARMY_OLI_SNIPER_TEAM side=1; faction="my_b_army_oli";   \
+#define MY_G_B_ARMY_OLI_SNIPER_TEAM side=1; \
     class 271 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Sniper_OLI";};                    \
     class 272 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_ForwardObserver_OLI";};
-#define MY_G_B_ARMY_OLI_COMMAND_TEAM side=1; faction="my_b_army_oli";  \
+#define MY_G_B_ARMY_OLI_COMMAND_TEAM side=1; \
     class 273 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Officer_OLI";};                   \
     class 274 {MY_G_B_2                                                \
@@ -449,29 +449,29 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Radioman_OLI";};                  \
     class 276 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Medic_OLI";};
-#define MY_G_B_ARMY_OLI_HOG_MG side=1; faction="my_b_army_oli";        \
+#define MY_G_B_ARMY_OLI_HOG_MG side=1; \
     class 277 {MY_G_B_3 vehicle="OPTRE_M12_LRV";};
-#define MY_G_B_ARMY_OLI_HOG_ROCKET side=1; faction="my_b_army_oli";    \
+#define MY_G_B_ARMY_OLI_HOG_ROCKET side=1; \
     class 278 {MY_G_B_3 vehicle="OPTRE_M12A1_LRV";};
-#define MY_G_B_ARMY_OLI_HOG_GAUSS side=1; faction="my_b_army_oli";     \
+#define MY_G_B_ARMY_OLI_HOG_GAUSS side=1; \
     class 279 {MY_G_B_3 vehicle="OPTRE_M12G1_LRV";};
-#define MY_G_B_ARMY_OLI_HOG_AA side=1; faction="my_b_army_oli";        \
+#define MY_G_B_ARMY_OLI_HOG_AA side=1; \
     class 280 {MY_G_B_3 vehicle="OPTRE_M12R_AA";};
-#define MY_G_B_ARMY_OLI_WHEELED_IFV side=1; faction="my_b_army_oli";   \
+#define MY_G_B_ARMY_OLI_WHEELED_IFV side=1; \
     class 281 {MY_G_B_3 vehicle="OPTRE_M412_IFV_UNSC";};
-#define MY_G_B_ARMY_OLI_WHEELED_MGS side=1; faction="my_b_army_oli";   \
+#define MY_G_B_ARMY_OLI_WHEELED_MGS side=1; \
     class 282 {MY_G_B_3 vehicle="OPTRE_M413_MGS_UNSC";};
-#define MY_G_B_ARMY_OLI_TRACKED_IFV side=1; faction="my_b_army_oli";   \
+#define MY_G_B_ARMY_OLI_TRACKED_IFV side=1; \
     class 283 {MY_G_B_3 vehicle="OPTRE_M494";};
-#define MY_G_B_ARMY_OLI_SCORPION side=1; faction="my_b_army_oli";      \
+#define MY_G_B_ARMY_OLI_SCORPION side=1; \
     class 284 {MY_G_B_3 vehicle="OPTRE_M808B_UNSC";};
 
-#define MY_G_B_ARMY_DES_SENTRY side=1; faction="my_b_army_des";        \
+#define MY_G_B_ARMY_DES_SENTRY side=1; \
     class 285 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_DES";};            \
     class 286 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_DES";};
-#define MY_G_B_ARMY_DES_FIRETEAM side=1; faction="my_b_army_des";      \
+#define MY_G_B_ARMY_DES_FIRETEAM side=1; \
     class 287 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_TeamLead_DES";};                  \
     class 288 {MY_G_B_1                                                \
@@ -480,7 +480,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_DES";};       \
     class 290 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_DES";};
-#define MY_G_B_ARMY_DES_SQUAD side=1; faction="my_b_army_des";         \
+#define MY_G_B_ARMY_DES_SQUAD side=1; \
     class 291 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_DES";};                 \
     class 292 {MY_G_B_2                                                \
@@ -509,7 +509,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_DES";};       \
     class 304 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_DES";};
-#define MY_G_B_ARMY_DES_WEAPONS_SQUAD side=1; faction="my_b_army_des"; \
+#define MY_G_B_ARMY_DES_WEAPONS_SQUAD side=1; \
     class 305 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_DES";};                 \
     class 306 {MY_G_B_2                                                \
@@ -538,12 +538,12 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Demolitions_DES";};               \
     class 318 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Grenadier_DES";};
-#define MY_G_B_ARMY_DES_SNIPER_TEAM side=1; faction="my_b_army_des";   \
+#define MY_G_B_ARMY_DES_SNIPER_TEAM side=1; \
     class 319 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Sniper_DES";};                    \
     class 320 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_ForwardObserver_DES";};
-#define MY_G_B_ARMY_DES_COMMAND_TEAM side=1; faction="my_b_army_des";  \
+#define MY_G_B_ARMY_DES_COMMAND_TEAM side=1; \
     class 321 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Officer_DES";};                   \
     class 322 {MY_G_B_2                                                \
@@ -552,29 +552,29 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Radioman_DES";};                  \
     class 324 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Medic_DES";};
-#define MY_G_B_ARMY_DES_HOG_MG side=1; faction="my_b_army_des";        \
+#define MY_G_B_ARMY_DES_HOG_MG side=1; \
     class 325 {MY_G_B_3 vehicle="OPTRE_M12_LRV";};
-#define MY_G_B_ARMY_DES_HOG_ROCKET side=1; faction="my_b_army_des";    \
+#define MY_G_B_ARMY_DES_HOG_ROCKET side=1; \
     class 326 {MY_G_B_3 vehicle="OPTRE_M12A1_LRV";};
-#define MY_G_B_ARMY_DES_HOG_GAUSS side=1; faction="my_b_army_des";     \
+#define MY_G_B_ARMY_DES_HOG_GAUSS side=1; \
     class 327 {MY_G_B_3 vehicle="OPTRE_M12G1_LRV";};
-#define MY_G_B_ARMY_DES_HOG_AA side=1; faction="my_b_army_des";        \
+#define MY_G_B_ARMY_DES_HOG_AA side=1; \
     class 328 {MY_G_B_3 vehicle="OPTRE_M12R_AA";};
-#define MY_G_B_ARMY_DES_WHEELED_IFV side=1; faction="my_b_army_des";   \
+#define MY_G_B_ARMY_DES_WHEELED_IFV side=1; \
     class 329 {MY_G_B_3 vehicle="OPTRE_M412_IFV_UNSC";};
-#define MY_G_B_ARMY_DES_WHEELED_MGS side=1; faction="my_b_army_des";   \
+#define MY_G_B_ARMY_DES_WHEELED_MGS side=1; \
     class 330 {MY_G_B_3 vehicle="OPTRE_M413_MGS_UNSC";};
-#define MY_G_B_ARMY_DES_TRACKED_IFV side=1; faction="my_b_army_des";   \
+#define MY_G_B_ARMY_DES_TRACKED_IFV side=1; \
     class 331 {MY_G_B_3 vehicle="OPTRE_M494";};
-#define MY_G_B_ARMY_DES_SCORPION side=1; faction="my_b_army_des";      \
+#define MY_G_B_ARMY_DES_SCORPION side=1; \
     class 332 {MY_G_B_3 vehicle="OPTRE_M808B_UNSC";};
 
-#define MY_G_B_ARMY_URB_SENTRY side=1; faction="my_b_army_urb";        \
+#define MY_G_B_ARMY_URB_SENTRY side=1; \
     class 333 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_URB";};            \
     class 334 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_URB";};
-#define MY_G_B_ARMY_URB_FIRETEAM side=1; faction="my_b_army_urb";      \
+#define MY_G_B_ARMY_URB_FIRETEAM side=1; \
     class 335 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_TeamLead_URB";};                  \
     class 336 {MY_G_B_1                                                \
@@ -583,7 +583,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_URB";};       \
     class 338 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_URB";};
-#define MY_G_B_ARMY_URB_SQUAD side=1; faction="my_b_army_urb";         \
+#define MY_G_B_ARMY_URB_SQUAD side=1; \
     class 339 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_URB";};                 \
     class 340 {MY_G_B_2                                                \
@@ -612,7 +612,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_URB";};       \
     class 352 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_URB";};
-#define MY_G_B_ARMY_URB_WEAPONS_SQUAD side=1; faction="my_b_army_urb"; \
+#define MY_G_B_ARMY_URB_WEAPONS_SQUAD side=1; \
     class 353 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_URB";};                 \
     class 354 {MY_G_B_2                                                \
@@ -641,12 +641,12 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Demolitions_URB";};               \
     class 366 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Grenadier_URB";};
-#define MY_G_B_ARMY_URB_SNIPER_TEAM side=1; faction="my_b_army_urb";   \
+#define MY_G_B_ARMY_URB_SNIPER_TEAM side=1; \
     class 367 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Sniper_URB";};                    \
     class 368 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_ForwardObserver_URB";};
-#define MY_G_B_ARMY_URB_COMMAND_TEAM side=1; faction="my_b_army_urb";  \
+#define MY_G_B_ARMY_URB_COMMAND_TEAM side=1; \
     class 369 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Officer_URB";};                   \
     class 370 {MY_G_B_2                                                \
@@ -655,29 +655,29 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Radioman_URB";};                  \
     class 372 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Medic_URB";};
-#define MY_G_B_ARMY_URB_HOG_MG side=1; faction="my_b_army_urb";        \
+#define MY_G_B_ARMY_URB_HOG_MG side=1; \
     class 373 {MY_G_B_3 vehicle="OPTRE_M12_LRV";};
-#define MY_G_B_ARMY_URB_HOG_ROCKET side=1; faction="my_b_army_urb";    \
+#define MY_G_B_ARMY_URB_HOG_ROCKET side=1; \
     class 374 {MY_G_B_3 vehicle="OPTRE_M12A1_LRV";};
-#define MY_G_B_ARMY_URB_HOG_GAUSS side=1; faction="my_b_army_urb";     \
+#define MY_G_B_ARMY_URB_HOG_GAUSS side=1; \
     class 375 {MY_G_B_3 vehicle="OPTRE_M12G1_LRV";};
-#define MY_G_B_ARMY_URB_HOG_AA side=1; faction="my_b_army_urb";        \
+#define MY_G_B_ARMY_URB_HOG_AA side=1; \
     class 376 {MY_G_B_3 vehicle="OPTRE_M12R_AA";};
-#define MY_G_B_ARMY_URB_WHEELED_IFV side=1; faction="my_b_army_urb";   \
+#define MY_G_B_ARMY_URB_WHEELED_IFV side=1; \
     class 377 {MY_G_B_3 vehicle="OPTRE_M412_IFV_UNSC";};
-#define MY_G_B_ARMY_URB_WHEELED_MGS side=1; faction="my_b_army_urb";   \
+#define MY_G_B_ARMY_URB_WHEELED_MGS side=1; \
     class 378 {MY_G_B_3 vehicle="OPTRE_M413_MGS_UNSC";};
-#define MY_G_B_ARMY_URB_TRACKED_IFV side=1; faction="my_b_army_urb";   \
+#define MY_G_B_ARMY_URB_TRACKED_IFV side=1; \
     class 379 {MY_G_B_3 vehicle="OPTRE_M494";};
-#define MY_G_B_ARMY_URB_SCORPION side=1; faction="my_b_army_urb";      \
+#define MY_G_B_ARMY_URB_SCORPION side=1; \
     class 380 {MY_G_B_3 vehicle="OPTRE_M808B_UNSC";};
 
-#define MY_G_B_ARMY_TRO_SENTRY side=1; faction="my_b_army_tro";        \
+#define MY_G_B_ARMY_TRO_SENTRY side=1; \
     class 381 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_TRO";};            \
     class 382 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_TRO";};
-#define MY_G_B_ARMY_TRO_FIRETEAM side=1; faction="my_b_army_tro";      \
+#define MY_G_B_ARMY_TRO_FIRETEAM side=1; \
     class 383 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_TeamLead_TRO";};                  \
     class 384 {MY_G_B_1                                                \
@@ -686,7 +686,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_TRO";};       \
     class 386 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_TRO";};
-#define MY_G_B_ARMY_TRO_SQUAD side=1; faction="my_b_army_tro";         \
+#define MY_G_B_ARMY_TRO_SQUAD side=1; \
     class 387 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_TRO";};                 \
     class 388 {MY_G_B_2                                                \
@@ -715,7 +715,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_TRO";};       \
     class 400 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_TRO";};
-#define MY_G_B_ARMY_TRO_WEAPONS_SQUAD side=1; faction="my_b_army_tro"; \
+#define MY_G_B_ARMY_TRO_WEAPONS_SQUAD side=1; \
     class 401 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_TRO";};                 \
     class 402 {MY_G_B_2                                                \
@@ -744,12 +744,12 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Demolitions_TRO";};               \
     class 414 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Grenadier_TRO";};
-#define MY_G_B_ARMY_TRO_SNIPER_TEAM side=1; faction="my_b_army_tro";   \
+#define MY_G_B_ARMY_TRO_SNIPER_TEAM side=1; \
     class 415 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Sniper_TRO";};                    \
     class 416 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_ForwardObserver_TRO";};
-#define MY_G_B_ARMY_TRO_COMMAND_TEAM side=1; faction="my_b_army_tro";  \
+#define MY_G_B_ARMY_TRO_COMMAND_TEAM side=1; \
     class 417 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Officer_TRO";};                   \
     class 418 {MY_G_B_2                                                \
@@ -758,29 +758,29 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Radioman_TRO";};                  \
     class 420 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Medic_TRO";};
-#define MY_G_B_ARMY_TRO_HOG_MG side=1; faction="my_b_army_tro";        \
+#define MY_G_B_ARMY_TRO_HOG_MG side=1; \
     class 421 {MY_G_B_3 vehicle="OPTRE_M12_LRV";};
-#define MY_G_B_ARMY_TRO_HOG_ROCKET side=1; faction="my_b_army_tro";    \
+#define MY_G_B_ARMY_TRO_HOG_ROCKET side=1; \
     class 422 {MY_G_B_3 vehicle="OPTRE_M12A1_LRV";};
-#define MY_G_B_ARMY_TRO_HOG_GAUSS side=1; faction="my_b_army_tro";     \
+#define MY_G_B_ARMY_TRO_HOG_GAUSS side=1; \
     class 423 {MY_G_B_3 vehicle="OPTRE_M12G1_LRV";};
-#define MY_G_B_ARMY_TRO_HOG_AA side=1; faction="my_b_army_tro";        \
+#define MY_G_B_ARMY_TRO_HOG_AA side=1; \
     class 424 {MY_G_B_3 vehicle="OPTRE_M12R_AA";};
-#define MY_G_B_ARMY_TRO_WHEELED_IFV side=1; faction="my_b_army_tro";   \
+#define MY_G_B_ARMY_TRO_WHEELED_IFV side=1; \
     class 425 {MY_G_B_3 vehicle="OPTRE_M412_IFV_UNSC";};
-#define MY_G_B_ARMY_TRO_WHEELED_MGS side=1; faction="my_b_army_tro";   \
+#define MY_G_B_ARMY_TRO_WHEELED_MGS side=1; \
     class 426 {MY_G_B_3 vehicle="OPTRE_M413_MGS_UNSC";};
-#define MY_G_B_ARMY_TRO_TRACKED_IFV side=1; faction="my_b_army_tro";   \
+#define MY_G_B_ARMY_TRO_TRACKED_IFV side=1; \
     class 427 {MY_G_B_3 vehicle="OPTRE_M494";};
-#define MY_G_B_ARMY_TRO_SCORPION side=1; faction="my_b_army_tro";      \
+#define MY_G_B_ARMY_TRO_SCORPION side=1; \
     class 428 {MY_G_B_3 vehicle="OPTRE_M808B_UNSC";};
 
-#define MY_G_B_ARMY_SNO_SENTRY side=1; faction="my_b_army_sno";        \
+#define MY_G_B_ARMY_SNO_SENTRY side=1; \
     class 429 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_SNO";};            \
     class 430 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_Light_SNO";};
-#define MY_G_B_ARMY_SNO_FIRETEAM side=1; faction="my_b_army_sno";      \
+#define MY_G_B_ARMY_SNO_FIRETEAM side=1; \
     class 431 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_TeamLead_SNO";};                  \
     class 432 {MY_G_B_1                                                \
@@ -789,7 +789,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_SNO";};       \
     class 434 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_SNO";};
-#define MY_G_B_ARMY_SNO_SQUAD side=1; faction="my_b_army_sno";         \
+#define MY_G_B_ARMY_SNO_SQUAD side=1; \
     class 435 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_SNO";};                 \
     class 436 {MY_G_B_2                                                \
@@ -818,7 +818,7 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Assist_Autorifleman_SNO";};       \
     class 448 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Rifleman_AT_SNO";};
-#define MY_G_B_ARMY_SNO_WEAPONS_SQUAD side=1; faction="my_b_army_sno"; \
+#define MY_G_B_ARMY_SNO_WEAPONS_SQUAD side=1; \
     class 449 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_SquadLead_SNO";};                 \
     class 450 {MY_G_B_2                                                \
@@ -847,12 +847,12 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Demolitions_SNO";};               \
     class 462 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Grenadier_SNO";};
-#define MY_G_B_ARMY_SNO_SNIPER_TEAM side=1; faction="my_b_army_sno";   \
+#define MY_G_B_ARMY_SNO_SNIPER_TEAM side=1; \
     class 463 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Sniper_SNO";};                    \
     class 464 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_ForwardObserver_SNO";};
-#define MY_G_B_ARMY_SNO_COMMAND_TEAM side=1; faction="my_b_army_sno";  \
+#define MY_G_B_ARMY_SNO_COMMAND_TEAM side=1; \
     class 465 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Officer_SNO";};                   \
     class 466 {MY_G_B_2                                                \
@@ -861,29 +861,29 @@
     vehicle="OPTRE_UNSC_Army_Soldier_Radioman_SNO";};                  \
     class 468 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Army_Soldier_Medic_SNO";};
-#define MY_G_B_ARMY_SNO_HOG_MG side=1; faction="my_b_army_sno";        \
+#define MY_G_B_ARMY_SNO_HOG_MG side=1; \
     class 469 {MY_G_B_3 vehicle="OPTRE_M12_LRV";};
-#define MY_G_B_ARMY_SNO_HOG_ROCKET side=1; faction="my_b_army_sno";    \
+#define MY_G_B_ARMY_SNO_HOG_ROCKET side=1; \
     class 470 {MY_G_B_3 vehicle="OPTRE_M12A1_LRV";};
-#define MY_G_B_ARMY_SNO_HOG_GAUSS side=1; faction="my_b_army_sno";     \
+#define MY_G_B_ARMY_SNO_HOG_GAUSS side=1; \
     class 471 {MY_G_B_3 vehicle="OPTRE_M12G1_LRV";};
-#define MY_G_B_ARMY_SNO_HOG_AA side=1; faction="my_b_army_sno";        \
+#define MY_G_B_ARMY_SNO_HOG_AA side=1; \
     class 472 {MY_G_B_3 vehicle="OPTRE_M12R_AA";};
-#define MY_G_B_ARMY_SNO_WHEELED_IFV side=1; faction="my_b_army_sno";   \
+#define MY_G_B_ARMY_SNO_WHEELED_IFV side=1; \
     class 473 {MY_G_B_3 vehicle="OPTRE_M412_IFV_UNSC";};
-#define MY_G_B_ARMY_SNO_WHEELED_MGS side=1; faction="my_b_army_sno";   \
+#define MY_G_B_ARMY_SNO_WHEELED_MGS side=1; \
     class 474 {MY_G_B_3 vehicle="OPTRE_M413_MGS_UNSC";};
-#define MY_G_B_ARMY_SNO_TRACKED_IFV side=1; faction="my_b_army_sno";   \
+#define MY_G_B_ARMY_SNO_TRACKED_IFV side=1; \
     class 475 {MY_G_B_3 vehicle="OPTRE_M494";};
-#define MY_G_B_ARMY_SNO_SCORPION side=1; faction="my_b_army_sno";      \
+#define MY_G_B_ARMY_SNO_SCORPION side=1; \
     class 476 {MY_G_B_3 vehicle="OPTRE_M808B_UNSC";};
 
-#define MY_G_B_MARINE_SENTRY side=1; faction="my_b_marine";            \
+#define MY_G_B_MARINE_SENTRY side=1; \
     class 477 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Rifleman_Light";};              \
     class 478 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Rifleman_Light";};
-#define MY_G_B_MARINE_FIRETEAM side=1; faction="my_b_marine";          \
+#define MY_G_B_MARINE_FIRETEAM side=1; \
     class 479 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_TeamLead";};                    \
     class 480 {MY_G_B_1                                                \
@@ -892,7 +892,7 @@
     vehicle="OPTRE_UNSC_Marine_Soldier_Assist_Autorifleman";};         \
     class 482 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Rifleman_AT";};
-#define MY_G_B_MARINE_SQUAD side=1; faction="my_b_marine";             \
+#define MY_G_B_MARINE_SQUAD side=1; \
     class 483 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_SquadLead";};                   \
     class 484 {MY_G_B_2                                                \
@@ -921,7 +921,7 @@
     vehicle="OPTRE_UNSC_Marine_Soldier_Assist_Autorifleman";};         \
     class 496 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Rifleman_AT";};
-#define MY_G_B_MARINE_WEAPONS_SQUAD side=1; faction="my_b_marine";     \
+#define MY_G_B_MARINE_WEAPONS_SQUAD side=1; \
     class 497 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_SquadLead";};                   \
     class 498 {MY_G_B_2                                                \
@@ -950,12 +950,12 @@
     vehicle="OPTRE_UNSC_Marine_Soldier_Demolitions";};                 \
     class 510 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Grenadier";};
-#define MY_G_B_MARINE_SNIPER_TEAM side=1; faction="my_b_marine";       \
+#define MY_G_B_MARINE_SNIPER_TEAM side=1; \
     class 511 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Sniper";};                      \
     class 512 {MY_G_B_2                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_ForwardObserver";};
-#define MY_G_B_MARINE_COMMAND_TEAM side=1; faction="my_b_marine";      \
+#define MY_G_B_MARINE_COMMAND_TEAM side=1; \
     class 513 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Officer";};                     \
     class 514 {MY_G_B_2                                                \
@@ -964,24 +964,24 @@
     vehicle="OPTRE_UNSC_Marine_Soldier_Radioman";};                    \
     class 516 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_Marine_Soldier_Corpsman";};
-#define MY_G_B_MARINE_HOG_MG side=1; faction="my_b_marine";            \
+#define MY_G_B_MARINE_HOG_MG side=1; \
     class 517 {MY_G_B_3 vehicle="OPTRE_M12_LRV";};
-#define MY_G_B_MARINE_HOG_ROCKET side=1; faction="my_b_marine";        \
+#define MY_G_B_MARINE_HOG_ROCKET side=1; \
     class 518 {MY_G_B_3 vehicle="OPTRE_M12A1_LRV";};
-#define MY_G_B_MARINE_HOG_GAUSS side=1; faction="my_b_marine";         \
+#define MY_G_B_MARINE_HOG_GAUSS side=1; \
     class 519 {MY_G_B_3 vehicle="OPTRE_M12G1_LRV";};
-#define MY_G_B_MARINE_HOG_AA side=1; faction="my_b_marine";            \
+#define MY_G_B_MARINE_HOG_AA side=1; \
     class 520 {MY_G_B_3 vehicle="OPTRE_M12R_AA";};
-#define MY_G_B_MARINE_WHEELED_IFV side=1; faction="my_b_marine";       \
+#define MY_G_B_MARINE_WHEELED_IFV side=1; \
     class 521 {MY_G_B_3 vehicle="OPTRE_M412_IFV_UNSC";};
-#define MY_G_B_MARINE_WHEELED_MGS side=1; faction="my_b_marine";       \
+#define MY_G_B_MARINE_WHEELED_MGS side=1; \
     class 522 {MY_G_B_3 vehicle="OPTRE_M413_MGS_UNSC";};
-#define MY_G_B_MARINE_TRACKED_IFV side=1; faction="my_b_marine";       \
+#define MY_G_B_MARINE_TRACKED_IFV side=1; \
     class 523 {MY_G_B_3 vehicle="OPTRE_M494";};
-#define MY_G_B_MARINE_SCORPION side=1; faction="my_b_marine";          \
+#define MY_G_B_MARINE_SCORPION side=1; \
     class 524 {MY_G_B_3 vehicle="OPTRE_M808B_UNSC";};
 
-#define MY_G_B_ODST_TEAM side=1; faction="my_b_odst";                  \
+#define MY_G_B_ODST_TEAM side=1; \
     class 525 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_TeamLeader";};                    \
     class 526 {MY_G_B_1                                                \
@@ -992,7 +992,7 @@
     vehicle="OPTRE_UNSC_ODST_Soldier_Rifleman_AT";};                   \
     class 529 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_Marksman";};
-#define MY_G_B_ODST_SCOUT_TEAM side=1; faction="my_b_odst";            \
+#define MY_G_B_ODST_SCOUT_TEAM side=1; \
     class 530 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_TeamLeader";};                    \
     class 531 {MY_G_B_1                                                \
@@ -1003,7 +1003,7 @@
     vehicle="OPTRE_UNSC_ODST_Soldier_Scout_AT";};                      \
     class 534 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_Scout_Sniper";};
-#define MY_G_B_ODST_DEMO_TEAM side=1; faction="my_b_odst";             \
+#define MY_G_B_ODST_DEMO_TEAM side=1; \
     class 535 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_TeamLeader";};                    \
     class 536 {MY_G_B_1                                                \
@@ -1014,13 +1014,13 @@
     vehicle="OPTRE_UNSC_ODST_Soldier_Scout_AT";};                      \
     class 539 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_DemolitionsExpert";};
-#define MY_G_B_ODST_SNIPER_TEAM side=1; faction="my_b_odst";           \
+#define MY_G_B_ODST_SNIPER_TEAM side=1; \
     class 540 {MY_G_B_3                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_TeamLeader";};                    \
     class 541 {MY_G_B_1                                                \
     vehicle="OPTRE_UNSC_ODST_Soldier_Scout_Sniper";};
 
-#define MY_G_I_FLOOD_COMBAT side=2; faction="my_i_flood";      \
+#define MY_G_I_FLOOD_COMBAT side=2; \
     class 542 {MY_G_I_1 vehicle="dev_flood_combat_i";};        \
     class 543 {MY_G_I_1 vehicle="dev_flood_combat_at_i";};     \
     class 544 {MY_G_I_1 vehicle="dev_flood_combat_br55_i";};   \
@@ -1038,7 +1038,7 @@
     class 556 {MY_G_I_1 vehicle="dev_flood_sangheili_t25_i";}; \
     class 557 {MY_G_I_1 vehicle="dev_flood_sangheili_t25_i";};
 
-#define MY_G_I_FLOOD_HUMAN side=2; faction="my_i_flood";       \
+#define MY_G_I_FLOOD_HUMAN side=2; \
     class 558 {MY_G_I_1 vehicle="dev_flood_combat_i";};        \
     class 559 {MY_G_I_1 vehicle="dev_flood_combat_i";};        \
     class 560 {MY_G_I_1 vehicle="dev_flood_combat_at_i";};     \
@@ -1055,7 +1055,7 @@
     class 571 {MY_G_I_1 vehicle="dev_flood_infection_i";};     \
     class 572 {MY_G_I_1 vehicle="dev_flood_infection_i";};
 
-#define MY_G_I_FLOOD_ELITE side=2; faction="my_i_flood";       \
+#define MY_G_I_FLOOD_ELITE side=2; \
     class 573 {MY_G_I_1 vehicle="dev_flood_sangheili_i";};     \
     class 574 {MY_G_I_1 vehicle="dev_flood_sangheili_i";};     \
     class 575 {MY_G_I_1 vehicle="dev_flood_sangheili_at_i";};  \
@@ -1072,7 +1072,7 @@
     class 586 {MY_G_I_1 vehicle="dev_flood_infection_i";};     \
     class 587 {MY_G_I_1 vehicle="dev_flood_infection_i";};
 
-#define MY_G_I_FLOOD_INFECTION side=2; faction="my_i_flood";   \
+#define MY_G_I_FLOOD_INFECTION side=2; \
     class 588 {MY_G_I_1 vehicle="dev_flood_carrier_i";};       \
     class 589 {MY_G_I_1 vehicle="dev_flood_carrier_i";};       \
     class 590 {MY_G_I_1 vehicle="dev_flood_carrier_i";};       \
