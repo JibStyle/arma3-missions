@@ -4,7 +4,7 @@ class CfgDebriefing {
     class End1 {
 	title = "Mission Completed";
 	subtitle = "";
-	description = "You succeeded in several priority objectives, helping stabilize the situation on the surface of Madrigal.";
+	description = "You secured the Enix Relay and surrounding objectives. This will safeguard sensitive ONI data and weaken the enemy posture.";
 	pictureBackground = __EVAL(getMissionPath "debrief.paa");
 	picture = __EVAL(getMissionPath "ignition.paa");
     };
