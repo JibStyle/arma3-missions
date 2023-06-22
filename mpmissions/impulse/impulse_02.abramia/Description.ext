@@ -1,0 +1,11 @@
+#include "my_groups.hpp"
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You ambushed the convoy and secured MANPADS. This will equip the rebels to defend themselves against enemy aircraft.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
