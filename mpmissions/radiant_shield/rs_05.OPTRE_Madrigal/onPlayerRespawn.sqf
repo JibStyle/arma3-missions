@@ -1,19 +1,33 @@
 params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
 
-if (!isNull _oldUnit) then {
-    waitUntil {alive player};
-    player allowDamage false;
-    player setPosATL getPosATL arrow;
-    uiSleep 5;
-    player allowDamage true;
-};
-
 [
     _newUnit,
     jib_menu_condition_admin,
     [
         "Mission Menu",
         [
+            [
+                "Emitters Terrain", "", "1", false,
+                [
+                    "Emitters Terrain",
+                    [
+                        [
+                            "Medium", toString {
+                                [my_e_o_medium] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ],
+                        [
+                            "Large", toString {
+                                [my_e_o_large] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ]
+                    ]
+                ]
+            ],
             [
                 "Tasks", "", "1", false,
                 [

@@ -4,7 +4,7 @@ class CfgDebriefing {
     class End1 {
 	title = "Mission Completed";
 	subtitle = "";
-	description = "You secured the Enix Relay and surrounding objectives. This will safeguard sensitive ONI data and weaken the enemy posture.";
+	description = "You successfully disarmed the antimatter warhead and secured the facility. This will prevent the Covenant from gaining access to secret ONI equipment.";
 	pictureBackground = __EVAL(getMissionPath "debrief.paa");
 	picture = __EVAL(getMissionPath "ignition.paa");
     };
