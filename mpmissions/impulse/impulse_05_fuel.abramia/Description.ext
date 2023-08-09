@@ -1,0 +1,18 @@
+// #include "my_groups.hpp"
+
+class CfgDebriefing {
+    class Success {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You obtained a shipment of fuel from the refinery. This will allow us to continue our motorized operations.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+    class Truck {
+	title = "Mission Failed";
+	subtitle = "Truck Disabled";
+	description = "The fuel truck was disabled. We will need to find another way to continue our motorized operations.";
+	pictureBackground = __EVAL(getMissionPath "disabled.paa");
+	// picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
