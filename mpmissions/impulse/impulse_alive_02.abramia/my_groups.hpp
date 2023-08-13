@@ -31,7 +31,7 @@
     class 6 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_LAT_F";};           \
     class 7 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_Med_F";};           \
     class 8 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_M_F";};             \
-    class 9 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_AT_F";};            \
+    class 9 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_LAT_F";};            \
     class 10 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_MG_F";};           \
     class 11 {MY_G_O_2 vehicle="OPFa_mas_SoldierE_Sold_TL_F";};
 #define MY_G_O_IFV side=0; faction="my_o";                                \
@@ -47,7 +47,7 @@
     class 20 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_LAT_F";};          \
     class 21 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_Med_F";};          \
     class 22 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_M_F";};            \
-    class 23 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_AT_F";};           \
+    class 23 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_LAT_F";};           \
     class 24 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_MG_F";};           \
     class 25 {MY_G_O_2 vehicle="OPFa_mas_SoldierE_Sold_TL_F";};
 #define MY_G_O_CAR side=0; faction="my_o";                                \
@@ -65,7 +65,7 @@
     class 36 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_M_F";};            \
     class 37 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_Med_F";};          \
     class 38 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_MG_F";};           \
-    class 39 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_AT_F";};
+    class 39 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_LAT_F";};
 #define MY_G_O_TEAM side=0; faction="my_o";                               \
     class 40 {MY_G_O_2 vehicle="OPFa_mas_SoldierE_Sold_TL_F";};           \
     class 41 {MY_G_O_1 vehicle="OPFa_mas_SoldierE_Sold_LAT_F";};          \
@@ -83,22 +83,22 @@
     class 51 {MY_G_O_2 vehicle="OPFa_mas_SoldierE_Sold_SFR_F";};          \
     class 52 {MY_G_O_2 vehicle="OPFa_mas_SoldierE_Sold_SFD_F";};
 
-#define MY_G_B_ASSAULT side=1; faction="my_b";                            \
+#define MY_G_B_ASSAULT side=2; faction="my_b";                            \
     class 53 {MY_G_B_3 vehicle="B_mas_cia_Soldierch_F";};                 \
     class 54 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_med_F";};             \
     class 55 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_AR_F";};              \
     class 56 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_exp_F";};
-#define MY_G_B_COVER side=1; faction="my_b";                              \
+#define MY_G_B_COVER side=2; faction="my_b";                              \
     class 57 {MY_G_B_3 vehicle="B_mas_cia_Soldierch_F";};                 \
     class 58 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_exp_F";};             \
     class 59 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_med_F";};             \
     class 60 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_L_F";};
-#define MY_G_B_RECCE side=1; faction="my_b";                              \
+#define MY_G_B_RECCE side=2; faction="my_b";                              \
     class 61 {MY_G_B_3 vehicle="B_mas_cia_Soldierch_F";};                 \
     class 62 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_exp_F";};             \
     class 63 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_med_F";};             \
     class 64 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_Snp_F";};
-#define MY_G_B_SUPPORT side=1; faction="my_b";                            \
+#define MY_G_B_SUPPORT side=2; faction="my_b";                            \
     class 65 {MY_G_B_3 vehicle="B_mas_cia_Soldierch_F";};                 \
     class 66 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_LAT_F";};             \
     class 67 {MY_G_B_2 vehicle="B_mas_cia_Soldierch_AR_F";};              \
@@ -164,22 +164,25 @@ class CfgGroups {
             name="My OPF";
             class Infantry {
                 class my_g_108 {MY_G_O_SQUAD};
-                class my_g_109 {MY_G_O_TEAM};
-                class my_g_110 {MY_G_O_RECCE};
+                class my_g_109 {MY_G_O_SQUAD};
+                class my_g_110 {MY_G_O_SQUAD};
+                class my_g_111 {MY_G_O_TEAM};
+                class my_g_112 {MY_G_O_RECCE};
             };
             class Motorized {
-                class my_g_111 {MY_G_O_TRUCK};
-                class my_g_112 {MY_G_O_CAR};
+                class my_g_113 {MY_G_O_TRUCK};
+                class my_g_114 {MY_G_O_TRUCK};
+                class my_g_115 {MY_G_O_CAR};
             };
             class Mechanized {
-                class my_g_113 {MY_G_O_APC};
-                class my_g_114 {MY_G_O_IFV};
+                class my_g_116 {MY_G_O_APC};
+                class my_g_117 {MY_G_O_IFV};
             };
             class Armored {
-                class my_g_115 {MY_G_O_ARM};
+                class my_g_118 {MY_G_O_ARM};
             };
             class SpecOps {
-                class my_g_116 {MY_G_O_SF};
+                class my_g_119 {MY_G_O_SF};
             };
         };
     };
@@ -195,10 +198,10 @@ class CfgGroups {
             class Armored {
             };
             class SpecOps {
-                class my_g_117 {MY_G_B_ASSAULT};
-                class my_g_118 {MY_G_B_COVER};
-                class my_g_119 {MY_G_B_RECCE};
-                class my_g_120 {MY_G_B_SUPPORT};
+                class my_g_131 {MY_G_B_ASSAULT};
+                class my_g_132 {MY_G_B_COVER};
+                class my_g_133 {MY_G_B_RECCE};
+                class my_g_134 {MY_G_B_SUPPORT};
             };
         };
     };
@@ -206,18 +209,21 @@ class CfgGroups {
         class my_i {
             name="My IND";
             class Infantry {
+                class my_g_120 {MY_G_I_SQUAD};
                 class my_g_121 {MY_G_I_SQUAD};
-                class my_g_122 {MY_G_I_TEAM};
-                class my_g_123 {MY_G_I_AA};
-                class my_g_124 {MY_G_I_AT};
-                class my_g_125 {MY_G_I_RECCE};
+                class my_g_122 {MY_G_I_SQUAD};
+                // class my_g_123 {MY_G_I_TEAM};
+                class my_g_124 {MY_G_I_AA};
+                class my_g_125 {MY_G_I_AT};
+                class my_g_126 {MY_G_I_RECCE};
             };
             class Motorized {
-                class my_g_126 {MY_G_I_TRUCK};
-                class my_g_127 {MY_G_I_CAR};
+                class my_g_127 {MY_G_I_TRUCK};
+                class my_g_128 {MY_G_I_TRUCK};
+                class my_g_129 {MY_G_I_CAR};
             };
             class Mechanized {
-                class my_g_128 {MY_G_I_TECHNICALS};
+                class my_g_130 {MY_G_I_TECHNICALS};
             };
             class Armored {
             };

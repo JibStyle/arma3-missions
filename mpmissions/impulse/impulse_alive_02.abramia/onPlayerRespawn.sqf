@@ -7,6 +7,21 @@ params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
         "Mission Menu",
         [
             [
+                "Emitters", "", "1", false,
+                [
+                    "Emitters",
+                    [
+                        [
+                            "Air", toString {
+                                [my_e_o_air] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ]
+                    ]
+                ]
+            ],
+            [
                 "Tasks", "", "1", false,
                 [
                     "Tasks",
@@ -18,8 +33,9 @@ params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
                                 [
                                     [
                                         "Mission Success", toString {
-                                            mission_success = true;
-                                            publicVariable "mission_success";
+                                            ["End1"] remoteExec [
+                                                "BIS_fnc_endMission"
+                                            ];
                                         }, "1"
                                     ]
                                 ]
