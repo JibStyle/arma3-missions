@@ -1,0 +1,18 @@
+// #include "my_groups.hpp"
+
+class CfgDebriefing {
+    class mission_done {
+	title = "Mission Completed";
+	subtitle = "VIP Rescued";
+	description = "You rescued the VIP from enemy control. He will be a valuable asset in our future operations.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+    class help_failed {
+	title = "Mission Failed";
+	subtitle = "VIP Killed";
+	description = "The VIP has been killed in action. We will need to be more careful next time.";
+	// pictureBackground = __EVAL(getMissionPath "disabled.paa");
+	// picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};

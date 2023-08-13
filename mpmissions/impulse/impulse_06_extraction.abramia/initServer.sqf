@@ -28,6 +28,7 @@
         crew _vehicle - units driver _vehicle apply {
             group _x leaveVehicle _vehicle;
             moveOut _x;
+            [_x, true] remoteExec ["allowDamage", _x];
         };
     };
 };

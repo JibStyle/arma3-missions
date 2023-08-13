@@ -1,36 +1,36 @@
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Signal_title",
-//         "- Nomad: Rebel squad"
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Execution_title",
-//         "1. Optional: Destroy comms tower<br/>
-// 2. Steal fuel truck<br/>
-// 3. Fill up at <marker name='factory'>Factory</marker><br/>
-// 4. Deliver truck to <marker name='safehouse'>Safehouse</marker>"
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Mission_title",
-//         "Steal the fuel truck, fill it up at the <marker name='factory'>Factory</marker>, and bring it to our <marker name='safehouse'>Safehouse</marker>."
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Situation_title",
-//         "Our rebellion is running dangerously low on fuel needed to sustain motorized operations. If we can fill and steal a fuel truck from the enemy, it will significantly increase our mobility. The town of Belucco is lightly guarded and provides an opportunity. By destroying the local <marker name='obj_tower'>Comms Tower</marker>, we can prevent the enemy from calling in QRF. There is a fuel truck in either the <marker name='station'>Fire Station</marker> or the <marker name='warehouse'>Warehouse</marker>. It is stored empty, so we must fill it up at the nearby <marker name='factory'>Factory</marker>. Once filled, we will bring it back to our nearby <marker name='safehouse'>Safehouse</marker>."
-//     ]
-// ];
-// uiSleep 1;
-// player selectDiarySubject "Diary:Record3"; // Situation
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Signal_title",
+        "- Hitman: CIA strike team"
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Execution_title",
+        "1. Insert via Little Bird on Towers 1 and 2.<br/>
+2. Access computer in Security room.<br/>
+3. Rescue VIP William Morgan.<br/>
+4. Extract via Ghosthawk."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Mission_title",
+        "Access the Security room, locate VIP William Morgan, and extract via Ghosthawk."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Situation_title",
+        "CIA operator William Morgan has been captured by the Abramian Army and is held prisoner in a gulag. There are 4 Cell Blocks and his location can be accessed in the warden's computer in the Security building. Morgan holds critical information and it is time sensitive that we rescue him at once. We will fly in 2 sticks of CIA operators and land them on Towers 1 and 2. They will clear out the gulag, access the Security room, and free Morgan. Once Morgan is found, a Ghosthawk will provide immediate extract. This will be a risky operation, so be fast and decisive."
+    ]
+];
+uiSleep 1;
+player selectDiarySubject "Diary:Record3"; // Situation
 
 // [
 //     player,
