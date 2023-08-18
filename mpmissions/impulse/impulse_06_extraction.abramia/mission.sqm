@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=50;
+		nextID=92;
 	};
 	class Camera
 	{
-		pos[]={8217.9883,64.684158,3508.9844};
-		dir[]={0.45388496,-0.50206208,0.7361536};
-		up[]={0.26349455,0.86483151,0.42736045};
-		aside[]={0.8512103,1.4901161e-008,-0.52482462};
+		pos[]={8262.8594,39.712959,3519.9001};
+		dir[]={-0.96359301,-0.23692089,0.12392358};
+		up[]={-0.2349856,0.97152901,0.030220494};
+		aside[]={0.12755522,0,0.99183154};
 	};
 };
 binarizationWanted=0;
@@ -762,7 +762,6 @@ class Mission
 							};
 							id=171;
 							type="OPFa_mas_SoldierE_Sold_Crew_F";
-							atlOffset=-1.5258789e-005;
 						};
 						class Item1
 						{
@@ -773,12 +772,12 @@ class Mission
 								angles[]={6.2312312,0.18383552,6.2571907};
 							};
 							side="East";
+							flags=4;
 							class Attributes
 							{
 							};
 							id=172;
 							type="OPFa_mas_SoldierE_Sold_Crew_F";
-							atlOffset=2.8163986;
 						};
 						class Item2
 						{
@@ -789,13 +788,12 @@ class Mission
 								angles[]={6.2312312,0.18383552,6.2571907};
 							};
 							side="East";
-							flags=2;
+							flags=6;
 							class Attributes
 							{
 							};
 							id=173;
 							type="OPFa_mas_SoldierE_Sold_Crew_F";
-							atlOffset=2.8163986;
 						};
 					};
 					class Attributes
@@ -2382,7 +2380,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={8188.3281,17.896,3553.679};
-					angle=1.5939037;
+					angle=1.5939035;
 					class Attributes
 					{
 						text="Landing Gear";
@@ -6632,6 +6630,7 @@ class Mission
 									};
 									id=1852;
 									type="OPFa_mas_SoldierE_Sold_R_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item1
 								{
@@ -6649,6 +6648,7 @@ class Mission
 									};
 									id=1853;
 									type="OPFa_mas_SoldierE_Sold_SL_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item2
 								{
@@ -6666,6 +6666,7 @@ class Mission
 									};
 									id=1854;
 									type="OPFa_mas_SoldierE_Sold_MG_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item3
 								{
@@ -6683,6 +6684,7 @@ class Mission
 									};
 									id=1855;
 									type="OPFa_mas_SoldierE_Sold_LAT_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item4
 								{
@@ -6700,6 +6702,7 @@ class Mission
 									};
 									id=1856;
 									type="OPFa_mas_SoldierE_Sold_Med_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item5
 								{
@@ -6717,6 +6720,7 @@ class Mission
 									};
 									id=1857;
 									type="OPFa_mas_SoldierE_Sold_M_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item6
 								{
@@ -6734,6 +6738,7 @@ class Mission
 									};
 									id=1858;
 									type="OPFa_mas_SoldierE_Sold_AT_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item7
 								{
@@ -6751,6 +6756,7 @@ class Mission
 									};
 									id=1859;
 									type="OPFa_mas_SoldierE_Sold_MG_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item8
 								{
@@ -6768,6 +6774,7 @@ class Mission
 									};
 									id=1860;
 									type="OPFa_mas_SoldierE_Sold_TL_F";
+									atlOffset=-2.2649765e-005;
 								};
 								class Item9
 								{
@@ -14121,7 +14128,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=4;
 								};
 							};
 						};
@@ -14279,7 +14286,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=4;
 								};
 							};
 						};
@@ -14437,7 +14444,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=4;
 								};
 							};
 						};

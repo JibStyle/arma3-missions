@@ -1,4 +1,6 @@
-player createDiaryRecord [
+params ["_player", "_didJIP"];
+
+_player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Signal_title",
@@ -8,7 +10,7 @@ player createDiaryRecord [
 - Delta: Overwatch"
     ]
 ];
-player createDiaryRecord [
+_player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Execution_title",
@@ -18,14 +20,14 @@ player createDiaryRecord [
 4. Exfiltrate to the objective destinations."
     ]
 ];
-player createDiaryRecord [
+_player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Mission_title",
         "Assault the base, search HQ building for intel, steal 2 ammo crates, and steal the CAS helicopter."
     ]
 ];
-player createDiaryRecord [
+_player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Situation_title",
@@ -33,49 +35,54 @@ player createDiaryRecord [
     ]
 ];
 uiSleep 1;
-player selectDiarySubject "Diary:Record4"; // Situation
+_player selectDiarySubject "Diary:Record4"; // Situation
 
-[
-    player,
-    jib_menu_condition_admin,
+my_menu_setup = {
+    params ["_player"];
+    waitUntil {alive _player};
     [
-        "Mission Menu",
+        _player,
+        jib_menu_condition_admin,
         [
+            "Mission Menu",
             [
-                "Phase", "", "1", false,
                 [
-                    "Phase",
+                    "Phase", "", "1", false,
                     [
+                        "Phase",
                         [
-                            "Yellow", toString {
-                                yellow = true; publicVariable "yellow";
-                            }, "1"
-                        ],
-                        [
-                            "Red", toString {
-                                yellow = true; publicVariable "yellow";
-                                red = true; publicVariable "red";
-                            }, "1"
+                            [
+                                "Yellow", toString {
+                                    yellow = true; publicVariable "yellow";
+                                }, "1"
+                            ],
+                            [
+                                "Red", toString {
+                                    yellow = true; publicVariable "yellow";
+                                    red = true; publicVariable "red";
+                                }, "1"
+                            ]
                         ]
                     ]
-                ]
-            ],
-            [
-                "Tasks", "", "1", false,
+                ],
                 [
-                    "Tasks",
+                    "Tasks", "", "1", false,
                     [
+                        "Tasks",
                         [
-                            "Mission Success", "", "1", false,
                             [
-                                "Confirm Mission Success?",
+                                "Mission Success", "", "1", false,
                                 [
+                                    "Confirm Mission Success?",
                                     [
-                                        "Mission Success", toString {
-                                            ["succeeded"] remoteExec [
-                                                "BIS_fnc_endMission", 0, true
-                                            ];
-                                        }, "1"
+                                        [
+                                            "Mission Success", toString {
+                                                ["succeeded"] remoteExec [
+                                                    "BIS_fnc_endMission",
+                                                    0, true
+                                                ];
+                                            }, "1"
+                                        ]
                                     ]
                                 ]
                             ]
@@ -84,5 +91,11 @@ player selectDiarySubject "Diary:Record4"; // Situation
                 ]
             ]
         ]
-    ]
-] call jib_menu_dynamic_action;
+    ] call jib_menu_dynamic_action;
+};
+
+addMissionEventHandler ["TeamSwitch", {
+    params ["_previousUnit", "_newUnit"];
+    [_newUnit] call my_menu_setup;
+}];
+[_player] call my_menu_setup;

@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=64;
+		nextID=104;
 	};
 	class Camera
 	{
-		pos[]={5334.8027,94.620293,1881.2667};
-		dir[]={0.73908687,-0.3122074,0.59688956};
-		up[]={0.24288946,0.950014,0.19615853};
-		aside[]={0.6282956,1.4901161e-008,-0.77797478};
+		pos[]={7769.6704,11.456906,3276.7493};
+		dir[]={-0.38025767,-0.25004879,0.89043951};
+		up[]={-0.098202802,0.96823227,0.22995883};
+		aside[]={0.91965288,-4.1793101e-008,0.39273298};
 	};
 };
 binarizationWanted=0;
@@ -420,7 +420,6 @@ class ScenarioData
 	overViewPicture="title.paa";
 	respawn=5;
 	respawnDelay=5;
-	enableTeamSwitch=0;
 	class Header
 	{
 		gameType="Coop";
@@ -5231,7 +5230,7 @@ class Mission
 											class PositionInfo
 											{
 												position[]={5508.0479,57.780437,1421.068};
-												angles[]={0,4.1898737,-0};
+												angles[]={0,4.1898737,0};
 											};
 											side="East";
 											flags=3;
@@ -8961,7 +8960,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=6;
 								};
 							};
 						};
@@ -9119,7 +9118,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=6;
 								};
 							};
 						};
@@ -9278,7 +9277,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=6;
 								};
 							};
 						};
@@ -9437,7 +9436,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=6;
 								};
 							};
 						};
@@ -9596,7 +9595,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=6;
 								};
 							};
 						};
@@ -9755,7 +9754,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=6;
 								};
 							};
 						};
@@ -9914,7 +9913,7 @@ class Mission
 								class data
 								{
 									singleType="SCALAR";
-									value=3;
+									value=6;
 								};
 							};
 						};
@@ -12031,33 +12030,21 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6004.6455,84.882401,2842.9519};
-								angles[]={0,4.0686817,0};
+								position[]={6004.646,84.882439,2842.9521};
+								angles[]={0,4.0686765,0};
 							};
 							side="Independent";
 							flags=5;
 							class Attributes
 							{
-								rank="SERGEANT";
+								rank="CORPORAL";
 							};
 							id=2868;
 							type="IND_mas_SoldierE_Para_6_F";
+							atlOffset=-7.6293945e-006;
 							class CustomAttributes
 							{
 								class Attribute0
-								{
-									property="ENH_disableAI_path";
-									expression="if (_value) then {[_this, 'PATH'] remoteExec ['disableAI', _this]}";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=1;
-										};
-									};
-								};
-								class Attribute1
 								{
 									property="ENH_AmbientAnimations";
 									expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          if (alive _unit) then          {            [_unit, ''] remoteExec ['switchMove', 0];            _unit enableAI 'ANIM';          };          _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -12116,7 +12103,46 @@ class Mission
 										};
 									};
 								};
-								nAttributes=2;
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male06GRE";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.04;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ENH_disableAI_path";
+									expression="if (_value) then {[_this, 'PATH'] remoteExec ['disableAI', _this]}";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=1;
+										};
+									};
+								};
+								nAttributes=4;
 							};
 						};
 						class Item5
@@ -12312,7 +12338,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={6219.4341,6.5129461,2880.113};
+								position[]={6219.4341,6.5129428,2880.113};
 								angles[]={0.0082205003,5.7079945,0.00034906584};
 							};
 							side="Independent";
@@ -12324,7 +12350,7 @@ class Mission
 							};
 							id=2871;
 							type="IND_mas_SoldierE_Para_9_F";
-							atlOffset=0.00022411346;
+							atlOffset=0.0002207756;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12490,7 +12516,7 @@ class Mission
 						dynamicSimulation=1;
 					};
 					id=2862;
-					atlOffset=0.00022411346;
+					atlOffset=0.0002207756;
 				};
 				class Item20
 				{
@@ -12886,6 +12912,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 								description="Squad Leader@Alpha";
 								isPlayer=1;
 								isPlayable=1;
@@ -12989,6 +13016,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								rank="CORPORAL";
 								isPlayable=1;
 							};
 							id=3153;
@@ -13202,6 +13230,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 							};
 							id=3158;
 							type="IND_mas_SoldierE_Para_2_F";
@@ -13270,6 +13299,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								rank="CORPORAL";
 							};
 							id=3162;
 							type="IND_mas_SoldierE_Para_6_F";
@@ -13332,7 +13362,7 @@ class Mission
 							loiterAltitude=-3.4028235e+038;
 							position[]={5671.124,28.895298,1803.8361};
 							type="Scripted";
-							expCond="yellow";
+							expCond="!isNil ""yellow""";
 							class Effects
 							{
 							};
@@ -13358,7 +13388,7 @@ class Mission
 							loiterAltitude=-3.4028235e+038;
 							position[]={5682.0332,54.218525,1578.142};
 							type="Scripted";
-							expCond="red";
+							expCond="!isNil ""red""";
 							class Effects
 							{
 							};
@@ -13424,6 +13454,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 							};
 							id=3167;
 							type="IND_mas_SoldierE_Para_2_F";
@@ -13492,6 +13523,7 @@ class Mission
 							flags=5;
 							class Attributes
 							{
+								rank="CORPORAL";
 							};
 							id=3171;
 							type="IND_mas_SoldierE_Para_6_F";
@@ -13554,7 +13586,7 @@ class Mission
 							loiterAltitude=-3.4028235e+038;
 							position[]={5106.251,25.629839,1597.12};
 							type="Scripted";
-							expCond="yellow";
+							expCond="!isNil ""yellow""";
 							class Effects
 							{
 							};
@@ -13580,7 +13612,7 @@ class Mission
 							loiterAltitude=-3.4028235e+038;
 							position[]={5234.1338,49.68116,1547.837};
 							type="Scripted";
-							expCond="red";
+							expCond="!isNil ""red""";
 							class Effects
 							{
 							};
@@ -13646,6 +13678,7 @@ class Mission
 							flags=7;
 							class Attributes
 							{
+								rank="SERGEANT";
 								init="if (!isServer) exitWith {};" \n "private _helper = helper_sl;" \n "this setVariable [""my_pos"", getPos _helper];" \n "deleteVehicle _helper;";
 							};
 							id=3139;
@@ -14018,7 +14051,7 @@ class Mission
 							loiterAltitude=-3.4028235e+038;
 							position[]={5235.8599,86.108101,1780.788};
 							type="Scripted";
-							expCond="yellow";
+							expCond="!isNil ""yellow""";
 							class Effects
 							{
 							};
@@ -14042,9 +14075,9 @@ class Mission
 						{
 							dataType="Waypoint";
 							loiterAltitude=-3.4028235e+038;
-							position[]={5355.2798,80.236183,1652.9133};
+							position[]={5355.2798,80.236198,1652.913};
 							type="Scripted";
-							expCond="red";
+							expCond="!isNil ""red""";
 							class Effects
 							{
 							};
@@ -14824,15 +14857,15 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7766.9326,8.4238138,3280.5576};
-								angles[]={0,2.3963156,0};
+								position[]={7766.9331,8.4238176,3280.5581};
+								angles[]={0,2.3963196,0};
 							};
 							side="Independent";
 							flags=7;
 							class Attributes
 							{
 								skill=0.55000001;
-								rank="LIEUTENANT";
+								rank="SERGEANT";
 							};
 							id=3083;
 							type="IND_mas_SoldierE_Para_2_F";
@@ -15344,14 +15377,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7781.1099,8.4447918,3298.3733};
-								angles[]={0,2.848763,0};
+								position[]={7781.1099,8.4447927,3298.373};
+								angles[]={0,2.8487613,0};
 							};
 							side="Independent";
 							flags=5;
 							class Attributes
 							{
-								rank="SERGEANT";
+								rank="CORPORAL";
 							};
 							id=3088;
 							type="IND_mas_SoldierE_Para_6_F";
@@ -15692,7 +15725,7 @@ class Mission
 				};
 			};
 			id=3081;
-			atlOffset=-0.058291435;
+			atlOffset=-0.058292389;
 		};
 		class Item6
 		{
