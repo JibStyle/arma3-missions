@@ -1,0 +1,11 @@
+// #include "my_groups.hpp"
+
+class CfgDebriefing {
+    class succeeded {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You successfully raided the enemy base and acquired valuable assets. We are gaining the power to sustain our revolution.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
