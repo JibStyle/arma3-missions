@@ -1,0 +1,9 @@
+class CfgDebriefing {
+    class succeeded {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You successfully obtained Forerunner data from the artifact. This will prove useful in turning the tide of the war.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
