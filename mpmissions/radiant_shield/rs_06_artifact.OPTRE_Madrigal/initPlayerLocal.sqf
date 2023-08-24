@@ -4,34 +4,33 @@ _player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Signal_title",
-        "- Alpha: Main assault<br/>
-- Bravo: Flank left<br/>
-- Charlie: Flank right<br/>
-- Delta: Overwatch"
+        "- Prism: Spartan II team.<br/>
+- Hitman: Marine element."
     ]
 ];
 _player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Execution_title",
-        "1. Bravo, Charlie, and Delta will wait for Alpha's signal to attack.<br/>
-2. Assault the base.<br/>
-3. Exploit the objectives.<br/>
-4. Exfiltrate to the objective destinations."
+        "1. Insert Warthogs via Pelicans.<br/>
+2. Secure Excavation Site.<br/>
+3. Download Forerunner artifact data.<br/>
+4. Await Marine reinforcements.<br/>
+5. Defend against Covenant counterattack."
     ]
 ];
 _player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Mission_title",
-        "Assault the base, search HQ building for intel, steal 2 ammo crates, and steal the CAS helicopter."
+        "Assault the Excavation Site, download data from the artifact, and defend against counterattack."
     ]
 ];
 _player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Situation_title",
-        "We have detected valuable assets at lightly defended Armybase Saira. We will send a platoon to attack. Delta will set up base of fire. Bravo and Charlie will flank both sides. Alpha will search the HQ building for intel, load 2 ammo crates onto trucks, and steal the parked CAS helicopter. Deliver the crates north to Camp Deer, and the helicopter northeast to Supply Drop Point. If we succeed it will give us the power to sustain our revolution."
+        "The Covenant have discovered a Forerunner artifact underground and are operating an Excavation Site to reach it. Luckily the artifact is coded to human touch which will delay them. We are sending a Spartan II team to assault the Excavation Site, secure the artifact, and download its Forerunner data. There are light infantry patrols around the site. Once the site is secure, we will insert two Marine squads to hold it against a likely counterattack."
     ]
 ];
 uiSleep 1;
