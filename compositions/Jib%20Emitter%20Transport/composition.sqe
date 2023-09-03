@@ -1,0 +1,154 @@
+version=54;
+center[]={5482.9395,57.254391,1734.5297};
+class items
+{
+	items=7;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.285645,14.872341,-36.571411};
+		};
+		init="[this, 1, 0, ""TR UNLOAD"", ""NO CHANGE"", ""CARELESS"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=7039;
+		type="Logic";
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={45.714355,0.025608063,27.428589};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=7040;
+		type="Logic";
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={45.714355,3.2194405,91.428589};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", ""[this] call jib_wp_rtbComplete""]] call jib_emitter_waypoint;";
+		id=7026;
+		type="Logic";
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.285645,29.645283,155.42859};
+		};
+		init="[this] call jib_emitter_save;";
+		id=7036;
+		type="Logic";
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.285645,0,-164.57141};
+		};
+		init="[this, 1, 0, ""GUARD"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=7027;
+		type="Logic";
+	};
+	class Item5
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.285645,2.2400017,-100.57141};
+		};
+		init="[this] call jib_emitter_child;";
+		id=7028;
+		type="Logic";
+	};
+	class Item6
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.285645,0.80119324,27.428589};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=7038;
+		type="Logic";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=6;
+	};
+	class Links
+	{
+		items=6;
+		class Item0
+		{
+			linkID=0;
+			item0=7038;
+			item1=7039;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=7039;
+			item1=7040;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=7026;
+			item1=7040;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=7027;
+			item1=7028;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=7028;
+			item1=7039;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=7036;
+			item1=7038;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

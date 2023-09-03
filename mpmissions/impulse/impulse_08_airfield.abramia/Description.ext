@@ -1,0 +1,11 @@
+#include "my_groups.hpp"
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "Airport Captured";
+	description = "You captured the airport and capital of Isla Abramia. This gives us the leverage to force the OPFOR Army to the negotiating table.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
