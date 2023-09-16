@@ -1,0 +1,39 @@
+version=54;
+center[]={1058.429,13.16,2882.8721};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,1.6262865,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, false] call jib_garbage_include;";
+		};
+		id=999;
+		type="B_Quadbike_01_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[""FirstAidKit""],[4]],[[],[]],[[],[]],[[],[]]],false]";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+};

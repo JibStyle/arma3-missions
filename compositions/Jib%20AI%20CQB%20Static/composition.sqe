@@ -1,0 +1,152 @@
+version=54;
+center[]={813.44629,15.475299,4501.979};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=8;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.22229,0.0014390945,8.9384766};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="SERGEANT";
+				};
+				id=895;
+				type="O_Soldier_SL_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.77771,0.69200611,3.9384766};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=896;
+				type="O_Soldier_F";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-7.22229,0.14264774,3.9384766};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=897;
+				type="O_Soldier_LAT_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={7.77771,1.4848757,-1.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=898;
+				type="O_soldier_M_F";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-12.22229,0.5122118,-1.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					rank="SERGEANT";
+				};
+				id=899;
+				type="O_Soldier_TL_F";
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={12.77771,2.5302439,-6.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=900;
+				type="O_Soldier_AR_F";
+			};
+			class Item6
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-17.22229,1.5781584,-6.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=901;
+				type="O_Soldier_A_F";
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={17.77771,3.0830908,-11.061523};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=902;
+				type="O_medic_F";
+			};
+		};
+		class Attributes
+		{
+			init="""static""; [this, 0, 0, 1, 0.5, random [-100, 0, 100]] call jib_ai_cqb;";
+			garbageCollect=1;
+			dynamicSimulation=1;
+		};
+		id=894;
+	};
+};
