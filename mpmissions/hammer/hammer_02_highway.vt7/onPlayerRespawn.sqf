@@ -6,21 +6,63 @@ params ["_newUnit", "_oldUnit", "_respawn", "_respawnDelay"];
     [
         "Mission Menu",
         [
-            // [
-            //     "Emitters", "", "1", false,
-            //     [
-            //         "Emitters",
-            //         [
-            //             [
-            //                 "Air", toString {
-            //                     [my_e_o_air] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ]
-            //         ]
-            //     ]
-            // ],
+            [
+                "Emitters", "", "1", false,
+                [
+                    "Emitters",
+                    [
+                        [
+                            "O Inf", toString {
+                                [my_e_o_inf] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ],
+                        [
+                            "O Mot", toString {
+                                [my_e_o_mot] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ],
+                        [
+                            "O Mec", toString {
+                                [my_e_o_mec] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ],
+                        [
+                            "O Arm", toString {
+                                [my_e_o_arm] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ],
+                        [
+                            "O Tra", toString {
+                                [my_e_o_tra] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ],
+                        [
+                            "O Air", toString {
+                                [my_e_o_air] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ],
+                        [
+                            "B Air", toString {
+                                [my_e_b_air] remoteExec [
+                                    "jib_emitter_single", 2
+                                ];
+                            }, "1", true
+                        ]
+                    ]
+                ]
+            ],
             [
                 "Tasks", "", "1", false,
                 [
