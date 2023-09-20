@@ -1,0 +1,13 @@
+version=54;
+center[]={9945.46,199.22,10891.124};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="[""a3\data_f\snowflake4_ca.paa"", 4, 0.01, 25, 0.05, 2.5, 0.5, 0.5, 0.07, 0.07, [1, 1, 1, 0.5], 0.0, 0.2, 0.5, 0.5, true, false] call BIS_fnc_setRain; " \n "forceWeatherChange;";
+		id=1049;
+		type="Logic";
+	};
+};

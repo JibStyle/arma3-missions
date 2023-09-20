@@ -1,0 +1,22 @@
+version=54;
+center[]={10911,251.37332,9220};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={0,0,0};
+		class Attributes
+		{
+			onActivation="private _target = 20; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+			sizeA=250;
+			sizeB=250;
+			activationBy="EAST";
+			isServerOnly=1;
+		};
+		id=1058;
+		type="EmptyDetectorAreaR250";
+		atlOffset=-1.5258789e-005;
+	};
+};
