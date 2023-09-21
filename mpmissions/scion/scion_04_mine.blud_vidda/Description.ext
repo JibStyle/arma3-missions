@@ -1,0 +1,9 @@
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You disabled the enemy Power Station. This will soften their capabilities when we conduct our main assault.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
