@@ -1,0 +1,226 @@
+version=54;
+center[]={1645.2858,295.29294,4375.8833};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=8;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.2220459,0.0025939941,8.9384766};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="SERGEANT";
+					isPlayer=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="SC_Rifle_Ravager";
+							firemode="SC_Rifle_Ravager:FullAuto";
+							class primaryMuzzleMag
+							{
+								name="SC_20Rnd_Plasma_Mag";
+								ammoLeft=20;
+							};
+						};
+						class uniform
+						{
+							typeName="SC_Undersuit_Black";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="SC_IG3";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="FirstAidKit";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="SC_Vest_WP_Light_Snow";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=4;
+								class Item0
+								{
+									name="SC_20Rnd_Plasma_Mag";
+									count=7;
+									ammoLeft=20;
+								};
+								class Item1
+								{
+									name="SC_IG3";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						goggles="SC_Hood_SE_Snow";
+						headgear="SC_Helmet_WP_Snow";
+					};
+				};
+				id=1035;
+				type="SC_SE_Arctic_Officer";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.7779541,0.055084229,3.9384766};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=1036;
+				type="SC_SE_Arctic_Rifleman_M";
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-7.2220459,0.0014343262,3.9384766};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=1037;
+				type="SC_SE_Arctic_Rifleman_H";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={7.7779541,0.1031189,-1.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=1038;
+				type="SC_SE_Arctic_Rifleman_L";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-12.222046,0.023986816,-1.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					rank="SERGEANT";
+				};
+				id=1039;
+				type="SC_SE_Arctic_Rifleman_AT";
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={12.777954,0.094726563,-6.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+				};
+				id=1040;
+				type="SC_SE_Arctic_Rifleman_H";
+			};
+			class Item6
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-17.222046,0.0053710938,-6.0615234};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=1041;
+				type="SC_SE_Arctic_Marksman";
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={17.777954,0.024291992,-11.061523};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+				};
+				id=1042;
+				type="SC_SE_Arctic_Medic";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=1034;
+	};
+};

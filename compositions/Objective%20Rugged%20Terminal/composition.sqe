@@ -1,0 +1,185 @@
+version=54;
+center[]={1592.549,271.96402,4346.873};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.85321045,0};
+		};
+		side="Empty";
+		flags=5;
+		class Attributes
+		{
+		};
+		id=112;
+		type="RuggedTerminal_01_F";
+		atlOffset=3.0517578e-005;
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ENH_HoldAction";
+				expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=13;
+							class Item0
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Activate Terminal";
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="STRING";
+									value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa";
+								};
+							};
+							class Item2
+							{
+								class data
+								{
+									singleType="STRING";
+									value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa";
+								};
+							};
+							class Item3
+							{
+								class data
+								{
+									singleType="STRING";
+									value="player distance _target < 3";
+								};
+							};
+							class Item4
+							{
+								class data
+								{
+									singleType="STRING";
+									value="true";
+								};
+							};
+							class Item5
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[ " \n "    _target, [""Terminal_source"",""Terminal_source_sound""], 100, 1 " \n "] call bis_fnc_LinkTerminal_Animations; " \n "_target setVariable [ " \n "    ""my_terminal_animation"", " \n "    [_target] spawn { " \n "        params [""_target""]; " \n "        uiSleep 3.5; " \n "        _target animateSource [""Downloading_source"", 100, 2.5]; " \n "        _target animateSource [""Progress_source"", 100, 1]; " \n "    } " \n "]; ";
+								};
+							};
+							class Item6
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+							class Item7
+							{
+								class data
+								{
+									singleType="STRING";
+									value="my_rugged_terminal = true; publicVariable ""my_rugged_terminal"";";
+								};
+							};
+							class Item8
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[ " \n "    _target, [""Terminal_source"",""Terminal_source_sound""], 0, 1 " \n "] call bis_fnc_LinkTerminal_Animations; " \n "terminate (_target getVariable [""my_terminal_animation"", scriptNull]); " \n "_target animateSource [""Downloading_source"", 0, true]; " \n "_target animateSource [""Progress_source"", 0, true];";
+								};
+							};
+							class Item9
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=14;
+								};
+							};
+							class Item10
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1000;
+								};
+							};
+							class Item11
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+							class Item12
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ProgressBar";
+				expression="_this animateSource ['Progress_source',_value*100,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="OpenTerminal";
+				expression="[_this,['Terminal_source','Terminal_source_sound'],_value*100,true] call bis_fnc_LinkTerminal_Animations";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="Downloading_source";
+				expression="_this animateSource ['Downloading_source',_value*100,true]";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+};
