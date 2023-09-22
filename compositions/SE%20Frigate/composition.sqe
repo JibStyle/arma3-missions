@@ -1,0 +1,54 @@
+version=54;
+center[]={319.88013,128,5697.5654};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.23977661,-5.4559784,31.157227};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=1180;
+		type="Land_SC_sefrigate";
+		atlOffset=102.86578;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.11987305,-4.7203674,-1.5654297};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=1181;
+		type="Land_SC_sefrigate2";
+		atlOffset=110.32665;
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.11987305,2.3035889,-29.59375};
+		};
+		side="Empty";
+		flags=1;
+		class Attributes
+		{
+		};
+		id=1182;
+		type="Land_SC_sefrigate3";
+		atlOffset=111.72;
+	};
+};
