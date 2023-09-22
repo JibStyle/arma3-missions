@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=75;
+		nextID=103;
 	};
 	class Camera
 	{
@@ -17122,7 +17122,6 @@ class Mission
 							};
 							id=1362;
 							type="SC_SE_Crewman";
-							atlOffset=0.00057983398;
 						};
 						class Item1
 						{
@@ -17133,14 +17132,14 @@ class Mission
 								angles[]={0.049956869,0,0.013336525};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 								name="mrap_1G";
 							};
 							id=1363;
 							type="SC_SE_Crewman";
-							atlOffset=0.00057983398;
+							atlOffset=2.7929688;
 						};
 					};
 					class Attributes
@@ -17257,6 +17256,7 @@ class Mission
 							};
 							id=1365;
 							type="SC_SE_Crewman";
+							atlOffset=-10.64325;
 						};
 						class Item1
 						{
@@ -17274,6 +17274,7 @@ class Mission
 							};
 							id=1366;
 							type="SC_SE_Crewman";
+							atlOffset=-7.859436;
 						};
 					};
 					class Attributes
@@ -17388,6 +17389,7 @@ class Mission
 							};
 							id=1369;
 							type="SC_SE_Crewman";
+							atlOffset=-1.4908142;
 						};
 						class Item1
 						{
@@ -17397,13 +17399,14 @@ class Mission
 								position[]={1911.4424,295.31235,4419.9604};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 								name="mrap_3G";
 							};
 							id=1370;
 							type="SC_SE_Crewman";
+							atlOffset=1.2960205;
 						};
 					};
 					class Attributes
@@ -17511,13 +17514,13 @@ class Mission
 								angles[]={0.10626716,0,6.2199364};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 								name="mrap_4D";
 							};
 							id=1373;
 							type="SC_SE_Crewman";
+							atlOffset=10.737457;
 						};
 						class Item1
 						{
@@ -17528,13 +17531,14 @@ class Mission
 								angles[]={0.10626716,0,6.2199364};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 								name="mrap_4G";
 							};
 							id=1374;
 							type="SC_SE_Crewman";
+							atlOffset=13.534729;
 						};
 					};
 					class Attributes
@@ -17650,6 +17654,7 @@ class Mission
 							};
 							id=1377;
 							type="SC_SE_Crewman";
+							atlOffset=-0.73065186;
 						};
 						class Item1
 						{
@@ -17660,13 +17665,14 @@ class Mission
 								angles[]={6.276526,0,6.1769185};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 								name="mrap_5G";
 							};
 							id=1378;
 							type="SC_SE_Crewman";
+							atlOffset=2.0617981;
 						};
 					};
 					class Attributes

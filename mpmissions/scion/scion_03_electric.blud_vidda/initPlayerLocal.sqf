@@ -1,84 +1,87 @@
 params ["_player", "_didJIP"];
 
-[
-    _player,
-    jib_menu_condition_admin,
+my_menu = {
+    params ["_player"];
     [
-        "Mission Menu",
+        _player,
+        jib_menu_condition_admin,
         [
-            // [
-            //     "Emitters", "", "1", false,
-            //     [
-            //         "Emitters",
-            //         [
-            //             [
-            //                 "Inf 1 Aware", toString {
-            //                     [my_e_i_1_aware] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ],
-            //             [
-            //                 "Inf 1 Stealth", toString {
-            //                     [my_e_i_1_stealth] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ],
-            //             [
-            //                 "Warbots 1", toString {
-            //                     [my_e_war_1] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ],
-            //             [
-            //                 "Inf 2 Aware", toString {
-            //                     [my_e_i_2_aware] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ],
-            //             [
-            //                 "Inf 2 Stealth", toString {
-            //                     [my_e_i_2_stealth] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ],
-            //             [
-            //                 "Warbots 2", toString {
-            //                     [my_e_war_2] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ],
-            //             [
-            //                 "Airborne", toString {
-            //                     [my_e_o_tra] remoteExec [
-            //                         "jib_emitter_single", 2
-            //                     ];
-            //                 }, "1", true
-            //             ]
-            //         ]
-            //     ]
-            // ],
+            "Mission Menu",
             [
-                "Tasks", "", "1", false,
+                // [
+                //     "Emitters", "", "1", false,
+                //     [
+                //         "Emitters",
+                //         [
+                //             [
+                //                 "Inf 1 Aware", toString {
+                //                     [my_e_i_1_aware] remoteExec [
+                //                         "jib_emitter_single", 2
+                //                     ];
+                //                 }, "1", true
+                //             ],
+                //             [
+                //                 "Inf 1 Stealth", toString {
+                //                     [my_e_i_1_stealth] remoteExec [
+                //                         "jib_emitter_single", 2
+                //                     ];
+                //                 }, "1", true
+                //             ],
+                //             [
+                //                 "Warbots 1", toString {
+                //                     [my_e_war_1] remoteExec [
+                //                         "jib_emitter_single", 2
+                //                     ];
+                //                 }, "1", true
+                //             ],
+                //             [
+                //                 "Inf 2 Aware", toString {
+                //                     [my_e_i_2_aware] remoteExec [
+                //                         "jib_emitter_single", 2
+                //                     ];
+                //                 }, "1", true
+                //             ],
+                //             [
+                //                 "Inf 2 Stealth", toString {
+                //                     [my_e_i_2_stealth] remoteExec [
+                //                         "jib_emitter_single", 2
+                //                     ];
+                //                 }, "1", true
+                //             ],
+                //             [
+                //                 "Warbots 2", toString {
+                //                     [my_e_war_2] remoteExec [
+                //                         "jib_emitter_single", 2
+                //                     ];
+                //                 }, "1", true
+                //             ],
+                //             [
+                //                 "Airborne", toString {
+                //                     [my_e_o_tra] remoteExec [
+                //                         "jib_emitter_single", 2
+                //                     ];
+                //                 }, "1", true
+                //             ]
+                //         ]
+                //     ]
+                // ],
                 [
-                    "Tasks",
+                    "Tasks", "", "1", false,
                     [
+                        "Tasks",
                         [
-                            "Mission Success", "", "1", false,
                             [
-                                "Confirm Mission Success?",
+                                "Mission Success", "", "1", false,
                                 [
+                                    "Confirm Mission Success?",
                                     [
-                                        "Mission Success", toString {
-                                            ["End1"] remoteExec [
-                                                "BIS_fnc_endMission"
-                                            ];
-                                        }, "1"
+                                        [
+                                            "Mission Success", toString {
+                                                ["End1"] remoteExec [
+                                                    "BIS_fnc_endMission"
+                                                ];
+                                            }, "1"
+                                        ]
                                     ]
                                 ]
                             ]
@@ -87,8 +90,13 @@ params ["_player", "_didJIP"];
                 ]
             ]
         ]
-    ]
-] call jib_menu_dynamic_action;
+    ] call jib_menu_dynamic_action;
+};
+addMissionEventHandler ["TeamSwitch", {
+    params ["_previousUnit", "_newUnit"];
+    [_newUnit] call my_menu;
+}];
+[_player] call my_menu;
 
 player createDiaryRecord [
     "Diary",
