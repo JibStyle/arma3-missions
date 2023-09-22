@@ -25,9 +25,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={2188.9819,282.53452,5009.7441};
-		dir[]={-0.78788555,-0.49928153,0.36059365};
-		up[]={-0.4540382,0.86640239,0.20780139};
-		aside[]={0.41617027,6.0163438e-007,0.9093166};
+		dir[]={-0.78785658,-0.49926314,0.36058059};
+		up[]={-0.45397606,0.86645049,0.20777254};
+		aside[]={0.41615838,0,0.90929222};
 	};
 };
 binarizationWanted=0;
@@ -15864,7 +15864,7 @@ class Mission
 			name="Players";
 			class Entities
 			{
-				items=2;
+				items=1;
 				class Item0
 				{
 					dataType="Group";
@@ -16993,20 +16993,9 @@ class Mission
 						nAttributes=1;
 					};
 				};
-				class Item1
-				{
-					dataType="Group";
-					side="West";
-					class Attributes
-					{
-						formation="FILE";
-					};
-					id=1592;
-					atlOffset=-320.57001;
-				};
 			};
 			id=1306;
-			atlOffset=-135.89479;
+			atlOffset=-3.0517578e-005;
 		};
 		class Item9
 		{
@@ -19489,7 +19478,7 @@ class Mission
 			text="OP 1";
 			type="mil_ambush";
 			colorName="ColorWEST";
-			angle=123.68264;
+			angle=123.68263;
 			id=1574;
 			atlOffset=3.0517578e-005;
 		};
@@ -19595,6 +19584,7 @@ class Mission
 					};
 					id=1579;
 					type="Land_RepairDepot_01_green_F";
+					atlOffset=-0.15844727;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19818,6 +19808,7 @@ class Mission
 					};
 					id=1580;
 					type="Land_Cargo10_military_green_F";
+					atlOffset=-0.0037536621;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19838,7 +19829,7 @@ class Mission
 				};
 			};
 			id=1583;
-			atlOffset=0.41064453;
+			atlOffset=0.41427612;
 		};
 		class Item29
 		{
@@ -19875,7 +19866,7 @@ class Mission
 				};
 			};
 			id=1590;
-			atlOffset=2.6479492;
+			atlOffset=3.1106567;
 		};
 		class Item30
 		{
@@ -19892,6 +19883,7 @@ class Mission
 			};
 			id=1591;
 			type="SC_AR_IFV";
+			atlOffset=-0.035217285;
 		};
 		class Item31
 		{
@@ -21134,7 +21126,7 @@ class Mission
 				};
 			};
 			id=1637;
-			atlOffset=2.1915894;
+			atlOffset=2.3093872;
 		};
 	};
 	class Connections

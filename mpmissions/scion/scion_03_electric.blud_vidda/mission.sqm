@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=54;
+		nextID=73;
 	};
 	class Camera
 	{
@@ -540,7 +540,7 @@ class CustomAttributes
 					singleType="ARRAY";
 					class value
 					{
-						items=3;
+						items=2;
 						class Item0
 						{
 							class data
@@ -555,14 +555,6 @@ class CustomAttributes
 							{
 								singleType="STRING";
 								value="EndMission";
-							};
-						};
-						class Item2
-						{
-							class data
-							{
-								singleType="STRING";
-								value="SwitchPlayer";
 							};
 						};
 					};
@@ -9477,6 +9469,7 @@ class Mission
 						};
 					};
 					id=818;
+					atlOffset=-197.05;
 				};
 				class Item1
 				{
@@ -9867,6 +9860,7 @@ class Mission
 								behaviour="SAFE";
 							};
 							id=908;
+							atlOffset=-197.05;
 						};
 						class Item1
 						{
@@ -10261,7 +10255,7 @@ class Mission
 								behaviour="SAFE";
 							};
 							id=920;
-							atlOffset=1.5258789e-005;
+							atlOffset=-197.05;
 						};
 						class Item2
 						{
@@ -10642,6 +10636,7 @@ class Mission
 								behaviour="SAFE";
 							};
 							id=939;
+							atlOffset=-197.05;
 						};
 						class Item3
 						{
@@ -11024,10 +11019,11 @@ class Mission
 								behaviour="SAFE";
 							};
 							id=958;
+							atlOffset=-197.05;
 						};
 					};
 					id=819;
-					atlOffset=-0.059677124;
+					atlOffset=-197.05;
 				};
 				class Item2
 				{
@@ -11194,7 +11190,7 @@ class Mission
 				};
 			};
 			id=727;
-			atlOffset=-2.5455933;
+			atlOffset=-3.1075592;
 		};
 		class Item5
 		{
@@ -11249,7 +11245,7 @@ class Mission
 									};
 									id=826;
 									type="SC_SE_Pilot";
-									atlOffset=0.0050048828;
+									atlOffset=1.5258789e-005;
 								};
 								class Item1
 								{
