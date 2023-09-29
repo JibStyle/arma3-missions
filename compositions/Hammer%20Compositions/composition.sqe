@@ -75260,7 +75260,7 @@ class items
 				angle=4.1168122;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=13.395;
 					sizeB=10.427;
 					activationBy="EAST";
@@ -75276,7 +75276,7 @@ class items
 				angle=3.1550274;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=11.327087;
 					sizeB=10.177457;
 					activationBy="EAST";
@@ -75293,7 +75293,7 @@ class items
 				angle=-1.6003906;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=13.395;
 					sizeB=10.427;
 					activationBy="EAST";
@@ -75309,7 +75309,7 @@ class items
 				angle=3.1711404;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=17.274;
 					sizeB=13.650207;
 					activationBy="EAST";
@@ -75326,7 +75326,7 @@ class items
 				angle=3.1711402;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=13.111238;
 					sizeB=11.103333;
 					activationBy="EAST";
@@ -75343,7 +75343,7 @@ class items
 				angle=3.1711402;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=10.564742;
 					sizeB=8.4241419;
 					activationBy="EAST";
@@ -75361,7 +75361,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=10.564742;
 					sizeB=8.4241419;
 					activationBy="EAST";
@@ -75379,7 +75379,7 @@ class items
 				angle=4.6111846;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=11.792512;
 					sizeB=8.815589;
 					activationBy="EAST";
@@ -75397,7 +75397,7 @@ class items
 				angle=4.7441611;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=10.274662;
 					sizeB=9.6382856;
 					activationBy="EAST";
@@ -75415,7 +75415,7 @@ class items
 				angle=4.4578815;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=9.2060375;
 					sizeB=9.3031635;
 					activationBy="EAST";
@@ -75433,7 +75433,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=9.9805632;
 					sizeB=7.0267525;
 					activationBy="EAST";
@@ -75451,7 +75451,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=9.7359982;
 					sizeB=7.573555;
 					activationBy="EAST";
@@ -75469,7 +75469,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=8.6922941;
 					sizeB=9.9435205;
 					activationBy="EAST";
@@ -75487,7 +75487,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=12.777447;
 					sizeB=9.1651049;
 					activationBy="EAST";
@@ -75505,7 +75505,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=8.0469828;
 					sizeB=8.4287319;
 					activationBy="EAST";
@@ -75523,7 +75523,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=10.050257;
 					sizeB=7.9439025;
 					activationBy="EAST";
@@ -75541,7 +75541,7 @@ class items
 				angle=3.17114;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=10.050257;
 					sizeB=8.2053623;
 					activationBy="EAST";
@@ -75559,7 +75559,7 @@ class items
 				angle=4.7006006;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=8.5377665;
 					sizeB=8.2774496;
 					activationBy="EAST";
@@ -75577,7 +75577,7 @@ class items
 				angle=4.7006001;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=11.07205;
 					sizeB=9.7329063;
 					activationBy="EAST";
@@ -75595,7 +75595,7 @@ class items
 				angle=4.7006001;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=11.504347;
 					sizeB=10.082454;
 					activationBy="EAST";
@@ -75613,7 +75613,7 @@ class items
 				angle=4.7006001;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=5.8753796;
 					sizeB=9.4551744;
 					activationBy="EAST";
@@ -75631,7 +75631,7 @@ class items
 				angle=4.7005997;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=5.8753796;
 					sizeB=9.4551744;
 					activationBy="EAST";
@@ -75649,7 +75649,7 @@ class items
 				angle=4.7005997;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=14.563655;
 					sizeB=10.150703;
 					activationBy="EAST";
@@ -75667,7 +75667,7 @@ class items
 				angle=4.7005997;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=14.006239;
 					sizeB=12.414466;
 					activationBy="EAST";
@@ -75685,7 +75685,7 @@ class items
 				angle=4.7005997;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=15.062498;
 					sizeB=14.684872;
 					activationBy="EAST";
@@ -75703,7 +75703,7 @@ class items
 				angle=4.7005997;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=12.095741;
 					sizeB=11.109287;
 					activationBy="EAST";
@@ -75721,7 +75721,7 @@ class items
 				angle=4.7005997;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=10.590332;
 					sizeB=11.799706;
 					activationBy="EAST";
@@ -75739,7 +75739,7 @@ class items
 				angle=4.7005997;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=7.1598864;
 					sizeB=9.8615065;
 					activationBy="EAST";
@@ -75757,7 +75757,7 @@ class items
 				angle=4.7005992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=7.1598864;
 					sizeB=9.8615065;
 					activationBy="EAST";
@@ -75775,7 +75775,7 @@ class items
 				angle=4.7005992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=7.6097417;
 					sizeB=10.796924;
 					activationBy="EAST";
@@ -75793,7 +75793,7 @@ class items
 				angle=4.7005992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=7.1598864;
 					sizeB=9.8615065;
 					activationBy="EAST";
@@ -75811,7 +75811,7 @@ class items
 				angle=4.7005992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=7.1598864;
 					sizeB=12.991063;
 					activationBy="EAST";
@@ -75829,7 +75829,7 @@ class items
 				angle=4.7006083;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=13.142147;
 					sizeB=11.556183;
 					activationBy="EAST";
@@ -75846,7 +75846,7 @@ class items
 				angle=0.20956168;
 				class Attributes
 				{
-					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=45.537998;
 					sizeB=33.416;
 					activationBy="EAST";
@@ -75862,7 +75862,7 @@ class items
 				angle=5.7656002;
 				class Attributes
 				{
-					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=41.328053;
 					sizeB=35.905888;
 					activationBy="EAST";
@@ -75878,7 +75878,7 @@ class items
 				angle=5.1601357;
 				class Attributes
 				{
-					onActivation="private _target = 50; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 50; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=42.153999;
 					sizeB=39.494999;
 					activationBy="EAST";
@@ -75894,7 +75894,7 @@ class items
 				angle=1.1394407;
 				class Attributes
 				{
-					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=41.450363;
 					sizeB=34.219265;
 					activationBy="EAST";
@@ -75910,7 +75910,7 @@ class items
 				angle=1.4518518;
 				class Attributes
 				{
-					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 30; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=40.116505;
 					sizeB=31.711559;
 					activationBy="EAST";
@@ -75927,7 +75927,7 @@ class items
 				angle=0.20955312;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=14.808956;
 					sizeB=14.832296;
 					activationBy="EAST";
@@ -75943,7 +75943,7 @@ class items
 				angle=6.2546992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=14.697796;
 					sizeB=15.315643;
 					activationBy="EAST";
@@ -75961,7 +75961,7 @@ class items
 				angle=6.2546992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=16.938303;
 					sizeB=16.385698;
 					activationBy="EAST";
@@ -75979,7 +75979,7 @@ class items
 				angle=6.2546992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=15.958492;
 					sizeB=16.550993;
 					activationBy="EAST";
@@ -75997,7 +75997,7 @@ class items
 				angle=6.2546992;
 				class Attributes
 				{
-					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / count _units; " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
+					onActivation="private _target = 10; " \n "private _units = " \n "    thisList select {_x getVariable [""my_ao_special"", false] == false}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    deleteVehicleCrew vehicle _x; " \n "    deleteVehicle _x; " \n "}; " \n "";
 					sizeA=16.019691;
 					sizeB=12.211265;
 					activationBy="EAST";
