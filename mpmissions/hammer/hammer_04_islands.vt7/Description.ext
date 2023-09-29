@@ -1,0 +1,11 @@
+// #include "my_groups.hpp"
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You destroyed the Russian Radar Dome and SAM Site. This will allow us to move in a carrier and deploy more troops.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
