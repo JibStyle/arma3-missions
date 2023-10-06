@@ -1,0 +1,9 @@
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You escaped a Scion Empire strike on COP Omega. Hopefully after regrouping with friendly survivors you can escape the planet.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
