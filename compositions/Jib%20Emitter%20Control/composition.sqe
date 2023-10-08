@@ -1,0 +1,62 @@
+version=54;
+center[]={4398.4404,38.673641,4218.1563};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Layer";
+		name="Spawn";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Trigger";
+				position[]={-135.31787,0,81.485352};
+				class Attributes
+				{
+					condition="this && count (allUnits select {simulationEnabled _x}) < missionNamespace getVariable [""my_emitter_limit"", 100];";
+					onActivation="private _emitters = synchronizedObjects thisTrigger select { " \n "    _x getVariable [""my_enabled"", true]; " \n "}; " \n "if (count _emitters == 0) exitWith {}; " \n "private _emitter = selectRandom _emitters; " \n "[_emitter] spawn jib_emitter_single; " \n "";
+					sizeA=137.79601;
+					sizeB=104.927;
+					activationBy="WEST SEIZED";
+					isServerOnly=1;
+				};
+				id=2269;
+				type="EmptyDetectorAreaR50";
+				atlOffset=3.8146973e-006;
+			};
+		};
+		id=2268;
+		atlOffset=3.8146973e-006;
+	};
+	class Item1
+	{
+		dataType="Layer";
+		name="Disable";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Trigger";
+				position[]={135.31836,6.7805367,-81.484863};
+				angle=2.5608158;
+				class Attributes
+				{
+					onActivation="private _emitters = synchronizedObjects thisTrigger apply { " \n "    _x setVariable [""my_enabled"", false]; " \n "}; " \n "";
+					sizeA=289.513;
+					sizeB=148.11501;
+					activationBy="WEST";
+					isServerOnly=1;
+				};
+				id=2271;
+				type="EmptyDetectorAreaR50";
+				atlOffset=3.627861;
+			};
+		};
+		id=2270;
+		atlOffset=3.627861;
+	};
+};

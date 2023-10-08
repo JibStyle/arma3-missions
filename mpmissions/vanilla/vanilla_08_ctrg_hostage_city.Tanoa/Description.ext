@@ -1,0 +1,16 @@
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "Hostage Rescued";
+	description = "You rescued the hostage and reached the extraction point.";
+	// pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+    class dead_hostage {
+	title = "Mission Failed";
+	subtitle = "Hostage Killed";
+	description = "The hostage was killed in action.";
+	// pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	// picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
