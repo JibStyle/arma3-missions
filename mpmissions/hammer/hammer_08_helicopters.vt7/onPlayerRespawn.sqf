@@ -38,6 +38,39 @@ _newUnit setPosATL [2886.8,3927.78,36.0832];
             //     ]
             // ],
             [
+                "Difficulty", "", "1", false,
+                [
+                    "Difficulty",
+                    [
+                        [
+                            "Off", toString {
+                                [] remoteExec ["my_flex_off", 2];
+                            }, "1"
+                        ],
+                        [
+                            "Easy", toString {
+                                [] remoteExec ["my_flex_easy", 2];
+                            }, "1"
+                        ],
+                        [
+                            "Normal", toString {
+                                [] remoteExec ["my_flex_normal", 2];
+                            }, "1"
+                        ],
+                        [
+                            "Hard", toString {
+                                [] remoteExec ["my_flex_hard", 2];
+                            }, "1"
+                        ],
+                        [
+                            "Custom", toString {
+                                [] remoteExec ["my_flex_custom", 2];
+                            }, "1"
+                        ]
+                    ]
+                ]
+            ],
+            [
                 "Tasks", "", "1", false,
                 [
                     "Tasks",

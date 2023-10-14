@@ -1,1 +1,11 @@
 respawnOnStart = 0;
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You supported the friendly ground assault. We have secured key towns north of the main highway.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
