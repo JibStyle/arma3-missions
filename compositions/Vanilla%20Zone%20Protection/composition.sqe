@@ -1,0 +1,333 @@
+version=54;
+center[]={568,27.737116,17156};
+class items
+{
+	items=6;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-8,0.22470284,4};
+			angles[]={6.2513409,0,6.2399812};
+		};
+		id=4;
+		type="ModuleZoneProtection_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleZoneProtection_F_WarningWidth";
+				expression="_this setVariable ['WarningWidth',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleZoneProtection_F_Show";
+				expression="_this setVariable ['Show',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleZoneProtection_F_ExecutionExpression";
+				expression="_this setVariable ['ExecutionExpression',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleZoneProtection_F_WarningExpression";
+				expression="_this setVariable ['WarningExpression',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0,0.28511429,4};
+			angles[]={6.1946807,0,0.011372928};
+		};
+		id=5;
+		type="LocationArea_F";
+		atlOffset=1.9073486e-006;
+	};
+	class Item2
+	{
+		dataType="Trigger";
+		position[]={8,0.17233276,4};
+		class Attributes
+		{
+			sizeA=250;
+			sizeB=250;
+			activationType="NOT PRESENT";
+			activationBy="ANYPLAYER";
+			isServerOnly=1;
+		};
+		id=6;
+		type="EmptyDetectorAreaR250";
+		atlOffset=3.8146973e-006;
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={8,0,-4};
+			angles[]={6.2127671,0,6.2672582};
+		};
+		id=7;
+		type="ModuleHQ_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleHQ_F_Identity";
+				expression="_this setVariable ['Identity',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleHQ_F_Callsign";
+				expression="_this setVariable ['Callsign',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="STR_A3_CfgHQIdentities_OPF_0";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleHQ_F_Side";
+				expression="_this setVariable ['Side',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="0";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleHQ_F_CallsignCustom";
+				expression="_this setVariable ['CallsignCustom',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0,0.046989441,-4};
+			angles[]={6.2627091,0,6.2627091};
+		};
+		id=11;
+		type="ModuleHQ_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleHQ_F_Identity";
+				expression="_this setVariable ['Identity',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleHQ_F_Callsign";
+				expression="_this setVariable ['Callsign',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="STR_A3_CfgHQIdentities_IND_G_0";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleHQ_F_Side";
+				expression="_this setVariable ['Side',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="2";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleHQ_F_CallsignCustom";
+				expression="_this setVariable ['CallsignCustom',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+	class Item5
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-8,0.12081146,-4};
+			angles[]={6.2627091,0,6.2627091};
+		};
+		id=12;
+		type="ModuleHQ_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleHQ_F_Identity";
+				expression="_this setVariable ['Identity',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleHQ_F_Callsign";
+				expression="_this setVariable ['Callsign',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="STR_A3_CfgHQIdentities_BLU_0";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleHQ_F_Side";
+				expression="_this setVariable ['Side',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="1";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleHQ_F_CallsignCustom";
+				expression="_this setVariable ['CallsignCustom',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=2;
+	};
+	class Links
+	{
+		items=2;
+		class Item0
+		{
+			linkID=0;
+			item0=5;
+			item1=4;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=6;
+			item1=5;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

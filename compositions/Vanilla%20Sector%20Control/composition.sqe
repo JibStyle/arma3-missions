@@ -1,0 +1,357 @@
+version=54;
+center[]={7020.1094,20.767601,14518.906};
+class items
+{
+	items=5;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={8,0.068370819,-4.7998047};
+			angles[]={6.2740898,0,6.2695355};
+		};
+		id=93;
+		type="SideBLUFOR_F";
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-8,0,-4.7998047};
+			angles[]={0.0022640675,0,6.2695355};
+		};
+		id=94;
+		type="SideOPFOR_F";
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0,0.098754883,3.2001953};
+			angles[]={6.2718124,0,0.011372928};
+		};
+		id=95;
+		type="ModuleBleedTickets_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleBleedTickets_F_ticketBleedRatio";
+				expression="_this setVariable ['ticketBleedRatio',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0.5;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleBleedTickets_F_ticketBleedMax";
+				expression="_this setVariable ['ticketBleedMax',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=3;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleBleedTickets_F_delay";
+				expression="_this setVariable ['delay',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=5;
+					};
+				};
+			};
+			nAttributes=3;
+		};
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.00048828125,0.20749092,11.200195};
+			angles[]={0.0091106193,0,0.0090931654};
+		};
+		init="if (!isServer) exitWith {}; [600] call BIS_fnc_countdown; [] spawn { waitUntil { uiSleep 0.5; {[_x] call BIS_fnc_respawnTickets == 0} count [ west, east, independent, civilian ] > 0 || [0] call BIS_fnc_countdown == 0; }; ""sidetickets"" call BIS_fnc_endMissionServer; }; [] spawn { while {true} do { uiSleep 1; [] call BIS_fnc_showMissionStatus; } };";
+		id=96;
+		type="Logic";
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0,0.041332245,-4.7998047};
+			angles[]={6.2763581,0,6.2740831};
+		};
+		areaSize[]={50,-1,50};
+		flags=1;
+		id=92;
+		type="ModuleSector_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleSector_F_DefaultOwner";
+				expression="_this setVariable ['DefaultOwner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="-1";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleSector_F_CostInfantry";
+				expression="_this setVariable ['CostInfantry',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="1";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleSector_F_OnOwnerChange";
+				expression="_this setVariable ['OnOwnerChange',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="params [""_mod"",""_new"",""_old""]; systemChat format [""Fun Zone captured, %1, %2, %3"", _mod, _new, _old];";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleSector_F_ScoreReward";
+				expression="_this setVariable ['ScoreReward',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleSector_F_CostWheeled";
+				expression="_this setVariable ['CostWheeled',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="2";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="ModuleSector_F_OwnerLimit";
+				expression="_this setVariable ['OwnerLimit',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="0";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="ModuleSector_F_TaskTitle";
+				expression="_this setVariable ['TaskTitle',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Capture Fun Zone";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="ModuleSector_F_Designation";
+				expression="_this setVariable ['Designation',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute8
+			{
+				property="ModuleSector_F_TaskOwner";
+				expression="_this setVariable ['TaskOwner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="1";
+					};
+				};
+			};
+			class Attribute9
+			{
+				property="ModuleSector_F_CostAir";
+				expression="_this setVariable ['CostAir',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="2";
+					};
+				};
+			};
+			class Attribute10
+			{
+				property="ModuleSector_F_CostPlayers";
+				expression="_this setVariable ['CostPlayers',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="2";
+					};
+				};
+			};
+			class Attribute11
+			{
+				property="ModuleSector_F_CostTracked";
+				expression="_this setVariable ['CostTracked',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="4";
+					};
+				};
+			};
+			class Attribute12
+			{
+				property="ModuleSector_F_TaskDescription";
+				expression="_this setVariable ['TaskDescription',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Let's go capture the fun zone!";
+					};
+				};
+			};
+			class Attribute13
+			{
+				property="ModuleSector_F_CostWater";
+				expression="_this setVariable ['CostWater',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="0";
+					};
+				};
+			};
+			class Attribute14
+			{
+				property="ModuleSector_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Fun Zone";
+					};
+				};
+			};
+			nAttributes=15;
+		};
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=4;
+	};
+	class Links
+	{
+		items=4;
+		class Item0
+		{
+			linkID=0;
+			item0=94;
+			item1=92;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=93;
+			item1=92;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=94;
+			item1=95;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=93;
+			item1=95;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

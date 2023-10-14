@@ -1,13 +1,62 @@
 version=54;
-center[]={3797.2158,12.48,2861.6707};
+center[]={6512.5029,14.782284,13287.277};
 class items
 {
-	items=1;
+	items=3;
 	class Item0
 	{
 		dataType="Logic";
-		init="[this] call jib_emitter_save;";
-		id=6978;
+		class PositionInfo
+		{
+			position[]={0.10595703,0,2.8925781};
+		};
+		init="[this, 20, 2] call jib_emitter_save;";
+		id=8643;
 		type="Logic";
+		atlOffset=9.5367432e-007;
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0.10644531,2.0709229,-61.107422};
+		};
+		init="[this, 1, 0, ""GUARD"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=8644;
+		type="Logic";
+	};
+	class Item2
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={-0.21386719,0.040259361,58.214844};
+		};
+		title="WP Arguments";
+		description="formation [""NO CHANGE"", ""COLUMN"", ""WEDGE"", etc]" \n "behaviour [""UNCHANGED"", ""CARELESS"", ""SAFE"", ""AWARE"", ""COMBAT"", ""STEALTH""]" \n "combatMode [""NO CHANGE"", ""BLUE"", ""GREEN"", ""WHITE"", ""YELLOW"", ""RED""]" \n "speed [""UNCHANGED"", ""LIMITED"", ""NORMAL"", ""FULL""]";
+		id=8642;
+		atlOffset=0.9676218;
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=1;
+	};
+	class Links
+	{
+		items=1;
+		class Item0
+		{
+			linkID=0;
+			item0=8643;
+			item1=8644;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
 	};
 };

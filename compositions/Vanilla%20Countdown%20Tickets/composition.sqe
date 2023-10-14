@@ -1,0 +1,13 @@
+version=54;
+center[]={5056.915,5,3481.084};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="if (!isServer) exitWith {}; [600] call BIS_fnc_countdown; [] spawn {waitUntil {uiSleep 0.5;[0] call BIS_fnc_countdown == 0;}; ""sidetickets"" call BIS_fnc_endMissionServer;};";
+		id=365;
+		type="Logic";
+	};
+};
