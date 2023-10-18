@@ -1,0 +1,638 @@
+version=54;
+center[]={3625.3889,48.016006,4134.1113};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Layer";
+		name="Jib Logistics Recruit";
+		class Entities
+		{
+			items=15;
+			class Item0
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={1.611084,0.055992126,-1.1113281};
+					angles[]={6.2631893,0,6.2392135};
+				};
+				init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_unit;";
+				id=503;
+				type="Logic";
+			};
+			class Item1
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={1.611084,0,-2.1113281};
+					angles[]={6.2073302,0,6.2551923};
+				};
+				init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_unit;";
+				id=504;
+				type="Logic";
+			};
+			class Item2
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-1.388916,0.22399521,0.88867188};
+					angles[]={6.2711854,0,6.2432079};
+				};
+				init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_unit;";
+				id=505;
+				type="Logic";
+			};
+			class Item3
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={-1.388916,0.1879921,-0.11132813};
+					angles[]={6.2471995,0,6.2432079};
+				};
+				init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_unit;";
+				id=506;
+				type="Logic";
+			};
+			class Item4
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.38891602,0.18543243,0.93847656};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+						};
+						id=484;
+						type="B_crew_F";
+					};
+				};
+				class Attributes
+				{
+				};
+				id=483;
+			};
+			class Item5
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-0.38891602,0.14942932,-0.061523438};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+						};
+						id=486;
+						type="B_Helipilot_F";
+					};
+				};
+				class Attributes
+				{
+				};
+				id=485;
+			};
+			class Item6
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.61108398,0.1414299,0.93847656};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="CORPORAL";
+						};
+						id=488;
+						type="B_Soldier_TL_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male04ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+				};
+				class Attributes
+				{
+				};
+				id=487;
+			};
+			class Item7
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.61108398,0.12142944,-0.061523438};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+						};
+						id=490;
+						type="B_medic_F";
+					};
+				};
+				class Attributes
+				{
+				};
+				id=489;
+			};
+			class Item8
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.61108398,0.085437775,-1.0615234};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+						};
+						id=492;
+						type="B_soldier_AR_F";
+					};
+				};
+				class Attributes
+				{
+				};
+				id=491;
+			};
+			class Item9
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={0.61108398,0.029441833,-2.0615234};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+						};
+						id=494;
+						type="B_Soldier_GL_F";
+					};
+				};
+				class Attributes
+				{
+				};
+				id=493;
+			};
+			class Item10
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={3.611084,0.021434784,0.93847656};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_logistics_recruit_1, true, ""Recruit Soldiers""] call jib_logistics_player;";
+							isPlayable=1;
+						};
+						id=496;
+						type="B_Soldier_SL_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male09ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=1.04;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+				};
+				class Attributes
+				{
+				};
+				id=495;
+			};
+			class Item11
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-3.388916,0.30342484,0.93847656};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_logistics_recruit_2, true, ""Recruit Soldiers""] call jib_logistics_player;";
+							isPlayable=1;
+						};
+						id=498;
+						type="B_crew_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male08ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0.95999998;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+				};
+				class Attributes
+				{
+				};
+				id=497;
+			};
+			class Item12
+			{
+				dataType="Group";
+				side="West";
+				class Entities
+				{
+					items=1;
+					class Item0
+					{
+						dataType="Object";
+						class PositionInfo
+						{
+							position[]={-3.388916,0.23942184,-0.061523438};
+						};
+						side="West";
+						flags=7;
+						class Attributes
+						{
+							rank="SERGEANT";
+							init="[this, my_logistics_recruit_3, true, ""Recruit Soldiers""] call jib_logistics_player;";
+							isPlayable=1;
+						};
+						id=500;
+						type="B_Helipilot_F";
+						class CustomAttributes
+						{
+							class Attribute0
+							{
+								property="speaker";
+								expression="_this setspeaker _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="STRING";
+										value="Male11ENG";
+									};
+								};
+							};
+							class Attribute1
+							{
+								property="pitch";
+								expression="_this setpitch _value;";
+								class Value
+								{
+									class data
+									{
+										singleType="SCALAR";
+										value=0.95999998;
+									};
+								};
+							};
+							nAttributes=2;
+						};
+					};
+				};
+				class Attributes
+				{
+				};
+				id=499;
+			};
+			class Item13
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={1.611084,0.095989227,0.88867188};
+					angles[]={6.2711854,0,6.2392135};
+				};
+				init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_unit;";
+				id=501;
+				type="Logic";
+			};
+			class Item14
+			{
+				dataType="Logic";
+				class PositionInfo
+				{
+					position[]={1.611084,0.07598877,-0.11132813};
+					angles[]={6.2631893,0,6.2392135};
+				};
+				init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_unit;";
+				id=502;
+				type="Logic";
+			};
+		};
+		id=507;
+		atlOffset=-0.0087089539;
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={2.611084,0.055988312,0.88867188};
+			angles[]={6.2631893,0,6.247201};
+		};
+		name="my_logistics_recruit_1";
+		id=510;
+		type="Logic";
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-2.388916,0.26398468,0.88867188};
+			angles[]={6.2711854,0,6.2432079};
+		};
+		name="my_logistics_recruit_2";
+		id=511;
+		type="Logic";
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-2.388916,0.21398926,-0.11132813};
+			angles[]={6.2192731,0,6.2711854};
+		};
+		name="my_logistics_recruit_3";
+		id=512;
+		type="Logic";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=12;
+	};
+	class Links
+	{
+		items=12;
+		class Item0
+		{
+			linkID=0;
+			item0=488;
+			item1=501;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=490;
+			item1=502;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=492;
+			item1=503;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=494;
+			item1=504;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=484;
+			item1=505;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=486;
+			item1=506;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item6
+		{
+			linkID=6;
+			item0=511;
+			item1=505;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=512;
+			item1=506;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item8
+		{
+			linkID=8;
+			item0=503;
+			item1=510;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item9
+		{
+			linkID=9;
+			item0=504;
+			item1=510;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item10
+		{
+			linkID=10;
+			item0=501;
+			item1=510;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item11
+		{
+			linkID=11;
+			item0=502;
+			item1=510;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

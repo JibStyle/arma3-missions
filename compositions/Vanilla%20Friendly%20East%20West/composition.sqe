@@ -1,0 +1,13 @@
+version=54;
+center[]={11818.153,38.646313,6478.4409};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="west setFriend [east, 1];" \n "east setFriend [west, 1];";
+		id=634;
+		type="Logic";
+	};
+};

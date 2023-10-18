@@ -1,0 +1,128 @@
+version=54;
+center[]={3614,48.377995,4135};
+class items
+{
+	items=4;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={1.0024414,0.15539551,-1.0141602};
+			angles[]={6.1914506,0,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, my_logistics_vehicles, ""Spawn Vehicles""] call jib_logistics_object;";
+		};
+		id=470;
+		type="Land_Laptop_unfolded_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-1,0.1400032,1};
+			angles[]={6.2751846,0,6.2631893};
+		};
+		init="[this] call jib_emitter_save;" \n "[this] call jib_logistics_vehicle;";
+		id=473;
+		type="Logic";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.9675293,1.6591225,-1.1489258};
+			angles[]={6.1914439,0,6.2631893};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=508;
+		type="B_Quadbike_01_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[""arifle_MX_F"",""FirstAidKit""],[2,10]],[[""30Rnd_65x39_caseless_mag"",""100Rnd_65x39_caseless_mag"",""HandGrenade"",""1Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""16Rnd_9x21_Mag"",""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue"",""NLAW_F""],[16,6,10,10,4,4,4,4,12,4,4,4,4,2]],[[],[]],[[],[]]],false]";
+					};
+				};
+			};
+			nAttributes=1;
+		};
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={1,0.11600876,1};
+			angles[]={6.2591867,0,0};
+		};
+		name="my_logistics_vehicles";
+		id=509;
+		type="Logic";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=2;
+	};
+	class Links
+	{
+		items=2;
+		class Item0
+		{
+			linkID=0;
+			item0=473;
+			item1=508;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=473;
+			item1=509;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

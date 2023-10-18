@@ -1,0 +1,166 @@
+version=54;
+center[]={5096.3877,53.589954,4449.6704};
+class items
+{
+	items=8;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={33.862305,4.7170372,84.583496};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", ""[this] call jib_wp_rtbComplete""]] call jib_emitter_waypoint;";
+		id=640;
+		type="Logic";
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-30.137695,1.5828972,-171.4165};
+		};
+		init="[this, 1, 0, ""GUARD"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=643;
+		type="Logic";
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-30.137695,0.54603195,-107.4165};
+		};
+		init="[this] call jib_emitter_child;";
+		id=644;
+		type="Logic";
+	};
+	class Item3
+	{
+		dataType="Comment";
+		class PositionInfo
+		{
+			position[]={82.96582,21.289852,47.915527};
+		};
+		title="WP Arguments";
+		description="formation [""NO CHANGE"", ""COLUMN"", ""WEDGE"", etc]" \n "behaviour [""UNCHANGED"", ""CARELESS"", ""SAFE"", ""AWARE"", ""COMBAT"", ""STEALTH""]" \n "combatMode [""NO CHANGE"", ""BLUE"", ""GREEN"", ""WHITE"", ""YELLOW"", ""RED""]" \n "speed [""UNCHANGED"", ""LIMITED"", ""NORMAL"", ""FULL""]";
+		id=641;
+		atlOffset=17.651184;
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-30.138184,6.4624062,148.58398};
+		};
+		init="[this, 20] call jib_emitter_save;";
+		id=642;
+		type="Logic";
+	};
+	class Item5
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-30.137695,2.165123,20.583496};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=645;
+		type="Logic";
+	};
+	class Item6
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-30.137695,0,-43.416504};
+		};
+		init="[this, 1, 0, ""TR UNLOAD"", ""NO CHANGE"", ""CARELESS"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=638;
+		type="Logic";
+	};
+	class Item7
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={33.862305,2.6773109,20.583496};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=639;
+		type="Logic";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=6;
+	};
+	class Links
+	{
+		items=6;
+		class Item0
+		{
+			linkID=0;
+			item0=645;
+			item1=638;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=638;
+			item1=639;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=640;
+			item1=639;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=643;
+			item1=644;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=644;
+			item1=638;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=642;
+			item1=645;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};

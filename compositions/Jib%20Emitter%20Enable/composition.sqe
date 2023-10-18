@@ -1,5 +1,5 @@
 version=54;
-center[]={6738.0752,32.664623,5226.4395};
+center[]={6365.8096,65.193489,4791.5146};
 class items
 {
 	items=3;
@@ -8,22 +8,22 @@ class items
 		dataType="Comment";
 		class PositionInfo
 		{
-			position[]={-0.21386719,1.047493,58.214844};
+			position[]={-0.21386719,5.2142944,58.214844};
 		};
 		title="WP Arguments";
 		description="formation [""NO CHANGE"", ""COLUMN"", ""WEDGE"", etc]" \n "behaviour [""UNCHANGED"", ""CARELESS"", ""SAFE"", ""AWARE"", ""COMBAT"", ""STEALTH""]" \n "combatMode [""NO CHANGE"", ""BLUE"", ""GREEN"", ""WHITE"", ""YELLOW"", ""RED""]" \n "speed [""UNCHANGED"", ""LIMITED"", ""NORMAL"", ""FULL""]";
-		id=654;
-		atlOffset=-5.9860573;
+		id=650;
+		atlOffset=0.17216492;
 	};
 	class Item1
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={0.10595703,1.1717186,2.8925781};
+			position[]={0.10644531,5.5102692,2.8925781};
 		};
-		init="[this] call jib_emitter_save;";
-		id=652;
+		init="[this] call jib_emitter_save;" \n "[this, 8, 1, 10] call jib_emitter_budget;" \n "[this] call jib_emitter_enable;";
+		id=648;
 		type="Logic";
 	};
 	class Item2
@@ -34,7 +34,7 @@ class items
 			position[]={0.10644531,0,-61.107422};
 		};
 		init="[this, 1, 0, ""GUARD"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
-		id=653;
+		id=649;
 		type="Logic";
 	};
 };
@@ -50,8 +50,8 @@ class connections
 		class Item0
 		{
 			linkID=0;
-			item0=652;
-			item1=653;
+			item0=648;
+			item1=649;
 			class CustomData
 			{
 				type="Sync";
