@@ -1,0 +1,8 @@
+class Params {
+    class Difficulty {
+        title = "Difficulty";
+        texts[] = {"East", "Normal", "Hard"};
+        values[] = {1, 2, 3};
+        default = 2;
+    };
+};
