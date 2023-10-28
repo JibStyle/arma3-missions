@@ -2,8 +2,8 @@ class CfgDebriefing {
     class End1 {
 	title = "Mission Completed";
 	subtitle = "";
-	// description = "You supported the friendly ground assault. We have secured key towns north of the main highway.";
-	// pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	description = "You secured the strategic valley linking the two main highways. This will enable us to continue our invasion.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
 	picture = __EVAL(getMissionPath "ignition.paa");
     };
 };

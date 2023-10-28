@@ -1,0 +1,40 @@
+version=54;
+center[]={12549.926,25.357149,12369.915};
+class items
+{
+	items=2;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={-106.62402,0,-1.2822266};
+		class Attributes
+		{
+			text="Hide";
+			condition="true";
+			onActivation="[flatten (thisList apply {[_x] + crew _x})] spawn {" \n "  params [""_list""];" \n "  _list apply {" \n "    _x enableSimulationGlobal false;" \n "    _x hideObjectGlobal true;" \n "    uiSleep 0.3;" \n "  };" \n "};";
+			sizeA=100;
+			sizeB=100;
+			activationBy="EAST";
+			isServerOnly=1;
+		};
+		id=9291;
+		type="EmptyDetectorAreaR250";
+	};
+	class Item1
+	{
+		dataType="Trigger";
+		position[]={106.62402,6.0439911,1.2822266};
+		class Attributes
+		{
+			text="Show";
+			condition="false";
+			onActivation="[flatten (thisList apply {[_x] + crew _x})] spawn {" \n "  params [""_list""];" \n "  _list apply {" \n "    _x enableSimulationGlobal true;" \n "    _x hideObjectGlobal false;" \n "    uiSleep 0.3;" \n "  };" \n "};";
+			sizeA=100;
+			sizeB=100;
+			activationBy="EAST";
+			isServerOnly=1;
+		};
+		id=9292;
+		type="EmptyDetectorAreaR250";
+	};
+};

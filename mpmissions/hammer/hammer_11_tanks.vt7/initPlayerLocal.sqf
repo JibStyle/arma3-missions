@@ -1,33 +1,33 @@
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Signal_title",
-//         "- Rodeo: AH-1Z Viper flight."
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Execution_title",
-//         "1. Seize AO 1.<br/>
-// 2. Seize AO 2.<br/>
-// 3. Seize AO 3.<br/>
-// 4. Seize AO 4."
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Mission_title",
-//         "Support friendly forces as they capture towns north of the highway."
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Situation_title",
-//         "Our carrier has arrived off the coast of Virolahti to provide increased logistics. Friendly mechanized forces are pushing north from the highway to seize several key towns. Russian combined arms forces are present, with additional heavy armor approaching from the northeast. Our helicopter squadron will provide CAS to the friendly ground forces as they push. Repair, rearm, and resupply are available both on our carrier and at the friendly ground FOB. Stay within the AO as there is high AA threat beyond."
-//     ]
-// ];
-// uiSleep 1;
-// player selectDiarySubject "Diary:Record3"; // Situation
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Signal_title",
+        "- Warpig: Armor platoon.<br/>
+- Archer: MLRS platoon."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Execution_title",
+        "1. Seize sector Anvil.<br/>
+2. Seize sector Tomahawk.<br/>
+3. Seize sector Hammer."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Mission_title",
+        "Destroy all Russian assets in the marked sectors."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Situation_title",
+        "The Russians occupy a long stretch of farmland which links the two main highways in the region. If we are to continue our invasion, we must secure this strategic valley. There are three concentrated areas with Russian fortifications, tank positions, and AT infantry. We have staged a tank company with logistics services to sustain our push. A friendly MLRS platoon is available as well for fire support. Civilians are still in the are, so we must take care with our fire."
+    ]
+];
+uiSleep 1;
+player selectDiarySubject "Diary:Record3"; // Situation
