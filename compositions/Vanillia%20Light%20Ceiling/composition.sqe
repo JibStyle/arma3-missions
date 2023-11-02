@@ -1,0 +1,17 @@
+version=54;
+center[]={10027.869,124.31626,9371.2041};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			angles[]={0.090420216,0,6.2618537};
+		};
+		init="private _intensity = 100; " \n "private _color = [1,1,1]; " \n "private _logic = this; " \n "private _light = ""#lightreflector"" createVehicleLocal getPosATL _logic; " \n "_logic setVariable [""my_light"", _light]; " \n "_light lightAttachObject [_logic, [0,0,0]]; " \n "_light setVectorDirAndUp ([nil, 0, -90, 0] call BIS_fnc_transformVectorDirAndUp); " \n "_light setLightColor _color; " \n "_light setLightAmbient _color; " \n "_light setLightConePars [360, 180, 5]; " \n "_light setLightIntensity _intensity; ";
+		id=1248;
+		type="Logic";
+	};
+};
