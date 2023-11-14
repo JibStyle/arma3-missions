@@ -1,0 +1,17 @@
+version=54;
+center[]={15752.83,8.5758648,16362.792};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			angles[]={0.068153359,0,0};
+		};
+		init="[this] call jib_emitter_save;";
+		id=3502;
+		type="Logic";
+	};
+};

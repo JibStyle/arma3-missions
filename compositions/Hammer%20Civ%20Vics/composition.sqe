@@ -1,0 +1,609 @@
+version=54;
+center[]={15790.885,8.5900002,16445.133};
+class items
+{
+	items=16;
+	class Item0
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.012695313,0.0014390945,-3.1835938};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2081;
+				type="CUP_C_R_Worker_05";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2081;
+					item1=2076;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2080;
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.012695313,1.7171087,-3.2011719};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2076;
+		type="C_Offroad_01_covered_F";
+	};
+	class Item2
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.017578125,0.0014390945,3.8574219};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2083;
+				type="CUP_C_R_Racketeer_01";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2083;
+					item1=2075;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2082;
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.017578125,1.6115026,3.8378906};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2075;
+		type="C_Offroad_01_F";
+	};
+	class Item4
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.10546875,0.0014390945,16.902344};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2085;
+				type="CUP_C_R_Citizen_02";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2085;
+					item1=2073;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2084;
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.10546875,1.4501238,16.853516};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2073;
+		type="C_Hatchback_01_F";
+	};
+	class Item6
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.04296875,0.0014390945,10.617188};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2089;
+				type="CUP_C_R_Rocker_03";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2089;
+					item1=2074;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2088;
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.04296875,1.4501238,10.568359};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2074;
+		type="C_Hatchback_01_sport_F";
+	};
+	class Item8
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.083984375,0.0014390945,-16.431641};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2091;
+				type="CUP_C_R_Worker_04";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2091;
+					item1=2078;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2090;
+	};
+	class Item9
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.083984375,1.8698463,-16.460938};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2078;
+		type="C_Van_01_box_F";
+	};
+	class Item10
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.041992188,0.0014390945,-25.505859};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2093;
+				type="CUP_C_R_Worker_03";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2093;
+					item1=2079;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2092;
+	};
+	class Item11
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.041992188,1.7319613,-25.556641};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2079;
+		type="C_Van_02_transport_F";
+	};
+	class Item12
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.059570313,0.0014390945,23.992188};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2095;
+				type="CUP_C_R_Worker_01";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2095;
+					item1=2072;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2094;
+	};
+	class Item13
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0.059570313,1.8577776,23.951172};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2072;
+		type="C_Van_01_fuel_F";
+	};
+	class Item14
+	{
+		dataType="Group";
+		side="Civilian";
+		class Entities
+		{
+			items=1;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-0.052734375,0.0014390945,-9.8203125};
+				};
+				side="Civilian";
+				flags=7;
+				class Attributes
+				{
+				};
+				id=2097;
+				type="CUP_C_R_Citizen_Random";
+			};
+		};
+		class Attributes
+		{
+		};
+		class CrewLinks
+		{
+			class LinkIDProvider
+			{
+				nextID=1;
+			};
+			class Links
+			{
+				items=1;
+				class Item0
+				{
+					linkID=0;
+					item0=2097;
+					item1=2077;
+					class CustomData
+					{
+						role=1;
+					};
+				};
+			};
+		};
+		id=2096;
+	};
+	class Item15
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.052734375,1.5964622,-9.8710938};
+		};
+		side="Civilian";
+		flags=6;
+		class Attributes
+		{
+		};
+		id=2077;
+		type="C_SUV_01_F";
+	};
+};
+class VehicleInVehicleLinks
+{
+	class LinkIDProvider
+	{
+		nextID=8;
+	};
+	class Links
+	{
+		items=8;
+		class Item0
+		{
+			linkID=0;
+			item0=2081;
+			item1=2076;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=2083;
+			item1=2075;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=2085;
+			item1=2073;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=2089;
+			item1=2074;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=2091;
+			item1=2078;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=2093;
+			item1=2079;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item6
+		{
+			linkID=6;
+			item0=2095;
+			item1=2072;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=2097;
+			item1=2077;
+			class CustomData
+			{
+				role=1;
+			};
+		};
+	};
+};

@@ -1,18 +1,374 @@
 version=54;
-center[]={7496.8853,26.856813,2831.8496};
+center[]={2136,13.45,13331.334};
 class items
 {
-	items=8;
+	items=6;
 	class Item0
+	{
+		dataType="Trigger";
+		position[]={0,0,4.6660156};
+		class Attributes
+		{
+			text="Start RTB";
+			condition="start_rtb";
+			sizeA=0;
+			sizeB=0;
+			isServerOnly=1;
+		};
+		id=1555;
+		type="EmptyDetector";
+	};
+	class Item1
+	{
+		dataType="Trigger";
+		position[]={0,0,-55.333984};
+		class Attributes
+		{
+			text="Done RTB";
+			condition="private _units = allPlayers select {alive _x}; start_rtb && {_x in thisList} count _units == count _units;";
+			onActivation="[""task_rtb"", ""SUCCEEDED""] call BIS_fnc_taskSetState; [] spawn {uiSleep 5; [""End1""] remoteExec [""BIS_fnc_endMission""];};";
+			activationBy="ANY";
+			isServerOnly=1;
+		};
+		id=1554;
+		type="EmptyDetectorAreaR50";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.010840416,20.666016};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, false] call jib_garbage_include;";
+		};
+		id=1551;
+		type="Land_DataTerminal_01_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ENH_HoldAction";
+				expression="      _value params ['_name', '_iconIdle', '_iconProgress', '_conditionShow', '_conditionProgress', '_codeStart', '_codeProgress', '_codeCompletion', '_codeInterrupt', '_duration', '_priority', '_showUnconscious', '_showWindow'];      if (!is3DEN && !(_name isEqualTo '')) then      {        [          _this,          _name,          _iconIdle,          _iconProgress,          _conditionShow,          _conditionProgress,          compile _codeStart,          compile _codeProgress,          compile format ['%1 %2', '[_this select 0, _this select 2] remoteExecCall [''removeAction'', 0]; remoteExecCall ['''', _this select 0];', _codeCompletion],          compile _codeInterrupt,          nil,          _duration,          _priority,          true,          _showUnconscious,          _showWindow        ] remoteExecCall ['BIS_fnc_holdActionAdd', 0, _this];      };";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=13;
+							class Item0
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Activate Data Terminal";
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="STRING";
+									value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa";
+								};
+							};
+							class Item2
+							{
+								class data
+								{
+									singleType="STRING";
+									value="\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_hack_ca.paa";
+								};
+							};
+							class Item3
+							{
+								class data
+								{
+									singleType="STRING";
+									value="_target distance player < 3";
+								};
+							};
+							class Item4
+							{
+								class data
+								{
+									singleType="STRING";
+									value="true";
+								};
+							};
+							class Item5
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[_target, 3] call BIS_fnc_dataTerminalAnimate;";
+								};
+							};
+							class Item6
+							{
+								class data
+								{
+									singleType="STRING";
+									value="if (_frame == 13) then {playSound3D [""a3\missions_f_oldman\data\sound\intel_pc\2sec\intel_pc_2sec_01.wss"", _target];};";
+								};
+							};
+							class Item7
+							{
+								class data
+								{
+									singleType="STRING";
+									value="playSound3D [""A3\Missions_F_Oldman\Data\sound\Computer\Reboot.wss"", _target]; done_terminal = true; publicVariable ""done_terminal"";";
+								};
+							};
+							class Item8
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[_target, 1] call BIS_fnc_dataTerminalAnimate;";
+								};
+							};
+							class Item9
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=7;
+								};
+							};
+							class Item10
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=1000;
+								};
+							};
+							class Item11
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+							class Item12
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=1;
+								};
+							};
+						};
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+	class Item3
 	{
 		dataType="Logic";
 		class PositionInfo
 		{
-			position[]={-0.99804688,4.3822842,-45.452148};
-			angles[]={0.063913256,0,0.083802827};
+			position[]={0,0,16.666016};
 		};
-		name="task_rtb_1";
-		id=1570;
+		name="task_terminal";
+		id=1552;
+		type="ModuleTaskCreate_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleTaskCreate_F_Destination";
+				expression="_this setVariable ['Destination',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleTaskCreate_F_Type";
+				expression="_this setVariable ['Type',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="intel";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleTaskCreate_F_ShowNotification";
+				expression="_this setVariable ['ShowNotification',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=1;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleTaskCreate_F_Marker";
+				expression="_this setVariable ['Marker',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleTaskCreate_F_Title";
+				expression="_this setVariable ['Title',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Activate Data Terminal";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="ModuleTaskCreate_F_Description";
+				expression="_this setVariable ['Description',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Activate the data terminal to download sensitive data.";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="ModuleTaskCreate_F_ID";
+				expression="_this setVariable ['ID',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="ModuleTaskCreate_F_AlwaysVisible";
+				expression="_this setVariable ['AlwaysVisible',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute8
+			{
+				property="ModuleTaskCreate_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=4;
+					};
+				};
+			};
+			class Attribute9
+			{
+				property="ModuleTaskCreate_F_State";
+				expression="_this setVariable ['State',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="ASSIGNED";
+					};
+				};
+			};
+			class Attribute10
+			{
+				property="ModuleTaskCreate_F_IDParent";
+				expression="_this setVariable ['IDParent',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			nAttributes=11;
+		};
+	};
+	class Item4
+	{
+		dataType="Trigger";
+		position[]={0,0,12.666016};
+		class Attributes
+		{
+			text="Done Terminal";
+			condition="done_terminal";
+			onActivation="[""task_terminal"",""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "start_rtb = true;";
+			sizeA=0;
+			sizeB=0;
+			isServerOnly=1;
+		};
+		id=1553;
+		type="EmptyDetector";
+	};
+	class Item5
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={0,0,0.66601563};
+		};
+		name="task_rtb";
+		id=1556;
 		type="ModuleTaskCreate_F";
 		class CustomAttributes
 		{
@@ -162,330 +518,21 @@ class items
 			nAttributes=11;
 		};
 	};
-	class Item1
-	{
-		dataType="Trigger";
-		position[]={-13.92041,0,-1.8918457};
-		class Attributes
-		{
-			text="Done Task Capture";
-			condition="done_capture";
-			onActivation="[""task_capture"",""SUCCEEDED""] call BIS_fnc_taskSetState;" \n "start_rtb = true;";
-			sizeA=0;
-			sizeB=0;
-			isServerOnly=1;
-		};
-		id=1566;
-		type="EmptyDetector";
-	};
-	class Item2
-	{
-		dataType="Trigger";
-		position[]={12.339355,3.2760582,-2.9328613};
-		class Attributes
-		{
-			text="Fail Task Capture";
-			condition="fail_capture";
-			onActivation="[""task_capture"",""FAILED""] call BIS_fnc_taskSetState;" \n "start_rtb = true;";
-			sizeA=0;
-			sizeB=0;
-			isServerOnly=1;
-		};
-		id=1567;
-		type="EmptyDetector";
-	};
-	class Item3
-	{
-		dataType="Trigger";
-		position[]={-0.79052734,3.2727947,-23.775879};
-		class Attributes
-		{
-			text="Start Task RTB";
-			condition="start_rtb";
-			sizeA=0;
-			sizeB=0;
-			isServerOnly=1;
-		};
-		id=1568;
-		type="EmptyDetector";
-		atlOffset=-1.9073486e-006;
-	};
-	class Item4
-	{
-		dataType="Trigger";
-		position[]={0.83251953,1.0923748,13.341797};
-		class Attributes
-		{
-			text="Fail Capture";
-			condition="{alive _x} count [hvt_1,hvt_2,hvt_3,hvt_4,hvt_5,hvt_6,hvt_7,hvt_8] == 0";
-			onActivation="fail_capture = true;";
-			sizeA=0;
-			sizeB=0;
-			isServerOnly=1;
-		};
-		id=1571;
-		type="EmptyDetector";
-	};
-	class Item5
-	{
-		dataType="Group";
-		side="East";
-		class Entities
-		{
-			items=1;
-			class Item0
-			{
-				dataType="Object";
-				class PositionInfo
-				{
-					position[]={0.76757813,1.0178986,17.614502};
-				};
-				side="East";
-				flags=7;
-				class Attributes
-				{
-					init="[this, 7, 2] call jib_objective_capture_register;" \n "[this, false] call jib_garbage_include;";
-				};
-				id=1573;
-				type="O_officer_F";
-				class CustomAttributes
-				{
-					class Attribute0
-					{
-						property="speaker";
-						expression="_this setspeaker _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="STRING";
-								value="Male02PER";
-							};
-						};
-					};
-					class Attribute1
-					{
-						property="pitch";
-						expression="_this setpitch _value;";
-						class Value
-						{
-							class data
-							{
-								singleType="SCALAR";
-								value=1;
-							};
-						};
-					};
-					nAttributes=2;
-				};
-			};
-		};
-		class Attributes
-		{
-			init="[this, 0, 0, 1, 1, random [-10, 0, 20], 0] call jib_ai_cqb;";
-		};
-		id=1572;
-	};
-	class Item6
-	{
-		dataType="Trigger";
-		position[]={0.76806641,1.0477753,15.564453};
-		class Attributes
-		{
-			text="Done Capture";
-			condition="{[_x] call jib_objective_capture_check} count synchronizedObjects thisTrigger > 0";
-			sizeA=0;
-			sizeB=0;
-			isServerOnly=1;
-		};
-		id=1574;
-		type="EmptyDetector";
-		atlOffset=3.8146973e-006;
-	};
-	class Item7
-	{
-		dataType="Logic";
-		class PositionInfo
-		{
-			position[]={1.0009766,0.94027901,27.581787};
-			angles[]={0.047961645,0,6.2471962};
-		};
-		name="task_capture_1";
-		id=1569;
-		type="ModuleTaskCreate_F";
-		class CustomAttributes
-		{
-			class Attribute0
-			{
-				property="ModuleTaskCreate_F_Destination";
-				expression="_this setVariable ['Destination',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="SCALAR";
-						value=1;
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="ModuleTaskCreate_F_Type";
-				expression="_this setVariable ['Type',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="target";
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="ModuleTaskCreate_F_ShowNotification";
-				expression="_this setVariable ['ShowNotification',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="SCALAR";
-						value=1;
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="ModuleTaskCreate_F_Marker";
-				expression="_this setVariable ['Marker',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="";
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="ModuleTaskCreate_F_Title";
-				expression="_this setVariable ['Title',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="Capture HVT";
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="ModuleTaskCreate_F_Description";
-				expression="_this setVariable ['Description',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="Capture the HVT alive.";
-					};
-				};
-			};
-			class Attribute6
-			{
-				property="ModuleTaskCreate_F_ID";
-				expression="_this setVariable ['ID',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="";
-					};
-				};
-			};
-			class Attribute7
-			{
-				property="ModuleTaskCreate_F_AlwaysVisible";
-				expression="_this setVariable ['AlwaysVisible',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="SCALAR";
-						value=0;
-					};
-				};
-			};
-			class Attribute8
-			{
-				property="ModuleTaskCreate_F_Owner";
-				expression="_this setVariable ['Owner',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="SCALAR";
-						value=4;
-					};
-				};
-			};
-			class Attribute9
-			{
-				property="ModuleTaskCreate_F_State";
-				expression="_this setVariable ['State',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="ASSIGNED";
-					};
-				};
-			};
-			class Attribute10
-			{
-				property="ModuleTaskCreate_F_IDParent";
-				expression="_this setVariable ['IDParent',_value,true];";
-				class Value
-				{
-					class data
-					{
-						singleType="STRING";
-						value="";
-					};
-				};
-			};
-			nAttributes=11;
-		};
-	};
 };
 class connections
 {
 	class LinkIDProvider
 	{
-		nextID=2;
+		nextID=1;
 	};
 	class Links
 	{
-		items=2;
+		items=1;
 		class Item0
 		{
 			linkID=0;
-			item0=1568;
-			item1=1570;
-			class CustomData
-			{
-				type="Sync";
-			};
-		};
-		class Item1
-		{
-			linkID=1;
-			item0=1573;
-			item1=1574;
+			item0=1555;
+			item1=1556;
 			class CustomData
 			{
 				type="Sync";

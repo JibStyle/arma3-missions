@@ -1,0 +1,17 @@
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You secured the town and destroyed the Russian ammo caches. This supports our combined arms assault into the region.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
+
+class CfgNotifications {
+    class MyCustom {
+        title = "%1";
+        description = "%2";
+        iconPicture = "%3";
+    };
+};

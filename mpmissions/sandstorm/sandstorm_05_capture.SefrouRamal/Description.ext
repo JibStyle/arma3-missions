@@ -1,0 +1,18 @@
+// class CfgSounds {
+//     tracks[]={};
+//     class Track01 {
+//         name = "Track01";
+//         sound[] = {"bazaar_merchants.wav", 50, 1.0};
+//         titles[] = {};
+//     };
+// }; // this say3D ["Track01",10,1];
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You captured the Tura HVT and brought him to the safehouse. After interrogation, he has revealed the location of the friendly hostage.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};

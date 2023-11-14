@@ -1,5 +1,5 @@
 version=54;
-center[]={5600.1309,23.55682,12352.643};
+center[]={12220.688,48.475826,8124.4629};
 class items
 {
 	items=1;
@@ -10,13 +10,13 @@ class items
 		class Attributes
 		{
 			text="AO Limiter";
-			onActivation="private _target = 20; " \n "private _units = " \n "    thisList select {_x getVariable [""my_tag"", """"] == """"}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
-			sizeA=250;
-			sizeB=250;
-			activationBy="EAST";
+			condition="true";
+			onActivation="private _target = 20; " \n "private _units = " \n "    allUnits select {_x getVariable [""my_tag"", """"] == """"}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
+			sizeA=0;
+			sizeB=0;
 			isServerOnly=1;
 		};
-		id=1318;
-		type="EmptyDetectorAreaR250";
+		id=3286;
+		type="EmptyDetector";
 	};
 };

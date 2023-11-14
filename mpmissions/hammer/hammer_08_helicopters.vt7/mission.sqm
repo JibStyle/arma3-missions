@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=162;
+		nextID=193;
 	};
 	class Camera
 	{
@@ -34,7 +34,6 @@ binarizationWanted=0;
 sourceName="hammer_08_helicopters";
 addons[]=
 {
-	"cba_xeh",
 	"A3_Modules_F",
 	"CUP_Creatures_Military_USMC",
 	"CUP_AirVehicles_AH1Z",
@@ -74,6 +73,7 @@ addons[]=
 	"ace_cargo",
 	"ace_dragging",
 	"A3_Structures_F_Items_Vessels",
+	"cba_xeh",
 	"A3_Structures_F_Civ_Accessories",
 	"A3_Structures_F_Ind_Cargo",
 	"CUP_Weapons_M16",
@@ -114,112 +114,112 @@ class AddonsMetaData
 		items=55;
 		class Item0
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item1
-		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item2
+		class Item1
 		{
 			className="CUP_Creatures_Military_USMC";
 			name="CUP_Creatures_Military_USMC";
 		};
-		class Item3
+		class Item2
 		{
 			className="CUP_AirVehicles_AH1Z";
 			name="CUP_AirVehicles_AH1Z";
 		};
-		class Item4
+		class Item3
 		{
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Structures_F_Tank";
 			name="Arma 3 Tank - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item9
+		class Item8
 		{
 			className="CUP_Weapons_Colt1911";
 			name="CUP_Weapons_Colt1911";
 		};
-		class Item10
+		class Item9
 		{
 			className="CUP_Weapons_Ammunition";
 			name="CUP_Weapons_Ammunition";
 		};
-		class Item11
+		class Item10
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item11
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item13
+		class Item12
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item14
+		class Item13
 		{
 			className="CUP_Creatures_People_Core";
 			name="CUP_Creatures_People_Core";
 		};
-		class Item15
+		class Item14
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item16
+		class Item15
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
+		};
+		class Item16
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item17
 		{
@@ -784,20 +784,8 @@ class Mission
 			state=2;
 			class Entities
 			{
-				items=3;
+				items=2;
 				class Item0
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={2917.5837,19.97834,3894.8726};
-					};
-					name="my_recruit_1";
-					id=58;
-					type="VirtualAISquad";
-					atlOffset=3.216444;
-				};
-				class Item1
 				{
 					dataType="Logic";
 					class PositionInfo
@@ -809,7 +797,7 @@ class Mission
 					type="Logic";
 					atlOffset=2.216444;
 				};
-				class Item2
+				class Item1
 				{
 					dataType="Group";
 					side="West";
@@ -841,7 +829,7 @@ class Mission
 				};
 			};
 			id=61;
-			atlOffset=-8.3000393;
+			atlOffset=-8.5500393;
 		};
 		class Item1
 		{
@@ -1528,7 +1516,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2250.6853,9.2222376,7350.8291};
-						angles[]={-0,5.6996078,0};
+						angles[]={0,5.6996078,0};
 					};
 					side="Empty";
 					flags=4;
@@ -1538,6 +1526,7 @@ class Mission
 					};
 					id=8693;
 					type="Land_WoodenTable_small_F";
+					atlOffset=0.0012836456;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1562,16 +1551,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2250.8489,9.7173052,7350.7002};
-						angles[]={-0,1.7936547,0};
+						angles[]={0,1.7936547,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						init="[this] call jib_service_fak_init;" \n "[this] call jib_service_respawn_init;";
 					};
 					id=8694;
 					type="Land_FirstAidKit_01_open_F";
+					atlOffset=0.86451817;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1592,7 +1581,7 @@ class Mission
 				};
 			};
 			id=214;
-			atlOffset=-15.905326;
+			atlOffset=-15.905333;
 		};
 		class Item3
 		{
@@ -5511,7 +5500,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=3493;
-							atlOffset=0.052112579;
+							atlOffset=22.049999;
 						};
 						class Item1
 						{
@@ -5786,7 +5775,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=3519;
-							atlOffset=0.042661667;
+							atlOffset=22.049999;
 						};
 						class Item2
 						{
@@ -6047,6 +6036,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=3561;
+							atlOffset=22.049999;
 						};
 						class Item3
 						{
@@ -6234,7 +6224,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=3659;
-							atlOffset=0.079995632;
+							atlOffset=22.049999;
 						};
 						class Item4
 						{
@@ -6508,7 +6498,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=3830;
-							atlOffset=0.079986572;
+							atlOffset=22.049999;
 						};
 						class Item5
 						{
@@ -6990,6 +6980,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=3983;
+							atlOffset=22.049999;
 						};
 						class Item6
 						{
@@ -7479,7 +7470,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=4112;
-							atlOffset=2.3713799;
+							atlOffset=22.049999;
 						};
 						class Item7
 						{
@@ -7582,7 +7573,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=4240;
-							atlOffset=-1.4305115e-006;
+							atlOffset=22.049999;
 						};
 						class Item8
 						{
@@ -7682,6 +7673,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=4356;
+							atlOffset=22.049999;
 						};
 						class Item9
 						{
@@ -7972,7 +7964,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=4450;
-							atlOffset=0.11088181;
+							atlOffset=22.049999;
 						};
 						class Item10
 						{
@@ -8213,7 +8205,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=7776;
-							atlOffset=0.14395523;
+							atlOffset=22.049999;
 						};
 						class Item11
 						{
@@ -8454,7 +8446,7 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=7805;
-							atlOffset=0.15681171;
+							atlOffset=22.049999;
 						};
 						class Item12
 						{
@@ -8695,11 +8687,11 @@ class Mission
 								dynamicSimulation=1;
 							};
 							id=7825;
-							atlOffset=0.18471909;
+							atlOffset=22.049999;
 						};
 					};
 					id=3311;
-					atlOffset=6.5349765;
+					atlOffset=22.049999;
 				};
 				class Item1
 				{
@@ -11977,7 +11969,7 @@ class Mission
 				};
 			};
 			id=7767;
-			atlOffset=-1.3768301;
+			atlOffset=-2.0486412;
 		};
 		class Item8
 		{
@@ -12108,7 +12100,7 @@ class Mission
 							};
 							id=3237;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.0077581406;
+							atlOffset=-0.001645565;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12162,7 +12154,6 @@ class Mission
 								angles[]={0.070418544,5.6093998,0.11103176};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -12268,7 +12259,7 @@ class Mission
 							};
 							id=3238;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.0077581406;
+							atlOffset=2.6785316;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12322,7 +12313,7 @@ class Mission
 								angles[]={0.070418544,5.6093998,0.11103176};
 							};
 							side="West";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -12427,7 +12418,7 @@ class Mission
 							};
 							id=3239;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.0077581406;
+							atlOffset=2.6785316;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12481,7 +12472,6 @@ class Mission
 								angles[]={0.070418544,5.6093998,0.11103176};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -12586,7 +12576,7 @@ class Mission
 							};
 							id=3240;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.0077581406;
+							atlOffset=2.6785316;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -12692,7 +12682,7 @@ class Mission
 						};
 					};
 					id=3235;
-					atlOffset=-0.0077581406;
+					atlOffset=22.049999;
 				};
 				class Item1
 				{
@@ -13995,6 +13985,7 @@ class Mission
 						init="this setVariable [""lambs_danger_disableGroupAI"", true];";
 					};
 					id=2516;
+					atlOffset=22.049999;
 				};
 				class Item2
 				{
@@ -14664,7 +14655,7 @@ class Mission
 						};
 					};
 					id=2496;
-					atlOffset=-0.0080413818;
+					atlOffset=22.049999;
 				};
 				class Item11
 				{
@@ -14839,7 +14830,7 @@ class Mission
 					{
 					};
 					id=2599;
-					atlOffset=1.8119812e-005;
+					atlOffset=22.049999;
 				};
 				class Item14
 				{
@@ -14938,7 +14929,7 @@ class Mission
 							};
 							id=8013;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.012571335;
+							atlOffset=0.18553352;
 						};
 						class Item1
 						{
@@ -14949,13 +14940,12 @@ class Mission
 								angles[]={6.2740831,1.4269662,0.022748843};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8014;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.012571335;
+							atlOffset=2.1312771;
 						};
 						class Item2
 						{
@@ -14966,13 +14956,13 @@ class Mission
 								angles[]={6.2740831,1.4269662,0.022748843};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8015;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.012571335;
+							atlOffset=2.1312771;
 						};
 					};
 					class Attributes
@@ -15022,7 +15012,7 @@ class Mission
 						};
 					};
 					id=8012;
-					atlOffset=-0.012571335;
+					atlOffset=22.049999;
 				};
 				class Item21
 				{
@@ -15135,7 +15125,7 @@ class Mission
 						};
 					};
 					id=8008;
-					atlOffset=-0.02713871;
+					atlOffset=22.049999;
 				};
 				class Item24
 				{
@@ -15159,7 +15149,7 @@ class Mission
 							};
 							id=7984;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.02721405;
+							atlOffset=-3.0040741e-005;
 						};
 						class Item1
 						{
@@ -15170,13 +15160,12 @@ class Mission
 								angles[]={6.1564507,4.8133659,6.190167};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=7985;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.02721405;
+							atlOffset=1.9620328;
 						};
 						class Item2
 						{
@@ -15187,13 +15176,13 @@ class Mission
 								angles[]={6.1564507,4.8133659,6.190167};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=7986;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.02721405;
+							atlOffset=1.9620328;
 						};
 					};
 					class Attributes
@@ -15243,7 +15232,7 @@ class Mission
 						};
 					};
 					id=7982;
-					atlOffset=-0.02721405;
+					atlOffset=22.049999;
 				};
 				class Item25
 				{
@@ -15357,7 +15346,7 @@ class Mission
 						};
 					};
 					id=7964;
-					atlOffset=-0.01463747;
+					atlOffset=22.049999;
 				};
 				class Item28
 				{
@@ -15381,7 +15370,7 @@ class Mission
 							};
 							id=8022;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0009803772;
+							atlOffset=-9.4174204;
 						};
 						class Item1
 						{
@@ -15398,7 +15387,7 @@ class Mission
 							};
 							id=8023;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0009803772;
+							atlOffset=-7.4622183;
 						};
 						class Item2
 						{
@@ -15415,7 +15404,7 @@ class Mission
 							};
 							id=8024;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0009803772;
+							atlOffset=-7.4622183;
 						};
 					};
 					class Attributes
@@ -15465,7 +15454,7 @@ class Mission
 						};
 					};
 					id=8021;
-					atlOffset=-0.0009803772;
+					atlOffset=22.049999;
 				};
 				class Item29
 				{
@@ -15579,7 +15568,7 @@ class Mission
 						};
 					};
 					id=8017;
-					atlOffset=-0.043262482;
+					atlOffset=22.049999;
 				};
 				class Item32
 				{
@@ -15688,13 +15677,13 @@ class Mission
 								angles[]={0.020473262,3.1252716,6.2786312};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8535;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-1.5258789e-005;
+							atlOffset=2.9092197;
 						};
 					};
 					class Attributes
@@ -15733,7 +15722,7 @@ class Mission
 						};
 					};
 					id=8532;
-					atlOffset=-1.5258789e-005;
+					atlOffset=22.049999;
 				};
 				class Item39
 				{
@@ -15794,7 +15783,7 @@ class Mission
 				};
 			};
 			id=7882;
-			atlOffset=-0.62776089;
+			atlOffset=-2.2320585;
 		};
 		class Item9
 		{
@@ -15952,7 +15941,7 @@ class Mission
 					{
 					};
 					id=7847;
-					atlOffset=0.25460625;
+					atlOffset=22.049999;
 				};
 				class Item1
 				{
@@ -16126,6 +16115,7 @@ class Mission
 					{
 					};
 					id=8037;
+					atlOffset=22.049999;
 				};
 				class Item4
 				{
@@ -16273,6 +16263,7 @@ class Mission
 					{
 					};
 					id=8046;
+					atlOffset=22.049999;
 				};
 				class Item5
 				{
@@ -16463,7 +16454,6 @@ class Mission
 							};
 							id=8087;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.0030994415;
 						};
 					};
 					class Attributes
@@ -16491,7 +16481,7 @@ class Mission
 						};
 					};
 					id=8085;
-					atlOffset=-0.0030994415;
+					atlOffset=22.049999;
 				};
 				class Item18
 				{
@@ -16515,7 +16505,6 @@ class Mission
 							};
 							id=8089;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.0094814301;
 						};
 					};
 					class Attributes
@@ -16543,7 +16532,7 @@ class Mission
 						};
 					};
 					id=8088;
-					atlOffset=-0.0094814301;
+					atlOffset=22.049999;
 				};
 				class Item19
 				{
@@ -16567,7 +16556,6 @@ class Mission
 							};
 							id=8092;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.037246704;
 						};
 					};
 					class Attributes
@@ -16595,7 +16583,7 @@ class Mission
 						};
 					};
 					id=8091;
-					atlOffset=-0.037246704;
+					atlOffset=22.049999;
 				};
 				class Item20
 				{
@@ -16701,7 +16689,7 @@ class Mission
 						};
 					};
 					id=8095;
-					atlOffset=-0.0021724701;
+					atlOffset=22.049999;
 				};
 				class Item21
 				{
@@ -16807,7 +16795,7 @@ class Mission
 						};
 					};
 					id=8100;
-					atlOffset=-0.14068985;
+					atlOffset=22.049999;
 				};
 				class Item22
 				{
@@ -16913,7 +16901,7 @@ class Mission
 						};
 					};
 					id=8105;
-					atlOffset=-0.28011894;
+					atlOffset=22.049999;
 				};
 				class Item23
 				{
@@ -16937,7 +16925,7 @@ class Mission
 							};
 							id=8111;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.015701294;
+							atlOffset=-0.001455307;
 						};
 					};
 					class Attributes
@@ -16965,7 +16953,7 @@ class Mission
 						};
 					};
 					id=8110;
-					atlOffset=-0.015701294;
+					atlOffset=22.049999;
 				};
 				class Item24
 				{
@@ -17071,7 +17059,7 @@ class Mission
 						};
 					};
 					id=8113;
-					atlOffset=-0.014263153;
+					atlOffset=22.049999;
 				};
 				class Item25
 				{
@@ -17095,7 +17083,6 @@ class Mission
 							};
 							id=8120;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.0033111572;
 						};
 						class Item1
 						{
@@ -17106,13 +17093,13 @@ class Mission
 								angles[]={0.043203145,1.3825823,6.2695355};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8121;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.0033111572;
+							atlOffset=2.4067249;
 						};
 					};
 					class Attributes
@@ -17151,7 +17138,7 @@ class Mission
 						};
 					};
 					id=8118;
-					atlOffset=-0.0033111572;
+					atlOffset=22.049999;
 				};
 				class Item26
 				{
@@ -17175,7 +17162,6 @@ class Mission
 							};
 							id=8124;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.18500519;
 						};
 						class Item1
 						{
@@ -17186,13 +17172,13 @@ class Mission
 								angles[]={6.2786312,1.1223775,0.038661517};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8125;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.18500519;
+							atlOffset=2.641861;
 						};
 					};
 					class Attributes
@@ -17231,7 +17217,7 @@ class Mission
 						};
 					};
 					id=8122;
-					atlOffset=-0.18500519;
+					atlOffset=22.049999;
 				};
 				class Item27
 				{
@@ -17255,7 +17241,6 @@ class Mission
 							};
 							id=8128;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00080108643;
 						};
 						class Item1
 						{
@@ -17266,13 +17251,13 @@ class Mission
 								angles[]={6.267262,5.0473967,0.0045412821};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8129;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00080108643;
+							atlOffset=2.4014359;
 						};
 					};
 					class Attributes
@@ -17311,7 +17296,7 @@ class Mission
 						};
 					};
 					id=8126;
-					atlOffset=-0.00080108643;
+					atlOffset=22.049999;
 				};
 				class Item28
 				{
@@ -17335,7 +17320,6 @@ class Mission
 							};
 							id=8132;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.15834236;
 						};
 						class Item1
 						{
@@ -17346,13 +17330,13 @@ class Mission
 								angles[]={0.12449536,5.399189,0.047745109};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8133;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.15834236;
+							atlOffset=2.4708176;
 						};
 					};
 					class Attributes
@@ -17391,7 +17375,7 @@ class Mission
 						};
 					};
 					id=8130;
-					atlOffset=-0.15834236;
+					atlOffset=22.049999;
 				};
 				class Item29
 				{
@@ -17415,7 +17399,6 @@ class Mission
 							};
 							id=8136;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0045566559;
 						};
 						class Item1
 						{
@@ -17426,13 +17409,12 @@ class Mission
 								angles[]={6.2558866,1.4226354,0.063623302};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8137;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0045566559;
+							atlOffset=1.9746609;
 						};
 						class Item2
 						{
@@ -17443,13 +17425,13 @@ class Mission
 								angles[]={6.2558866,1.4226354,0.063623302};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8138;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0045566559;
+							atlOffset=1.9746609;
 						};
 					};
 					class Attributes
@@ -17499,7 +17481,7 @@ class Mission
 						};
 					};
 					id=8134;
-					atlOffset=-0.0045566559;
+					atlOffset=22.049999;
 				};
 				class Item30
 				{
@@ -17523,7 +17505,6 @@ class Mission
 							};
 							id=8141;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0038719177;
 						};
 						class Item1
 						{
@@ -17534,13 +17515,12 @@ class Mission
 								angles[]={6.2536163,1.1865307,0.0022640675};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8142;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0038719177;
+							atlOffset=1.9677467;
 						};
 						class Item2
 						{
@@ -17551,13 +17531,13 @@ class Mission
 								angles[]={6.2536163,1.1865307,0.0022640675};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8143;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0038719177;
+							atlOffset=1.9677467;
 						};
 					};
 					class Attributes
@@ -17607,7 +17587,7 @@ class Mission
 						};
 					};
 					id=8139;
-					atlOffset=-0.0038719177;
+					atlOffset=22.049999;
 				};
 				class Item31
 				{
@@ -17631,7 +17611,6 @@ class Mission
 							};
 							id=8146;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0042991638;
 						};
 						class Item1
 						{
@@ -17642,13 +17621,12 @@ class Mission
 								angles[]={6.2422514,5.0446782,6.237711};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8147;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0042991638;
+							atlOffset=1.9612808;
 						};
 						class Item2
 						{
@@ -17659,13 +17637,13 @@ class Mission
 								angles[]={6.2422514,5.0446782,6.237711};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8148;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0042991638;
+							atlOffset=1.9612808;
 						};
 					};
 					class Attributes
@@ -17715,7 +17693,7 @@ class Mission
 						};
 					};
 					id=8144;
-					atlOffset=-0.0042991638;
+					atlOffset=22.049999;
 				};
 				class Item32
 				{
@@ -17739,7 +17717,6 @@ class Mission
 							};
 							id=8151;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.029510498;
 						};
 						class Item1
 						{
@@ -17750,13 +17727,12 @@ class Mission
 								angles[]={0.15572566,5.3995819,0.074945249};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8152;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.029510498;
+							atlOffset=1.961132;
 						};
 						class Item2
 						{
@@ -17767,13 +17743,13 @@ class Mission
 								angles[]={0.15572566,5.3995819,0.074945249};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8153;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.029510498;
+							atlOffset=1.961132;
 						};
 					};
 					class Attributes
@@ -17823,7 +17799,7 @@ class Mission
 						};
 					};
 					id=8149;
-					atlOffset=-0.029510498;
+					atlOffset=22.049999;
 				};
 				class Item33
 				{
@@ -18185,8 +18161,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -18198,8 +18174,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -18321,8 +18297,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -18334,8 +18310,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -18463,8 +18439,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -18476,8 +18452,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -18608,8 +18584,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -18621,8 +18597,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -18778,8 +18754,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -18791,8 +18767,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -18921,8 +18897,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -18934,8 +18910,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -19037,8 +19013,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -19050,8 +19026,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -19194,8 +19170,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -19207,8 +19183,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -19227,7 +19203,7 @@ class Mission
 						init="this setVariable [""lambs_danger_disableGroupAI"", true];";
 					};
 					id=8187;
-					atlOffset=4.7683716e-007;
+					atlOffset=22.049999;
 				};
 				class Item46
 				{
@@ -19450,8 +19426,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -19463,8 +19439,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -19596,8 +19572,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -19609,8 +19585,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -19742,8 +19718,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -19755,8 +19731,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -19819,7 +19795,7 @@ class Mission
 						};
 					};
 					id=8201;
-					atlOffset=-0.01462698;
+					atlOffset=22.049999;
 				};
 				class Item52
 				{
@@ -19946,8 +19922,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -19959,8 +19935,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -20092,8 +20068,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -20105,8 +20081,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -20238,8 +20214,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -20251,8 +20227,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -20383,8 +20359,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -20396,8 +20372,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -20471,7 +20447,7 @@ class Mission
 						};
 					};
 					id=8182;
-					atlOffset=-0.00030088425;
+					atlOffset=22.049999;
 				};
 				class Item53
 				{
@@ -20580,7 +20556,6 @@ class Mission
 							};
 							id=8553;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.006729126;
 						};
 						class Item1
 						{
@@ -20591,13 +20566,13 @@ class Mission
 								angles[]={0.065888278,1.9036235,6.2105041};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8554;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.006729126;
+							atlOffset=2.9102745;
 						};
 					};
 					class Attributes
@@ -20636,7 +20611,7 @@ class Mission
 						};
 					};
 					id=8551;
-					atlOffset=-0.006729126;
+					atlOffset=22.049999;
 				};
 				class Item61
 				{
@@ -20660,7 +20635,6 @@ class Mission
 							};
 							id=8557;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.0030117035;
 						};
 						class Item1
 						{
@@ -20671,13 +20645,13 @@ class Mission
 								angles[]={0.020473262,2.5265212,0.011372928};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8558;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.0030117035;
+							atlOffset=2.9096394;
 						};
 					};
 					class Attributes
@@ -20716,7 +20690,7 @@ class Mission
 						};
 					};
 					id=8555;
-					atlOffset=-0.0030117035;
+					atlOffset=22.049999;
 				};
 				class Item62
 				{
@@ -20794,7 +20768,7 @@ class Mission
 				};
 			};
 			id=7884;
-			atlOffset=-22.384878;
+			atlOffset=4.0490685;
 		};
 		class Item10
 		{
@@ -20948,7 +20922,7 @@ class Mission
 					{
 					};
 					id=7862;
-					atlOffset=1.9073486e-006;
+					atlOffset=22.049999;
 				};
 				class Item1
 				{
@@ -21118,8 +21092,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -21131,8 +21105,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -21255,8 +21229,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -21268,8 +21242,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -21397,8 +21371,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -21410,8 +21384,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -21542,8 +21516,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -21555,8 +21529,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -21713,8 +21687,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -21726,8 +21700,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -21856,8 +21830,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -21869,8 +21843,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -21972,8 +21946,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -21985,8 +21959,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -22129,8 +22103,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -22142,8 +22116,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -22162,6 +22136,7 @@ class Mission
 						init="this setVariable [""lambs_danger_disableGroupAI"", true];";
 					};
 					id=8234;
+					atlOffset=22.049999;
 				};
 				class Item3
 				{
@@ -22179,7 +22154,6 @@ class Mission
 								angles[]={0.11327865,4.6976681,0.052285124};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -22285,13 +22259,13 @@ class Mission
 							};
 							id=8249;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.034793854;
+							atlOffset=8.751894;
 							class CustomAttributes
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -22303,8 +22277,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -22326,7 +22300,6 @@ class Mission
 								angles[]={0.11327865,4.6976681,0.052285124};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -22432,13 +22405,13 @@ class Mission
 							};
 							id=8250;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.034793854;
+							atlOffset=11.375408;
 							class CustomAttributes
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -22450,8 +22423,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -22473,7 +22446,7 @@ class Mission
 								angles[]={0.11327865,4.6976681,0.052285124};
 							};
 							side="West";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -22578,13 +22551,13 @@ class Mission
 							};
 							id=8251;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.034793854;
+							atlOffset=11.375408;
 							class CustomAttributes
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -22596,8 +22569,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -22660,7 +22633,7 @@ class Mission
 						};
 					};
 					id=8248;
-					atlOffset=-0.034793854;
+					atlOffset=22.049999;
 				};
 				class Item4
 				{
@@ -22882,8 +22855,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -22895,8 +22868,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -23028,8 +23001,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -23041,8 +23014,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -23174,8 +23147,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -23187,8 +23160,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -23319,8 +23292,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -23332,8 +23305,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -23407,7 +23380,7 @@ class Mission
 						};
 					};
 					id=8229;
-					atlOffset=-0.00025558472;
+					atlOffset=22.049999;
 				};
 				class Item10
 				{
@@ -23470,7 +23443,7 @@ class Mission
 							};
 							id=8304;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.010156631;
+							atlOffset=-3.6756744;
 						};
 						class Item1
 						{
@@ -23487,7 +23460,7 @@ class Mission
 							};
 							id=8305;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.010156631;
+							atlOffset=-1.6643047;
 						};
 						class Item2
 						{
@@ -23504,7 +23477,7 @@ class Mission
 							};
 							id=8306;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.010156631;
+							atlOffset=-1.6643047;
 						};
 					};
 					class Attributes
@@ -23554,7 +23527,7 @@ class Mission
 						};
 					};
 					id=8303;
-					atlOffset=-0.010156631;
+					atlOffset=22.049999;
 				};
 				class Item14
 				{
@@ -23578,7 +23551,7 @@ class Mission
 							};
 							id=8308;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00031280518;
+							atlOffset=-0.12339592;
 						};
 						class Item1
 						{
@@ -23589,13 +23562,13 @@ class Mission
 								angles[]={0.0068272259,5.399189,0.072681367};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8309;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00031280518;
+							atlOffset=2.2582493;
 						};
 					};
 					class Attributes
@@ -23634,7 +23607,7 @@ class Mission
 						};
 					};
 					id=8307;
-					atlOffset=-0.00031280518;
+					atlOffset=22.049999;
 				};
 				class Item15
 				{
@@ -23737,7 +23710,7 @@ class Mission
 						};
 					};
 					id=8301;
-					atlOffset=-0.027244568;
+					atlOffset=22.049999;
 				};
 				class Item19
 				{
@@ -23800,7 +23773,7 @@ class Mission
 							};
 							id=8321;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.030519485;
+							atlOffset=-1.2813168;
 						};
 						class Item1
 						{
@@ -23811,13 +23784,12 @@ class Mission
 								angles[]={6.2467976,4.0039382,0.036387973};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8322;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.030519485;
+							atlOffset=0.72184563;
 						};
 						class Item2
 						{
@@ -23828,13 +23800,13 @@ class Mission
 								angles[]={6.2467976,4.0039382,0.036387973};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8323;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.030519485;
+							atlOffset=0.72184563;
 						};
 					};
 					class Attributes
@@ -23884,7 +23856,7 @@ class Mission
 						};
 					};
 					id=8320;
-					atlOffset=-0.030519485;
+					atlOffset=22.049999;
 				};
 				class Item23
 				{
@@ -23902,13 +23874,12 @@ class Mission
 								angles[]={0.0022640675,3.995985,0.0068272259};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8325;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00033378601;
+							atlOffset=3.1148357;
 						};
 						class Item1
 						{
@@ -23919,13 +23890,13 @@ class Mission
 								angles[]={0.0022640675,3.995985,0.0068272259};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8326;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00033378601;
+							atlOffset=5.4688625;
 						};
 					};
 					class Attributes
@@ -23964,7 +23935,7 @@ class Mission
 						};
 					};
 					id=8324;
-					atlOffset=-0.00033378601;
+					atlOffset=22.049999;
 				};
 				class Item24
 				{
@@ -24067,7 +24038,7 @@ class Mission
 						};
 					};
 					id=8335;
-					atlOffset=-0.043094635;
+					atlOffset=22.049999;
 				};
 				class Item28
 				{
@@ -24091,7 +24062,7 @@ class Mission
 							};
 							id=8338;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.011447906;
+							atlOffset=-0.43540192;
 						};
 						class Item1
 						{
@@ -24102,13 +24073,12 @@ class Mission
 								angles[]={0.063623302,3.0962567,0.079468332};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8339;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.011447906;
+							atlOffset=1.5947418;
 						};
 						class Item2
 						{
@@ -24119,13 +24089,13 @@ class Mission
 								angles[]={0.063623302,3.0962567,0.079468332};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8340;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.011447906;
+							atlOffset=1.5947418;
 						};
 					};
 					class Attributes
@@ -24175,7 +24145,7 @@ class Mission
 						};
 					};
 					id=8337;
-					atlOffset=-0.011447906;
+					atlOffset=22.049999;
 				};
 				class Item29
 				{
@@ -24193,13 +24163,12 @@ class Mission
 								angles[]={0.0068272259,2.8200507,6.2786441};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8342;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00045776367;
+							atlOffset=6.6704216;
 						};
 						class Item1
 						{
@@ -24210,13 +24179,13 @@ class Mission
 								angles[]={0.0068272259,2.8200507,6.2786441};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8343;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.00045776367;
+							atlOffset=9.035553;
 						};
 					};
 					class Attributes
@@ -24255,7 +24224,7 @@ class Mission
 						};
 					};
 					id=8341;
-					atlOffset=-0.00045776367;
+					atlOffset=22.049999;
 				};
 				class Item30
 				{
@@ -24358,7 +24327,7 @@ class Mission
 						};
 					};
 					id=8352;
-					atlOffset=-0.0028533936;
+					atlOffset=22.049999;
 				};
 				class Item34
 				{
@@ -24421,7 +24390,7 @@ class Mission
 							};
 							id=8384;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.015142441;
+							atlOffset=2.4795532e-005;
 						};
 						class Item1
 						{
@@ -24438,7 +24407,7 @@ class Mission
 							};
 							id=8385;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.015142441;
+							atlOffset=5.1498413e-005;
 						};
 						class Item2
 						{
@@ -24455,7 +24424,7 @@ class Mission
 							};
 							id=8386;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.015142441;
+							atlOffset=5.1498413e-005;
 						};
 					};
 					class Attributes
@@ -24505,7 +24474,7 @@ class Mission
 						};
 					};
 					id=8382;
-					atlOffset=-0.015142441;
+					atlOffset=22.049999;
 				};
 				class Item38
 				{
@@ -24529,7 +24498,7 @@ class Mission
 							};
 							id=8389;
 							type="CUP_O_RU_Crew";
-							atlOffset=0.034004211;
+							atlOffset=3.8146973e-006;
 						};
 						class Item1
 						{
@@ -24546,7 +24515,7 @@ class Mission
 							};
 							id=8390;
 							type="CUP_O_RU_Crew";
-							atlOffset=0.034004211;
+							atlOffset=1.1444092e-005;
 						};
 						class Item2
 						{
@@ -24563,7 +24532,7 @@ class Mission
 							};
 							id=8391;
 							type="CUP_O_RU_Crew";
-							atlOffset=0.034004211;
+							atlOffset=1.1444092e-005;
 						};
 					};
 					class Attributes
@@ -24613,7 +24582,7 @@ class Mission
 						};
 					};
 					id=8387;
-					atlOffset=0.034004211;
+					atlOffset=22.049999;
 				};
 				class Item39
 				{
@@ -24637,7 +24606,7 @@ class Mission
 							};
 							id=8394;
 							type="CUP_O_RU_Crew";
-							atlOffset=-5.3405762e-005;
+							atlOffset=-1.9073486e-005;
 						};
 						class Item1
 						{
@@ -24654,7 +24623,7 @@ class Mission
 							};
 							id=8395;
 							type="CUP_O_RU_Crew";
-							atlOffset=-5.3405762e-005;
+							atlOffset=-2.6702881e-005;
 						};
 						class Item2
 						{
@@ -24671,7 +24640,7 @@ class Mission
 							};
 							id=8396;
 							type="CUP_O_RU_Crew";
-							atlOffset=-5.3405762e-005;
+							atlOffset=-2.6702881e-005;
 						};
 					};
 					class Attributes
@@ -24721,7 +24690,7 @@ class Mission
 						};
 					};
 					id=8392;
-					atlOffset=-5.3405762e-005;
+					atlOffset=22.049999;
 				};
 				class Item40
 				{
@@ -24940,7 +24909,7 @@ class Mission
 							};
 							id=8568;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.0082798004;
+							atlOffset=-9.5367432e-007;
 						};
 						class Item1
 						{
@@ -24951,13 +24920,13 @@ class Mission
 								angles[]={6.2445254,2.6898973,0.056821637};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8569;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.0082798004;
+							atlOffset=2.9090652;
 						};
 					};
 					class Attributes
@@ -24996,7 +24965,7 @@ class Mission
 						};
 					};
 					id=8566;
-					atlOffset=-0.0082798004;
+					atlOffset=22.049999;
 				};
 				class Item54
 				{
@@ -25020,7 +24989,6 @@ class Mission
 							};
 							id=8572;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.031253815;
 						};
 						class Item1
 						{
@@ -25031,13 +24999,13 @@ class Mission
 								angles[]={0.11103123,4.0613008,0.022751464};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8573;
 							type="CUP_O_RU_Soldier";
-							atlOffset=-0.031253815;
+							atlOffset=2.9253693;
 						};
 					};
 					class Attributes
@@ -25076,7 +25044,7 @@ class Mission
 						};
 					};
 					id=8570;
-					atlOffset=-0.031253815;
+					atlOffset=22.049999;
 				};
 				class Item55
 				{
@@ -25182,7 +25150,7 @@ class Mission
 						};
 					};
 					id=8574;
-					atlOffset=-0.018556595;
+					atlOffset=22.049999;
 				};
 				class Item56
 				{
@@ -25288,7 +25256,7 @@ class Mission
 						};
 					};
 					id=8579;
-					atlOffset=-0.0082893372;
+					atlOffset=22.049999;
 				};
 				class Item57
 				{
@@ -25367,7 +25335,7 @@ class Mission
 				};
 			};
 			id=7886;
-			atlOffset=7.6492901;
+			atlOffset=13.421029;
 		};
 		class Item11
 		{
@@ -25522,6 +25490,7 @@ class Mission
 					{
 					};
 					id=7873;
+					atlOffset=22.049999;
 				};
 				class Item1
 				{
@@ -25564,13 +25533,12 @@ class Mission
 								angles[]={6.228632,2.8200507,0.074945249};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8370;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.014993668;
+							atlOffset=8.3479977;
 						};
 						class Item1
 						{
@@ -25581,13 +25549,13 @@ class Mission
 								angles[]={6.228632,2.8200507,0.074945249};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8371;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.014993668;
+							atlOffset=10.566433;
 						};
 					};
 					class Attributes
@@ -25626,7 +25594,7 @@ class Mission
 						};
 					};
 					id=8369;
-					atlOffset=-0.014993668;
+					atlOffset=22.049999;
 				};
 				class Item4
 				{
@@ -25767,7 +25735,7 @@ class Mission
 						};
 					};
 					id=8365;
-					atlOffset=-0.00141716;
+					atlOffset=22.049999;
 				};
 				class Item7
 				{
@@ -25811,13 +25779,12 @@ class Mission
 								angles[]={0.15350442,6.1512794,6.2105041};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8405;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.015100479;
+							atlOffset=18.623734;
 						};
 						class Item1
 						{
@@ -25828,13 +25795,13 @@ class Mission
 								angles[]={0.15350442,6.1512794,6.2105041};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8406;
 							type="CUP_O_RU_Crew_VDV_M_EMR";
-							atlOffset=-0.015100479;
+							atlOffset=20.935234;
 						};
 					};
 					class Attributes
@@ -25873,7 +25840,7 @@ class Mission
 						};
 					};
 					id=8404;
-					atlOffset=-0.015100479;
+					atlOffset=22.049999;
 				};
 				class Item10
 				{
@@ -26013,7 +25980,7 @@ class Mission
 						};
 					};
 					id=8409;
-					atlOffset=-0.0080490112;
+					atlOffset=22.049999;
 				};
 				class Item13
 				{
@@ -26037,7 +26004,7 @@ class Mission
 							};
 							id=8399;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0013122559;
+							atlOffset=4.9591064e-005;
 						};
 						class Item1
 						{
@@ -26054,7 +26021,7 @@ class Mission
 							};
 							id=8400;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0013122559;
+							atlOffset=6.1035156e-005;
 						};
 						class Item2
 						{
@@ -26071,7 +26038,7 @@ class Mission
 							};
 							id=8401;
 							type="CUP_O_RU_Crew";
-							atlOffset=-0.0013122559;
+							atlOffset=6.1035156e-005;
 						};
 					};
 					class Attributes
@@ -26121,7 +26088,7 @@ class Mission
 						};
 					};
 					id=8397;
-					atlOffset=-0.0013122559;
+					atlOffset=22.049999;
 				};
 				class Item14
 				{
@@ -26139,13 +26106,12 @@ class Mission
 								angles[]={0.090762824,0.048758224,6.2490687};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8414;
 							type="CUP_O_RU_Crew";
-							atlOffset=0.049232483;
+							atlOffset=17.603867;
 						};
 						class Item1
 						{
@@ -26156,13 +26122,12 @@ class Mission
 								angles[]={0.090762824,0.048758224,6.2490687};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8415;
 							type="CUP_O_RU_Crew";
-							atlOffset=0.049232483;
+							atlOffset=17.618328;
 						};
 						class Item2
 						{
@@ -26173,13 +26138,13 @@ class Mission
 								angles[]={0.090762824,0.048758224,6.2490687};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8416;
 							type="CUP_O_RU_Crew";
-							atlOffset=0.049232483;
+							atlOffset=17.618328;
 						};
 					};
 					class Attributes
@@ -26229,7 +26194,7 @@ class Mission
 						};
 					};
 					id=8413;
-					atlOffset=0.049232483;
+					atlOffset=22.049999;
 				};
 				class Item15
 				{
@@ -26411,7 +26376,7 @@ class Mission
 					{
 					};
 					id=8418;
-					atlOffset=9.5367432e-007;
+					atlOffset=22.049999;
 				};
 				class Item18
 				{
@@ -26629,8 +26594,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -26642,8 +26607,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -26766,8 +26731,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -26779,8 +26744,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -26907,8 +26872,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -26920,8 +26885,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27051,8 +27016,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -27064,8 +27029,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27222,8 +27187,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -27235,8 +27200,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27364,8 +27329,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -27377,8 +27342,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27480,8 +27445,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -27493,8 +27458,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27636,8 +27601,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -27649,8 +27614,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27669,7 +27634,7 @@ class Mission
 						init="this setVariable [""lambs_danger_disableGroupAI"", true];";
 					};
 					id=8439;
-					atlOffset=-1.9073486e-006;
+					atlOffset=22.049999;
 				};
 				class Item24
 				{
@@ -27687,7 +27652,6 @@ class Mission
 								angles[]={6.2740898,6.1479163,0.03184275};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -27793,13 +27757,13 @@ class Mission
 							};
 							id=8449;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.0042762756;
+							atlOffset=10.875704;
 							class CustomAttributes
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -27811,8 +27775,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27834,7 +27798,6 @@ class Mission
 								angles[]={6.2740898,6.1479163,0.03184275};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -27940,13 +27903,13 @@ class Mission
 							};
 							id=8450;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.0042762756;
+							atlOffset=13.510319;
 							class CustomAttributes
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -27958,8 +27921,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -27981,7 +27944,7 @@ class Mission
 								angles[]={6.2740898,6.1479163,0.03184275};
 							};
 							side="West";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 								init="this setVariable [""lambs_danger_disableAI"", true];";
@@ -28086,13 +28049,13 @@ class Mission
 							};
 							id=8451;
 							type="CUP_B_USMC_Crew";
-							atlOffset=-0.0042762756;
+							atlOffset=13.510319;
 							class CustomAttributes
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -28104,8 +28067,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -28168,7 +28131,7 @@ class Mission
 						};
 					};
 					id=8448;
-					atlOffset=-0.0042762756;
+					atlOffset=22.049999;
 				};
 				class Item25
 				{
@@ -28390,8 +28353,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -28403,8 +28366,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -28536,8 +28499,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -28549,8 +28512,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -28682,8 +28645,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -28695,8 +28658,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -28827,8 +28790,8 @@ class Mission
 							{
 								class Attribute0
 								{
-									property="ENH_allowFleeing";
-									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+									property="ENH_courage";
+									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 									class Value
 									{
 										class data
@@ -28840,8 +28803,8 @@ class Mission
 								};
 								class Attribute1
 								{
-									property="ENH_courage";
-									expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
+									property="ENH_allowFleeing";
+									expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
 									class Value
 									{
 										class data
@@ -28915,7 +28878,7 @@ class Mission
 						};
 					};
 					id=8458;
-					atlOffset=-0.0054035187;
+					atlOffset=22.049999;
 				};
 				class Item31
 				{
@@ -29135,7 +29098,7 @@ class Mission
 						};
 					};
 					id=8590;
-					atlOffset=0.0001077652;
+					atlOffset=22.049999;
 				};
 				class Item40
 				{
@@ -29170,13 +29133,13 @@ class Mission
 								angles[]={6.2127676,3.8250146,0.029571336};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8598;
 							type="CUP_O_RU_Soldier";
-							atlOffset=6.2942505e-005;
+							atlOffset=2.9171162;
 						};
 					};
 					class Attributes
@@ -29215,7 +29178,7 @@ class Mission
 						};
 					};
 					id=8595;
-					atlOffset=6.2942505e-005;
+					atlOffset=22.049999;
 				};
 				class Item41
 				{
@@ -29321,6 +29284,7 @@ class Mission
 						};
 					};
 					id=8599;
+					atlOffset=22.049999;
 				};
 				class Item42
 				{
@@ -29344,7 +29308,7 @@ class Mission
 							};
 							id=8606;
 							type="CUP_O_RU_Soldier";
-							atlOffset=4.3869019e-005;
+							atlOffset=4.5776367e-005;
 						};
 						class Item1
 						{
@@ -29355,13 +29319,13 @@ class Mission
 								angles[]={0.050015319,4.0450854,0.015927421};
 							};
 							side="East";
-							flags=6;
+							flags=2;
 							class Attributes
 							{
 							};
 							id=8607;
 							type="CUP_O_RU_Soldier";
-							atlOffset=4.3869019e-005;
+							atlOffset=2.9126854;
 						};
 					};
 					class Attributes
@@ -29400,7 +29364,7 @@ class Mission
 						};
 					};
 					id=8604;
-					atlOffset=4.3869019e-005;
+					atlOffset=22.049999;
 				};
 				class Item43
 				{
@@ -29492,6 +29456,7 @@ class Mission
 					};
 					id=8691;
 					type="EmptyDetectorAreaR50";
+					atlOffset=2.7179718e-005;
 				};
 				class Item49
 				{
@@ -29515,7 +29480,7 @@ class Mission
 				};
 			};
 			id=7888;
-			atlOffset=2.0092363;
+			atlOffset=3.9031391;
 		};
 		class Item12
 		{
@@ -29871,7 +29836,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 							class Value
 							{
 								class data
@@ -30230,7 +30195,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 							class Value
 							{
 								class data
@@ -30588,7 +30553,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 							class Value
 							{
 								class data
@@ -30946,7 +30911,7 @@ class Mission
 						class Attribute0
 						{
 							property="groupID";
-							expression=" if (isNil 'CBA_fnc_setCallsign') then { _this setGroupID [_value]; } else { [_this, _value] call CBA_fnc_setCallsign; }; ";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };                        ";
 							class Value
 							{
 								class data
@@ -31150,7 +31115,7 @@ class Mission
 					name="marker_15";
 					type="mil_arrow2";
 					colorName="ColorEAST";
-					angle=224.21497;
+					angle=224.21495;
 					id=8515;
 				};
 				class Item15
@@ -32089,6 +32054,7 @@ class Mission
 							};
 							id=8632;
 							type="CUP_O_RU_Pilot";
+							atlOffset=1.7166138e-005;
 						};
 						class Item1
 						{
@@ -32099,12 +32065,12 @@ class Mission
 								angles[]={0,3.9577482,0};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8633;
 							type="CUP_O_RU_Pilot";
+							atlOffset=2.5120287;
 						};
 					};
 					class Attributes
@@ -32185,7 +32151,7 @@ class Mission
 							};
 							id=8636;
 							type="CUP_O_RU_Pilot";
-							atlOffset=9.5367432e-007;
+							atlOffset=-3.8146973e-006;
 						};
 						class Item1
 						{
@@ -32196,13 +32162,12 @@ class Mission
 								angles[]={0,3.9578221,0};
 							};
 							side="East";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=8637;
 							type="CUP_O_RU_Pilot";
-							atlOffset=9.5367432e-007;
+							atlOffset=2.7713594;
 						};
 					};
 					class Attributes
@@ -32635,16 +32600,16 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=167;
+			nextID=166;
 		};
 		class Links
 		{
-			items=167;
+			items=166;
 			class Item0
 			{
 				linkID=0;
-				item0=58;
-				item1=54;
+				item0=54;
+				item1=25;
 				class CustomData
 				{
 					type="Sync";
@@ -32653,8 +32618,8 @@ class Mission
 			class Item1
 			{
 				linkID=1;
-				item0=54;
-				item1=25;
+				item0=184;
+				item1=183;
 				class CustomData
 				{
 					type="Sync";
@@ -32663,7 +32628,7 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=184;
+				item0=185;
 				item1=183;
 				class CustomData
 				{
@@ -32673,7 +32638,7 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=185;
+				item0=186;
 				item1=183;
 				class CustomData
 				{
@@ -32683,7 +32648,7 @@ class Mission
 			class Item4
 			{
 				linkID=4;
-				item0=186;
+				item0=188;
 				item1=183;
 				class CustomData
 				{
@@ -32693,7 +32658,7 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=188;
+				item0=189;
 				item1=183;
 				class CustomData
 				{
@@ -32703,7 +32668,7 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=189;
+				item0=187;
 				item1=183;
 				class CustomData
 				{
@@ -32713,8 +32678,8 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=187;
-				item1=183;
+				item0=3249;
+				item1=3246;
 				class CustomData
 				{
 					type="Sync";
@@ -32723,8 +32688,8 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=3249;
-				item1=3246;
+				item0=2517;
+				item1=3249;
 				class CustomData
 				{
 					type="Sync";
@@ -32733,8 +32698,8 @@ class Mission
 			class Item9
 			{
 				linkID=9;
-				item0=2517;
-				item1=3249;
+				item0=3236;
+				item1=3250;
 				class CustomData
 				{
 					type="Sync";
@@ -32743,8 +32708,8 @@ class Mission
 			class Item10
 			{
 				linkID=10;
-				item0=3236;
-				item1=3250;
+				item0=2497;
+				item1=3252;
 				class CustomData
 				{
 					type="Sync";
@@ -32753,8 +32718,8 @@ class Mission
 			class Item11
 			{
 				linkID=11;
-				item0=2497;
-				item1=3252;
+				item0=7846;
+				item1=7845;
 				class CustomData
 				{
 					type="Sync";
@@ -32763,8 +32728,8 @@ class Mission
 			class Item12
 			{
 				linkID=12;
-				item0=7846;
-				item1=7845;
+				item0=2600;
+				item1=7846;
 				class CustomData
 				{
 					type="Sync";
@@ -32773,8 +32738,8 @@ class Mission
 			class Item13
 			{
 				linkID=13;
-				item0=2600;
-				item1=7846;
+				item0=7857;
+				item1=7856;
 				class CustomData
 				{
 					type="Sync";
@@ -32783,8 +32748,8 @@ class Mission
 			class Item14
 			{
 				linkID=14;
-				item0=7857;
-				item1=7856;
+				item0=7848;
+				item1=7857;
 				class CustomData
 				{
 					type="Sync";
@@ -32793,8 +32758,8 @@ class Mission
 			class Item15
 			{
 				linkID=15;
-				item0=7848;
-				item1=7857;
+				item0=7858;
+				item1=7846;
 				class CustomData
 				{
 					type="Sync";
@@ -32803,8 +32768,8 @@ class Mission
 			class Item16
 			{
 				linkID=16;
-				item0=7858;
-				item1=7846;
+				item0=7863;
+				item1=7861;
 				class CustomData
 				{
 					type="Sync";
@@ -32813,8 +32778,8 @@ class Mission
 			class Item17
 			{
 				linkID=17;
-				item0=7863;
-				item1=7861;
+				item0=7872;
+				item1=7871;
 				class CustomData
 				{
 					type="Sync";
@@ -32823,8 +32788,8 @@ class Mission
 			class Item18
 			{
 				linkID=18;
-				item0=7872;
-				item1=7871;
+				item0=7874;
+				item1=7872;
 				class CustomData
 				{
 					type="Sync";
@@ -32833,8 +32798,8 @@ class Mission
 			class Item19
 			{
 				linkID=19;
-				item0=7874;
-				item1=7872;
+				item0=3252;
+				item1=3244;
 				class CustomData
 				{
 					type="Sync";
@@ -32843,8 +32808,8 @@ class Mission
 			class Item20
 			{
 				linkID=20;
-				item0=3252;
-				item1=3244;
+				item0=3245;
+				item1=3250;
 				class CustomData
 				{
 					type="Sync";
@@ -32853,8 +32818,8 @@ class Mission
 			class Item21
 			{
 				linkID=21;
-				item0=3245;
-				item1=3250;
+				item0=7990;
+				item1=7989;
 				class CustomData
 				{
 					type="Sync";
@@ -32863,8 +32828,8 @@ class Mission
 			class Item22
 			{
 				linkID=22;
-				item0=7990;
-				item1=7989;
+				item0=7983;
+				item1=7990;
 				class CustomData
 				{
 					type="Sync";
@@ -32873,8 +32838,8 @@ class Mission
 			class Item23
 			{
 				linkID=23;
-				item0=7983;
-				item1=7990;
+				item0=7965;
+				item1=7988;
 				class CustomData
 				{
 					type="Sync";
@@ -32883,7 +32848,7 @@ class Mission
 			class Item24
 			{
 				linkID=24;
-				item0=7965;
+				item0=8011;
 				item1=7988;
 				class CustomData
 				{
@@ -32893,7 +32858,7 @@ class Mission
 			class Item25
 			{
 				linkID=25;
-				item0=8011;
+				item0=8020;
 				item1=7988;
 				class CustomData
 				{
@@ -32903,8 +32868,8 @@ class Mission
 			class Item26
 			{
 				linkID=26;
-				item0=8020;
-				item1=7988;
+				item0=8016;
+				item1=7990;
 				class CustomData
 				{
 					type="Sync";
@@ -32913,7 +32878,7 @@ class Mission
 			class Item27
 			{
 				linkID=27;
-				item0=8016;
+				item0=8025;
 				item1=7990;
 				class CustomData
 				{
@@ -32923,7 +32888,7 @@ class Mission
 			class Item28
 			{
 				linkID=28;
-				item0=8025;
+				item0=8031;
 				item1=7990;
 				class CustomData
 				{
@@ -32933,7 +32898,7 @@ class Mission
 			class Item29
 			{
 				linkID=29;
-				item0=8031;
+				item0=8032;
 				item1=7990;
 				class CustomData
 				{
@@ -32943,8 +32908,8 @@ class Mission
 			class Item30
 			{
 				linkID=30;
-				item0=8032;
-				item1=7990;
+				item0=8031;
+				item1=7988;
 				class CustomData
 				{
 					type="Sync";
@@ -32953,7 +32918,7 @@ class Mission
 			class Item31
 			{
 				linkID=31;
-				item0=8031;
+				item0=8032;
 				item1=7988;
 				class CustomData
 				{
@@ -32963,7 +32928,7 @@ class Mission
 			class Item32
 			{
 				linkID=32;
-				item0=8032;
+				item0=7989;
 				item1=7988;
 				class CustomData
 				{
@@ -32973,8 +32938,8 @@ class Mission
 			class Item33
 			{
 				linkID=33;
-				item0=7989;
-				item1=7988;
+				item0=8033;
+				item1=3250;
 				class CustomData
 				{
 					type="Sync";
@@ -32983,7 +32948,7 @@ class Mission
 			class Item34
 			{
 				linkID=34;
-				item0=8033;
+				item0=3244;
 				item1=3250;
 				class CustomData
 				{
@@ -32993,8 +32958,8 @@ class Mission
 			class Item35
 			{
 				linkID=35;
-				item0=3244;
-				item1=3250;
+				item0=8033;
+				item1=3252;
 				class CustomData
 				{
 					type="Sync";
@@ -33003,7 +32968,7 @@ class Mission
 			class Item36
 			{
 				linkID=36;
-				item0=8033;
+				item0=3245;
 				item1=3252;
 				class CustomData
 				{
@@ -33013,8 +32978,8 @@ class Mission
 			class Item37
 			{
 				linkID=37;
-				item0=3245;
-				item1=3252;
+				item0=8038;
+				item1=7857;
 				class CustomData
 				{
 					type="Sync";
@@ -33023,7 +32988,7 @@ class Mission
 			class Item38
 			{
 				linkID=38;
-				item0=8038;
+				item0=8047;
 				item1=7857;
 				class CustomData
 				{
@@ -33033,7 +32998,7 @@ class Mission
 			class Item39
 			{
 				linkID=39;
-				item0=8047;
+				item0=8079;
 				item1=7857;
 				class CustomData
 				{
@@ -33043,7 +33008,7 @@ class Mission
 			class Item40
 			{
 				linkID=40;
-				item0=8079;
+				item0=8078;
 				item1=7857;
 				class CustomData
 				{
@@ -33053,8 +33018,8 @@ class Mission
 			class Item41
 			{
 				linkID=41;
-				item0=8078;
-				item1=7857;
+				item0=8086;
+				item1=8094;
 				class CustomData
 				{
 					type="Sync";
@@ -33063,7 +33028,7 @@ class Mission
 			class Item42
 			{
 				linkID=42;
-				item0=8086;
+				item0=8090;
 				item1=8094;
 				class CustomData
 				{
@@ -33073,7 +33038,7 @@ class Mission
 			class Item43
 			{
 				linkID=43;
-				item0=8090;
+				item0=8093;
 				item1=8094;
 				class CustomData
 				{
@@ -33083,7 +33048,7 @@ class Mission
 			class Item44
 			{
 				linkID=44;
-				item0=8093;
+				item0=8112;
 				item1=8094;
 				class CustomData
 				{
@@ -33093,8 +33058,8 @@ class Mission
 			class Item45
 			{
 				linkID=45;
-				item0=8112;
-				item1=8094;
+				item0=8096;
+				item1=8081;
 				class CustomData
 				{
 					type="Sync";
@@ -33103,7 +33068,7 @@ class Mission
 			class Item46
 			{
 				linkID=46;
-				item0=8096;
+				item0=8101;
 				item1=8081;
 				class CustomData
 				{
@@ -33113,7 +33078,7 @@ class Mission
 			class Item47
 			{
 				linkID=47;
-				item0=8101;
+				item0=8106;
 				item1=8081;
 				class CustomData
 				{
@@ -33123,7 +33088,7 @@ class Mission
 			class Item48
 			{
 				linkID=48;
-				item0=8106;
+				item0=8114;
 				item1=8081;
 				class CustomData
 				{
@@ -33133,7 +33098,7 @@ class Mission
 			class Item49
 			{
 				linkID=49;
-				item0=8114;
+				item0=8119;
 				item1=8081;
 				class CustomData
 				{
@@ -33143,7 +33108,7 @@ class Mission
 			class Item50
 			{
 				linkID=50;
-				item0=8119;
+				item0=8123;
 				item1=8081;
 				class CustomData
 				{
@@ -33153,7 +33118,7 @@ class Mission
 			class Item51
 			{
 				linkID=51;
-				item0=8123;
+				item0=8127;
 				item1=8081;
 				class CustomData
 				{
@@ -33163,7 +33128,7 @@ class Mission
 			class Item52
 			{
 				linkID=52;
-				item0=8127;
+				item0=8131;
 				item1=8081;
 				class CustomData
 				{
@@ -33173,8 +33138,8 @@ class Mission
 			class Item53
 			{
 				linkID=53;
-				item0=8131;
-				item1=8081;
+				item0=8135;
+				item1=8080;
 				class CustomData
 				{
 					type="Sync";
@@ -33183,7 +33148,7 @@ class Mission
 			class Item54
 			{
 				linkID=54;
-				item0=8135;
+				item0=8140;
 				item1=8080;
 				class CustomData
 				{
@@ -33193,7 +33158,7 @@ class Mission
 			class Item55
 			{
 				linkID=55;
-				item0=8140;
+				item0=8145;
 				item1=8080;
 				class CustomData
 				{
@@ -33203,7 +33168,7 @@ class Mission
 			class Item56
 			{
 				linkID=56;
-				item0=8145;
+				item0=8150;
 				item1=8080;
 				class CustomData
 				{
@@ -33213,8 +33178,8 @@ class Mission
 			class Item57
 			{
 				linkID=57;
-				item0=8150;
-				item1=8080;
+				item0=8156;
+				item1=8094;
 				class CustomData
 				{
 					type="Sync";
@@ -33223,7 +33188,7 @@ class Mission
 			class Item58
 			{
 				linkID=58;
-				item0=8156;
+				item0=8155;
 				item1=8094;
 				class CustomData
 				{
@@ -33233,7 +33198,7 @@ class Mission
 			class Item59
 			{
 				linkID=59;
-				item0=8155;
+				item0=8154;
 				item1=8094;
 				class CustomData
 				{
@@ -33243,8 +33208,8 @@ class Mission
 			class Item60
 			{
 				linkID=60;
-				item0=8154;
-				item1=8094;
+				item0=8156;
+				item1=8081;
 				class CustomData
 				{
 					type="Sync";
@@ -33253,7 +33218,7 @@ class Mission
 			class Item61
 			{
 				linkID=61;
-				item0=8156;
+				item0=8155;
 				item1=8081;
 				class CustomData
 				{
@@ -33263,7 +33228,7 @@ class Mission
 			class Item62
 			{
 				linkID=62;
-				item0=8155;
+				item0=8154;
 				item1=8081;
 				class CustomData
 				{
@@ -33273,8 +33238,8 @@ class Mission
 			class Item63
 			{
 				linkID=63;
-				item0=8154;
-				item1=8081;
+				item0=8156;
+				item1=8080;
 				class CustomData
 				{
 					type="Sync";
@@ -33283,7 +33248,7 @@ class Mission
 			class Item64
 			{
 				linkID=64;
-				item0=8156;
+				item0=8155;
 				item1=8080;
 				class CustomData
 				{
@@ -33293,7 +33258,7 @@ class Mission
 			class Item65
 			{
 				linkID=65;
-				item0=8155;
+				item0=8154;
 				item1=8080;
 				class CustomData
 				{
@@ -33303,8 +33268,8 @@ class Mission
 			class Item66
 			{
 				linkID=66;
-				item0=8154;
-				item1=8080;
+				item0=8188;
+				item1=8198;
 				class CustomData
 				{
 					type="Sync";
@@ -33313,8 +33278,8 @@ class Mission
 			class Item67
 			{
 				linkID=67;
-				item0=8188;
-				item1=8198;
+				item0=8197;
+				item1=8199;
 				class CustomData
 				{
 					type="Sync";
@@ -33323,8 +33288,8 @@ class Mission
 			class Item68
 			{
 				linkID=68;
-				item0=8197;
-				item1=8199;
+				item0=8196;
+				item1=8200;
 				class CustomData
 				{
 					type="Sync";
@@ -33333,8 +33298,8 @@ class Mission
 			class Item69
 			{
 				linkID=69;
-				item0=8196;
-				item1=8200;
+				item0=8207;
+				item1=8198;
 				class CustomData
 				{
 					type="Sync";
@@ -33343,8 +33308,8 @@ class Mission
 			class Item70
 			{
 				linkID=70;
-				item0=8207;
-				item1=8198;
+				item0=8210;
+				item1=8199;
 				class CustomData
 				{
 					type="Sync";
@@ -33353,7 +33318,7 @@ class Mission
 			class Item71
 			{
 				linkID=71;
-				item0=8210;
+				item0=8209;
 				item1=8199;
 				class CustomData
 				{
@@ -33363,8 +33328,8 @@ class Mission
 			class Item72
 			{
 				linkID=72;
-				item0=8209;
-				item1=8199;
+				item0=8210;
+				item1=8200;
 				class CustomData
 				{
 					type="Sync";
@@ -33373,7 +33338,7 @@ class Mission
 			class Item73
 			{
 				linkID=73;
-				item0=8210;
+				item0=8209;
 				item1=8200;
 				class CustomData
 				{
@@ -33383,8 +33348,8 @@ class Mission
 			class Item74
 			{
 				linkID=74;
-				item0=8209;
-				item1=8200;
+				item0=8199;
+				item1=8208;
 				class CustomData
 				{
 					type="Sync";
@@ -33393,7 +33358,7 @@ class Mission
 			class Item75
 			{
 				linkID=75;
-				item0=8199;
+				item0=8200;
 				item1=8208;
 				class CustomData
 				{
@@ -33403,8 +33368,8 @@ class Mission
 			class Item76
 			{
 				linkID=76;
-				item0=8200;
-				item1=8208;
+				item0=8235;
+				item1=8245;
 				class CustomData
 				{
 					type="Sync";
@@ -33413,8 +33378,8 @@ class Mission
 			class Item77
 			{
 				linkID=77;
-				item0=8235;
-				item1=8245;
+				item0=8244;
+				item1=8246;
 				class CustomData
 				{
 					type="Sync";
@@ -33423,8 +33388,8 @@ class Mission
 			class Item78
 			{
 				linkID=78;
-				item0=8244;
-				item1=8246;
+				item0=8243;
+				item1=8247;
 				class CustomData
 				{
 					type="Sync";
@@ -33433,8 +33398,8 @@ class Mission
 			class Item79
 			{
 				linkID=79;
-				item0=8243;
-				item1=8247;
+				item0=8317;
+				item1=7861;
 				class CustomData
 				{
 					type="Sync";
@@ -33443,7 +33408,7 @@ class Mission
 			class Item80
 			{
 				linkID=80;
-				item0=8317;
+				item0=8318;
 				item1=7861;
 				class CustomData
 				{
@@ -33453,7 +33418,7 @@ class Mission
 			class Item81
 			{
 				linkID=81;
-				item0=8318;
+				item0=8319;
 				item1=7861;
 				class CustomData
 				{
@@ -33463,8 +33428,8 @@ class Mission
 			class Item82
 			{
 				linkID=82;
-				item0=8319;
-				item1=7861;
+				item0=8300;
+				item1=8253;
 				class CustomData
 				{
 					type="Sync";
@@ -33473,7 +33438,7 @@ class Mission
 			class Item83
 			{
 				linkID=83;
-				item0=8300;
+				item0=8331;
 				item1=8253;
 				class CustomData
 				{
@@ -33483,7 +33448,7 @@ class Mission
 			class Item84
 			{
 				linkID=84;
-				item0=8331;
+				item0=8348;
 				item1=8253;
 				class CustomData
 				{
@@ -33493,7 +33458,7 @@ class Mission
 			class Item85
 			{
 				linkID=85;
-				item0=8348;
+				item0=8314;
 				item1=8253;
 				class CustomData
 				{
@@ -33503,7 +33468,7 @@ class Mission
 			class Item86
 			{
 				linkID=86;
-				item0=8314;
+				item0=8332;
 				item1=8253;
 				class CustomData
 				{
@@ -33513,7 +33478,7 @@ class Mission
 			class Item87
 			{
 				linkID=87;
-				item0=8332;
+				item0=8349;
 				item1=8253;
 				class CustomData
 				{
@@ -33523,8 +33488,8 @@ class Mission
 			class Item88
 			{
 				linkID=88;
-				item0=8349;
-				item1=8253;
+				item0=8316;
+				item1=8255;
 				class CustomData
 				{
 					type="Sync";
@@ -33533,7 +33498,7 @@ class Mission
 			class Item89
 			{
 				linkID=89;
-				item0=8316;
+				item0=8334;
 				item1=8255;
 				class CustomData
 				{
@@ -33543,7 +33508,7 @@ class Mission
 			class Item90
 			{
 				linkID=90;
-				item0=8334;
+				item0=8351;
 				item1=8255;
 				class CustomData
 				{
@@ -33553,7 +33518,7 @@ class Mission
 			class Item91
 			{
 				linkID=91;
-				item0=8351;
+				item0=8355;
 				item1=8255;
 				class CustomData
 				{
@@ -33563,7 +33528,7 @@ class Mission
 			class Item92
 			{
 				linkID=92;
-				item0=8355;
+				item0=8354;
 				item1=8255;
 				class CustomData
 				{
@@ -33573,7 +33538,7 @@ class Mission
 			class Item93
 			{
 				linkID=93;
-				item0=8354;
+				item0=8356;
 				item1=8255;
 				class CustomData
 				{
@@ -33583,8 +33548,8 @@ class Mission
 			class Item94
 			{
 				linkID=94;
-				item0=8356;
-				item1=8255;
+				item0=8355;
+				item1=8253;
 				class CustomData
 				{
 					type="Sync";
@@ -33593,7 +33558,7 @@ class Mission
 			class Item95
 			{
 				linkID=95;
-				item0=8355;
+				item0=8354;
 				item1=8253;
 				class CustomData
 				{
@@ -33603,7 +33568,7 @@ class Mission
 			class Item96
 			{
 				linkID=96;
-				item0=8354;
+				item0=8356;
 				item1=8253;
 				class CustomData
 				{
@@ -33613,8 +33578,8 @@ class Mission
 			class Item97
 			{
 				linkID=97;
-				item0=8356;
-				item1=8253;
+				item0=8355;
+				item1=8254;
 				class CustomData
 				{
 					type="Sync";
@@ -33623,7 +33588,7 @@ class Mission
 			class Item98
 			{
 				linkID=98;
-				item0=8355;
+				item0=8354;
 				item1=8254;
 				class CustomData
 				{
@@ -33633,7 +33598,7 @@ class Mission
 			class Item99
 			{
 				linkID=99;
-				item0=8354;
+				item0=8356;
 				item1=8254;
 				class CustomData
 				{
@@ -33643,7 +33608,7 @@ class Mission
 			class Item100
 			{
 				linkID=100;
-				item0=8356;
+				item0=8383;
 				item1=8254;
 				class CustomData
 				{
@@ -33653,7 +33618,7 @@ class Mission
 			class Item101
 			{
 				linkID=101;
-				item0=8383;
+				item0=8388;
 				item1=8254;
 				class CustomData
 				{
@@ -33663,7 +33628,7 @@ class Mission
 			class Item102
 			{
 				linkID=102;
-				item0=8388;
+				item0=8393;
 				item1=8254;
 				class CustomData
 				{
@@ -33673,8 +33638,8 @@ class Mission
 			class Item103
 			{
 				linkID=103;
-				item0=8393;
-				item1=8254;
+				item0=8376;
+				item1=8402;
 				class CustomData
 				{
 					type="Sync";
@@ -33683,7 +33648,7 @@ class Mission
 			class Item104
 			{
 				linkID=104;
-				item0=8376;
+				item0=8407;
 				item1=8402;
 				class CustomData
 				{
@@ -33693,7 +33658,7 @@ class Mission
 			class Item105
 			{
 				linkID=105;
-				item0=8407;
+				item0=8377;
 				item1=8402;
 				class CustomData
 				{
@@ -33703,7 +33668,7 @@ class Mission
 			class Item106
 			{
 				linkID=106;
-				item0=8377;
+				item0=8408;
 				item1=8402;
 				class CustomData
 				{
@@ -33713,8 +33678,8 @@ class Mission
 			class Item107
 			{
 				linkID=107;
-				item0=8408;
-				item1=8402;
+				item0=8398;
+				item1=8403;
 				class CustomData
 				{
 					type="Sync";
@@ -33723,7 +33688,7 @@ class Mission
 			class Item108
 			{
 				linkID=108;
-				item0=8398;
+				item0=8417;
 				item1=8403;
 				class CustomData
 				{
@@ -33733,8 +33698,8 @@ class Mission
 			class Item109
 			{
 				linkID=109;
-				item0=8417;
-				item1=8403;
+				item0=8419;
+				item1=7872;
 				class CustomData
 				{
 					type="Sync";
@@ -33743,7 +33708,7 @@ class Mission
 			class Item110
 			{
 				linkID=110;
-				item0=8419;
+				item0=8427;
 				item1=7872;
 				class CustomData
 				{
@@ -33753,7 +33718,7 @@ class Mission
 			class Item111
 			{
 				linkID=111;
-				item0=8427;
+				item0=8428;
 				item1=7872;
 				class CustomData
 				{
@@ -33763,8 +33728,8 @@ class Mission
 			class Item112
 			{
 				linkID=112;
-				item0=8428;
-				item1=7872;
+				item0=8431;
+				item1=8402;
 				class CustomData
 				{
 					type="Sync";
@@ -33773,7 +33738,7 @@ class Mission
 			class Item113
 			{
 				linkID=113;
-				item0=8431;
+				item0=8430;
 				item1=8402;
 				class CustomData
 				{
@@ -33783,7 +33748,7 @@ class Mission
 			class Item114
 			{
 				linkID=114;
-				item0=8430;
+				item0=8429;
 				item1=8402;
 				class CustomData
 				{
@@ -33793,8 +33758,8 @@ class Mission
 			class Item115
 			{
 				linkID=115;
-				item0=8429;
-				item1=8402;
+				item0=8431;
+				item1=8403;
 				class CustomData
 				{
 					type="Sync";
@@ -33803,7 +33768,7 @@ class Mission
 			class Item116
 			{
 				linkID=116;
-				item0=8431;
+				item0=8430;
 				item1=8403;
 				class CustomData
 				{
@@ -33813,7 +33778,7 @@ class Mission
 			class Item117
 			{
 				linkID=117;
-				item0=8430;
+				item0=8429;
 				item1=8403;
 				class CustomData
 				{
@@ -33823,8 +33788,8 @@ class Mission
 			class Item118
 			{
 				linkID=118;
-				item0=8429;
-				item1=8403;
+				item0=8434;
+				item1=8245;
 				class CustomData
 				{
 					type="Sync";
@@ -33833,8 +33798,8 @@ class Mission
 			class Item119
 			{
 				linkID=119;
-				item0=8434;
-				item1=8245;
+				item0=8437;
+				item1=8247;
 				class CustomData
 				{
 					type="Sync";
@@ -33843,7 +33808,7 @@ class Mission
 			class Item120
 			{
 				linkID=120;
-				item0=8437;
+				item0=8436;
 				item1=8247;
 				class CustomData
 				{
@@ -33853,7 +33818,7 @@ class Mission
 			class Item121
 			{
 				linkID=121;
-				item0=8436;
+				item0=8435;
 				item1=8247;
 				class CustomData
 				{
@@ -33863,8 +33828,8 @@ class Mission
 			class Item122
 			{
 				linkID=122;
-				item0=8435;
-				item1=8247;
+				item0=8437;
+				item1=8246;
 				class CustomData
 				{
 					type="Sync";
@@ -33873,7 +33838,7 @@ class Mission
 			class Item123
 			{
 				linkID=123;
-				item0=8437;
+				item0=8436;
 				item1=8246;
 				class CustomData
 				{
@@ -33883,7 +33848,7 @@ class Mission
 			class Item124
 			{
 				linkID=124;
-				item0=8436;
+				item0=8435;
 				item1=8246;
 				class CustomData
 				{
@@ -33893,8 +33858,8 @@ class Mission
 			class Item125
 			{
 				linkID=125;
-				item0=8435;
-				item1=8246;
+				item0=8440;
+				item1=8456;
 				class CustomData
 				{
 					type="Sync";
@@ -33903,8 +33868,8 @@ class Mission
 			class Item126
 			{
 				linkID=126;
-				item0=8440;
-				item1=8456;
+				item0=8453;
+				item1=8455;
 				class CustomData
 				{
 					type="Sync";
@@ -33913,8 +33878,8 @@ class Mission
 			class Item127
 			{
 				linkID=127;
-				item0=8453;
-				item1=8455;
+				item0=8452;
+				item1=8457;
 				class CustomData
 				{
 					type="Sync";
@@ -33923,8 +33888,8 @@ class Mission
 			class Item128
 			{
 				linkID=128;
-				item0=8452;
-				item1=8457;
+				item0=8480;
+				item1=8456;
 				class CustomData
 				{
 					type="Sync";
@@ -33933,7 +33898,7 @@ class Mission
 			class Item129
 			{
 				linkID=129;
-				item0=8480;
+				item0=8479;
 				item1=8456;
 				class CustomData
 				{
@@ -33943,8 +33908,8 @@ class Mission
 			class Item130
 			{
 				linkID=130;
-				item0=8479;
-				item1=8456;
+				item0=8483;
+				item1=8455;
 				class CustomData
 				{
 					type="Sync";
@@ -33953,7 +33918,7 @@ class Mission
 			class Item131
 			{
 				linkID=131;
-				item0=8483;
+				item0=8482;
 				item1=8455;
 				class CustomData
 				{
@@ -33963,7 +33928,7 @@ class Mission
 			class Item132
 			{
 				linkID=132;
-				item0=8482;
+				item0=8481;
 				item1=8455;
 				class CustomData
 				{
@@ -33973,8 +33938,8 @@ class Mission
 			class Item133
 			{
 				linkID=133;
-				item0=8481;
-				item1=8455;
+				item0=8483;
+				item1=8457;
 				class CustomData
 				{
 					type="Sync";
@@ -33983,7 +33948,7 @@ class Mission
 			class Item134
 			{
 				linkID=134;
-				item0=8483;
+				item0=8482;
 				item1=8457;
 				class CustomData
 				{
@@ -33993,7 +33958,7 @@ class Mission
 			class Item135
 			{
 				linkID=135;
-				item0=8482;
+				item0=8481;
 				item1=8457;
 				class CustomData
 				{
@@ -34003,8 +33968,8 @@ class Mission
 			class Item136
 			{
 				linkID=136;
-				item0=8481;
-				item1=8457;
+				item0=8500;
+				item1=8497;
 				class CustomData
 				{
 					type="Sync";
@@ -34013,8 +33978,8 @@ class Mission
 			class Item137
 			{
 				linkID=137;
-				item0=8500;
-				item1=8497;
+				item0=8499;
+				item1=8496;
 				class CustomData
 				{
 					type="Sync";
@@ -34023,8 +33988,8 @@ class Mission
 			class Item138
 			{
 				linkID=138;
-				item0=8499;
-				item1=8496;
+				item0=8498;
+				item1=8495;
 				class CustomData
 				{
 					type="Sync";
@@ -34033,8 +33998,8 @@ class Mission
 			class Item139
 			{
 				linkID=139;
-				item0=8498;
-				item1=8495;
+				item0=8533;
+				item1=8536;
 				class CustomData
 				{
 					type="Sync";
@@ -34043,7 +34008,7 @@ class Mission
 			class Item140
 			{
 				linkID=140;
-				item0=8533;
+				item0=8549;
 				item1=8536;
 				class CustomData
 				{
@@ -34053,7 +34018,7 @@ class Mission
 			class Item141
 			{
 				linkID=141;
-				item0=8549;
+				item0=8550;
 				item1=8536;
 				class CustomData
 				{
@@ -34063,8 +34028,8 @@ class Mission
 			class Item142
 			{
 				linkID=142;
-				item0=8550;
-				item1=8536;
+				item0=8552;
+				item1=8537;
 				class CustomData
 				{
 					type="Sync";
@@ -34073,7 +34038,7 @@ class Mission
 			class Item143
 			{
 				linkID=143;
-				item0=8552;
+				item0=8556;
 				item1=8537;
 				class CustomData
 				{
@@ -34083,7 +34048,7 @@ class Mission
 			class Item144
 			{
 				linkID=144;
-				item0=8556;
+				item0=8559;
 				item1=8537;
 				class CustomData
 				{
@@ -34093,7 +34058,7 @@ class Mission
 			class Item145
 			{
 				linkID=145;
-				item0=8559;
+				item0=8560;
 				item1=8537;
 				class CustomData
 				{
@@ -34103,8 +34068,8 @@ class Mission
 			class Item146
 			{
 				linkID=146;
-				item0=8560;
-				item1=8537;
+				item0=8580;
+				item1=8538;
 				class CustomData
 				{
 					type="Sync";
@@ -34113,7 +34078,7 @@ class Mission
 			class Item147
 			{
 				linkID=147;
-				item0=8580;
+				item0=8575;
 				item1=8538;
 				class CustomData
 				{
@@ -34123,7 +34088,7 @@ class Mission
 			class Item148
 			{
 				linkID=148;
-				item0=8575;
+				item0=8567;
 				item1=8538;
 				class CustomData
 				{
@@ -34133,7 +34098,7 @@ class Mission
 			class Item149
 			{
 				linkID=149;
-				item0=8567;
+				item0=8571;
 				item1=8538;
 				class CustomData
 				{
@@ -34143,7 +34108,7 @@ class Mission
 			class Item150
 			{
 				linkID=150;
-				item0=8571;
+				item0=8587;
 				item1=8538;
 				class CustomData
 				{
@@ -34153,7 +34118,7 @@ class Mission
 			class Item151
 			{
 				linkID=151;
-				item0=8587;
+				item0=8588;
 				item1=8538;
 				class CustomData
 				{
@@ -34163,7 +34128,7 @@ class Mission
 			class Item152
 			{
 				linkID=152;
-				item0=8588;
+				item0=8589;
 				item1=8538;
 				class CustomData
 				{
@@ -34173,8 +34138,8 @@ class Mission
 			class Item153
 			{
 				linkID=153;
-				item0=8589;
-				item1=8538;
+				item0=8596;
+				item1=8539;
 				class CustomData
 				{
 					type="Sync";
@@ -34183,7 +34148,7 @@ class Mission
 			class Item154
 			{
 				linkID=154;
-				item0=8596;
+				item0=8605;
 				item1=8539;
 				class CustomData
 				{
@@ -34193,7 +34158,7 @@ class Mission
 			class Item155
 			{
 				linkID=155;
-				item0=8605;
+				item0=8591;
 				item1=8539;
 				class CustomData
 				{
@@ -34203,7 +34168,7 @@ class Mission
 			class Item156
 			{
 				linkID=156;
-				item0=8591;
+				item0=8600;
 				item1=8539;
 				class CustomData
 				{
@@ -34213,7 +34178,7 @@ class Mission
 			class Item157
 			{
 				linkID=157;
-				item0=8600;
+				item0=8612;
 				item1=8539;
 				class CustomData
 				{
@@ -34223,7 +34188,7 @@ class Mission
 			class Item158
 			{
 				linkID=158;
-				item0=8612;
+				item0=8613;
 				item1=8539;
 				class CustomData
 				{
@@ -34233,7 +34198,7 @@ class Mission
 			class Item159
 			{
 				linkID=159;
-				item0=8613;
+				item0=8614;
 				item1=8539;
 				class CustomData
 				{
@@ -34243,8 +34208,8 @@ class Mission
 			class Item160
 			{
 				linkID=160;
-				item0=8614;
-				item1=8539;
+				item0=8631;
+				item1=8639;
 				class CustomData
 				{
 					type="Sync";
@@ -34253,7 +34218,7 @@ class Mission
 			class Item161
 			{
 				linkID=161;
-				item0=8631;
+				item0=8635;
 				item1=8639;
 				class CustomData
 				{
@@ -34263,7 +34228,7 @@ class Mission
 			class Item162
 			{
 				linkID=162;
-				item0=8635;
+				item0=8648;
 				item1=8639;
 				class CustomData
 				{
@@ -34273,7 +34238,7 @@ class Mission
 			class Item163
 			{
 				linkID=163;
-				item0=8648;
+				item0=8647;
 				item1=8639;
 				class CustomData
 				{
@@ -34283,8 +34248,8 @@ class Mission
 			class Item164
 			{
 				linkID=164;
-				item0=8647;
-				item1=8639;
+				item0=8668;
+				item1=8667;
 				class CustomData
 				{
 					type="Sync";
@@ -34293,16 +34258,6 @@ class Mission
 			class Item165
 			{
 				linkID=165;
-				item0=8668;
-				item1=8667;
-				class CustomData
-				{
-					type="Sync";
-				};
-			};
-			class Item166
-			{
-				linkID=166;
 				item0=8669;
 				item1=8668;
 				class CustomData
