@@ -1,5 +1,5 @@
 version=54;
-center[]={12220.688,48.475826,8124.4629};
+center[]={15330.419,1.0264257,13914.877};
 class items
 {
 	items=1;
@@ -11,12 +11,12 @@ class items
 		{
 			text="AO Limiter";
 			condition="true";
-			onActivation="private _target = 20; " \n "private _units = " \n "    allUnits select {_x getVariable [""my_tag"", """"] == """"}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
+			onActivation="private _tag = ""obj"";" \n "private _target = 40; " \n "private _units = " \n "    allUnits select {_x getVariable [""my_tag"", """"] == _tag}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
 			sizeA=0;
 			sizeB=0;
 			isServerOnly=1;
 		};
-		id=3286;
+		id=10961;
 		type="EmptyDetector";
 	};
 };

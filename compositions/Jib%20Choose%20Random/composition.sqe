@@ -1,5 +1,5 @@
 version=54;
-center[]={1432.312,78.277672,10737.223};
+center[]={15318.435,1.9423314,13961.663};
 class items
 {
 	items=1;
@@ -10,8 +10,8 @@ class items
 		{
 			angles[]={6.2093229,0,0.023003438};
 		};
-		init="[this, random [1, 1, 1]] call jib_choose_number;";
-		id=13380;
+		init="[this, round random [2, 2.3, 3]] call jib_choose_number;";
+		id=10933;
 		type="Logic";
 	};
 };
