@@ -1,56 +1,62 @@
-[] spawn {
-    waitUntil {uiSleep 0.5; alive player;};
-    sleep 5;
-    showHUD [
-        true, // scriptedHUD
-        true, // info
-        true, // radar
-        true, // compass
-        true, // direction
-        true, // menu
-        true, // group
-        true, // cursors
-        true, // panels
-        false, // kills
-        false  // showIcon3D
-    ];
-    showScoretable 0;
-};
+terminate (missionNamespace getVariable ["my_disable_hud", scriptNull]);
+missionNamespace setVariable [
+    "my_disable_hud",
+    [] spawn {
+        scriptName "My Disable HUD";
+        while {true} do {
+            uiSleep 1;
+            showHUD [
+                true, // scriptedHUD
+                true, // info
+                true, // radar
+                true, // compass
+                true, // direction
+                true, // menu
+                true, // group
+                true, // cursors
+                true, // panels
+                false, // kills
+                false  // showIcon3D
+            ];
+            showScoretable 0;
+        };
+    }
+];
 
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Signal_title",
-//         "- Alpha: Player infantry squad.<br/>
-// - Bravo: Player infantry squad.<br/>
-// - Charlie: AI infantry squad.<br/>
-// - Delta: AI infantry squad.<br/>
-// - Warpig: LAV-25 IFV platoon.<br/>
-// - Eagle: AH-1Z Viper."
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Execution_title",
-//         "1. Assemble assault force.<br/>
-// 2. Seize sectors Granite, Onyx, and Sandstone.<br/>
-// 3. Search for enemy intel documents."
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Mission_title",
-//         "Seize all three sectors inside the town of Harju. Watch for enemy intel documents which reveal further enemy positions."
-//     ]
-// ];
-// player createDiaryRecord [
-//     "Diary",
-//     [
-//         localize "STR_A3_Diary_Situation_title",
-//         "Key town Harju is located in a strategic position near an important highway crossroads. A Russian infantry company has garrisoned buildings in the town, and an armor company is expected to support them from the east. We will send a combined arms force from the northwest to seize the town. There are known to be Russian intelligence documents among their command posts that may reveal further enemy positions. There are still civilians in the AO so we must exercise caution. If we can seize this town it will enable our armor to advance further into the region."
-//     ]
-// ];
-// uiSleep 1;
-// player selectDiarySubject "Diary:Record3"; // Situation
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Signal_title",
+        "- Alpha: Infantry.<br/>
+- Bravo: Infantry.<br/>
+- Charlie: Infantry (AI).<br/>
+- Delta: Infantry (AI).<br/>
+- Warpig: Armor.<br/>
+- Eagle: Helicopter."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Execution_title",
+        "1. Secure Hospital.<br/>
+2. Secure Checkpoint Omega.<br/>
+3. Secure Russian HQ."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Mission_title",
+        "Assault and secure key objectives in the capital city."
+    ]
+];
+player createDiaryRecord [
+    "Diary",
+    [
+        localize "STR_A3_Diary_Situation_title",
+        "We are launching the final assault into the capital city of Virolahti. The Russians have garrisoned buildings along MSR Kit Kat and MSR Sour Patch Kids. They have armor and several helicopters in reserve to the northeast that will likely join the fight. Our objectives are to capture the Hospital, Checkpoint Omega, and the Russian HQ. This should cripple their operation in the region and we expect it to force a Russian withdrawal from Virolahti."
+    ]
+];
+uiSleep 1;
+player selectDiarySubject "Diary:Record3"; // Situation
