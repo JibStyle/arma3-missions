@@ -1,0 +1,1417 @@
+version=54;
+center[]={20312.297,50.51363,9241.5049};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Group";
+		side="East";
+		class Entities
+		{
+			items=8;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.0014381409,7.7890625};
+					angles[]={6.2206011,0,6.1861582};
+				};
+				side="East";
+				flags=7;
+				class Attributes
+				{
+					rank="SERGEANT";
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_Katiba_ARCO_pointer_F";
+							optics="optic_ACO_grn";
+							flashlight="acc_pointer_IR";
+							firemode="arifle_Katiba_ARCO_pointer_F:Single";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_green";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class binocular
+						{
+							name="Binocular";
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item1
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="SmokeShellOrange";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShellYellow";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="Chemlight_red";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_TacVest_khk";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_green";
+									count=3;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="30Rnd_65x39_caseless_green_mag_Tracer";
+									count=2;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="O_IR_Grenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="Chemlight_red";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetLeaderO_ocamo";
+					};
+				};
+				id=62;
+				type="O_Soldier_SL_F";
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.092834473,5.3388672};
+					angles[]={6.2392135,0,6.1677008};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_Katiba_ACO_pointer_F";
+							optics="optic_ACO_grn";
+							flashlight="acc_pointer_IR";
+							firemode="arifle_Katiba_ACO_pointer_F:Single";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_green";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_HarnessO_brn";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_green";
+									count=9;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="Chemlight_red";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetO_ocamo";
+					};
+				};
+				id=63;
+				type="O_Soldier_F";
+				atlOffset=3.8146973e-006;
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.12378311,2.8388672};
+					angles[]={6.2458687,0,6.1677008};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_Katiba_ACO_F";
+							optics="optic_ACO_grn";
+							firemode="arifle_Katiba_ACO_F:Single";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_green";
+								ammoLeft=30;
+							};
+						};
+						class secondaryWeapon
+						{
+							name="launch_RPG32_F";
+							class primaryMuzzleMag
+							{
+								name="RPG32_F";
+								ammoLeft=1;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_TacVest_khk";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_green";
+									count=5;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="Chemlight_red";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="B_FieldPack_cbr_LAT";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="RPG32_F";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item1
+								{
+									name="RPG32_HE_F";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetO_ocamo";
+					};
+				};
+				id=64;
+				type="O_Soldier_LAT_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.10377884,0.33886719};
+					angles[]={6.2458687,0,6.1677008};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="srifle_DMR_01_DMS_BI_F";
+							optics="optic_DMS";
+							underBarrel="bipod_02_F_blk";
+							firemode="srifle_DMR_01_DMS_BI_F:Single";
+							class primaryMuzzleMag
+							{
+								name="10Rnd_762x54_Mag";
+								ammoLeft=10;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=3;
+								class Item0
+								{
+									name="HandGrenade";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item1
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="Chemlight_red";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=9;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+								class Item8
+								{
+									name="ACE_RangeCard";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_TacVest_khk";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="10Rnd_762x54_Mag";
+									count=9;
+									ammoLeft=10;
+								};
+								class Item1
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item3
+								{
+									name="HandGrenade";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="Chemlight_red";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetO_ocamo";
+					};
+				};
+				id=65;
+				type="O_soldier_M_F";
+			};
+			class Item4
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.081893921,-2.1611328};
+					angles[]={6.2312322,0,6.1821971};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					rank="SERGEANT";
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_Katiba_GL_ARCO_pointer_F";
+							optics="optic_ACO_grn";
+							flashlight="acc_pointer_IR";
+							firemode="arifle_Katiba_GL_ARCO_pointer_F:Single";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_green";
+								ammoLeft=30;
+							};
+							class secondaryMuzzleMag
+							{
+								name="1Rnd_HE_Grenade_shell";
+								ammoLeft=1;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=4;
+								class Item0
+								{
+									name="1Rnd_Smoke_Grenade_shell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item1
+								{
+									name="1Rnd_SmokeRed_Grenade_shell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="1Rnd_SmokeOrange_Grenade_shell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="1Rnd_SmokeYellow_Grenade_shell";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_HarnessOGL_brn";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=11;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_green";
+									count=3;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="30Rnd_65x39_caseless_green_mag_Tracer";
+									count=2;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item3
+								{
+									name="MiniGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="1Rnd_HE_Grenade_shell";
+									count=5;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item6
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item7
+								{
+									name="SmokeShellOrange";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item8
+								{
+									name="SmokeShellYellow";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item9
+								{
+									name="Chemlight_red";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item10
+								{
+									name="1Rnd_Smoke_Grenade_shell";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetLeaderO_ocamo";
+					};
+				};
+				id=66;
+				type="O_Soldier_TL_F";
+			};
+			class Item5
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.067333221,-4.6611328};
+					angles[]={0.061257254,0,6.1821966};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.44999999;
+					rank="CORPORAL";
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="LMG_Zafir_pointer_F";
+							flashlight="acc_pointer_IR";
+							firemode="LMG_Zafir_pointer_F:FullAuto";
+							class primaryMuzzleMag
+							{
+								name="150Rnd_762x54_Box";
+								ammoLeft=150;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_HarnessO_brn";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item1
+								{
+									name="HandGrenade";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item2
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="150Rnd_762x54_Box";
+									count=2;
+									ammoLeft=150;
+								};
+								class Item5
+								{
+									name="Chemlight_red";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetO_ocamo";
+					};
+				};
+				id=67;
+				type="O_Soldier_AR_F";
+			};
+			class Item6
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.074001312,-7.1611328};
+					angles[]={0.061257254,0,6.1821966};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_Katiba_ACO_pointer_F";
+							optics="optic_ACO_grn";
+							flashlight="acc_pointer_IR";
+							firemode="arifle_Katiba_ACO_pointer_F:Single";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_green";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_HarnessO_brn";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_green";
+									count=7;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="Chemlight_red";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="B_FieldPack_cbr_Ammo";
+							isBackpack=1;
+							class MagazineCargo
+							{
+								items=7;
+								class Item0
+								{
+									name="150Rnd_762x54_Box";
+									count=2;
+									ammoLeft=150;
+								};
+								class Item1
+								{
+									name="30Rnd_65x39_caseless_green";
+									count=6;
+									ammoLeft=30;
+								};
+								class Item2
+								{
+									name="10Rnd_762x54_Mag";
+									count=2;
+									ammoLeft=10;
+								};
+								class Item3
+								{
+									name="RPG32_F";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShell";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item6
+								{
+									name="1Rnd_HE_Grenade_shell";
+									count=5;
+									ammoLeft=1;
+								};
+							};
+							class ItemCargo
+							{
+								items=4;
+								class Item0
+								{
+									name="ACE_packingBandage";
+									count=4;
+								};
+								class Item1
+								{
+									name="ACE_fieldDressing";
+									count=4;
+								};
+								class Item2
+								{
+									name="ACE_morphine";
+									count=4;
+								};
+								class Item3
+								{
+									name="ACE_tourniquet";
+									count=4;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetO_ocamo";
+					};
+				};
+				id=68;
+				type="O_Soldier_A_F";
+			};
+			class Item7
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0,0.075023651,-9.6611328};
+					angles[]={0.014664836,0,6.2285728};
+				};
+				side="East";
+				flags=5;
+				class Attributes
+				{
+					skill=0.40000001;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_Katiba_pointer_F";
+							flashlight="acc_pointer_IR";
+							firemode="arifle_Katiba_pointer_F:Single";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_green";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_Rook40_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_O_CombatUniform_ocamo";
+							isBackpack=0;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_EarPlugs";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACE_Flashlight_XL50";
+									count=1;
+								};
+								class Item2
+								{
+									name="ACE_packingBandage";
+									count=2;
+								};
+								class Item3
+								{
+									name="ACE_fieldDressing";
+									count=2;
+								};
+								class Item4
+								{
+									name="ACE_morphine";
+									count=1;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=1;
+								};
+								class Item6
+								{
+									name="ACE_CableTie";
+									count=2;
+								};
+								class Item7
+								{
+									name="ACRE_PRC343";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_TacVest_khk";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=7;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_green";
+									count=5;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShellRed";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellOrange";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="SmokeShellYellow";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item6
+								{
+									name="Chemlight_red";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						class backpack
+						{
+							typeName="B_FieldPack_ocamo_Medic";
+							isBackpack=1;
+							class ItemCargo
+							{
+								items=8;
+								class Item0
+								{
+									name="ACE_packingBandage";
+									count=20;
+								};
+								class Item1
+								{
+									name="ACE_fieldDressing";
+									count=20;
+								};
+								class Item2
+								{
+									name="ACE_epinephrine";
+									count=5;
+								};
+								class Item3
+								{
+									name="ACE_morphine";
+									count=5;
+								};
+								class Item4
+								{
+									name="ACE_splint";
+									count=5;
+								};
+								class Item5
+								{
+									name="ACE_tourniquet";
+									count=5;
+								};
+								class Item6
+								{
+									name="ACE_salineIV_500";
+									count=5;
+								};
+								class Item7
+								{
+									name="ACE_adenosine";
+									count=5;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						hmd="ACE_NVG_Wide_Black";
+						headgear="H_HelmetO_ocamo";
+					};
+				};
+				id=69;
+				type="O_medic_F";
+				atlOffset=3.8146973e-006;
+			};
+		};
+		class Attributes
+		{
+			formation="FILE";
+		};
+		id=61;
+	};
+};

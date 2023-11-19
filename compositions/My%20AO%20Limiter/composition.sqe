@@ -1,22 +1,55 @@
 version=54;
-center[]={15330.419,1.0264257,13914.877};
+center[]={20318.697,38.190094,8853.8896};
 class items
 {
-	items=1;
+	items=3;
 	class Item0
 	{
 		dataType="Trigger";
-		position[]={0,0,0};
+		position[]={5.9042969,0,-6.3115234};
 		class Attributes
 		{
-			text="AO Limiter";
+			text="AO Limiter OBJ";
 			condition="true";
-			onActivation="private _tag = ""obj"";" \n "private _target = 40; " \n "private _units = " \n "    allUnits select {_x getVariable [""my_tag"", """"] == _tag}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
+			onActivation="private _tag = ""obj"";" \n "private _target = 20; " \n "private _units = " \n "    allUnits select {_x getVariable [""my_tag"", """"] == _tag}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
 			sizeA=0;
 			sizeB=0;
 			isServerOnly=1;
 		};
-		id=10961;
+		id=1035;
+		type="EmptyDetector";
+		atlOffset=3.8146973e-006;
+	};
+	class Item1
+	{
+		dataType="Trigger";
+		position[]={-6.1113281,1.350029,6.5449219};
+		class Attributes
+		{
+			text="AO Limiter Outer";
+			condition="true";
+			onActivation="private _tag = ""outer"";" \n "private _target = 10; " \n "private _units = " \n "    allUnits select {_x getVariable [""my_tag"", """"] == _tag}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
+			sizeA=0;
+			sizeB=0;
+			isServerOnly=1;
+		};
+		id=1039;
+		type="EmptyDetector";
+	};
+	class Item2
+	{
+		dataType="Trigger";
+		position[]={0.20507813,0.5860405,-0.23242188};
+		class Attributes
+		{
+			text="AO Limiter Inner";
+			condition="true";
+			onActivation="private _tag = ""inner"";" \n "private _target = 10; " \n "private _units = " \n "    allUnits select {_x getVariable [""my_tag"", """"] == _tag}; " \n "private _probability = _target / (count _units max 1); " \n "_units select {random 1 > _probability} apply { " \n "    private _veh = vehicle _x; " \n "    deleteVehicleCrew _veh; " \n "    deleteVehicle _veh; " \n "};";
+			sizeA=0;
+			sizeB=0;
+			isServerOnly=1;
+		};
+		id=1037;
 		type="EmptyDetector";
 	};
 };
