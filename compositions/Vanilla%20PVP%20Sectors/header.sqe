@@ -1,10 +1,11 @@
 version=54;
-name="Vanilla Sector Control";
+name="Vanilla PVP Sectors";
 author="JibStyle";
 category="EdSubcat_Default";
 requiredAddons[]=
 {
+	"A3_Modules_F_Multiplayer",
 	"A3_Modules_F",
 	"A3_Modules_F_Curator_Multiplayer",
-	"A3_Modules_F_Multiplayer"
+	"A3_Ui_F"
 };
