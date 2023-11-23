@@ -1,0 +1,198 @@
+version=54;
+center[]={8235.5469,192.95737,11920.503};
+class items
+{
+	items=3;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={-0.10644531,0,-1.7587891};
+		angle=3.1145573;
+		class Attributes
+		{
+			onActivation="[""task_attack"",""SUCCEEDED""] call BIS_fnc_taskSetState;";
+			sizeA=250;
+			sizeB=250;
+			sizeC=95.69886;
+			timeout[]={20,20,20};
+			interuptable=1;
+			activationBy="WEST SEIZED";
+			isServerOnly=1;
+		};
+		id=4035;
+		type="EmptyDetectorAreaR250";
+		atlOffset=-30.27655;
+	};
+	class Item1
+	{
+		dataType="Marker";
+		position[]={0.28808594,29.928406,-0.18066406};
+		name="marker_18";
+		markerType="ELLIPSE";
+		type="";
+		colorName="ColorGUER";
+		fillName="Border";
+		a=250;
+		b=250;
+		drawBorder=1;
+		id=4036;
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-0.18261719,29.499893,1.9384766};
+		};
+		name="task_attack";
+		id=4037;
+		type="ModuleTaskCreate_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleTaskCreate_F_Destination";
+				expression="_this setVariable ['Destination',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleTaskCreate_F_Type";
+				expression="_this setVariable ['Type',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="attack";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleTaskCreate_F_ShowNotification";
+				expression="_this setVariable ['ShowNotification',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=1;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleTaskCreate_F_Marker";
+				expression="_this setVariable ['Marker',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleTaskCreate_F_Title";
+				expression="_this setVariable ['Title',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Secure AO";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="ModuleTaskCreate_F_Description";
+				expression="_this setVariable ['Description',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="Eliminate enemy forces from the AO.";
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="ModuleTaskCreate_F_ID";
+				expression="_this setVariable ['ID',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="ModuleTaskCreate_F_AlwaysVisible";
+				expression="_this setVariable ['AlwaysVisible',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=0;
+					};
+				};
+			};
+			class Attribute8
+			{
+				property="ModuleTaskCreate_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="SCALAR";
+						value=4;
+					};
+				};
+			};
+			class Attribute9
+			{
+				property="ModuleTaskCreate_F_State";
+				expression="_this setVariable ['State',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="ASSIGNED";
+					};
+				};
+			};
+			class Attribute10
+			{
+				property="ModuleTaskCreate_F_IDParent";
+				expression="_this setVariable ['IDParent',_value,true];";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="";
+					};
+				};
+			};
+			nAttributes=11;
+		};
+	};
+};

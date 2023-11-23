@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=248;
+		nextID=273;
 	};
 	class Camera
 	{
@@ -7012,7 +7012,7 @@ class Mission
 					name="marker_37";
 					type="mil_arrow";
 					colorName="ColorGUER";
-					angle=161.78287;
+					angle=161.78285;
 					id=3940;
 				};
 				class Item7
@@ -7022,7 +7022,7 @@ class Mission
 					name="marker_38";
 					type="mil_arrow";
 					colorName="ColorGUER";
-					angle=48.247395;
+					angle=48.247391;
 					id=3941;
 				};
 				class Item8
@@ -12737,19 +12737,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -12758,6 +12745,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -12785,19 +12785,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -12806,6 +12793,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -12832,19 +12832,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -12853,6 +12840,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -12879,19 +12879,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -12900,6 +12887,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -12928,19 +12928,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -12949,6 +12936,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -12976,19 +12976,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -12997,6 +12984,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13024,19 +13024,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13045,6 +13032,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13072,19 +13072,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13096,6 +13083,19 @@ class Mission
 														};
 													};
 												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+												};
 												nAttributes=2;
 											};
 										};
@@ -13104,7 +13104,7 @@ class Mission
 									{
 									};
 									id=3617;
-									atlOffset=1.9073486e-006;
+									atlOffset=-70.699997;
 								};
 								class Item1
 								{
@@ -13134,19 +13134,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13155,6 +13142,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13182,19 +13182,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13203,6 +13190,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13230,19 +13230,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13251,6 +13238,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13278,19 +13278,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13299,6 +13286,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13327,19 +13327,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13348,6 +13335,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13375,19 +13375,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13396,6 +13383,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13422,19 +13422,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13443,6 +13430,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13470,19 +13470,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13494,6 +13481,19 @@ class Mission
 														};
 													};
 												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
+														};
+													};
+												};
 												nAttributes=2;
 											};
 										};
@@ -13502,7 +13502,7 @@ class Mission
 									{
 									};
 									id=3626;
-									atlOffset=0.03096962;
+									atlOffset=-70.699997;
 								};
 								class Item2
 								{
@@ -13530,19 +13530,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13551,6 +13538,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13577,19 +13577,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13598,6 +13585,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13624,19 +13624,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13645,6 +13632,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13671,19 +13671,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13692,6 +13679,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13718,19 +13718,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13739,6 +13726,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13765,19 +13765,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13786,6 +13773,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13873,7 +13873,7 @@ class Mission
 										};
 									};
 									id=3644;
-									atlOffset=-0.00024795532;
+									atlOffset=-70.699997;
 								};
 								class Item3
 								{
@@ -13937,19 +13937,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -13958,6 +13945,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -13984,19 +13984,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14005,6 +13992,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14048,7 +14048,7 @@ class Mission
 										};
 									};
 									id=3658;
-									atlOffset=-3.8146973e-006;
+									atlOffset=-70.699997;
 								};
 								class Item5
 								{
@@ -14111,19 +14111,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14132,6 +14119,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14159,19 +14159,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14180,6 +14167,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14207,19 +14207,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14228,6 +14215,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14255,19 +14255,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14276,6 +14263,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14303,19 +14303,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14324,6 +14311,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14351,19 +14351,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14372,6 +14359,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14459,7 +14459,7 @@ class Mission
 										};
 									};
 									id=3709;
-									atlOffset=-0.0046081543;
+									atlOffset=-70.699997;
 								};
 								class Item7
 								{
@@ -14522,19 +14522,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14543,6 +14530,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14569,19 +14569,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14590,6 +14577,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14633,7 +14633,7 @@ class Mission
 										};
 									};
 									id=3717;
-									atlOffset=-0.016338348;
+									atlOffset=-70.699997;
 								};
 								class Item9
 								{
@@ -14696,19 +14696,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14717,6 +14704,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14744,19 +14744,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14765,6 +14752,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14792,19 +14792,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14813,6 +14800,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14840,19 +14840,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14861,6 +14848,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14888,19 +14888,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14909,6 +14896,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -14936,19 +14936,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -14957,6 +14944,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -15044,7 +15044,7 @@ class Mission
 										};
 									};
 									id=3735;
-									atlOffset=-0.0026283264;
+									atlOffset=-70.699997;
 								};
 								class Item11
 								{
@@ -15107,19 +15107,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -15128,6 +15115,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -15154,19 +15154,6 @@ class Mission
 											{
 												class Attribute0
 												{
-													property="ENH_allowFleeing";
-													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
-													class Value
-													{
-														class data
-														{
-															singleType="SCALAR";
-															value=0;
-														};
-													};
-												};
-												class Attribute1
-												{
 													property="ENH_courage";
 													expression="if (_value == 0.5) exitWith {}; [_this, ['courage', _value]] remoteExec ['setSkill', _this]";
 													class Value
@@ -15175,6 +15162,19 @@ class Mission
 														{
 															singleType="SCALAR";
 															value=1;
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="ENH_allowFleeing";
+													expression="if (_value == 0.5) exitWith {}; [_this, _value] remoteExec ['allowFleeing', _this]";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=0;
 														};
 													};
 												};
@@ -15218,7 +15218,7 @@ class Mission
 										};
 									};
 									id=3743;
-									atlOffset=-0.003528595;
+									atlOffset=-70.699997;
 								};
 								class Item13
 								{
@@ -15256,7 +15256,7 @@ class Mission
 								};
 							};
 							id=3662;
-							atlOffset=2.7738667;
+							atlOffset=-70.699997;
 						};
 						class Item1
 						{
@@ -15326,7 +15326,7 @@ class Mission
 								};
 							};
 							id=3665;
-							atlOffset=5.6529388;
+							atlOffset=-70.699997;
 						};
 						class Item2
 						{
@@ -15349,6 +15349,7 @@ class Mission
 								};
 							};
 							id=3666;
+							atlOffset=-70.699997;
 						};
 						class Item3
 						{
@@ -15458,11 +15459,11 @@ class Mission
 								};
 							};
 							id=3667;
-							atlOffset=-4.9499912;
+							atlOffset=-70.699997;
 						};
 					};
 					id=3664;
-					atlOffset=12.896025;
+					atlOffset=-70.699997;
 				};
 				class Item1
 				{
@@ -17188,11 +17189,11 @@ class Mission
 						};
 					};
 					id=3811;
-					atlOffset=-12.353527;
+					atlOffset=-70.699997;
 				};
 			};
 			id=3663;
-			atlOffset=-31.791752;
+			atlOffset=-60.494923;
 		};
 		class Item11
 		{

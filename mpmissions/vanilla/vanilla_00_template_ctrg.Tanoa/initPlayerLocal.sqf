@@ -1,30 +1,5 @@
 params ["_player", "_didJIP"];
 
-terminate (missionNamespace getVariable ["my_disable_hud", scriptNull]);
-missionNamespace setVariable [
-    "my_disable_hud",
-    [] spawn {
-        scriptName "My Disable HUD";
-        while {true} do {
-            uiSleep 1;
-            showHUD [
-                true, // scriptedHUD
-                true, // info
-                true, // radar
-                true, // compass
-                true, // direction
-                true, // menu
-                true, // group
-                true, // cursors
-                true, // panels
-                false, // kills
-                false  // showIcon3D
-            ];
-            showScoretable 0;
-        };
-    }
-];
-
 my_menu_setup = {
     params ["_player"];
     waitUntil {alive _player};
@@ -116,44 +91,27 @@ addMissionEventHandler ["TeamSwitch", {
 }];
 [_player] call my_menu_setup;
 
-player createDiaryRecord [
-    "Diary",
-    [
-        "Hostage",
-        "<img image='mug.paa'/>"
-    ]
+terminate (missionNamespace getVariable ["my_disable_hud", scriptNull]);
+missionNamespace setVariable [
+    "my_disable_hud",
+    [] spawn {
+        scriptName "My Disable HUD";
+        while {true} do {
+            uiSleep 1;
+            showHUD [
+                true, // scriptedHUD
+                true, // info
+                true, // radar
+                true, // compass
+                true, // direction
+                true, // menu
+                true, // group
+                true, // cursors
+                true, // panels
+                false, // kills
+                false  // showIcon3D
+            ];
+            showScoretable 0;
+        };
+    }
 ];
-player createDiaryRecord [
-    "Diary",
-    [
-        localize "STR_A3_Diary_Signal_title",
-        "- Assassin: Infantry squad.<br/>
-- Hitman: Infantry squad.<br/>
-- Warpig: AMV-7 Marshall APC."
-    ]
-];
-player createDiaryRecord [
-    "Diary",
-    [
-        localize "STR_A3_Diary_Execution_title",
-        "1. Secure hostage compound.<br/>
-2. Free hostage.<br/>
-3. Return to base."
-    ]
-];
-player createDiaryRecord [
-    "Diary",
-    [
-        localize "STR_A3_Diary_Mission_title",
-        "Rescue the construction worker hostage and bring him back to our safehouse."
-    ]
-];
-player createDiaryRecord [
-    "Diary",
-    [
-        localize "STR_A3_Diary_Situation_title",
-        "An employee of our client, Daltgreen Mining Corporation, has been kidnapped by the Tura. We have intel that he is held by Tura insurgents in a compound in the city Bir Dakhla. The entire city is controlled by insurgents and we expect enemy reinforcements once they are alerted. Our job is to assault the compound, rescue the hostage, and bring him back to our safehouse. We will use a Marshall APC for support. He holds a high ranking position in Daltgreen so this will be a worthwhile contract."
-    ]
-];
-uiSleep 1;
-player selectDiarySubject "Diary:Record4"; // Situation (4)

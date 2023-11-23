@@ -88,34 +88,6 @@ my_menu_setup = {
                         "Tasks",
                         [
                             [
-                                "Done Foritfy", "", "1", false,
-                                [
-                                    "Confirm Done Fortify?",
-                                    [
-                                        [
-                                            "Done Fortify", toString {
-                                                done_fortify = true;
-                                                publicVariable "done_fortify";
-                                            }, "1"
-                                        ]
-                                    ]
-                                ]
-                            ],
-                            [
-                                "Done Defense", "", "1", false,
-                                [
-                                    "Confirm Done Defense?",
-                                    [
-                                        [
-                                            "Done Defense", toString {
-                                                done_defense = true;
-                                                publicVariable "done_defend";
-                                            }, "1"
-                                        ]
-                                    ]
-                                ]
-                            ],
-                            [
                                 "Mission Success", "", "1", false,
                                 [
                                     "Confirm Mission Success?",
@@ -137,48 +109,49 @@ my_menu_setup = {
         ]
     ] call jib_menu_dynamic_action;
 };
-
 addMissionEventHandler ["TeamSwitch", {
     params ["_previousUnit", "_newUnit"];
     [_newUnit] call my_menu_setup;
 }];
 [_player] call my_menu_setup;
 
+[{
+    params ["_unit", "_object", "_cost"];
+    isTouchingGround _object;
+}] call ace_fortify_fnc_addDeployHandler;
+
 player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Signal_title",
         "- Assassin: Infantry squad.<br/>
-- Hitman: Infantry squad."
+- Hitman: Infantry squad.<br/>
+- Warpig: AMV-7 Marshall APC.
+- Rodeo: CAS Helicopter."
     ]
 ];
 player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Execution_title",
-        "1. Take fortification tools, entrenching tools, and wirecutters from safehouse.<br/>
-2. Prepare defensive positions around the Solar Farm until 1720 hours.<br/>
-3. Defend the Solar Farm against the Tura attack."
+        "1. Prepare assault force.<br/>
+2. Recon the AO.<br/>
+3. Assault the AO."
     ]
 ];
 player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Mission_title",
-        "Defend the Solar Farm against the Tura attack. The mission will be complete once Tura forces are exhausted."
+        "Eliminate Tura insurgent infantry and technicals from the AO."
     ]
 ];
 player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Situation_title",
-        "We have gotten word that the Tura are planning an attack on the Solar Farm at 1720 hours. Our client has contracted us to defend it, as its destruction would limit their profits in Sefrou-Ramal. We expect the Tura to attack from all sides and will need to establish a perimeter. Fortification supplies are available to build sandbags, razorwire barriers, and small bunkers to assist our defense. We can use drones as well to increase surveillance and firepower."
+        "Tura insurgents are stockpiling weapons and supplies, and training recruits in the northern region of Sefrou-Ramal. Our client would like us to check their growth before they become a problem. We will attack and clear out insurgent forces from the village. We are expecting about a platoon of infantry and a couple technicals. If we can put an end to this now, it will prevent them from growing their presence."
     ]
 ];
 uiSleep 1;
 player selectDiarySubject "Diary:Record3";
-
-[{
-    params ["_unit", "_object", "_cost"];
-    isTouchingGround _object;
-}] call ace_fortify_fnc_addDeployHandler;
