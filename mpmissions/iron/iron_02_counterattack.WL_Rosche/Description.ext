@@ -1,0 +1,9 @@
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You located and seized the Soviet FOB. This will prevent them from being able to stage another attack on our airfield.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};

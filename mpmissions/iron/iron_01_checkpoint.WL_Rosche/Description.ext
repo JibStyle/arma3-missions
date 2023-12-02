@@ -1,0 +1,9 @@
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	description = "You defended Checkpoint Zulu and prevented the Soviets from reaching the nuclear missiles at our airfield.";
+	pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};

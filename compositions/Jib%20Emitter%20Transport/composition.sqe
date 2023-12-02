@@ -1,0 +1,13 @@
+version=54;
+center[]={3815.303,16.469702,4202.4868};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="[this, 1, 0, ""SCRIPTED"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", ""[this] call jib_wp_transport""]] call jib_emitter_waypoint;";
+		id=8016;
+		type="Logic";
+	};
+};
