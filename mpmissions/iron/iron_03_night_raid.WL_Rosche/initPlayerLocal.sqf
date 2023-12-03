@@ -49,39 +49,39 @@ my_menu_setup = {
                 //         ]
                 //     ]
                 // ],
-                [
-                    "Difficulty", "", "1", false,
-                    [
-                        "Difficulty",
-                        [
-                            [
-                                "Off", toString {
-                                    [] remoteExec ["my_flex_off", 2];
-                                }, "1"
-                            ],
-                            [
-                                "Easy", toString {
-                                    [] remoteExec ["my_flex_easy", 2];
-                                }, "1"
-                            ],
-                            [
-                                "Normal", toString {
-                                    [] remoteExec ["my_flex_normal", 2];
-                                }, "1"
-                            ],
-                            [
-                                "Hard", toString {
-                                    [] remoteExec ["my_flex_hard", 2];
-                                }, "1"
-                            ],
-                            [
-                                "Custom", toString {
-                                    [] remoteExec ["my_flex_custom", 2];
-                                }, "1"
-                            ]
-                        ]
-                    ]
-                ],
+                // [
+                //     "Difficulty", "", "1", false,
+                //     [
+                //         "Difficulty",
+                //         [
+                //             [
+                //                 "Off", toString {
+                //                     [] remoteExec ["my_flex_off", 2];
+                //                 }, "1"
+                //             ],
+                //             [
+                //                 "Easy", toString {
+                //                     [] remoteExec ["my_flex_easy", 2];
+                //                 }, "1"
+                //             ],
+                //             [
+                //                 "Normal", toString {
+                //                     [] remoteExec ["my_flex_normal", 2];
+                //                 }, "1"
+                //             ],
+                //             [
+                //                 "Hard", toString {
+                //                     [] remoteExec ["my_flex_hard", 2];
+                //                 }, "1"
+                //             ],
+                //             [
+                //                 "Custom", toString {
+                //                     [] remoteExec ["my_flex_custom", 2];
+                //                 }, "1"
+                //             ]
+                //         ]
+                //     ]
+                // ],
                 [
                     "Tasks", "", "1", false,
                     [
@@ -132,32 +132,30 @@ player createDiaryRecord [
     [
         localize "STR_A3_Diary_Signal_title",
         "- Alpha: Infantry squad.<br/>
-- Bravo: Infantry squad.<br/>
-- Charlie: Infantry squad.<br/>
-- Warpig: M113A3"
+- Bravo: Infantry squad."
     ]
 ];
 player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Execution_title",
-        "1. Search Gross Liedern for intel.<br/>
-2. Follow the trail of intel to find the Soviet FOB.<br/>
-3. Assault the Soviet FOB."
+        "1. Travel to the Fuel Depot.<br/>
+2. Assault the Depot.<br/>
+3. RTB with the Fuel Truck."
     ]
 ];
 player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Mission_title",
-        "Search for and take control of the Soviet FOB."
+        "Assault the Fuel Depot, eliminate the threats, and RTB with the fuel truck."
     ]
 ];
 player createDiaryRecord [
     "Diary",
     [
         localize "STR_A3_Diary_Situation_title",
-        "During the Soviet attack on our airfield, we observed enemy troops ingressing through the town Gross Liedern. They must have a FOB nearby which they used to organize the attack. Your objective is to seize Gross Liedern and search for clues about where the Soviet FOB is located. We must take it out before they can reorganize a new attack."
+        "Our Spetsnaz section is tasked with assaulting a guerrilla held compound, which also houses a few US troops. We are to extract a fuel truck and return it to our nearby staging location in Woltersburg. This will limit the local guerrilla resistance capabilities."
     ]
 ];
 uiSleep 1;

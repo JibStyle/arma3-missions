@@ -3,6 +3,7 @@ missionNamespace setVariable [
     "my_mission_status",
     [] spawn {
         scriptName "my_mission_status";
+        [] call BIS_fnc_showMissionStatus;
         while {true} do {
             waitUntil {uiSleep 0.5; !isNull findDisplay 312;};
             waitUntil {uiSleep 0.5; isNull findDisplay 312;};
