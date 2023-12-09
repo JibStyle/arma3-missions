@@ -1,13 +1,161 @@
 version=54;
-center[]={3815.303,16.469702,4202.4868};
+center[]={7667.1484,30.873241,3620.0208};
 class items
 {
-	items=1;
+	items=7;
 	class Item0
 	{
 		dataType="Logic";
-		init="[this, 1, 0, ""SCRIPTED"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", ""[this] call jib_wp_transport""]] call jib_emitter_waypoint;";
-		id=8016;
+		class PositionInfo
+		{
+			position[]={-18.286621,1.4400711,-82.2854};
+			angles[]={0.012000273,1.7516245,6.105093};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=6345;
 		type="Logic";
+	};
+	class Item1
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.286621,0,45.7146};
+			angles[]={6.2711902,1.7516245,0.023993526};
+		};
+		init="[this, 1, 0, ""TR UNLOAD"", ""NO CHANGE"", ""CARELESS"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=6346;
+		type="Logic";
+	};
+	class Item2
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={45.713379,1.236866,-18.2854};
+			angles[]={6.1756024,1.7516245,0.067895547};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=6347;
+		type="Logic";
+	};
+	class Item3
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={45.713379,1.8540077,-82.2854};
+			angles[]={0.019999012,1.7516245,0.047963165};
+		};
+		init="[this, 1, 0, ""MOVE"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", ""[this] call jib_wp_rtbComplete""]] call jib_emitter_waypoint;";
+		id=6348;
+		type="Logic";
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.286621,0.53082657,109.7146};
+			angles[]={6.2352209,1.7516245,6.2751846};
+		};
+		init="[this] call jib_emitter_child;";
+		id=6349;
+		type="Logic";
+	};
+	class Item5
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.286621,3.1402969,-146.2854};
+			angles[]={0.051953323,1.7516298,0.02399601};
+		};
+		init="[this, 1] call jib_emitter_save;";
+		id=6350;
+		type="Logic";
+	};
+	class Item6
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-18.286621,0.85842896,173.7146};
+			angles[]={0.0039967569,1.7516298,6.2751846};
+		};
+		init="[this, 1, 0, ""GUARD"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=6351;
+		type="Logic";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=6;
+	};
+	class Links
+	{
+		items=6;
+		class Item0
+		{
+			linkID=0;
+			item0=6345;
+			item1=6346;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=6346;
+			item1=6347;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=6348;
+			item1=6347;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=6349;
+			item1=6346;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=6350;
+			item1=6345;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=6349;
+			item1=6351;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
 	};
 };
