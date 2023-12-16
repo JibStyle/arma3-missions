@@ -1,0 +1,53 @@
+version=54;
+center[]={5598.0879,21.790001,1071.849};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={0,0.2840538,0};
+			angles[]={0,4.2501035,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="this addAction [ " \n "    ""Rearm"", " \n "    { " \n "        player setUnitLoadout ( " \n "            player getVariable [""ENH_SavedLoadout"", getUnitLoadout player] " \n "        ); " \n "        systemChat ""Player Loadout Restored""; " \n "    }, " \n "    [], 3, true, true, """", ""true"", 3 " \n "]; " \n "";
+		};
+		id=11163;
+		type="Box_NATO_Ammo_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ammoBox";
+				expression="[_this,_value] call bis_fnc_initAmmoBox;";
+				class Value
+				{
+					class data
+					{
+						singleType="STRING";
+						value="[[[[],[]],[[],[]],[[],[]],[[],[]]],false]";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+};
