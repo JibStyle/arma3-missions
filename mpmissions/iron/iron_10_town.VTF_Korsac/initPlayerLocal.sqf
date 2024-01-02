@@ -88,12 +88,6 @@ my_menu_setup = {
                         "Tasks",
                         [
                             [
-                                "Start Convoy", toString {
-                                    done_setup = true;
-                                    publicVariable "done_setup";
-                                }, "1"
-                            ],
-                            [
                                 "Mission Success", toString {
                                     ["End1"] remoteExec [
                                         "BIS_fnc_endMission"
