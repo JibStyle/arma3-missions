@@ -1,0 +1,13 @@
+version=54;
+center[]={12573.057,23.375626,7432.7632};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="[this, 1, 0, ""GUARD"", ""NO CHANGE"", ""UNCHANGED"", ""NO CHANGE"", ""UNCHANGED"", [0, 0, 0], [""true"", """"]] call jib_emitter_waypoint;";
+		id=4365;
+		type="Logic";
+	};
+};

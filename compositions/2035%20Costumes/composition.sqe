@@ -1,0 +1,1291 @@
+version=54;
+center[]={14187.35,19.28911,16295.032};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={-0.0009765625,0.38148689,0.005859375};
+			angles[]={0.014660765,0,0.0026529003};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+			init="[this, false] call jib_garbage_include;" \n "this addAction [""Reset loadout"", {player setUnitLoadout [player getVariable [""ENH_savedLoadout"", getUnitLoadout typeOf player], true]}, [], 1, false, true, """", ""true"", 3];";
+		};
+		id=34;
+		type="Box_NATO_Uniforms_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ace_arsenal_attribute";
+				expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+				class Value
+				{
+					class data
+					{
+						singleType="ARRAY";
+						class value
+						{
+							items=2;
+							class Item0
+							{
+								class data
+								{
+									singleType="ARRAY";
+									class value
+									{
+										items=152;
+										class Item0
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_gry";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_blu";
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_cbr";
+											};
+										};
+										class Item3
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_khk_hs";
+											};
+										};
+										class Item4
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_khk";
+											};
+										};
+										class Item5
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_mcamo";
+											};
+										};
+										class Item6
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_sgg";
+											};
+										};
+										class Item7
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_sand";
+											};
+										};
+										class Item8
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_surfer";
+											};
+										};
+										class Item9
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_surfer_blk";
+											};
+										};
+										class Item10
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_surfer_grn";
+											};
+										};
+										class Item11
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Bandanna_camo";
+											};
+										};
+										class Item12
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Watchcap_blk";
+											};
+										};
+										class Item13
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Watchcap_cbr";
+											};
+										};
+										class Item14
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Watchcap_camo";
+											};
+										};
+										class Item15
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Watchcap_khk";
+											};
+										};
+										class Item16
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_mgrn";
+											};
+										};
+										class Item17
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_khk_hs";
+											};
+										};
+										class Item18
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_khk";
+											};
+										};
+										class Item19
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_mcamo";
+											};
+										};
+										class Item20
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_oli";
+											};
+										};
+										class Item21
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_tan";
+											};
+										};
+										class Item22
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_taiga";
+											};
+										};
+										class Item23
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_tna_F";
+											};
+										};
+										class Item24
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_wdl";
+											};
+										};
+										class Item25
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_dgtl";
+											};
+										};
+										class Item26
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Booniehat_eaf";
+											};
+										};
+										class Item27
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_grn_BI";
+											};
+										};
+										class Item28
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_blk";
+											};
+										};
+										class Item29
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_Black_IDAP_F";
+											};
+										};
+										class Item30
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_blu";
+											};
+										};
+										class Item31
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_blk_CMMG";
+											};
+										};
+										class Item32
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_grn";
+											};
+										};
+										class Item33
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_blk_ION";
+											};
+										};
+										class Item34
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_Lyfe";
+											};
+										};
+										class Item35
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_MaldenTours";
+											};
+										};
+										class Item36
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_oli";
+											};
+										};
+										class Item37
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_oli_hs";
+											};
+										};
+										class Item38
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_Orange_IDAP_F";
+											};
+										};
+										class Item39
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_police";
+											};
+										};
+										class Item40
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_press";
+											};
+										};
+										class Item41
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_red";
+											};
+										};
+										class Item42
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_surfer";
+											};
+										};
+										class Item43
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_tan";
+											};
+										};
+										class Item44
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_khaki_specops_UK";
+											};
+										};
+										class Item45
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_usblack";
+											};
+										};
+										class Item46
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_tan_specops_US";
+											};
+										};
+										class Item47
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_White_IDAP_F";
+											};
+										};
+										class Item48
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_blk_Raven";
+											};
+										};
+										class Item49
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Cap_brn_SPECOPS";
+											};
+										};
+										class Item50
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_EarProtectors_black_F";
+											};
+										};
+										class Item51
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_EarProtectors_orange_F";
+											};
+										};
+										class Item52
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_EarProtectors_red_F";
+											};
+										};
+										class Item53
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_EarProtectors_white_F";
+											};
+										};
+										class Item54
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_EarProtectors_yellow_F";
+											};
+										};
+										class Item55
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_blue";
+											};
+										};
+										class Item56
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_brown";
+											};
+										};
+										class Item57
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_camo";
+											};
+										};
+										class Item58
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_checker";
+											};
+										};
+										class Item59
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_grey";
+											};
+										};
+										class Item60
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_tan";
+											};
+										};
+										class Item61
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadBandage_clean_F";
+											};
+										};
+										class Item62
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadBandage_stained_F";
+											};
+										};
+										class Item63
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadBandage_bloody_F";
+											};
+										};
+										class Item64
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadSet_black_F";
+											};
+										};
+										class Item65
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadSet_orange_F";
+											};
+										};
+										class Item66
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadSet_red_F";
+											};
+										};
+										class Item67
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadSet_white_F";
+											};
+										};
+										class Item68
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_HeadSet_yellow_F";
+											};
+										};
+										class Item69
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_Safari_olive_F";
+											};
+										};
+										class Item70
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_Safari_sand_F";
+											};
+										};
+										class Item71
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Shemag_olive";
+											};
+										};
+										class Item72
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Shemag_olive_hs";
+											};
+										};
+										class Item73
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_ShemagOpen_tan";
+											};
+										};
+										class Item74
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_ShemagOpen_khk";
+											};
+										};
+										class Item75
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_StrawHat";
+											};
+										};
+										class Item76
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_StrawHat_dark";
+											};
+										};
+										class Item77
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_Hat_Tinfoil_F";
+											};
+										};
+										class Item78
+										{
+											class data
+											{
+												singleType="STRING";
+												value="H_WirelessEarpiece_F";
+											};
+										};
+										class Item79
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_AirPurifyingRespirator_02_black_F";
+											};
+										};
+										class Item80
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_AirPurifyingRespirator_02_olive_F";
+											};
+										};
+										class Item81
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_AirPurifyingRespirator_02_sand_F";
+											};
+										};
+										class Item82
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_AirPurifyingRespirator_01_F";
+											};
+										};
+										class Item83
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Aviator";
+											};
+										};
+										class Item84
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_blk";
+											};
+										};
+										class Item85
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_BlueStrips";
+											};
+										};
+										class Item86
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_combat";
+											};
+										};
+										class Item87
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_Flecktarn";
+											};
+										};
+										class Item88
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_Halloween_01";
+											};
+										};
+										class Item89
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_lowprofile";
+											};
+										};
+										class Item90
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_oli";
+											};
+										};
+										class Item91
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_Flames1";
+											};
+										};
+										class Item92
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_Scarecrow_01";
+											};
+										};
+										class Item93
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_Skull1";
+											};
+										};
+										class Item94
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_Tropentarn";
+											};
+										};
+										class Item95
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_aviator";
+											};
+										};
+										class Item96
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_beast";
+											};
+										};
+										class Item97
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_blk";
+											};
+										};
+										class Item98
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_BlueFlame1";
+											};
+										};
+										class Item99
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_BlueFlame2";
+											};
+										};
+										class Item100
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_CandySkull";
+											};
+										};
+										class Item101
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_khk";
+											};
+										};
+										class Item102
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_oli";
+											};
+										};
+										class Item103
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_OrangeFlame1";
+											};
+										};
+										class Item104
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_RedFlame1";
+											};
+										};
+										class Item105
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_shades";
+											};
+										};
+										class Item106
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_Skull1";
+											};
+										};
+										class Item107
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_Syndikat1";
+											};
+										};
+										class Item108
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_Skull2";
+											};
+										};
+										class Item109
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_sport";
+											};
+										};
+										class Item110
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_tan";
+											};
+										};
+										class Item111
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_Vampire_01";
+											};
+										};
+										class Item112
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Bandanna_Syndikat2";
+											};
+										};
+										class Item113
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Blindfold_01_black_F";
+											};
+										};
+										class Item114
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Blindfold_01_white_F";
+											};
+										};
+										class Item115
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Combat";
+											};
+										};
+										class Item116
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Combat_Goggles_tna_F";
+											};
+										};
+										class Item117
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Diving";
+											};
+										};
+										class Item118
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_I_Diving";
+											};
+										};
+										class Item119
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_O_Diving";
+											};
+										};
+										class Item120
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_B_Diving";
+											};
+										};
+										class Item121
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Lady_Blue";
+											};
+										};
+										class Item122
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Lowprofile";
+											};
+										};
+										class Item123
+										{
+											class data
+											{
+												singleType="STRING";
+												value="None";
+											};
+										};
+										class Item124
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_RegulatorMask_F";
+											};
+										};
+										class Item125
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Respirator_blue_F";
+											};
+										};
+										class Item126
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Respirator_white_F";
+											};
+										};
+										class Item127
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Respirator_yellow_F";
+											};
+										};
+										class Item128
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_EyeProtectors_F";
+											};
+										};
+										class Item129
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_EyeProtectors_Earpiece_F";
+											};
+										};
+										class Item130
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Shades_Black";
+											};
+										};
+										class Item131
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Shades_Blue";
+											};
+										};
+										class Item132
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Shades_Green";
+											};
+										};
+										class Item133
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Shades_Red";
+											};
+										};
+										class Item134
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Spectacles";
+											};
+										};
+										class Item135
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Sport_Red";
+											};
+										};
+										class Item136
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Sport_Blackyellow";
+											};
+										};
+										class Item137
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Sport_BlackWhite";
+											};
+										};
+										class Item138
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Sport_Checkered";
+											};
+										};
+										class Item139
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Sport_Blackred";
+											};
+										};
+										class Item140
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Sport_Greenblack";
+											};
+										};
+										class Item141
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Squares";
+											};
+										};
+										class Item142
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Squares_Tinted";
+											};
+										};
+										class Item143
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_TI_blk_F";
+											};
+										};
+										class Item144
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_TI_G_blk_F";
+											};
+										};
+										class Item145
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_TI_tna_F";
+											};
+										};
+										class Item146
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Balaclava_TI_G_tna_F";
+											};
+										};
+										class Item147
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Tactical_Clear";
+											};
+										};
+										class Item148
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Tactical_Black";
+											};
+										};
+										class Item149
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Spectacles_Tinted";
+											};
+										};
+										class Item150
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_Goggles_VR";
+											};
+										};
+										class Item151
+										{
+											class data
+											{
+												singleType="STRING";
+												value="G_WirelessEarpiece_F";
+											};
+										};
+									};
+								};
+							};
+							class Item1
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0;
+								};
+							};
+						};
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="allowDamage";
+				expression="_this allowdamage _value;";
+				class Value
+				{
+					class data
+					{
+						singleType="BOOL";
+						value=0;
+					};
+				};
+			};
+			nAttributes=2;
+		};
+	};
+};
