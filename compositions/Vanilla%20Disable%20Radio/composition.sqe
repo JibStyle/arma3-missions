@@ -1,0 +1,13 @@
+version=54;
+center[]={11987.324,29.875797,6579.6299};
+class items
+{
+	items=1;
+	class Item0
+	{
+		dataType="Logic";
+		init="[false] remoteExec [""enableRadio"", 0, true];";
+		id=908;
+		type="Logic";
+	};
+};

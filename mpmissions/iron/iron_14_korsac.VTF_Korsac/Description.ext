@@ -1,0 +1,18 @@
+// class CfgMusic {
+//     tracks[]={song1};
+
+//     class track1 {
+//         name="song1";
+//         sound[] = {\music\fortunateson.ogg, 1, 1};
+//     };
+// };
+
+class CfgDebriefing {
+    class End1 {
+	title = "Mission Completed";
+	subtitle = "";
+	// description = "You secured the hardware facility, killed a high ranking Soviet officer, and secured valuable intel. This will please Command and allow us to pick future targets.";
+	// pictureBackground = __EVAL(getMissionPath "debrief.paa");
+	picture = __EVAL(getMissionPath "ignition.paa");
+    };
+};
