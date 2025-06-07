@@ -25,44 +25,66 @@ my_menu_setup = {
                     ]
                 ],
                 [
-                    "OBJ", "", "1", false,
+                    "AO", "", "1", false,
                     [
-                        "OBJ",
+                        "AO",
                         [
-                            ["05", toString {[["obj"], 05] remoteExec ["my_ao", 2]}],
-                            ["10", toString {[["obj"], 10] remoteExec ["my_ao", 2]}],
-                            ["15", toString {[["obj"], 15] remoteExec ["my_ao", 2]}],
-                            ["20", toString {[["obj"], 20] remoteExec ["my_ao", 2]}],
-                            ["25", toString {[["obj"], 25] remoteExec ["my_ao", 2]}],
-                            ["30", toString {[["obj"], 30] remoteExec ["my_ao", 2]}]
-                        ]
-                    ]
-                ],
-                [
-                    "Inner", "", "1", false,
-                    [
-                        "Inner",
-                        [
-                            ["05", toString {[["inner"], 05] remoteExec ["my_ao", 2]}],
-                            ["10", toString {[["inner"], 10] remoteExec ["my_ao", 2]}],
-                            ["15", toString {[["inner"], 15] remoteExec ["my_ao", 2]}],
-                            ["20", toString {[["inner"], 20] remoteExec ["my_ao", 2]}],
-                            ["25", toString {[["inner"], 25] remoteExec ["my_ao", 2]}],
-                            ["30", toString {[["inner"], 30] remoteExec ["my_ao", 2]}]
-                        ]
-                    ]
-                ],
-                [
-                    "Outer", "", "1", false,
-                    [
-                        "Outer",
-                        [
-                            ["05", toString {[["outer"], 05] remoteExec ["my_ao", 2]}],
-                            ["10", toString {[["outer"], 10] remoteExec ["my_ao", 2]}],
-                            ["15", toString {[["outer"], 15] remoteExec ["my_ao", 2]}],
-                            ["20", toString {[["outer"], 20] remoteExec ["my_ao", 2]}],
-                            ["25", toString {[["outer"], 25] remoteExec ["my_ao", 2]}],
-                            ["30", toString {[["outer"], 30] remoteExec ["my_ao", 2]}]
+                            [
+                                "OBJ", "", "1", false,
+                                [
+                                    "OBJ",
+                                    [
+                                        ["05", toString {[["obj"], 05] remoteExec ["my_ao", 2]}],
+                                        ["10", toString {[["obj"], 10] remoteExec ["my_ao", 2]}],
+                                        ["15", toString {[["obj"], 15] remoteExec ["my_ao", 2]}],
+                                        ["20", toString {[["obj"], 20] remoteExec ["my_ao", 2]}],
+                                        ["25", toString {[["obj"], 25] remoteExec ["my_ao", 2]}],
+                                        ["30", toString {[["obj"], 30] remoteExec ["my_ao", 2]}]
+                                    ]
+                                ]
+                            ],
+                            [
+                                "Inner", "", "1", false,
+                                [
+                                    "Inner",
+                                    [
+                                        ["05", toString {[["inner"], 05] remoteExec ["my_ao", 2]}],
+                                        ["10", toString {[["inner"], 10] remoteExec ["my_ao", 2]}],
+                                        ["15", toString {[["inner"], 15] remoteExec ["my_ao", 2]}],
+                                        ["20", toString {[["inner"], 20] remoteExec ["my_ao", 2]}],
+                                        ["25", toString {[["inner"], 25] remoteExec ["my_ao", 2]}],
+                                        ["30", toString {[["inner"], 30] remoteExec ["my_ao", 2]}]
+                                    ]
+                                ]
+                            ],
+                            [
+                                "Outer", "", "1", false,
+                                [
+                                    "Outer",
+                                    [
+                                        ["05", toString {[["outer"], 05] remoteExec ["my_ao", 2]}],
+                                        ["10", toString {[["outer"], 10] remoteExec ["my_ao", 2]}],
+                                        ["15", toString {[["outer"], 15] remoteExec ["my_ao", 2]}],
+                                        ["20", toString {[["outer"], 20] remoteExec ["my_ao", 2]}],
+                                        ["25", toString {[["outer"], 25] remoteExec ["my_ao", 2]}],
+                                        ["30", toString {[["outer"], 30] remoteExec ["my_ao", 2]}]
+                                    ]
+                                ]
+                            ],
+                            [
+                                "Civ", "", "1", false,
+                                [
+                                    "Civ",
+                                    [
+                                        ["05", toString {[["civ"], 05] remoteExec ["my_ao", 2]}],
+                                        ["10", toString {[["civ"], 10] remoteExec ["my_ao", 2]}],
+                                        ["15", toString {[["civ"], 15] remoteExec ["my_ao", 2]}],
+                                        ["20", toString {[["civ"], 20] remoteExec ["my_ao", 2]}],
+                                        ["25", toString {[["civ"], 25] remoteExec ["my_ao", 2]}],
+                                        ["30", toString {[["civ"], 30] remoteExec ["my_ao", 2]}]
+                                    ]
+                                ]
+                            ]
                         ]
                     ]
                 ]
